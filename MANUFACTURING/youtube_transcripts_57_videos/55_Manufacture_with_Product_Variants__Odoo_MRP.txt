@@ -1,0 +1,194 @@
+Video: Manufacture with Product Variants | Odoo MRP
+Video ID: 5Pn9iBsXQBo
+URL: https://www.youtube.com/watch?v=5Pn9iBsXQBo
+Playlist Index: 55
+================================================================================
+
+What's up, Odoers, and welcome back. At
+Stealthywood, we're known for our
+ergonomic chairs, and our customers
+appreciate having options. We give them
+three different colors to choose from,
+plus the ability to add a comfortable
+headrest or not. And hey, that sounds
+perfect, right? But behind the scenes,
+all that customization creates a complex
+challenge. Each combination, like a
+black chair with a headrest or a red
+chair without one, becomes its own mini
+product. And suddenly, our manufacturing
+team isn't just building one chair.
+They're juggling six different versions.
+Each one needs a specific parts list
+because different colors mean different
+components to track. Each one might also
+follow a different set of steps on the
+assembly line, like adding a headrest or
+skipping it. And with more product
+variants, you get more SKs, more
+inventory to manage, and more room for
+mistakes. As the manufacturing manager
+here at Stealthy Wood, I deal with this
+every day. And when a new order comes
+in, let's say a blue chair without a
+headrest, I don't have to scramble
+because ODU automatically picks the
+right build of materials, the correct
+components, and the proper steps on the
+shop floor. No second guessing, no
+manual edits, no delays, just smooth,
+accurate production. In this video,
+we're going to walk through the process
+of ordering a chair variant so you can
+see exactly how ODU keeps production
+running smoothly, even with multiple
+options. That being said, let's dive in.
+Before we dive into manufacturing, just
+a quick heads up, we've already enabled
+and configured product variance. To turn
+products variance on, we just need to
+hop into our settings, click sales in
+our left side column, and then here
+under our product catalog section, make
+sure we have variance ticked and
+enabled. And if you haven't done this in
+your database yet, don't forget to click
+save before moving on. But now that
+that's out of the way, let's take a look
+at the ergonomic chair that we'll be
+building today. We're going to hop into
+the manufacturing app, select products,
+followed by products once again, and
+select our ergonomic chair.
+Currently, the product type is set to
+goods. And we've also enabled track
+inventory.
+And this is both on for not only the
+chair, but the components as well. And
+that's so we know exactly what's in
+stock before we even start production.
+If we move over to our attributes and
+variance tab, you'll see the two
+different options we have here. We have
+our headrest attribute with our yes and
+no values. And we also have our color
+attribute with black, red, and blue
+being the color options.
+That gives us six different possible
+combinations for our ergonomic chair.
+Now, let's take a look at how components
+change based on the chair color. First,
+I'm going to click our build material
+smart button here at the top of the
+screen. And I'm just going to open our
+first build materials here for our black
+chair with a headrest.
+And we've linked this bomb to this
+specific product variant.
+Under the components, we're going to see
+we have our headrest since this variant
+does include our yes value. And it also
+includes our black chair base as well as
+our black armrest which matches the
+configuration.
+Now, we're going to head back to our
+bill material list using the breadcrumbs
+at the top. And this time, let's go
+ahead and select our red chair without a
+headrest.
+In here, we'll notice a few different
+things. There's no headrest component
+and our chair base and armrest is red.
+And if we look back at the product
+variant field here, we can see our
+selected configuration here.
+Each bomb reflects exactly what that
+variant needs, nothing more and nothing
+less. Now, let's walk through a full
+flow using one specific product variant.
+And we're going to sell and manufacture
+a black ergonomic chair with a headrest.
+So to get started, we're going to head
+back to our homepage here and just
+quickly jump into the sales app. I'll
+click new in the top left corner. We'll
+choose Deco Addict as our customer and
+we're going to click add a product at
+the bottom and add our ergonomic chair.
+When we do, a pop-up appears and this is
+where we can select our product
+attributes. In this case, we're going to
+keep the default options, which is yes
+to the headrest and keep the color set
+to black. If we wanted to remove the
+headrest, we could simply just click no.
+And when we do, we'll also see the price
+drop automatically. That's because we
+added a $50 upcharge to the headrest
+option.
+And we can change this back by clicking
+yes. And we'll also see the price
+automatically update.
+Next, we just have to click confirm on
+the popup and then confirm again on the
+quotation, which then turns it into an
+official sales order.
+Once it's confirmed, a manufacturing
+order is created. And that's because the
+product route is on replenish to order
+or manufacture.
+And from here, we're just going to click
+this manufacturing smart button.
+And that takes us straight to the
+manufacturing order for the black chair
+with a headrest. If we take a closer
+look, we'll see the correct components
+that are listed in the bill of
+materials, including that headrest. And
+if we click into the work orders tab
+here, we can see that we have both
+operations needed to produce this black
+chair, including attaching that
+headrest. As you can see, ODO
+automatically selected the right bill of
+materials and applied the correct
+operations based entirely on the variant
+that we chose in the sales order. Now,
+let's complete this manufacturing
+process on the shop floor. We're going
+to head back to our homepage and click
+into the shop floor module.
+And here we'll see we have our new
+manufacturing order here. And if we
+click into assembly line one, we can
+begin our first operation which is
+attach the headrest. Since this variant
+includes a headrest, this step is
+automatically included once again. And
+let's go ahead and start this now by
+registering this one unit to produce.
+And then we'll click mark as done for
+this step.
+Next up is the operation. Assemble chair
+body and armrests. This step is required
+for every variant whether or not it
+includes a headrest. Once that's
+complete, all we have to do is click
+mark as done once again, followed by
+close production.
+And that's it. We've built a black
+ergonomic chair with a headrest exactly
+as ordered.
+And that's a wrap. We built one
+customizable chair variant from sales to
+production using product variants,
+builds of materials, and defined
+operations to keep everything clear and
+accurate. ODU handled the complexity
+behind the scenes so every step stayed
+efficient and error resistant. If you're
+ready to build smarter and scale faster,
+keep on exploring how ODU adapts to your
+unique manufacturing needs. Until then,
+thanks for watching and I'll see you in
+the next video.

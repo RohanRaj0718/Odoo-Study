@@ -1,0 +1,218 @@
+Video: Overall Equipment Effectiveness | Odoo MRP
+Video ID: ZBBDLRoRPcs
+URL: https://www.youtube.com/watch?v=ZBBDLRoRPcs
+Playlist Index: 24
+================================================================================
+
+hello o doers as always it's so good to
+see you again today I'm coming at you
+with another great manufacturing app
+tutorial this time we're going to be
+talking about overall equipment
+Effectiveness or OE for my acronym
+lovers which is one of the manufacturing
+apps reporting features the OE feature
+tracks the amount of time a work center
+is fully productive versus the amount of
+time it is operating at reduced speed or
+when it is blocked from being used now
+before we jump into our database I want
+to take a little time to define the
+different work center statuses this is
+going to make it easier to understand
+the OE report when we look at it later
+so first off we have fully productive
+time when a work center is fully
+productive it means it's processing a
+work order that has not exceeded its
+expected duration for example if a work
+order has an expected duration of let's
+say 60 minutes and it is completed in 57
+minutes all of that time is considered
+to be fully productive now up next we
+have reduced speed which is when a work
+center is processing a work order that
+has exceeded its expected duration using
+our previous example of a work order
+with an expected duration of 60 minutes
+let's say it takes 70 minutes to
+complete the extra 10 minutes is counted
+as reduced speed time reduce speed
+negatively impacts a work Center's OE
+score even though the work center is
+operational and then finally we have a
+few different statuses all of which
+result in the work center being blocked
+or prevented from receiving work orders
+these include equipment availability
+equipment failure Steve and process
+defects as well as a few others okay
+Steve wasn't the real one but you get my
+points all right now that we've learned
+about all of those statuses let's see
+how we can configure work center to
+properly track OE with Odo so here we
+are on the main dashboard I'm going to
+start by opening up the manufacturing
+application over here going up to config
+configuration and then work centers
+let's select our assembly Station 2 over
+here and here we have its form so there
+are three fields we need to focus on
+over here inside of the production
+information header the ones that we want
+to focus on is time efficiency capacity
+and OE Target so I think it's time for
+me to break down time efficiency real
+quick now time efficiency refers to how
+efficient the work center is processing
+work orders an efficiency value of 100%
+means that the work center processes
+orders at the rate of their expected
+duration alternatively an efficiency
+value of let's say 50% or 200% would
+signify that the work center processes
+work orders at half the speed or twice
+the speed respectively that makes sense
+right so let's jump back over to our
+database and I'm going to discuss those
+other fields further so here we have
+capacity right there you'll notice it
+just says one which means that the work
+center can only handle one unit at a
+time so if an ammo is created for two
+units of a product with a work order
+that takes 10 minutes it would take 20
+minutes to process it at this work
+center because you'd have to manufacture
+each unit one at a time so finally we
+have the OE Target right there I've set
+it to 90% this is our goal for how much
+of the work Center's operating time
+should be fully productive time so we
+want this work center to be fully
+productive at least 90% of the time H I
+know that is a lot of info to taken at
+once o doers it's important to have
+these values set correctly doing so
+ensures that ODU properly tracks fully
+prod Ive time versus reduced speed time
+all right let's actually move on to the
+oee report itself there are a couple of
+ways that we can actually view it first
+I can actually navigate over to my
+overview page that we have over here and
+then we will see our actual work centers
+and on the card free to the work centers
+they have an oee button that we can see
+here some are in red some are in green
+so this number that we have right there
+represents the percentage of fully
+productive time for the work center the
+number that appears in green for in our
+case this drill station one over here
+means the work center is at or above its
+OE Target on assembly station one as I
+just talked about the red color over
+here we have it well it's in red which
+means that the work center is not
+meeting its OE targets if I click on the
+OE button on one of these cards like in
+our case let's select the green one
+because it's better to show it there I'm
+taking to the oee report for that
+specific work center if I want to view
+OE data for every work center actually
+need to click on uh actually over here
+in reporting almost went to the wrong
+area sorry about that overall equipment
+Effectiveness and there we have it like
+most reporting dashboards I can view the
+data as in our case bar chart line chart
+py graph everything you want we can even
+go further than that and go all the way
+over here and do pivot tables list
+honestly you can name it through all of
+these so for now let's actually go back
+over to our graphs and we're going to
+stick with our bar chart over here
+so each view shows me the total amount
+of time tracked for each work center as
+well as how that time is broken down
+into various work center statuses so
+once again at drill station one for
+example we can see that most of the
+track time has been fully productive
+time which happens to be that dark blue
+section over there now this is a smaller
+polar Shin over here that we have
+reduced speed time in the nice little
+orange right there so now in our case
+let's talk about how each staus type is
+tracked for a work center so this can be
+accomplished to the manufacturing app or
+the shop Thor module so in our case I've
+created ano for our coat wrap product
+use as an example so I'm going to open
+that now we're going to go to operations
+and Manufacturing orders and just as I
+talked about it right now we have this
+one right there our nice little coat
+rack so on the ammo I'm going to select
+the work orders tab over here and here's
+where the oee report comes into play if
+in our case case the real duration that
+we have right there is less than the
+expected duration over there the time is
+counted as fully productive if in our
+case the expected duration that we have
+over there is actually going to be more
+then we have a situation where that
+excess time is counted as a reduced
+speed if the real duration exceeds that
+60 of expected okay but what about when
+a work center is blocked how do we track
+that as the more Eagle IO doers may have
+already guessed we do so by clicking on
+the Block button that we have right
+there on a work order so we're actually
+going to do that right now for this
+drill poll and right now we have the
+block work center popup that appears I
+need to choose a loss reason so I think
+it's going to be the reason why this was
+lost there are a few options to choose
+from including material availability
+equipment failure setup process defect
+reduce yield and the list goes on or if
+I wanted to I can actually just start
+typing and click create once that I get
+typing away so our selected reason is
+then recorded on the oee report for this
+work center for this one I'm going to
+select equipment failure and then I'm
+just going to click block I don't want
+to say what happened so once the work
+center is ready to be used once again
+all I need to do is Click unblock on the
+line of the work order and just doing
+that immediately we're ready to go once
+again okay so before I finish this
+tutorial I just want to quickly mention
+that work centers can also be blocked
+and unblocked from the shop floor module
+so back over here on our main dashboard
+we're going to open up shop floor and
+take a look at any work order over here
+and you want to click on these three
+dots in the bottom right and this is our
+additional options menu on a work order
+and to unlock or in this case unblock it
+or block it you just click on this
+button at the bottom and that's how you
+do it and that's it for now folks thanks
+for sticking around until the end you're
+now ready to use the oee report to gain
+deeper insights into the productivity of
+your work centers I'm going to see you
+soon o doers go grab a snack

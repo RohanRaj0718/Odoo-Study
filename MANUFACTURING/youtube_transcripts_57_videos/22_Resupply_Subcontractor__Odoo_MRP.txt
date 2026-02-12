@@ -1,0 +1,173 @@
+Video: Resupply Subcontractor | Odoo MRP
+Video ID: I1aH9Mp-878
+URL: https://www.youtube.com/watch?v=I1aH9Mp-878
+Playlist Index: 22
+================================================================================
+
+it's wonderful to see you again OD doers
+my name is Jasio today we're going to
+take an even deeper dive into
+subcontracting so previously we
+discussed basic subcontracting in which
+a subcontractor is going to be
+responsible for obtaining the components
+used for manufacturing a subcontracted
+product but what about situations where
+you want to supply a subcontractor with
+the components yourself well that's the
+best thing about ODU we offer two routes
+to accom Lish that resupply
+subcontractor on order and drop ship
+subcontractor on order so inside of this
+video we're going to be discussing the
+resupply subcontractor on order route in
+which we send components from our
+warehouses directly to the
+subcontractor now this differs from the
+drop ship subcontractor on order route
+in which components are drop shipped
+from a vendor directly over to a
+subcontractor resupplying a
+subcontractor from our own Warehouse
+allows us to Outsource the manufacturing
+of certain products while still having
+control over the inventory counts of the
+components needed for subcontracting so
+let's not waste any more time and jump
+right into the Odo platform to see how
+it all works all right in this video
+we're going to be using the resupply
+subcontractor and Order route to
+manufacture one unit of our unic cycle
+product so let's begin by seeing how
+I've configured the product and its
+components to use that route now since
+I've already covered all of the general
+subcontracting settings in the basic
+subcontracting video this video will
+only cover the settings specific to
+product products that use the resupply
+subcontractor on order route if you
+haven't already watched the basic
+subcontracting video be sure to do that
+before we continue it's going to save
+you some time I'm going to link it below
+now let's click into the inventory
+application over here we're going to
+select products and products The
+Familiar dance and we're going to open
+up in our case our unicycle if I can
+spell properly today our unicycle
+unicycle so inside of here I need to
+click on the bill material smart button
+up at the top because that's going to
+take me where I need to and I'm going to
+select the product and remember that we
+didn't list any components on the bomb
+for the product in our basic
+subcontracting video well while using
+resupply subcontract are on order we do
+need to specify the products components
+which you see down here in the
+components tab just so that ODU knows
+what we need to send to the
+subcontractor if you don't do that what
+are we going to send as you can see the
+components tab over here already has a
+requirement of a frame and a unicycle
+wheel it's just two components right
+there now this is what we're going to
+send to the subcontractor after
+confirming a purchase order for this
+product now once we're done I'm actually
+going to go over to the unicycle frames
+product page just by selecting our nice
+little internal link just to show you
+how I've configured both of the
+components for this product so inside of
+here if we take a quick look we're at
+our components product page but I want
+the inventory tab over here now again I
+talked about routes and here we have it
+resupply subcontractor an order right
+there there you can see that this is the
+operation that we would like to use now
+with this route enabled a resupply
+subcontractor order will be created to
+send this component to the subcontractor
+each time that a purchase order for the
+unicycle is confirmed all right I've
+already configured our other component
+in the same way so I don't think I need
+to go show that which means everything
+is configured the way that we want and
+we can move on to subcontracting our
+unicycle so the process starts when we
+confirm a purchase order or Po from my
+acronym lovers to buy the subcontract
+product from the subcontractor so to do
+so let's head back to our main dashboard
+over here and we're going to open our
+purchase app now I'm typing again and
+select new in the top left corner we got
+to start with our vendor so who is the
+subcontractor that we want in this case
+we're going to pick bike
+friends these are always very legitimate
+companies by the way so then on the
+products page I'm going to click on the
+add a product right there and we're
+going to start typing in for our
+unicycle let it fill out and we're great
+we're perfect now all I need to do is
+confirm this order and that's the order
+of the unicycle from bike friends so
+once I click it you'll notice we have
+two smart buttons up at the top resupply
+and receipt the resupply smart button
+opens the resupply subcontractor order
+which we will confirm once the unicycle
+components have been sent to the
+subcontractor the receipt button on the
+other hand opens the ORD receipt which
+we will confirm once we have received
+the manufactured
+unicycles so let's start by selecting
+the resupply smart button up at the top
+to open up our resupply subcontractor
+order here we can see that bike friends
+is listed as the delivery address over
+there and both the unicycle components
+are listed in the operations tab this
+means we will ship all of these
+components to bike friends so once we
+ship them I just need to click on the
+validate button up at the top just to
+confirm that the components have been
+sent and once that's done I can return
+to the PO by selecting The Source poo
+smart button up at the top
+so all right it's time for us to process
+this let's say I don't know a week has
+passed and the subcontractor has
+manufactured our unicycle it takes that
+long and they've shipped it back to us
+so now all we need to do to process the
+receipt in which we will enter the
+unicycle into inventory I can open the
+receipt by clicking on the receipt smart
+button up at the top as well or the
+receip products button over here we're
+going to do that because it seems easier
+it saves the screen time so on the
+receipt all I need to do is click
+validate right
+there and the unicycle is entered into
+our inventory there you go it's really
+that simple well folks that's it for
+today you now know how to subcontract a
+product using the resupply subcontractor
+an order route stay tuned for more
+subcontracting videos and I'll see you
+next time go grab a snack I actually
+have some today jell lime

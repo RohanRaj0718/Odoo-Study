@@ -1,0 +1,168 @@
+Video: Processing Returns for Repairs | Odoo MRP
+Video ID: oAWC8x7ij7U
+URL: https://www.youtube.com/watch?v=oAWC8x7ij7U
+Playlist Index: 43
+================================================================================
+
+Hello Odooers, and welcome back! Sometimes, things 
+just break, and we have to fix them. Items we ship  
+might get damaged in transit, or a purchased 
+product might break while still under warranty. 
+From a manufacturing standpoint, it’s super 
+important to offer services after a sale has  
+happened, since we want to maintain a good 
+reputation in the market and build strong  
+relationships with our customers.
+Offering efficient repairs adds a  
+touch of excellence to our customer 
+service offerings, and encourages  
+people to continue buying products from us.
+In Odoo, the Repairs application integrates  
+beautifully with the Manufacturing, Inventory, 
+and Helpdesk applications. By activating a few  
+settings, we can swiftly take care of any 
+repairs and keep our customers happy. So,  
+let’s dive right in and see how we can manage 
+the repair process in Odoo! Before we begin,  
+let’s take a look at the product we’ll be using 
+today, a Customized Desk made of glass. So let's  
+go to the Sales Application, go to the Products 
+Subheading, and click on Products. And let’s click  
+on the Customized Desk product. This brings us to 
+the product form. Let’s go to the Inventory tab,  
+and under “Traceability", w see that tracking 
+‘by unique serial number’ has been selected. This  
+is important, because we’ll need to track our 
+products in order to process repair orders. To  
+enable tracking by serial numbers, you’ll need to 
+activate the setting from the Inventory app first,  
+so make sure you do that before starting the 
+flow. Alright, let’s start our flow from the  
+very beginning, and sell the product to 
+our customer before we tackle repairs. 
+Since we’re already in the Sales app, we'll go to 
+the Orders subheading, and click on Quotations.  
+And would you look at that, we already have a 
+new quotation here for Joey! Let’s click into  
+it. It looks like Joey ordered one Customized Desk 
+made of glass. Under the Optional Products tab,  
+we also offer a Warranty as a cross sell if the 
+customer wants that extra layer of security. In  
+this case, let’s say that Joey decided to take the 
+risk and forgo the warranty. I hope that doesn't  
+bite him in the gl-ass table later. Get it? So, 
+let’s go ahead and confirm this quotation. That  
+turns it into a sales older, all ready to deliver.
+We'll click into the Delivery smart button here at  
+the top, click Validate, Mark All Done, and 
+boom! It's as easy as that Odooers. And check  
+this out – on the product line, in the Serial 
+Numbers column, an existing serial number was  
+automatically chosen for this specific desk 
+that Joey ordered. Keep that number in mind,  
+you'll need to remember it for later!
+Okay, so it’s been quite some time and our  
+customer reported a problem with the 
+desk and is requesting a repair. Not a  
+problem! Stealthy Wood takes great pride 
+in the awesome after-sales services and  
+everything is easily managed using the Odoo 
+Helpdesk application. So jump into Helpdesk! 
+Here, I have a dedicated team set up to address 
+all issues related to furniture. Right now,  
+we need to activate some important configurations 
+for our Helpdesk team, which we can access by  
+clicking on these three dots on the top right of 
+the Customer Care card. And let’s choose Settings.  
+Let’s go ahead and scroll to the very bottom to 
+the After-Sales heading. We can see that Returns  
+and Repairs checked for this Helpdesk team. This 
+will allow us to integrate our Helpdesk flow with  
+the Inventory and Repairs applications. For 
+more information on After-Sales Services,  
+be sure to check out the Helpdesk tutorial we 
+have for that subject. Alright, let’s head back  
+to Helpdesk Overview via the breadcrumbs. Let’s 
+imagine that our client submitted a ticket on our  
+website requesting a repair service – we can see 
+in our Customer Care card overview that we have  
+1 unassigned ticket. Let’s go ahead and check it 
+out. This leads us to a ticket generated from the  
+customer service form with the Title of the ticket 
+as the Subject of the form, and the description  
+of the form as the description of the ticket. 
+Okay, let’s go ahead and assign this ticket to  
+Mitchell Admin. For the priority, let's select 
+3 stars because we value Joey as a customer! For  
+the type Type, let's select “Issue”. And for 
+the tags, let's do “Website”. After reviewing  
+the customer's complaint, the first thing our 
+Helpdesk team needs to do is specify the product  
+on the ticket. So let’s click the Return button 
+above the form on the top left. This will reveal  
+a pop-up window where we can see the appropriate 
+desk and appropriate sales order are linked. Let’s  
+go ahead and change the quantity to 1. And let's 
+click Return to confirm this return. Awesome! An  
+important piece of information that the client 
+needs to provide the product’s serial number. We  
+can track the exact product we sold, which we can 
+find, by clicking on the blue Details icon on the  
+product line under the Serial Numbers column. 
+And would you look at that, Odooers – remember  
+the serial number I asked you to remember, 
+from Joey’s sales order? Well, here it is now,  
+this time on the Return form! Great, everything’s 
+checking out so far! So let’s go ahead and click  
+discard for now. Now, let's dive a little deeper 
+into Joey's customer profile by clicking on this  
+arrow next to Joey’s name. And let's head to 
+the Sales smart button at the top. And let's  
+check out the original Sales Order to see to see 
+if the desk was purchased with a warranty or not. 
+In the product lines, we see that the 
+original sale was made without warranty. 
+Too bad for Joey.
+So, let’s go back to the  
+Helpdesk ticket using the breadcrumbs.
+I'll click on the 3 dots at the top  
+left and click on "Issue with Desk (#57)".
+And let's reply to the customer by using the  
+Send message chatter function. We can ask if the 
+customer is willing to pay for the repair, since  
+they didn’t originally purchase a warranty with 
+the product. To do that, we’ll type a colon, this  
+brings up a list of canned responses that we can 
+choose from. Let’s choose the one that says “no  
+warranty” and click Send. Isn’t that easy Odooers? 
+In addition to chatting with the customer, we can  
+use the chatter to collect important details from 
+the customer once the return order is validated,  
+like the product’s serial number, and 
+the original delivery slip information. 
+Now, let’s say we sent our message to Joey, 
+he had some time to think about it, and he’s  
+willing to pay for the repair out-of-pocket. So 
+he’s gonna send the table back to us for repairs. 
+So, two things need to happen: , the customer 
+needs to return the product back to us. Then,  
+we can begin working on repairs. Let’s process the 
+return by clicking the Return smart button at the  
+top of the form. Now, since we confirmed earlier 
+that this is the correct desk he wants to return,  
+we see more information here. Okay, 
+let’s click Validate and Mark All Done. 
+Okay, let’s go back to the Helpdesk ticket 
+via the breadcrumbs. And here, we canI see  
+that the return is logged in the chatter as 
+“Done”. If we want to double check the return,  
+we can do so by heading back into the dashboard, 
+hopping into the Inventory app, clicking on the  
+Operations subheading, and then Receipts. And at 
+the bottom over here, we see the Return of our  
+original delivery, from Joey. Awesome! And that’s 
+how you process returns for products previously  
+delivered to customers! In the next video on 
+Repairs, we'll learn how to physically repair  
+and re-deliver the item once it’s been returned. 
+Thanks for watching, Odooers. See you next time!

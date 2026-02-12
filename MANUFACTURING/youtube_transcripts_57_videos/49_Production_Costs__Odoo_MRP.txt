@@ -1,0 +1,279 @@
+Video: Production Costs | Odoo MRP
+Video ID: G4elSiAOLlY
+URL: https://www.youtube.com/watch?v=G4elSiAOLlY
+Playlist Index: 49
+================================================================================
+
+Hello doers. My name is Jose Ignasio.
+Today we're talking about production
+costs. Here at Stealthy Wood, we build a
+lot of furniture. And recently, well,
+the price of wood shot up by 20%. So,
+how do we stay profitable when materials
+and labor costs keep changing? Inside of
+ODOU, we can actually track those costs
+by setting up inventory valuation for
+each component, labor rates, and work
+center expenses as well. And if our
+prices don't reflect those costs, we
+could lose money on every single sale.
+So today, I'm going to show you how to
+make sure your sales reflect the true
+cost of production so that you can
+protect your margins. Let's get right
+into it, shall we? So before we do
+anything, let's configure our employee
+labor rates. This directly becomes part
+of the labor cost of each production
+run. So if we want our product cost to
+actually be accurate, this number has to
+also be. So to do that, make sure the
+payroll app is installed. And it looks a
+little bit like that. Okay. Then you
+want to make sure you go over to the
+employees application and find your
+employee. In this case, myself. So
+inside of the settings tab, make sure
+that my hourly rate is set right there
+in the bottom left corner. Now, this
+hourly rate doesn't update automatically
+from the annual salary set in the
+employee contract that we have up here.
+So, we're going to need to manually
+calculate and enter it to ensure
+accurate labor costs in production.
+Okay. Now, let's set up how ODO tracks
+costs for our manufactured product. So,
+we're going to go back to our main ODO
+dashboard over here. And can you guess
+where we're headed out? Well, we're
+actually going over to our manufacturing
+application once again. Okay. Now, up
+here, we're going to go to products and
+products. Perfect. You're getting the
+hang of this right now. We're going to
+select our star drawer product. So,
+here's the most important step. Inside
+of this category field that we have
+right here, well, in this field, we set
+the costing method. So, when you hover
+over it, we have this nice little
+internal link. Go ahead and select that
+to open the product category settings.
+Under the costing method over here, in
+my case, I've selected Avco. I've
+selected average cost and that happens
+to be average manufacturing cost split
+among my existing drawers that happen to
+all be in stock. We're going to cover
+the difference between standard price FO
+and AFCO in another video. So hang
+tight. But for inventory valuation to
+work correctly, you're going to either
+want AFCO or perhaps FIFO. And you might
+get a warning as you change that. So
+think about that. And as I mentioned,
+there's also standard price. Going to
+revert all of that. So standard price
+won't automatically calculate our cost
+during production. By the way, with the
+manufactured product configured,
+everything is done. Let's see which
+components are used to build the drawer.
+So we're going to go back using our
+drawer breadcrumb. It's Wonderbread
+today. And then we're going to select
+our bill of material smart button up at
+the top. And then we're going to select
+our bomb. Nice. So each component here
+should also have its costing method set
+to AFCO for consistent valuation. Don't
+be mixing stuff. So since you smart
+odoers already know that the costing
+method is set on the components product
+category, I'm not going to show you. So
+with our components ready, let's define
+how long the production takes. So we're
+going to head over to our operations tab
+over here. And here we've set the
+operation with a duration of 1 hour. Now
+sharp doers probably see where this is
+going. We calculate labor cost based on
+the duration of working on this mo with
+that hourly rage that we set up earlier.
+It's using your brain right there. Makes
+it a little bit easier for us to do
+that. Okay. Now, the time has come to
+add the cost to keep the machines
+running. We can either get to the work
+centers two different ways. So, either
+way, in our case, you can go up to the
+very top that we have up here and select
+configuration and then work centers. But
+we're not going to do that way. All
+right, that's how you do that. Or more
+quickly, if you wanted to, you select
+assembly line one once, then you hover
+it, and then you click on the internal
+link. And there we go. And that's how
+we're at. Because you know, why should
+you have one path when ODO gives you
+two. Okay, so over here on the right,
+well, actually underneath the costing
+information area, we happen to have our
+cost per hour, and it is set to
+$3459 per work center. Now, this
+reflects the hourly cost of running this
+work center. All right. Now, time to
+bring it all together by processing a
+manufacturing order. So, first you
+actually want to close this window.
+Then, we're going to close this
+operations one over here as well. Now,
+we're going to go to operations and
+manufacturing orders. Select the one for
+our drawer that we happen to have over
+here. Okay. So, as the assembly line
+worker, I can either click the shop
+floor smart button that we have up at
+the top for a nice interface, or I can
+go to the barcode app to scan each
+component during assembly. Check out our
+consuming components during
+manufacturing video for a full demo of
+that. So, for now, I'm going to keep it
+simple. We're just going to check the
+consume boxes. See, ODO is already
+starting to register all that I'm doing
+over here. And then we're going to
+select produce all at the top left. And
+something new has appeared at the top of
+the page. Can you
+guess? Okay, so actually two things
+appeared and one of them happens to have
+been something up at the top of the page
+and in the top right corner. I am now in
+developer mode. You should be as well
+and I'm going to explain why in a
+second, but first let's check out the
+cost breakdown for this manufacturing
+order. So we're going to select overview
+up at the top. All right. So over here
+in the very top line under unit cost, we
+see how much it actually cost to produce
+the drawers in this MMO only.
+And how did it get so expensive? Let's
+see what's going on. So the first
+section that we happen to have with blue
+links shows components costs with each
+unit price listed. But gets those
+numbers from the stock valuation of
+purchased items, which we're going to
+look at in just a second. So, next up,
+we happen to have operation costs, and
+there's a line for assembly one, which
+reflects our work center cost. And below
+that is actually me. It's my hourly wage
+based on the 1 hour duration that we set
+earlier. You can see that at the $100
+right there as well. That's mighty
+interesting. So, if the operation took
+more or less time, this number would
+adjust accordingly. So, at the bottom
+here, we actually get the full picture
+for one drawer. We happen to have our
+total cost of operations per unit which
+gets us the final production cost which
+happens to be the unit cost. All right,
+let's dive into procurement where those
+component costs that we talked about
+come from. So now I could just show you
+the purchase order directly through the
+purchase app, but let me take you
+through a series of smart buttons and
+show you how I'd investigate how all the
+different ODO apps, including inventory,
+manufacturing, and purchase, work
+together to track production costs. So
+let's click on our mo breadcrumbs up at
+the very top over here. And we're back
+at the manufacturing order. Now, this is
+where we need to make sure we turn on
+developer mode. As you can tell, I
+happen to be in it. And now let's click
+our valuation spar button up at the top.
+Perfect. So this shows us which
+components were deducted from inventory
+for each component after production was
+completed. But how did odo get these
+total values that we happen to have over
+here? Well, let's click the breadcrumb
+to go back to the mo that we happen to
+be on and then select one of the
+components. Let's pick handle. Okay, so
+here we have the handle and in the
+handle popup, we're going to click
+handle once again and that takes us to
+its product form. So from there, we're
+going to click on our purchase smart
+button that we actually should have up
+at the very top. There we go. Okay,
+let's expand this for a quick
+second. So now we should click on our
+topmost recent order that we happen to
+have. All right, so here's our purchase
+order. So this PO shows the unit price
+that we paid when we bought those
+components. ODU happens to actually use
+that to calculate the value of what was
+consumed. But that value only updates
+after we receive the items. So let's
+click the receipt smart button up at the
+very top. So once that this is
+validated, ODO creates evaluation
+later evaluation layer. So let's click
+on the evaluation smart button up at the
+top to see the value of the received
+items. If you noticed the valuation that
+we happen to have this time is positive
+and the valuation on the MMO was
+negative because right now the items are
+entering stock and the consu components
+are leaving stock. Now let's bring it
+all together. So let's select products
+and products once again. This time we're
+going to open up our drawer product all
+over again. So here we have a cost field
+and that shows the current average cost
+per unit based on the manufacturing
+orders we did before today. To update
+this, we're going to click compute price
+from
+bomb. And what do you know? This
+recalculates the average cost of all
+manufactured drawers currently in stock.
+Want the full breakdown of how UDO
+calculates this? Check out our video on
+costing methods. So, comparing this cost
+to our sales price that we have over
+here. All right. Um, well, I don't have
+to be a math magician to see, it looks
+like we're operating at a loss. Might be
+time to re-evaluate our pricing strategy
+to protect those margins. So, for an
+overview of all production costs, not
+just 1 MO, we're going to click the cost
+analysis smart button. And let's go over
+here. We're sometimes having to click
+the more option that we have over there.
+Okay. So, this gives us a bird's- eye
+view of costs across every drawer that
+we've ever produced. There's a lot of
+information everywhere. And there you
+have it. We're talking money today.
+These are the out of-box tools in Odo to
+help you track manufacturing costs and
+inventory valuation so that you can
+price smart. Thanks for watching. As
+always, see you next time. Go grab a
+snack. I need one.

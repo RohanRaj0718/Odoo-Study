@@ -1,0 +1,206 @@
+Video: Basic Subcontracting | Odoo MRP
+Video ID: QPVOuRH0PIs
+URL: https://www.youtube.com/watch?v=QPVOuRH0PIs
+Playlist Index: 21
+================================================================================
+
+welcome back oders my name is so ignasio
+today we're going to talk about
+subcontracting what is subcontracting
+you ask well sometimes a company doesn't
+have the resources necessary to
+manufacture a product that they want to
+sell in such a case they can hire a
+subcontractor to manufacture the product
+for them subcontracting has benefits for
+both the subcontractor and the
+Contracting Company among other things
+it allows subcontractors to specialize
+in the task that they're good at and it
+helps Contracting companies adapt to
+changing economic conditions as well
+inside of this video we're going to be
+discussing basics of Contracting in
+which the subcontractor is responsible
+for sourcing the components used for
+manufacturing subcontracted products in
+the following videos we're going to
+cover some ways that you can supply the
+subcontractor with components yourself
+but today let's keep it simple all right
+before we can use subcontracting inside
+of Odo we first have to enable it so to
+do so I'm actually going to open up the
+manufacturing application over here and
+now want to select configuration and
+settings we're always here now over here
+under the operations heading I need to
+make sure that the check boox that is
+next to you guessed it subcontracting
+itself right there is selected and once
+that I've already done that you want to
+hit save in case you hav't so make sure
+you check both and save it now with this
+setting enabled a few new features
+become available inside of ODU on
+products bill of materials or bombs for
+those acronym lovers we're going to be
+able to select subcontracting as the
+bomb type and specify by one or more
+subcontractors who will manufacture the
+product inside of the inventory app
+which I'm going to go into right now
+over here two subcontract specific
+routes become available we have both the
+resupply subcontractor routes as well as
+the Dropship subcontractor route over
+here on the right these can be assigned
+to products on their product forms
+themselves now these routes will be
+covered in a future video but today
+we're going to show you how to configure
+a product and its bomb so that we can
+subcontract its production so to do so
+we actually want to go back to our main
+dashboard over here and now we need to
+open up once again the inventory app I
+did that in case you haven't done this
+yet and you were on a different screen
+so right now we want to select products
+and products great now first I need to
+select in our case the product that I
+like to talk about which is the
+tricycle been doing a lot of stuff with
+bikes lately I
+feel okay once that we're inside of here
+we want to make our way over to the
+purchase tab now I've already added bike
+friends which happens to be our vendor
+right there this is the subcontractor
+the manufactures our tricycle product
+I've also specified the price that we
+pay them for each tricycle 50 bucks
+pretty affordable now next I want to
+select the inventory tabs that we can
+talk about you guessed it the routes in
+here now I've enabled the buy route that
+we have right there which tells ODU that
+we will buy the product and then have it
+shipped to us this means a receipt will
+be created when we confirm a purchase
+order for the the product the receipt is
+then processed when we receive the
+product now I could enable the replenish
+on order which happens to be the MTO
+route right below it as well which makes
+it so that the purchase orders are
+automatically created upon confirmation
+of a sales order however this route
+isn't strictly necessary for
+subcontracted products so I'm just going
+to show you the flow as it begins with a
+purchase order in addition I could
+select the drop ship route which you
+were probably also wondering about down
+there not the first one drop ship route
+only instead of the Buy Route if I did
+that the subcontractor would ship the
+product directly to the customer instead
+of sending it back to us in that case a
+confirmed purchase order would create a
+drop ship order instead of a receipt
+order so remember that a confirmed
+purchase order will create a drop ship
+order not a receipt order all right now
+that we configured the product I think
+it's time for us to go check out that
+bomb so in order for us to do that I'm
+going to click on the bill of material
+smart button up here at the top and then
+we want to select the bomb for the
+tricycle let's take a look at that so
+the very first thing I need you to take
+a look at is the bomb type as you
+checked over here on the right you'll
+notice it selected the subcontracting
+option this tells ODU that this bomb's
+corresponding product is manufactured by
+a subcontractor which subcontractor you
+ask well we can actually specify that in
+the subcontractor's field right below it
+you can specify multiple subcontractors
+but for our tricycle product we only
+have one bike friends now if you're also
+an expert bomb maker like me you may
+think it's time to add components down
+below over here however we actually
+don't need to add components when using
+the basic subcontracting workflow that's
+because the subcontractor is responsible
+for every element of manufacturing
+including the required components so
+once a product is configured for basic
+subcontracting the workflow for buying
+it is similar to the workflow for
+purchasing any product the main
+difference is that we have to wait for
+the subcontractor to manufacture the
+product before they can actually ship it
+we can even estimate the delivery date
+using lead times which I'm going to be
+covering in a video later in this series
+all right let's go to our actual
+workflow now so we're going to start out
+by creating a purchase order to buy the
+subcontracted product from the
+subcontractor can't show you anything
+till I create something like a PO so to
+do so we're actually going to go out of
+inventory back to our main database and
+you guessed it I'm going to search for
+and open up the purchase app now we want
+to select orders up here at the top and
+purchase orders actually great now we
+need to select new top button over there
+to the left now on the new purchase
+order I'm going to add the subcontractor
+which we said is bike friends not Bike
+World I don't know why I did that I'm
+sorry so that's for the vendor field
+right there then I actually need to add
+a product so select it down there in the
+products and we're going to pick well
+it's the tricycle that we're looking for
+thank goodness for ODU Auto completing
+and now that we're done all I actually
+have to do is confirm this order right
+over there and once I do that look at
+that smart buttons appear right at the
+top of the page now let's say that a few
+days have passed and the subcontractor
+has just delivered the tricycle to our
+warehouse awesome that's the greatest
+news ever so all that we need to do now
+is open up the receipt order by clicking
+on the receipt smart button over here or
+you can also click on the receive
+products button that was above the
+purchase order I'm going to go back just
+to talk about that see right there we
+could do that but I use the but
+button so once that we've opened the
+receipt we just need to click validate
+right there and the product is entered
+into our inventory it's really that
+simple and well it's time to go today
+that's it for today friends you now know
+how to configure products for the basic
+subcontracting workflow stay tuned for
+the rest of the videos in this series
+where we're going to learn how to supply
+subcontractors with components and use
+lead times to estimate delivery dates
+I'm going to see you soon o doers and if
+I don't go grab a snack lays please
+still sponsor me I'm running out of
+chips bye

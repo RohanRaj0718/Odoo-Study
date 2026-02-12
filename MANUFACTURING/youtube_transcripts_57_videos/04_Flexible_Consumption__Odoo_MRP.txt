@@ -1,0 +1,260 @@
+Video: Flexible Consumption | Odoo MRP
+Video ID: lwEOHMB0YVA
+URL: https://www.youtube.com/watch?v=lwEOHMB0YVA
+Playlist Index: 4
+================================================================================
+
+[Music]
+foreign
+it's common to consume more or fewer
+components than what is defined on the
+bill of materials now this kind of
+flexible consumption is prevalent in
+Industries such as food and beverage
+where usage depends on a variety of
+factors now let's say you're making a
+fruit salad recipe calls for one cup of
+apples if the apples you receive are
+half the size this week you're going to
+need twice as many to get that one cup
+or maybe you've run out of apples now
+you're using pears for a weird salad
+odo's flexible consumption feature
+allows us to keep track of any
+modifications we make to a product
+during its manufacturing process thereby
+keeping product and component counts
+accurate in our inventory and during
+production ODU even permits flexible
+consumption for subcontracted production
+now to learn more about subcontracting
+be sure to check out the tutorials
+related to that now at stealthy wood our
+Flagship showroom has its own Cafe where
+we make wholesome treats that are
+visiting customers can purchase our most
+popular is a cheese souffle so let's
+take a look and see how we can use
+flexible consumption in odoo to make
+that are the doors so here we are in the
+manufacturing application now first we
+need to enable flexible consumption
+which is done on the bill of materials
+itself so we're gonna go up here to our
+products build materials and now we'll
+be preparing our popular cheese souffle
+so we gotta find that and open it up all
+right there we go all right now the
+recipe is pretty simple heavy cream eggs
+parmesan cheese if we go check the
+operations tab you'll notice we just
+have one operation it's a mix and bake
+now when we head over over here to the
+miscellaneous tab you'll notice a few
+other things now you'll see that there
+are three options for flexible
+consumption now we have a loud allowed
+with warning and blocked now the allowed
+option is appropriate for frequent
+flexible consumption as it lets you
+freely consume any amount of components
+without restriction I don't like
+restrictions myself and we also have a
+loud with warning and that's an option
+that allows flexible consumption but
+provides a notification to review before
+closing the manufacturing order and
+finally we have blocked and that is an
+option that depending on the user's
+access rights may or may not be allowed
+to close the actual manufacturing order
+when modifications to consumption are
+made that's the war on us against Steve
+now for the first part of the demo I'm
+going to use the allowed with warning
+because I just need a little warning and
+later on we're going to go over blocked
+over here now flexible consumption is
+going to be something that I love a lot
+actually and you'll see why now to
+illustrate how to use flexible
+consumption let's create a manufacturing
+order so we're going to go up here to
+operations manufacturing orders new one
+and what is our product well we've been
+talking about cheese souffles
+so that's what we'll make all right
+everything looks good to go let's
+confirm this and let's jump on over here
+to our work orders and we're going to go
+into tablet view just to show you how
+this looks like to a chef alrighty to do
+so here we are inside of our tablet mode
+because that's what an employee would
+see now odoo shows us up at the top how
+much we're going to be making in this
+case we're going to be making a dozen of
+these souffles now over here on our left
+hand side we have our consumption our
+basically ingredients that we need to
+validate the consumption of now starting
+with heavy cream we basically used a bit
+too much we had to make these Peaks
+perfect though so we're going to
+validate that and for the next one our
+eggs were really huge so we didn't need
+as many 23 instead of 24. and you'll
+notice when I did that the validation
+button changed from highlight over here
+to the continue production instead now
+in our case though we are certain that
+we use 23 out of 24 eggs so we can
+actually still hit validate and move on
+and finally our parmesan cheese were
+perfect now so at this point we've
+gotten the hang of it and we've used the
+exact amount now when we mark this as
+done I want to show you something let's
+go back to our manufacturing order and
+if we check over here to the components
+tab we'll notice the differences between
+consumed and the reserved columns the
+quantities displayed in the consume
+column follow what we typed in the work
+order now the colors are the numbers
+over here inside of the consumed
+indicate if the amounts consumed were
+greater than less than or equal to what
+was specified on the bomb orange over
+here indicates under over consumption
+sorry about that over we use 1.1 instead
+of one black indicates under consumption
+23 instead of 24 and finally green is a
+perfect score now Odo also lets you
+change component consumption directly
+from the manufacturing order form like
+just like this actually and boom
+now this actually allows you to complete
+the manufacturing order without going
+into the tablet view now when we Mark
+the manufacturing order as done you'll
+notice something pops up a consumption
+warning appears since we had previously
+configured flexible consumption to be
+allowed with a warning now when we
+confirm the consumption and everything
+you'll notice that odoo now has updated
+the to consume and to the match the
+consumed column you know for bookkeeping
+purposes now also you notice down here
+we actually have that extra egg as well
+because it's set aside is unconsumed
+since we use fewer eggs than what was
+called for now the consumed quantities
+are also recorded inside of our product
+moves which we can view using that smart
+button that I showed off since we
+consumed a different quantity of
+ingredients and expected the cost of our
+final product will be slightly different
+and you can actually see that if we go
+into odu's cost analysis over here now
+thankfully Otis cost analysis report
+keeps track of that for us now since
+odor records manufacturing costs based
+on the exact quantities consumed the
+actual product cost will differ slightly
+from the car cost listed on the bill of
+materials now finally I think it's time
+that I show you what that blocked
+consumption looks like so we're gonna
+create a new one all right dear so here
+we are in our bill of materials now if
+we click in the gcflame and go into
+miscellaneous this time we're going to
+select block because I'd like to show
+you what that looks like when certain
+actions may or may not be available now
+these will depend on the user's access
+rights only users with Administration
+rights can close a manufacturing order
+if the components used do not match what
+is specified on the bill of materials so
+Mark demo for example has user rights on
+the manufacturing app but not
+administrator rights this is set in the
+settings app by an admin now for more on
+this check out our getting started
+e-learning videos which cover this now
+let's see what blocked flexible
+consumption looks like from a user
+profile with limited access alright a
+doer so here I am Mark demo and we're
+gonna go and create a new Mo for that
+cheese souffle that the boss man wants
+perfect everything looks good I better
+get on this immediately so what are we
+going gonna do we're gonna go into work
+orders and start into our tablet view
+all right a doer so here we are inside
+of our tablet and similarly 1.1 liters
+we'll validate that
+and now this time when we do that it'll
+tell us
+if we do 23 eggs here
+continue production instead of
+validating and then something cool
+happens now you'll notice that when we
+tried to move forward because of the
+super large eggs I'll be forced to click
+the continue production Button as you
+saw and notice that there's this extra
+step that is basically asking me for
+consuming the last egg and if we
+validate that as well it allows us to
+move forward to our parmesan cheese
+which has now actually been unchanged as
+well for some reason we use the same
+amount of cheese we validate that and we
+mark this as done
+and if we go back over here and we go
+over to our manufacturing order there's
+something I want to show you all it's
+still too close why well if we hit Mark
+is done you'll notice we have a
+consumption warning that basically tells
+us we don't have powers there's no way
+for me to validate this and move forward
+since I am a limited user so how does
+this look like for a user with admin
+rights as Mark demo cannot continue well
+I'm going to show you what that looks
+like alright odor so Mitchell admin here
+now we're going to go up to our
+manufacturing orders and we've got to go
+back to that one that Mark demo just did
+alright so I noticed something
+immediately now if you notice we did not
+actually consume 24 eggs so I can
+actually modify this because I'm an
+admin and now I can finally hit Mark is
+done and you'll notice I get that same
+consumption warning but this time since
+I have way more power than Mark and
+Steve I can actually Force this and by
+selecting it
+I can actually confirm the adjusted
+amounts consumed and Mark this ammo as
+done and as you notice it actually does
+that for the to consume there you have
+it flexible consumption it's a helpful
+tool that allows companies to keep
+better track of their components even
+when a different quantity than expected
+is consumed now this functionality can
+be tailored to the specific needs of
+each Company by choosing who can and who
+cannot approve the use of different
+quantities of components that's all for
+this video see you in the next one go
+grab a snack

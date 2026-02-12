@@ -1,0 +1,162 @@
+Video: Using Several Work Centers | Odoo MRP
+Video ID: 3YwFlD97Bio
+URL: https://www.youtube.com/watch?v=3YwFlD97Bio
+Playlist Index: 2
+================================================================================
+
+foreign
+what's up oh doers until now we've been
+focused on working with a single work
+center for our stealthy wood
+manufacturing operations however if we
+want to scale our production capacity
+we'll need to have multiple work centers
+in use at the same time now we Face a
+common issue that many manufacturers
+have to deal with and that is
+manufacturing different products
+simultaneously across multiple work
+centers now in practice if employees
+don't want to wait for the main work
+center to be available they can actually
+manufacture the goods somewhere else but
+we still got to keep track of that we
+don't want to lose stuff now after all
+tracking which work center was used and
+when is pretty vital for maintenance
+purposes and it you know it enables you
+to avoid non-productive time and that's
+the worst kind of time oh doers now
+luckily and this will always be the case
+with odoo I can do all of that and keep
+track of stealthy Woods manufacturing
+orders by allowing my employees to work
+at an alternative work center if the
+main one is already being used but this
+all gets me excited I always say that so
+let's dive into our database and see
+what we can you know drastically do to
+improve our productivity with multiple
+work centers all right there so here I
+am on my database and I'm looking at the
+manufacturing dashboard now if you
+didn't follow my previous videos why
+didn't you follow my previous videos the
+first thing you want to do then is
+enable the work orders feature from the
+settings menu so you go up to
+configuration and settings and then you
+scroll down now once enabled odoo
+automatically generates three default
+work centers just to get you started
+because ODU doesn't leave you hanging
+now those work centers are immediately
+ready to go you don't have to wait but
+to better understand what they are and
+how they work you should wait and we
+should go do something so let's go
+create a new one alright so we can
+actually access our work centers through
+this link under the work orders settings
+over here or you can also do it from the
+work centers menu under configuration
+now to make a new workcenter we'll click
+on new
+let's name this one alternative assembly
+line with the reference code and this is
+important AAL for easy identification
+because as you know Jose Ignacio he
+loves his acronyms now I can actually
+customize the production information
+here and for this workcenter if I want
+to add values for efficiency capacity
+setup cleanup and all those types of
+things I can do so now if you'd like to
+know more about how these values affect
+manufacturing times please check out our
+other tutorials on the subject you know
+and that will also be linked now since
+we are going to set up this work center
+to be alternative to assembly line one
+it needs to have the same equipment we
+don't want to leave people hanging on
+that so I'm actually going to go to the
+equipment Tab and add the same Machinery
+in this case so we're going to add a
+line I'm going to select you gotta have
+a Samsung monitor
+and then we need a saw
+and some other stuff and then we're
+gonna save manually because I want to
+make sure this saves now without taken
+care of let's go to our list of work
+centers so we're going to actually just
+use our breadcrumbs over here and today
+we're dealing with a nice sourdough from
+San Francisco at my boss's favorite
+Bakery and we're gonna jump into
+assembly line one and now we're going to
+designate the work center we just set up
+as the alternative work center to
+assembly line one and that's all we had
+to do now
+once that you're done there manually
+save save everything always save I
+always feel bad when someone loses stuff
+please save
+now this workcenter has a capacity of
+one which means it can only handle one
+manufacturing order at a time now we'll
+actually go back to our manufacturing
+dashboard to see this new work center
+over here now
+we can also see that there's something
+in progress at assembly line one and
+that means one of my employees is
+already using that work center and I
+don't know how you feel about that but I
+want to actually kind of see that so
+let's see what happens when I plan to
+manufacture something that would
+typically use the same work center so
+we're going to manufacture the large
+meeting table which I already created a
+bill of materials for or a bomb bom for
+my acronym lovers now that requires the
+use of assembly line one now to do that
+I'm actually going to create a
+manufacturing order for one large
+meeting table they're going to go into
+our operations manufacturing orders
+follow me here new one large meeting
+table and confirm alright then I'm
+actually going to jump over to the work
+orders tab just so that we could see
+what's going on there now we see that by
+default the Warwick Center that was
+selected for assembling this item is
+assembly line one but we can actually
+turn to the work order and when we hit
+plan the work center changes because
+assembly line one is already being used
+you see that once that you do that Odo
+saves you the time so if we want to
+manufacture this item we're actually
+going to need to use the alternative
+assembly line over here and that work
+center is the one that we had just set
+up now if we go back to our dashboard
+over here we'll see that we have the
+work you know the work orders all ready
+to go and it's ready to be launched
+inside of the alternative work center
+and that is beautiful that is exactly
+what we need in this situation now there
+you have it oddures
+now you know how to handle several work
+centers and you can even organize your
+manufacturing areas and eliminate
+non-productive time now that's all for
+now thanks for watching and this was
+just a quick tutorial just to let you
+know I got you have a great day

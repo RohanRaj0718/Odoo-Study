@@ -1,0 +1,246 @@
+Video: Subcontracting: Dropshipping | Odoo MRP
+Video ID: 98nqCQsG9qI
+URL: https://www.youtube.com/watch?v=98nqCQsG9qI
+Playlist Index: 6
+================================================================================
+
+[Music]
+foreign
+hello doers it's stealthywood we
+subcontract some of our manufacturing
+operations to bolster production without
+having to invest in expensive machines
+or staff were broke so letting
+subcontractors handle some of our
+production allows us to focus on other
+tasks now today I'm going to give you
+the 4-1-1 on Drop Shipping which is a
+method retailers or manufacturers can
+use to sell Goods to customers without
+receiving storing or shipping the items
+themselves Now by ordering directly from
+subcontractors or suppliers our company
+can have products shipped directly to
+the customer Drop Shipping is a
+convenient way to free up inventory
+space and avoid costs associated with
+handling and storage now with just a few
+clicks we can configure A Drop Shipping
+route so that we never have to
+physically manage raw materials or
+finished products now in today's example
+we're going to configure two kinds of
+drop ships first We'll order raw
+materials to be sent directly from the
+vendor to the subcontractor then once
+the subcontractor finishes manufacturing
+they will deliver the finished product
+to the customer now this means the raw
+materials and finished products never
+enter our warehouse so let's get this
+Drop Shipping party started
+all right Honduras so first things first
+we need to make sure subcontracting is
+activated in the manufacturing app
+setting so configuration settings scroll
+down actually in this case it's right
+there subcontracting is checked off now
+up next we also want to make sure if we
+check under purchase and at the very
+bottom over here that Drop Shipping is
+also checked off over there we need both
+of them now let's go to the bill of
+materials for our example product the
+stealthy Wood Lamp so in our case we're
+going to go to products fill the
+materials stealthy with lamp all right
+we need to check a few things we need to
+First make sure that the bomb type is
+set to subcontracting and that we have
+at least one subcontractor listed and
+next we need to ensure that our
+components are set up properly so we're
+going to select one of them just to
+check it out using the internal link
+we go to the inventory tab you want to
+make sure that this Dropship
+subcontractor on order is selected over
+here now this is essentially just so
+that we have it activated for the routes
+we also have the designate a vendor over
+here under the purchase uh tab which is
+basically going to be awesome vendor now
+essentially what we also see here is a
+delivery lead time now this is the time
+it takes for the vendor to deliver the
+components to the subcontractor here we
+can see that our vendor will take four
+days to get everything to our
+subcontractor now I've already set up
+the same vendor and delivery lead time
+for the rest of the components so let's
+go back to our breadcrumbs and we
+actually have to make sure that the
+actual product is set up properly so we
+will also go over here to inventory for
+it and inside of the inventory tab we
+need to make sure that Dropship is
+selected and we also need to ensure that
+the lead times are properly configured
+in our case let's say it takes six days
+for the subcontractor to manufacture the
+final product that's the manufacturing
+only time you see over here but the
+customer lead time itself is 12 days
+over here and that is the number of days
+it takes for the customer to receive the
+product after they place the order we
+know that it takes four days for the
+subcontractor to receive the components
+and six days for them to manufacture the
+lamp we also know we'll take an
+additional two days to ship the lamp to
+the customer added together by basic
+math that's 12 days right there for the
+customer lead time now finally we need
+to go over here to the purchase Tab and
+make sure that our subcontractor is set
+as the vendor as well in our case super
+subcontractor
+and as well as that we also need to make
+sure that the subcontracted checkbox is
+enabled as well that you should see
+and then once that that is actually set
+up everything is pretty much ready to go
+and you if you don't see it by the way
+in our case you need to make sure that
+it's checked off and over here you can
+select the additional View and there's
+also other options here I just realized
+you can see that sorry your doers but as
+you can tell everything is done and what
+this basically does is it tells Otis
+that the subcontractor will ship the
+item to the customer when we purchase it
+instead of us sending it so once that
+that's all set up and we confirm that
+the delivery lead time is set as 12 days
+over here you know since we know this is
+how long it will take for the customer
+to receive the item it's good to double
+check these things but let's see what
+this looks like when a customer places
+an order
+all right we're gonna go into the sales
+app and create a new quotation for Deco
+addict and our product is that Lampo
+doers beautiful once that this is all
+done we confirm it now if we check over
+here to the other info tab you'll notice
+that we actually haven't expected
+delivery date we can confirm that it is
+12 days from today now since we're Drop
+Shipping this product a RFQ for the lamp
+was automatically created when the sales
+order was confirmed it would actually go
+to it by selecting the purchase smart
+button up here in the top right and we
+can check out a few bits of information
+now this document tracks our purchase
+from our partner super subcontractor now
+the expected arrival date also
+corresponds to the 12-day customer lead
+time that we set up and we can actually
+see that right over there and 100 on
+time delivery because we're that
+excellent now we can also see that the
+delivery is set to drop ship over here
+and on top of that the Dropship address
+is Deco addict and that's beautiful now
+what happens well we when we confirm
+this order
+you'll notice one Dropship document will
+be created which we can view by clicking
+on the Dropship smart button up here and
+we're in there now let's head on over to
+the purchase app because I have
+something to show you here so we're
+going to go in there
+beautiful now here we can actually see
+immediately that there's a new request
+for quotation has been created for the
+component so we're going to select it
+from awesome vendor now these components
+will be bought from awesome vendor and
+directly delivered to Super
+subcontractor now the expected arrival
+date as you can see over here is 524
+which reflects the four days delivery
+lead time that we set up for our
+components now after we confirm this
+order
+you'll notice we'll see another drop
+ document that again was created so
+we'll select it and in this document we
+see a smart button which links us to the
+source purchase order over here now this
+is the original po we created for the
+finished lamp it's all comfortable
+Circle low doers so let's process this
+let's go to our inventory application in
+this case I'm going to go in there and
+here we see that we have two drop ships
+to process in our case we have the one
+for the subcontractor and the one that's
+just the regular one now first we'll
+process the component delivery that's
+due in four days so we're gonna do the
+subcontractor first in our case what do
+we do let's say that the four days have
+passed and super subcontractor lets us
+know that we have received the
+components already so I'll go ahead and
+I need to basically validate this one so
+we give it a quick application there
+boom and we're done now for peace of
+mind we can confirm that the components
+are registered is on hand in the
+location I've set up for subcontractors
+by going up to configuration and
+locations now we'll Select Physical
+locations and boom when I click on the
+current stock
+we can see that they are all there
+awesome this means the subcontractor
+received the components and can
+manufacture our lamp for the customer
+remember that they usually take about
+six days to complete the lamp and to
+deliver to the customer even though we
+don't physically store these parts in
+our warehouse it's important to keep
+track of where the parts are and how
+many so that we can keep track of any
+you know subcontracted orders and ensure
+that we have nothing but happy customers
+who receive their products on time now
+finally we need to process the second
+drop ship we've received a notice from
+Super subcontractor has shipped the lamp
+and that the customer has received it so
+we're going to head back to our
+inventory overview and we're going to go
+over here to the Dropship the process
+now we'll select it and what do we do
+I'll do is well
+we're going to go in there and validate
+this apply
+boom just like that we've successfully
+sold sub manufactured and drop shipped
+the lamp without ever touching it ah
+there you have it odor saving time and
+space has never been easier now that you
+know how to drop it's like
+you need a drop ship it like it's hot so
+I hope you have a very
+hot day and remember to grab a snack

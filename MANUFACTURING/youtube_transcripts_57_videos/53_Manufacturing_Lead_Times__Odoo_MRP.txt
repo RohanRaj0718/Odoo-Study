@@ -1,0 +1,231 @@
+Video: Manufacturing Lead Times | Odoo MRP
+Video ID: Vd1MDPaA4hk
+URL: https://www.youtube.com/watch?v=Vd1MDPaA4hk
+Playlist Index: 53
+================================================================================
+
+What is up, Odoers, and welcome back.
+Have you ever ordered something only for
+it to show up months later or just way
+late in general, and by the time it
+arrives, you've already moved on and
+you're just over your order? Delays like
+that aren't just frustrating, but they
+can hurt customer trust and just throw
+off your entire workflow. So, in this
+video, we're going to take a look at how
+planning with accurate security lead
+times help keep production on track and
+orders on time. By estimating delivery
+times properly, we make sure parts
+arrive when we need them and products
+are ready to ship without them sitting
+in storage. So, what is lead time? It's
+the number of calendar days it takes to
+complete a process from start to finish.
+And there are a few types you should
+know about. First, we have customer lead
+time. That's how many days pass between
+when a product is ordered and when it
+ships out of the warehouse. Now
+remember, whenever we're talking about
+customer lead time, we're essentially
+talking about delivery lead time. Then
+we also have manufacturing lead time,
+and that's how long it takes to actually
+build the product. Knowing these
+timelines helps us plan smarter and hit
+every deadline, so parts show up on time
+and orders go out right when they
+should. Alrighty, let's clickity clack
+into the world of lead times and get
+things
+moving. Okay, so let's get started here
+in the manufacturing app and take a look
+at a product that I'm selling, which is
+our industrial style shelf. To find it,
+I'm just going to click products at the
+top, followed by products once again,
+and boom, there she is. So, I'm just
+going to click to enter into that
+product page. Now, there are a couple
+different places where we can define the
+lead time information. We'll enter the
+manufacturing lead time on the products
+bill of materials and the customer lead
+time goes right here into the product
+page. So, we're going to start with that
+one. We'll just enter the inventory tab.
+And in the logistics section, we can
+find the customer lead time field right
+here. And for this product, we can see
+that it takes 10 days to process and
+deliver. Next up, let's check out the
+bill of material smart button here at
+the top. Just click into that. And this
+shows us all of the bill of materials
+that are linked to the industrial style
+shelf. And we're just going to click
+this one and only one right here. Here
+we can see a list of all the components
+as well as the operations needed to make
+this shelf. But we're interested in the
+manufacturing lead time. So we're going
+to switch over to this miscellaneous tab
+right
+here. So in this section, we have two
+fields that we need to pay attention to.
+We have manufacturing lead time right
+here. And we also have days to prepare.
+M
+O manufacturing lead time which is how
+long it takes to produce the product
+from start to finish for this case is 3
+days. And then moving into the next
+field days to prepare manufacturing
+order which is the number of days needed
+to gather components or make
+subasssemblies before production can
+even start. You can set this manually by
+clicking into the field or you can
+simply click compute and ODO will
+calculate it automatically based off
+your bill of materials. So where does
+this number come from? Let's go ahead
+and take a look. If we jump back into
+the components tab and click the little
+arrow next to our Pinewood component,
+which is the internal link button, it'll
+take us to the product page of the
+Pinewood product. Then from here, we can
+click into the purchase tab. And right
+off the bat, we can see that good vendor
+delivers us this component within two
+delivery days. Of all the components in
+this bomb, Pinewood has the longest
+delivery time. So, ODU calculates that
+it'll take 2 days to get everything that
+we need. That's why the days to prepare
+MO field was automatically set to 2 days
+because that's the earliest that we can
+start manufacturing if we didn't have
+any of the raw materials on hand.
+So, in summary, a 10-day customer lead
+time is the default timeline for
+producing an industrial style shelf. It
+takes two days to prepare the MMO, 3
+days to manufacture the product, and a
+5-day processing period to ship the
+product to the customer. It's also worth
+noting that the customer lead time isn't
+linked to any other lead times. It's
+manually set by us, the user, to capture
+the entire replenishment process.
+Let's take a look at an order that we
+just received from our good friend Deco
+Addict. Now, he placed this order
+earlier today and wants to know when he
+can expect his brand new industrial
+style shelf. And right off the bat, we
+can see that there's no available stock
+for this product. And that's indicated
+by this red icon right here in our
+delivered column. And if we click on
+this red icon, we get a clear message
+noting that there's no future
+availability for this product. And
+that's because there's no MO that has
+been created to produce the shelf. And
+we also just haven't started building
+one yet. So to get more details on this,
+we can click this view forecast link.
+And when we do that, takes us to a
+forecast report for our industrial style
+shelf. And from here, we'll click this
+manufacturing forecast button. And when
+we do this, opens up a bill of materials
+overview. And this is what we see. We
+can see that the next estimated
+available date for the industrial style
+shelf is 5 days from now. And it's also
+shown in red. So what's causing this
+delay? Well, we do know it takes 3 days
+to manufacture the shelf. But since
+we're currently out of pinewood, ODO
+adds two more days for us to purchase
+and receive those components before we
+can even start production. So, now that
+the lead time setup is all coming
+together, we need a total of 5 days
+before this product is ready to ship. We
+need two days to get the materials and 3
+days to build it. Looks like it's time
+to give good vendor a call so we can
+restock on our pinewood. Two days later.
+And just like that, let's pretend two
+days have passed. During that time, we
+placed the order and received all seven
+pieces of pinewood. Now, as you can see,
+we have everything we need in stock, so
+we can officially start that
+manufacturing process for our industrial
+style shelf. Oh, and check this out. The
+estimated availability date for the
+shelf has updated to 3 days from today,
+which totally makes sense since it takes
+exactly 3 days to build the shelf from
+start to finish. We're officially ready
+to roll. So, let's go ahead and head
+over to our manufacturing application so
+we can manufacture this industrial style
+shelf. and maybe even get it shipped to
+Deco Addict earlier than expected. So,
+we'll start by heading back to the home
+screen of our database and just opening
+up the manufacturing application. And
+from here, I'll click operations at the
+top followed by manufacturing orders and
+then simply click new in the upper
+leftand
+corner. Now, in the product field, I'm
+going to enter and select our industrial
+style shelf and then click confirm.
+Now, when the MMO is confirmed, we can
+see that the scheduled start date is set
+to today and the scheduled end date is 3
+days from now, which is when we expect
+the shelf to be finished. But here's the
+fun part. My manufacturing team just let
+me know that the shelf is already done.
+Total legends. So, I'll go ahead and
+click produce all. And when I do,
+that'll mark this mo as complete. And
+just like that, it's time to get this
+shelf over to Deco Attic. Looks like we
+might just surprise him with an earlier
+delivery than he was expecting. So,
+let's go ahead and finish up this order
+and make this happen. Now, we'll head
+back to our homepage once again, but
+this time we're going to enter into the
+inventory app. And from here, we're just
+going to click this one to deliver
+button here in our delivery order
+section. And look at that. It is for
+Deco Addict. So, we'll just click into
+this here. And all we have to do to
+complete this is click
+validate. And now this has been shipped
+over to Deco Addict. And he got his
+shelf much earlier than
+expected. And there you have it.
+Estimating delivery dates and planning
+production doesn't have to be
+complicated. ODU makes it easy to stay
+on track. If you want, you can explore
+more scheduling tutorials. Feel free to
+check out our videos on planning and
+master production. But that's all for
+now. Go grab a snack, take a break, and
+hey, if no one's told you today, you're
+doing great. See you later, Odoers.

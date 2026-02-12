@@ -1,0 +1,206 @@
+Video: MRP Overview | Odoo MRP
+Video ID: XvAe_B29mB8
+URL: https://www.youtube.com/watch?v=XvAe_B29mB8
+Playlist Index: 1
+================================================================================
+
+What's up, Odoers and welcome. In this
+video series, we'll follow how materials
+are sourced and how products are built
+and delivered all on one platform. To do
+that, we identify raw material shortages
+using the inventory app and create RFQS
+using purchase. As soon as parts land,
+the manufacturing app can be used to
+schedule the work order, balance worker
+capacity, reserve components, and track
+component and labor costs. Shop floor
+operators log processes with one tap,
+while quality checkpoints and ECOs's
+catch issues early. Maintenance would
+then schedule preventative tasks to
+avoid downtime, and shipping connectors
+print labels and push tracking details
+straight off to the customer. And
+because every step runs on the same
+real-time database, production planners
+see true stock, lines stay on schedule,
+and orders ship out without any
+surprises, which helps showcase the
+power of ODO's all-in-one platform for
+manufacturing. So, let's walk through
+the process, shall
+we? So, in most manufacturing workflows,
+the process starts with engineering. The
+engineers are responsible for designing
+the product, typically using a computer-
+aided design software or CAD for short,
+such as AutoCAD or Solid Works. Once the
+design is finalized, the next step is to
+create a bill of materials in ODO or
+more commonly called a bomb. Think of
+the bomb as a recipe for manufacturing.
+It lists every component or subasssembly
+needed to build the final product as
+well as the steps to put it together.
+Here's a simple example of a bomb for a
+bicycle. While it might look
+straightforward, it captures every piece
+required to assemble the bike. The
+operations are work orders which break
+down the manufacturing tasks step by
+step that my assemblers follow to
+construct the bike. Keep this layout in
+mind. We'll be revisiting bombs in more
+detail later down the series.
+With the bomb in place, we can check the
+required components against our onhand
+inventory. If parts are short, then we
+can auto trigger the creation of RFQS
+with approved vendors. And once
+materials arrive at the facility, the
+inventory team routes each one through a
+quality check or straight to its spot in
+cold storage, be it on a shelf or in the
+overflow warehouse. So to keep the
+movement of products in real life
+perfectly in sync with the database, we
+can also use barcode scanners to log
+everything into ODO from product
+quantities and especially those
+unnecessarily long serial
+numbers. With every product, lot or
+serial number captured at receipt, the
+manufacturing team can step in reassured
+that the components listed in the bomb
+are truly in stock. Operators pull the
+exact components the system reserved. No
+hunting, no stockouts. So raw materials
+are consumed, recorded, and finished
+products are produced. In the cases
+where production is outsourced to
+subcontractors, say for specialized
+parts or overflow demand, ODO can handle
+that, too. The database tracks where the
+product is with which subcontractor, and
+how long to expect to wait until we get
+that part built back. So for in-house
+manufacturing, ODO tracks real-time
+status updates while the assembly line
+is running. On the shop floor control
+panel, operators press start, pause, or
+validate as they work. Each tap updates
+the manufacturing orders progress bar
+immediately, giving planning a view of
+every
+operation. Using the planning feature,
+we can check every new work order
+against the work cent's capacity and
+calendar. And if a station is
+overloaded, the system automatically
+schedules the MMO for the next day
+before the shift even begins. This
+ensures that all of my orders are on
+time and carefully scheduled
+efficiently. With every confirmed MMO,
+ODO's automatic component reservation
+allocates the exact parts right down to
+the lot or serial numbers. And this
+helps pickers so they see green for
+available or red for awaiting supply
+long before production starts.
+As materials are consumed and labor is
+logged, the cost analysis tab rolls up
+with material, labor, and overhead in
+real time. Managers know the true margin
+while the job is still on the line, not
+weeks later in a spreadsheet. So far,
+we've covered how manufacturing starts
+with product design and build materials,
+followed by checking inventory and
+triggering RFQS when parts are missing.
+When materials arrive, all products are
+recorded into ODOW. And from there, the
+manufacturing app ensures that
+components are ready, work orders are
+tracked, and production stays on
+schedule. ODU handles everything from
+planning and progress tracking to
+real-time cost analysis, keeping
+operations transparent and efficient
+from start to finish. But as business
+owners know, the story doesn't always
+end when the package arrives at the
+customer's doorstep. If they find any
+issues with the product, some Kairens
+might find the customer support team
+megaphone in hand, ready to tell us
+about all the defects. Once the item's
+returned, our quality team can then
+inspect the item and begin a new
+workflow to improve or repair the
+product depending on what's needed. This
+entire post delivery process is tracked
+in real time so nothing falls through
+the cracks and customers stay informed.
+First, the quality team would run a root
+cause analysis, and if the fix for the
+issue is procedural, then they could
+simply drop a new quality control point
+at reception, picking, or even pre-
+ship. A quality control point or QCP is
+a predefined check or inspection that is
+automatically triggered at a specific
+stage in your workflow. For example, we
+can add a QCP to inspect the product
+before we pack the order to be shipped.
+If the issue is related to oversight in
+the manufacturing process or is maybe a
+design related flaw, we can make changes
+to the bomb by creating an engineering
+change order aka ECO using the PLM
+app. With built-in version control,
+teams can roll out design changes in
+stages or roll back to a previous
+version if needed. That way, assembly
+teams are always working with the
+correct, most up-to-date bomb with no
+confusion or no delays.
+Finally, we use the maintenance app to
+schedule preventative tasks and log
+corrective repairs on equipment. Whether
+it's a routine belt check or surprise
+motor swap, by staying ahead of
+breakdowns, production lines keep
+running and delivery promises stay
+intact from the moment a product is
+first designed to the day it lands in
+your customer's hands. ODU connects
+every step. You can track it all,
+procurement, production, quality checks,
+maintenance, and even the final delivery
+right from one platform.
+And that wraps up our highle overview of
+how manufacturing works in ODO. In the
+videos that follow, we'll take a deeper
+dive into every part of the
+manufacturing process, so you can see
+exactly how ODU supports every step of
+your operations. Whether you manufacture
+in-house, use subcontractors, or manage
+complex supply chains, ODO brings
+everything together in one seamless
+platform, helping you reduce errors,
+increase visibility, and stay agile.
+Now, one of the best parts, ODU adapts
+to the way that you already work instead
+of forcing you to change your existing
+processes. That means you can configure
+the system to match your workflows so
+your team can stay productive without
+skipping a beat. It's more than just a
+software. It's a smarter way to
+manufacture. And we're excited to show
+you how ODU can transform your workflow
+and help your business grow. Until then,
+I'll see you later.

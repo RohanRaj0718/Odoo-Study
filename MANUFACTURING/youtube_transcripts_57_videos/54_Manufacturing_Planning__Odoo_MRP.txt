@@ -1,0 +1,257 @@
+Video: Manufacturing Planning | Odoo MRP
+Video ID: 4laFf9MnH6I
+URL: https://www.youtube.com/watch?v=4laFf9MnH6I
+Playlist Index: 54
+================================================================================
+
+What's up, Odoers? Welcome back. Here at
+Stealthy Wood, our customers have been
+going absolutely wild for our keyboards,
+and we're manufacturing more than ever
+before. We use work orders and work
+centers to define how and where our
+manufacturing is done. But with
+increased demand comes an increased need
+for us to be able to automate scheduling
+our work order operations and manually
+fine-tune them. Fortunately for us, work
+center planning is here to the rescue to
+handle all the scheduling conflicts and
+optimizations for our work centers for
+us. So, let's clickity clack away at
+scheduling work orders to see how
+planning is done here in Odo. So, let's
+begin with an overview of our super
+popular custom keyboard. In the
+manufacturing application, all we're
+going to do is click products at the
+top, followed by products once again,
+and we're going to select our custom
+keyboard product. Now to see what's
+involved in manufacturing one of these,
+we just have to click this build
+materials smart button here at the top.
+And here we're going to select our
+custom keyboard build
+materials. In the components section, we
+can see that this product requires five
+different components. And when I move on
+to the operations tab, I can see that
+there are four different operations
+required to make this custom keyboard. I
+also have five different work centers
+set up. The work centers are defining
+where we perform each operation. We can
+also get a better look at these work
+centers if I click on configuration at
+the top followed by work centers. Now, a
+lot of our assembly operations happen at
+our keyboard assembly work center. And
+as you can see here, we also have a
+keyboard assembly 2 as an alternative
+work center. Keyboard assembly 2 is an
+alternative place to perform these
+assembly operations. See our video on
+alternative work centers to learn how we
+did that. But moving on, I'm going to
+click on our lubrication station to see
+how it's
+configured. For all of these work
+centers, I have the working hours set to
+the standard 40 hours a week. To see
+more information on how this schedule is
+configured, we can click this internal
+link arrow right here. To see a full
+breakdown of the working hours, which is
+Monday through Friday from 8:00 a.m. to
+5:00 p.m. with a 1 hour break at noon
+because, you know, people got to eat.
+Anyways, OD will schedule work orders
+within these times. If we need to change
+the hours it uses, we would do that
+here. So, let's create a manufacturing
+order for one of these keyboards. To do
+that, I'm going to click operations at
+the top, followed by manufacturing
+orders. And then I'll click this new
+button here in the upper leftand corner
+and add our custom keyboard into the
+product field.
+And from here I can click
+confirm. And if I click on the work
+orders tab down below, I can see that
+lubricate switches is our first
+operation. That happens at the
+lubrication station and takes about 20
+minutes. And when I click plan at the
+start, ODO will start looking for the
+next available time after the scheduled
+date where there is capacity in the
+lubrication station and schedule our
+first operation.
+Then next ODU schedules the next
+operation which is install stabilizers
+and that's at the student's availability
+of our keyboard assembly workstation but
+only after the previous operation has
+been completed. If keyboard assembly is
+busy by the time the first operation is
+finished will look at the keyboard
+assembly 2 workstation for availability
+so we can get those keyboards
+manufactured and out the door as soon as
+possible.
+So that's what planning looks like
+within just one product. But let's start
+getting this operation up to capacity
+and take a look at all of our
+manufacturing
+orders. So from here, we're going to
+click on the operations button at the
+top of the screen, followed by
+manufacturing orders, so we can view and
+manage all of the MOS that our company
+is currently working on. The MO for the
+custom keyboard that we just ordered is
+right here down
+below. And the rest of these MOS are the
+products that Stealthy Wood will be
+producing next. Now I can also see which
+manufacturing orders we still need to
+complete and all we need to do is focus
+on these MOS in the future and plan for
+another productive week. Pretty simple,
+right? We can also see that all these
+MOS are available to produce because all
+the components we need to produce these
+products are fully in stock. So some of
+these MOS were scheduled for several
+days ago. So we better get them
+scheduled. To do that, I'm just going to
+tick the check box next to all the MOS
+and then click this plan button here at
+the
+top. ODU will assign work centers to
+each of the manufacturing orders that I
+have planned and create a schedule based
+on the capacity of each work center and
+the work order duration. If we look at
+the start date column, we can see that
+most of these start dates were changed
+to today. So, OD is trying to schedule
+all the orders that were overdue or due
+today as soon as possible. Now let's
+take a look at how all these orders were
+planned for us. We can start by clicking
+planning at the top followed by planning
+by
+production so we can see how the
+operations were scheduled and organized
+by manufacturing order. If I click the
+list view button here on the right, it
+makes things a little bit easier to
+read. From here, I'm just going to click
+the drop- down arrow for this first mo.
+So we can see how everything here was
+scheduled for this first operation here,
+lubricate switches. This is scheduled to
+start at 10:44 and is expected to take
+20 minutes as indicated by the end time
+here. Right after that, we have the
+second step which is install
+stabilizers. That's scheduled at the
+next work center. And each work order
+operation starts as soon as the last one
+finishes because there was nothing else
+already scheduled at these work centers.
+With later work orders, we'll see bigger
+gaps between operations as ODO optimizes
+scheduling each step as early as
+possible while respecting the capacities
+of the work center. And so it goes.
+Let's see what this looks like from each
+work center scheduling perspective. I'll
+click planning back at the top, but this
+time select planning by work center. So
+we can see our scheduled
+operations. This is organized by where
+they happen. And we can also view the
+schedule by week by clicking this
+calendar button here at the top left and
+selecting this
+week. This Gant view shows the schedule
+for all MOS that we planned earlier and
+also the occupied timetable of each work
+center. You may notice that blocks of
+the same color are a part of the same
+manufacturing
+order. And these green highlighted
+regions here on the left indicate
+scheduled hours for the work center. The
+total capacity is based on the hours of
+operation which in this case is 40 hours
+max with 16 hours planned. If no more
+work orders are scheduled, then Steve
+can chill in the break room for the
+remaining hours of the week. And moving
+on, if we click the calendar icon here
+in the top
+right, we can see all the work center
+schedules hour by hour. And wow, this is
+a really busy day. So, poor Steve. Here,
+the colors correspond to each of the
+work centers on the right side panel. I
+can also uncheck all of these work
+centers with the exception of
+lubrication
+station just so I could see each work
+center scheduled one at a time. If an
+operation carries over to the next day,
+that's due to limitations imposed by
+working hours and capacity. And you
+know, Steve can only do so much. Now, if
+I click the Gant icon in the top right
+of my screen, I can go back to our
+original view and click the calendar
+icon on the top left and select today.
+So, we can take a look at what's
+scheduled for today. I can also drag
+work orders to simply reschedu them. And
+when I do, oh no, it turned a different
+color. If that happens, it means that
+there's a problem with scheduling. And
+for this issue, I'm not too sure what
+the conflict is yet, but I'm confident
+that it can be fixed. ODO always has a
+solution. So, to see alerts, we can
+click this list view icon here in the
+top right. And I'm also going to exit
+out of this work center filter to
+ungroup my operations and just show me
+the entire
+list. In the far right column, I can see
+some icons. And if I click this purple
+eye
+icon, ODO is warning me that this step
+in the manufacturing process is still
+waiting for another one to complete. And
+if I scroll down and click this red
+exclamation
+warning, OD will tell me that this work
+order is planned at the same time as
+another work order. But regardless of
+what kind of scheduling conflict we've
+encountered, this handy replan button
+right here is here for me. And if I
+click
+it, voila, our scheduling conflicts are
+resolved. And there you have it. We now
+know how to get ODU to schedule your
+work order operations across all
+available workstations, how to manually
+adjust the planned operations, and how
+to resolve any errors that come up. I
+hope you've leveled up your ODU
+knowledge that you can now use to
+improve your planning process. Until the
+next video, I'll see you next time.

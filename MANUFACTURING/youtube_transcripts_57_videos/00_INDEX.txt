@@ -1,0 +1,313 @@
+ODOO MRP VIDEO PLAYLIST - TRANSCRIPT INDEX
+================================================================================
+Extraction Progress: 20/57 (35.1%)
+================================================================================
+
+EXTRACTED VIDEOS:
+--------------------------------------------------------------------------------
+ 1. MRP Overview | Odoo MRP
+    File: 01_MRP_Overview__Odoo_MRP.txt
+    Words: 1234
+
+ 2. Using Several Work Centers | Odoo MRP
+    File: 02_Using_Several_Work_Centers__Odoo_MRP.txt
+    Words: 1069
+
+ 3. Work Center Controls \u0026 Parameters | Odoo MRP
+    File: 03_Work_Center_Controls_u0026_Parameters__Odoo_MRP.txt
+    Words: 1964
+
+ 4. Flexible Consumption | Odoo MRP
+    File: 04_Flexible_Consumption__Odoo_MRP.txt
+    Words: 1737
+
+ 5. Subcontracting: Resupply Vendors | Odoo MRP
+    File: 05_Subcontracting_Resupply_Vendors__Odoo_MRP.txt
+    Words: 1086
+
+ 6. Subcontracting: Dropshipping | Odoo MRP
+    File: 06_Subcontracting_Dropshipping__Odoo_MRP.txt
+    Words: 1649
+
+ 7. Manufacturing Lead Times | Odoo MRP
+    File: 07_Manufacturing_Lead_Times__Odoo_MRP.txt
+    Words: 2101
+
+ 8. Costing: AVCO | Odoo MRP
+    File: 08_Costing_AVCO__Odoo_MRP.txt
+    Words: 1598
+
+ 9. Replenishment Methods for Manufacturing | Odoo MRP
+    File: 09_Replenishment_Methods_for_Manufacturing__Odoo_MRP.txt
+    Words: 1457
+
+10. Costing: Standard Price | Odoo MRP
+    File: 10_Costing_Standard_Price__Odoo_MRP.txt
+    Words: 2134
+
+11. Costing: FIFO | Odoo MRP
+    File: 11_Costing_FIFO__Odoo_MRP.txt
+    Words: 1831
+
+12. Engineering-to-Order | Odoo MRP
+    File: 12_Engineering-to-Order__Odoo_MRP.txt
+    Words: 2876
+
+13. Manufacturing with Backorders | Odoo MRP
+    File: 13_Manufacturing_with_Backorders__Odoo_MRP.txt
+    Words: 1626
+
+14. Master Production Schedule (MPS) | Odoo MRP
+    File: 14_Master_Production_Schedule_MPS__Odoo_MRP.txt
+    Words: 1795
+
+15. Managing Equipment Maintenance | Odoo MRP
+    File: 15_Managing_Equipment_Maintenance__Odoo_MRP.txt
+    Words: 1959
+
+16. Manufacturing Efficiency | Odoo MRP
+    File: 16_Manufacturing_Efficiency__Odoo_MRP.txt
+    Words: 800
+
+17. Manufacturing in One Step | Odoo MRP
+    File: 17_Manufacturing_in_One_Step__Odoo_MRP.txt
+    Words: 931
+
+18. Make-to-Order Manufacturing (MTO) | Odoo MRP
+    File: 18_Make-to-Order_Manufacturing_MTO__Odoo_MRP.txt
+    Words: 1131
+
+19. Costing: Overview | Odoo MRP
+    File: 19_Costing_Overview__Odoo_MRP.txt
+    Words: 1241
+
+20. Unbuild Orders | Odoo MRP
+    File: 20_Unbuild_Orders__Odoo_MRP.txt
+    Words: 1302
+
+
+================================================================================
+PENDING VIDEOS (74):
+--------------------------------------------------------------------------------
+21. Basic Subcontracting | Odoo MRP
+    Video ID: QPVOuRH0PIs
+
+21. Basic Subcontracting | Odoo MRP
+    Video ID: QPVOuRH0PIs
+
+22. Resupply Subcontractor | Odoo MRP
+    Video ID: I1aH9Mp-878
+
+22. Resupply Subcontractor | Odoo MRP
+    Video ID: I1aH9Mp-878
+
+23. Production Analysis | Odoo MRP
+    Video ID: 7y2P8Qugag4
+
+23. Production Analysis | Odoo MRP
+    Video ID: 7y2P8Qugag4
+
+24. Overall Equipment Effectiveness | Odoo MRP
+    Video ID: ZBBDLRoRPcs
+
+24. Overall Equipment Effectiveness | Odoo MRP
+    Video ID: ZBBDLRoRPcs
+
+25. Allocation Reports | Odoo MRP
+    Video ID: RWY3nh16T_E
+
+25. Allocation Reports | Odoo MRP
+    Video ID: RWY3nh16T_E
+
+26. Scrap Orders | Odoo MRP
+    Video ID: XddbBYkDAl4
+
+26. Scrap Orders | Odoo MRP
+    Video ID: XddbBYkDAl4
+
+27. Flexible Consumption | Odoo MRP
+    Video ID: yP2Tji_WyNY
+
+27. Flexible Consumption | Odoo MRP
+    Video ID: yP2Tji_WyNY
+
+28. Product Kits | Odoo MRP
+    Video ID: nyXngfghtaY
+
+28. Product Kits | Odoo MRP
+    Video ID: nyXngfghtaY
+
+29. Dropship to Subcontractor | Odoo MRP
+    Video ID: HsNSF43ZHg0
+
+29. Dropship to Subcontractor | Odoo MRP
+    Video ID: HsNSF43ZHg0
+
+30. Sub-Assemblies | Odoo MRP
+    Video ID: a8Dl1Ip0jtI
+
+30. Sub-Assemblies | Odoo MRP
+    Video ID: a8Dl1Ip0jtI
+
+31. Bill of Materials Basics | Odoo MRP
+    Video ID: WQec3vmGp5o
+
+31. Bill of Materials Basics | Odoo MRP
+    Video ID: WQec3vmGp5o
+
+32. Sales Order to Manufacturing Order | Odoo MRP
+    Video ID: ILpbH7X6vzo
+
+32. Sales Order to Manufacturing Order | Odoo MRP
+    Video ID: ILpbH7X6vzo
+
+33. Work Center Parameters | Odoo MRP
+    Video ID: 4lus18iXc3U
+
+33. Work Center Parameters | Odoo MRP
+    Video ID: 4lus18iXc3U
+
+34. Alternative Work Centers | Odoo MRP
+    Video ID: 7BjUXSlx6lo
+
+34. Alternative Work Centers | Odoo MRP
+    Video ID: 7BjUXSlx6lo
+
+35. Work Order Dependencies | Odoo MRP
+    Video ID: YSW_SxmyG5E
+
+35. Work Order Dependencies | Odoo MRP
+    Video ID: YSW_SxmyG5E
+
+36. By-Products | Odoo MRP
+    Video ID: J65h3-WFIKU
+
+36. By-Products | Odoo MRP
+    Video ID: J65h3-WFIKU
+
+37. Split and Merge Manufacturing Orders | Odoo MRP
+    Video ID: c5cFwTaD2I8
+
+37. Split and Merge Manufacturing Orders | Odoo MRP
+    Video ID: c5cFwTaD2I8
+
+38. Maintenance Requests | Odoo MRP
+    Video ID: yj6ko6AVjqQ
+
+38. Maintenance Requests | Odoo MRP
+    Video ID: yj6ko6AVjqQ
+
+39. Recurrent Maintenance | Odoo MRP
+    Video ID: 6zUVbOa5arY
+
+39. Recurrent Maintenance | Odoo MRP
+    Video ID: 6zUVbOa5arY
+
+40. Manufacturing Steps | Odoo MRP
+    Video ID: grZ9oj8CqNI
+
+40. Manufacturing Steps | Odoo MRP
+    Video ID: grZ9oj8CqNI
+
+41. Manufacturing Backorders | Odoo MRP
+    Video ID: OIrkwN0RXRo
+
+41. Manufacturing Backorders | Odoo MRP
+    Video ID: OIrkwN0RXRo
+
+42. Barcode: Process and Cancel MOs Using Barcodes | Odoo MRP
+    Video ID: 6zBz93AIXBo
+
+42. Barcode: Process and Cancel MOs Using Barcodes | Odoo MRP
+    Video ID: 6zBz93AIXBo
+
+43. Processing Returns for Repairs | Odoo MRP
+    Video ID: oAWC8x7ij7U
+
+43. Processing Returns for Repairs | Odoo MRP
+    Video ID: oAWC8x7ij7U
+
+44. Manufacturing Time and Costs | Odoo Shop Floor
+    Video ID: ecR7gxBP_Vo
+
+44. Manufacturing Time and Costs | Odoo Shop Floor
+    Video ID: ecR7gxBP_Vo
+
+45. Process an MO | Odoo Shop Floor
+    Video ID: NBH30rhhXiI
+
+45. Process an MO | Odoo Shop Floor
+    Video ID: NBH30rhhXiI
+
+46. Shop Floor Overview | Odoo Shop Floor
+    Video ID: RgUrM-np8v8
+
+46. Shop Floor Overview | Odoo Shop Floor
+    Video ID: RgUrM-np8v8
+
+47. Manufacturing Order \u0026 Work Order Basics | Odoo MRP
+    Video ID: r5JewejnfQ4
+
+47. Manufacturing Order \u0026 Work Order Basics | Odoo MRP
+    Video ID: r5JewejnfQ4
+
+48. Consuming Components Using Barcodes | Odoo MRP
+    Video ID: 2ojxIbTq41Q
+
+48. Consuming Components Using Barcodes | Odoo MRP
+    Video ID: 2ojxIbTq41Q
+
+49. Production Costs | Odoo MRP
+    Video ID: G4elSiAOLlY
+
+49. Production Costs | Odoo MRP
+    Video ID: G4elSiAOLlY
+
+50. Batch Transfers | Odoo Inventory
+    Video ID: oGTIn2TOdkY
+
+50. Batch Transfers | Odoo Inventory
+    Video ID: oGTIn2TOdkY
+
+51. Manufacture in 2 or 3 Steps | Odoo MRP
+    Video ID: qqNEEBNtArA
+
+51. Manufacture in 2 or 3 Steps | Odoo MRP
+    Video ID: qqNEEBNtArA
+
+52. Engineer To Order | Odoo MRP
+    Video ID: f-w5sVsl0Vg
+
+52. Engineer To Order | Odoo MRP
+    Video ID: f-w5sVsl0Vg
+
+53. Manufacturing Lead Times | Odoo MRP
+    Video ID: Vd1MDPaA4hk
+
+53. Manufacturing Lead Times | Odoo MRP
+    Video ID: Vd1MDPaA4hk
+
+54. Manufacturing Planning | Odoo MRP
+    Video ID: 4laFf9MnH6I
+
+54. Manufacturing Planning | Odoo MRP
+    Video ID: 4laFf9MnH6I
+
+55. Manufacture with Product Variants | Odoo MRP
+    Video ID: 5Pn9iBsXQBo
+
+55. Manufacture with Product Variants | Odoo MRP
+    Video ID: 5Pn9iBsXQBo
+
+56. Work Center Basics | Odoo MRP
+    Video ID: UUGbGjRvXtg
+
+56. Work Center Basics | Odoo MRP
+    Video ID: UUGbGjRvXtg
+
+57. Manufacture w/ Lots and Serial Numbers | Odoo MRP
+    Video ID: UUr5EK3ocxU
+
+57. Manufacture w/ Lots and Serial Numbers | Odoo MRP
+    Video ID: UUr5EK3ocxU
+

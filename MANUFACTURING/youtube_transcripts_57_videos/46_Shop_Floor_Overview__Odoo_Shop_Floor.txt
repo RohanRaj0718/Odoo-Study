@@ -1,0 +1,238 @@
+Video: Shop Floor Overview | Odoo Shop Floor
+Video ID: RgUrM-np8v8
+URL: https://www.youtube.com/watch?v=RgUrM-np8v8
+Playlist Index: 46
+================================================================================
+
+welcome back with do my name is Jose
+gasio now today I've got a very special
+lesson for you about the shop floor
+module now here at stealthy wood we
+manufacture almost all of our products
+and that means we have to deal with a
+lot of manufacturing orders further
+complicating things is the fact that
+most manufacturing orders are split into
+multiple work orders now these are steps
+that are required to complete each
+manufacturing order so with tons of
+manufacturing orders that are then
+further subdivided into multiple work
+orders it's easy to see how things can
+get a bit complicated for our
+manufacturing
+employees anyways that's where the brand
+new shop floor module comes into play or
+maybe I should say comes into
+production the shop floor module
+organizes stealthy Woods work orders by
+their respective work centers in one
+convenient location so enough chitchat
+let's get right into
+it all right I know you're eager to get
+a peek at the shop floor module but
+first there are a few things that I need
+to mention starting off you should know
+that the shop floor is a companion
+module to the manufacturing app and this
+means that you can install shop Flor by
+itself instead you need to install the
+manufacturing app first which will
+automatically install shop Flor as well
+now you may be saying to yourself Jose
+I've never seen a shop Flor module
+anywhere on my ODU database and I
+already have the manufacturing app
+installed that's not surprising because
+shop floor is a brand new module that's
+been added in ODU 16. 4 and later
+versions too of course if you're
+wondering what version of Odo you're on
+it's actually pretty easy to find out
+all you have to do is open up the
+settings application scroll to the very
+bottom and boom your database version
+will appear right there if you're not on
+version 16.4 or newer and you'd like to
+upgrade so that you can take advantage
+of shop floor as well as all of the
+other cool stuff that we've added I'm
+going to link the documentation for how
+to do so in the video description below
+now the final thing that I need to
+mention is that the shop Flor module
+replaces the tablet view functionality
+and you found that inside of older
+versions of ODU now this means you'll no
+longer see the tablet view button next
+to work orders on a manufacturing order
+don't worry though the shop Flor module
+still allows you to process work orders
+and just like tablet view you can use
+shop floor on a tablet or a desktop as
+well all right now that we've got that
+out of the way let's jump over to the
+shop floor module so I can show you how
+it makes processing work orders as easy
+as one two and
+three all right Odo so here we are on
+the Odo homepage again now unlike the
+old tablet view which could only be
+accessed from a work order shop floor is
+a separate module and thus has its own
+icon so I'm just going to click on the
+shop floor icon and we're at the shop
+floor dashboard now the dashboard shows
+us a card for each manufacturing order
+by default we only see emos that are
+ready to start according to the search
+filter that we have up here if we get
+rid of that filter we should see every
+manufacturing order regardless of status
+let's look at one of our ammo cards to
+see what information it gives us and
+what it allows us to do so the header
+for each card shows the ammo number and
+then we also see the product as well as
+the number of units being produced and
+as well as the status of the ammo in
+this case down here in the bottom right
+we have a confirmed one however that
+will change to in progress once that we
+actually start now below the header we
+actually see the first work order and
+that happens to be over here assembl
+table along with a button that takes us
+to the work center where these things
+are going to be made which happens to be
+called assembly line now below the
+current work order we see a line titled
+register to production I'm going to go
+into more detail about how to use this
+in the next video but basically it
+allows us to record the number of units
+we produce and at the very bottom
+diverting your attention to this one you
+should see a Clos production button
+which allows us to close the MMO you
+know once that you complete it if you
+see the quality checks button instead we
+need to perform one or more quality
+checks first now once all quality checks
+are completed the closed production
+button is revealed if I click on close
+production you'll notice an undo button
+appears
+giving you a few seconds you know to
+just click undo before the ammo is
+closed for Good keeping it open instead
+now to the right of that we actually see
+an options button and when you select it
+a popup appears and this window allows
+us to do a few different things we can
+scrap a component if it is found to be
+unusable for any reason we can also add
+a work order or a component now these
+options are useful if an extra work
+order or component is needed that was
+not included in the bill of materials
+for the product finally I can click open
+backend demo to open the full
+manufacturing order in the manufacturing
+app very cool all right let's return to
+the shop floor app so that I can show
+you how it handles work centers and work
+orders so back on the shop floor
+dashboard let's pretend that I'm Steve
+and I'm working on the assembly line and
+I only want to see the work orders
+assigned to my work center if I want to
+view all of the ready to Star work
+orders assigned to a specific work
+center I can actually click on the work
+center button on any of these cards and
+boom alternatively I can actually click
+on the work centers button up here at
+the top like I do with the alternate
+paint station and we can go there
+directly now if I want to change which
+work centers are actually shown up here
+at the top all I need to do is actually
+click on this little plus button select
+one and confirm it out but for now I'm
+going to stay on the assembly line work
+center just so I can show you a work
+order card now much like ano card each
+work order card shows us Theo number as
+well as the product and the number of
+units being produced like we have right
+there if work has not yet started on the
+work order the card will actually be
+tagged with to-do over here now once
+work begins this tag will be replaced by
+a timer showing the total amount of time
+work like we have up here with 10 11 and
+some other numbers now below the header
+we actually see each of the steps
+required to complete the work order now
+next to that we may see a button at the
+bottom of the card if the work order in
+question is basically the last work
+order to be completed for the
+manufacturing order the button will read
+close production now this closes the
+entire Mo just like when we click the
+same button on any of ouro cards so
+it'll look like
+that and instead we actually see
+something else if there are additional
+work orders to complete before the ammo
+can be completed the button will instead
+read Mark is done like we have right
+there which completes the work order but
+not the entire MMO last of all we have
+an options button just like on ano card
+and once you click it some of these
+options you'll notice are slightly
+different we still have scrap and add
+component which behave as normal but
+there are a few additional options we
+have seen yet so we have move to work
+center which is used to transfer the
+work order to a different work center
+this is helpful if the intended work
+center can't be used for any reason
+maybe your Steve blew something up we
+also have suggest the worksheet
+Improvement which allows us to suggest a
+change to the instruction shown when
+processing a work order in case someone
+like Steve doesn't understand something
+and we also have to create a quality
+alert which allows us to notify a
+quality control team about quality
+issues if any are found and finally the
+block button at the bottom and this
+allows us to make the work Center
+unavailable just in the event that it
+cannot be used for any reason all right
+we're going to close out of this just so
+I can show you one more thing now if you
+check over here what is that well that's
+the operator panel and this panel shows
+us all the operators signed into the
+shop floor module I'm going to go into
+more detail about this panel in a later
+video so for now just know that it
+allows operators to sign into the shop
+floor module and log the time they spend
+working on each work order all right OD
+doers that's it for today lucky for you
+this is just the first video in our
+series about the shop floor module now
+coming up we're going to learn how to
+process an MMO using shop floor track
+the time our employees spend working on
+work orders and so much more so stay
+tuned go grab a snack and I'll see you
+soon

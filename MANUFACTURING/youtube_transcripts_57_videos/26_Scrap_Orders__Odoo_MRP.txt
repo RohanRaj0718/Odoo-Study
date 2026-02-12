@@ -1,0 +1,226 @@
+Video: Scrap Orders | Odoo MRP
+Video ID: XddbBYkDAl4
+URL: https://www.youtube.com/watch?v=XddbBYkDAl4
+Playlist Index: 26
+================================================================================
+
+[Music]
+good morning my beloved OD doers today
+we're talking scrap specifically how to
+scrap components and products during and
+after the manufacturing process you see
+sometimes a component or finished
+product can't be used for a variety of
+reasons perhaps the vendor sent as a
+defective component or maybe a component
+or finished product was damaged during
+or after manufacturing scrapping a
+component or product removes it from our
+inventory and places it in a location
+designated to store scrap ODU also gives
+us the option to replenish the product
+quantity that was scrapped allowing us
+to get back to manufacturing as quickly
+as possible ready to see how this all
+works all right let's get
+scrapping now the first thing I should
+mention is that the scrapping process
+works a little differently when using
+one-step manufacturing compared to two
+or three-step manufacturing let's take a
+look at the one-step process first to
+begin I need to go to the inventory
+application select a configuration and
+then our warehouses going to go ahead
+and use our main warehouse for this
+example and we want to make sure that
+manufacturer one step is enabled in our
+manufacturer section then I'm going to
+click on products products once again
+and then select our W and pull
+product this is the component used for
+our coat rack product and it's the
+component that we'll be scrapping as an
+example for the first part of this
+tutorial under the inventory tab here we
+want to make sure that the Buy Route is
+selected in the operation section this
+is the route that will be used to
+replenish the product after we we scrap
+it we can always select a different
+route if we want to replenish it using a
+different method but at least one route
+needs to be selected in order to use
+replenishment since we've enabled the
+Buy Route we need to click on the
+purchase Tab and we need to make sure
+that a vendor has been added as well as
+the price that they sell this product
+for perfect looks like we're all set
+there last thing I want to point out is
+that we only have one unit of our wooden
+pull in stock this will come into play
+shortly with all of our settings the way
+we want them I'm going to jump over to
+to our manufacturing application and
+create a new emmo by clicking on
+operations manufacturing orders and then
+new I'll go ahead and select our coat
+rack and then confirm
+Theo now let's say that the wooden pull
+component I pulled from the inventory
+has a big crack in it that won't make
+for a very sturdy coat rack now will it
+so I'm going to click on the scrap
+button here at the top of the page and
+then the scrap products popup window
+will appear in the window I'll start by
+clicking the product drop down menu
+notice how the only products that can be
+selected are the two components used to
+manufacture the finished product not the
+finished product itself remember that
+because we'll come back to it later for
+now I'll just select the wooden pull
+product in the product field and I'll
+leave the quantity field set to one
+since that's the amount I'm scrapping
+I'm also going to enable the replenish
+quantities check boox since I want to
+get a new unit of the wooden Pole to
+continue with the ml finally I'll scrap
+a product prodcts by clicking the scrap
+products
+button and once we do a few things
+happen first in the chatter Theo status
+changes from ready to waiting since
+we're missing the wooden pull
+component also the component status
+field now reads not available since the
+component is not in stock we also have
+two new smart buttons at the top of the
+page the first one is titled scraps
+which shows us all the scrap orders
+created for this ML and the second smart
+button is titled purchases which shows
+us the purchase orders that were created
+to replenish the wooden pull product
+you're going to confirm the product
+purchase order by clicking on the smart
+button clicking confirm then receive
+products followed by a validate to enter
+the new component into the inventory
+when I return to the emmo by using the
+breadcrumbs
+here the component status now reads
+available and at the status of the emo
+in the chatter changed back from waiting
+to ready
+I'm now able to manufacture the coat
+rack at which point I'll click on
+produce all to complete the MMO very
+cool now I should mention that this
+process is a bit different if there are
+more components in stock in that case
+when a component is scrapped The emmo
+Remains ready and the component status
+still reads available no purchase order
+is created as the user is expected to
+Simply take the scrapped quantity from
+the existing inventory now before we
+leave this page I want to use this
+completed emmo to show you one more
+thing remember how when we were only
+able to select the components in the
+product field on the scrap orders pop-up
+window well now the product has been
+manufactured if we click the scrap
+button once again the product field here
+will allow us to scrap the finished
+product I'll select the coat rack enable
+replenish quantities and then
+scrap since the coat rack uses a
+manufacturer route a new emmo has been
+created to replace the unit of the
+product which we can see by going to
+operations manufacturing orders and then
+clicking the most recently created
+MMO all right before we finish today I
+just want to show you the scrapping
+process one using two or three-step
+manufacturing it's fairly similar but
+different enough that it's worth taking
+a look at we'll start by returning back
+to the inventory application clicking
+configuration warehouses and then
+selecting our main Warehouse once again
+this time we'll select the pick
+components then manufacture twep option
+in our manufacturer
+section then we'll return to the
+manufacturing
+app to create another MMO for our coffee
+table and just like last time we're
+going to go to operations manufacturing
+orders and we'll select new and we'll
+add coffee
+table you'll notice that once we confirm
+the order Theo status in the chatter
+appears as
+waiting another operation this is
+because two and three-step Manufacturing
+require components to be transferred to
+the production location before Theo is
+marked as ready with that in mind I'll
+click the transfer smart button at the
+top of the page to open the pick
+component's
+transfer and then I'll simply go ahead
+and select validate to process
+it when I return to
+Theo the status is now ready in the
+chatter all right let's say that the
+table tabletop component that we pick
+has a large scratch on top of it I'll
+scrap it the same way as before by
+clicking on scrap and selecting TBL toop
+in the drop- down
+field once we do enabling the
+replenished quantities check box here
+and then clicking scrap
+products once I do Theo status changes
+to waiting back here in the chatter just
+like in our previous example however
+unlike onstep manufacturing no purchase
+order is created to replenish the scrap
+quantities instead a new picking order
+has been created to transfer the
+replacement tabletop to the production
+location which I can access by clicking
+on the transfer smart button at the top
+of the page and selecting the pick
+component transfer marked as ready I'll
+transfer this by clicking validate and
+return to the emo by the breadcrumbs
+once
+again where I can go ahead and see that
+Theo status appears as ready and
+available and that's how you replenish
+scrap quantities using two or three-step
+manufacturing now in the case we were
+able to process the replenishment
+picking transfer right away since we
+were had an extra tabletop in stock
+however if there were no extra tabletops
+we would need to manually create an
+order to replenish them before
+validating the pick a purchase order if
+they were bought or a manufacturing
+order if they are manufactured and that
+my dear oders brings us to the end of
+another great tutorial today I showed
+you how to scrap components and finish
+products from a Manufacturing orders and
+how to replenish the quantities that
+were scrapped that's all for today and
+I'll see you next time

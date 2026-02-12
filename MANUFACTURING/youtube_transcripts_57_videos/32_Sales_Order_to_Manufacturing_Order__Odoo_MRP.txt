@@ -1,0 +1,174 @@
+Video: Sales Order to Manufacturing Order | Odoo MRP
+Video ID: ILpbH7X6vzo
+URL: https://www.youtube.com/watch?v=ILpbH7X6vzo
+Playlist Index: 32
+================================================================================
+
+what's up o doers and welcome back for
+another tutorial like most apps in Odo
+the sales and Manufacturing apps are
+integrated with one another this allows
+for a bunch of cool workflows including
+the use of the manufacturing app to fill
+a product needed created by the
+inventory app here's how it works when a
+sales order or so is confirmed for a
+product that's not currently available a
+manufacturing order ormo is created to
+manufacture the product and fulfill that
+need the there are two workflows we can
+use to make that happen the first uses
+the replenish on order route also known
+as MTO while the second uses specific
+type of reordering rule so let's jump
+into our Odo database and see how this
+all works all right we're going to start
+with the MTO route workflow this route
+is archived by default so we need to
+unarchive it first to do so I'm going to
+hop into the inventory application click
+on configuration and then head down to
+routes and from here I'll go ahead and
+use the drop down in the search bar here
+and click the archived in the filter
+section
+now I just need to tick the checkbox
+next to the replenish on order MTO
+option click on the actions button here
+and then click on unarchived and then
+boom the MTO route is ready for use now
+let's see the product we'll be selling
+and Manufacturing to do that I'll click
+on products and then products once again
+and simply click on our dresser
+product on the products form I need to
+make sure the canb sold option here is
+ticked and enabled so it can be added to
+SOS I also need to click on the
+inventory tab here and make sure both
+the manufacturer and the MTO options are
+enabled the MTO route tells Odo that we
+want to replenish the product when
+there's a need for it and when we enable
+the manufacture route as well ODU knows
+that we want to replenish this product
+by manufacturing it the only other thing
+we need to worry about is the product's
+bill of materials or bomb this contains
+all the information needed to
+manufacture the product now I've already
+created one but to do so yourself all
+you have to do is click on the build
+material smart button and then simply
+click on new feel free to also check out
+our tutorial on build material basics
+for a full overview of bomb
+creation all right we're ready to create
+a sales order for our dresser and use
+the MTO route to manufacture it so now
+all we have to do is head over to our
+sales application click new to create a
+new quotation and we'll go ahead and use
+our good friend here Terry Green in the
+customer field and then down below on
+the order product lines all we have to
+do is add our addresser and then to turn
+this into an so I'll just go ahead and
+click
+confirm one side do an emmo is
+automatically created to manufacture the
+product which I can access by simply
+clicking on the manufacturing smart
+button this is one of the most useful
+features in the MTO route because the
+MMO is linked to the so that created it
+it also means that the product is
+reserved for that specific so and can't
+be used for any other now let's go ahead
+and click on produce to manufacture this
+one unit of this
+dresser and next I'll go ahead and head
+back to Theo by clicking on the Sal
+smart button here at the top then
+deliver the product we can click on the
+delivery smart button here and to go
+ahead and finish this delivery all we
+have to do is Click
+validate and just like that we've sold
+one unit of our dresser manufactured it
+and sent it to Mr Green now before we
+move on I should mention that the MTO
+route always creates anmo for a product
+when it is included in an so this is the
+case even when there's enough stock on
+hand to fulfill the so now let's set
+everything up the same but this time
+we're going to use the reordering rule
+instead of the MTO route so to do so
+I'll head back to the dresser by
+selecting products products once again
+selecting our dresser and then I'm going
+to click on the inventory tab again but
+untick the MTO option since we won't be
+using it of course then I'll go ahead
+and click on the reordering rules smart
+button here and then click
+new in the route field here we're going
+to use
+manufacturer and since we won't be
+replenish this product I'll go ahead and
+leave both the minimum set to zero and
+maximum set to zero and then for the far
+right on the two order I'll go ahead and
+put one in that column so how does this
+work well we have zero units of the
+dresser on hand creating an for it makes
+the onand quantity negative since this
+is below the minimum quantity of zero
+and Manufacturing ORD created to
+replenish the product back to the
+maximum quantity of zero the product is
+replenished in increments of one since
+that's what we entered in the two order
+column this is called a 001 reordering
+Rule and it's just one of the ways
+reordering rules can be used for a full
+overview make sure to check out our
+reordering rules tutorial all right
+let's complete another sales order with
+this reordering rule workflow so to do
+so I'll create another quotation and
+select new in
+quotations and then we'll add Terry
+green once again to the customer field
+let's go ahead and add our addresser
+once more to the order lines then I'll
+click confirm to confirm this into an so
+and once I do you'll notice no
+manufacturing smart button appears at
+the top of this page don't worry though
+anmo was generated automatically but in
+this case it's not linked to the so this
+also means that the product was created
+by Theo will not be reserved for thiso
+and can be used for any other orders if
+necessary so to open the emo I'll head
+back to the manufacturing
+application select operations and then
+down to manufacturing orders and then
+simply create click on the most recent
+order and then here I'll go ahead and
+click produce all to manufacture the
+dresser and now all I have to do is
+return to the sales
+application and click on
+ouro and then if I click on the delivery
+smart button to open up the delivery
+order once the dresser has been shipped
+I just need to click validate and then
+we're all done and that's it for today
+folks you now know the two different
+methods used for sales orders to
+automatically generate manufacturing
+orders thanks for sticking around and
+I'll see you next time

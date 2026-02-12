@@ -1,0 +1,202 @@
+Video: Production Analysis | Odoo MRP
+Video ID: 7y2P8Qugag4
+URL: https://www.youtube.com/watch?v=7y2P8Qugag4
+Playlist Index: 23
+================================================================================
+
+hello doers my name is hos ignasio and
+it's good to see you again now today
+we're jumping into manufacturing
+reporting specifically the production
+analysis report you see there are a lot
+of questions that you have to ask
+yourself when running a manufacturing
+operation how long does it take to
+manufacture each product how much does
+it cost how much do I need to pay my
+workers for each product they
+manufacture and the list goes on if you
+want your operation to be profitable
+these are all important factors to
+consider and luckily the production
+analysis report and Odo manufacturing
+app can tell you all of that and so much
+more so enough chitchat let's hop into
+our database now to see how it all works
+so to open up the production analysis
+report I'm actually going to navigate
+over to our manufacturing application
+select reporting up at the top
+production analysis and there we are so
+by default the report is displayed as a
+line chart but I could also view it if I
+wanted to as something such as a bar
+chart or a pie chart which is always my
+favorite one each graph type shows the
+data broken down by weeks you can also
+view the data inside of a pivot table
+format by selecting it up here in the
+top right corner and there you have it
+so each row that we have over here on
+the pivot table shows the data for one
+specific product but let's jump back
+into our line chart because that was a
+little bit
+intense okay so the data presented and
+the way it's displayed are affected by
+two factors we have the measures drop
+down menu that we have over here and the
+search bar that we have up at the top
+Center if I click into this measures
+menu once again I can actually select
+from a variety of different data sets by
+default average total cost slun is being
+used but I can also choose a different
+metric like let's assume average
+operation cost as you can see only one
+measure option can be selected at a time
+with a data set selected we can use the
+search bar over here to show how it's
+displayed on the report by default a
+filter is enabled so only data for demos
+completed during the current year are
+the ones that are shown I can also add a
+custom filter by entering a product's
+name into the search bar for instance I
+could type in the word let's assume it's
+coat
+R and look at that only the data for
+that specific product is shown speaking
+of the search bar if we click on this
+little down arrow that we have over here
+we have our Mega menu filter and
+grouping options so let's talk about one
+area and it is actually the end date
+section that we have and this allows me
+right here that I used and the
+comparison to be able to see a desired
+time period for the data the group by
+section that we have over here in the
+center allows me to group data by
+products or end day and finally the one
+that I glanced over earlier is our
+comparison area which is our end dat
+previous period end date previous year
+as well so both of these options allow
+us to compare data from two different
+time periods we're going to use this
+section in a use case later in the video
+so I won't go into too much detail about
+it right this instant the the main thing
+that you should know is that the
+comparison feature should only be used
+with the pie chart graph type or the
+pivot table using a comparison on a
+different view won't have any effect all
+right with all of those nitty-gritty
+details out of the way I want to close
+this video by showing you a few use
+cases for the production analysis report
+so first we're actually going to want to
+reset this report to its default state
+by clicking on the refresh button inside
+of our browser once that that refreshes
+we'll continue so for our first use case
+we're going to compare two different
+products our Oak chair and an Arcane
+chair just to see which takes longer to
+produce this can be useful when deciding
+how much of your manufacturing resources
+should be dedicated to one product or
+another so I'm going to keep the default
+end dat filter in place and I'm going to
+start by entering the names of the
+products that we want to compare inside
+of the search bar so the very first one
+that I'm going to type in is that Oak
+chair select it and then the next one
+that I said cane chair select it okay
+now we have both of them right there so
+I'm going to open up the search bar drop
+down menu now this time around and this
+time I'm going to select the product
+option underneath the group ey and we're
+already getting somewhere so now I'm
+also going to open up the menus drop the
+measures drop down small o dupsy over
+here and we're going to select duration
+of operations because remember I said
+which one takes longer and finally all I
+need to do is select the bar Ty type of
+graph right there now we have it and wow
+as you can see we now see the average
+time it takes to produce one unit of
+each of these products and well it looks
+like it takes takes us twice as long to
+make one cane chair based on this we can
+make an informed decision about whether
+we want to keep producing the same
+number of cane chairs or maybe dedicate
+more resources over here to producing
+our oak chairs so that's pretty cool all
+right let's refresh the page once again
+to reset it and this time it's going to
+be faster okay so for this next example
+we're going to take a look at how to use
+the reports comparison feature let's say
+that we want to compare quarters one and
+two of this fiscal year to see which
+items we spent the most money producing
+in of each quarter so I'm going to start
+by selecting the pie chart cuz remember
+I mentioned that it only works in those
+ones so I'm going to click on measures
+drop down over here once again and this
+time I want to see total cost great now
+I'm going to open up the drop down menu
+of the search bar once again and this
+time what I want to click on is the end
+date section that we had over here and
+you'll notice it lets us select some
+other stuff I want to add the Q2 filter
+over there as well and finally the other
+one that I want to see is the comparison
+section I'm going to select the end dat
+previous period over here just so that I
+could see that and as you can see
+selecting this option divides the pie
+chart into two sections the outer
+section that we have over here is Q2 of
+2024 and the inner section that we have
+inside of here shows us
+rq1 based on this we can see that the
+products that we spent the most money
+producing in the second quarter were our
+looks like a bike and a cabinet one
+wonderful so during the first quarter
+the product that we spent the most money
+producing was once again the cane chair
+keeps coming back so if I had selected
+the end date previous year filter
+instead let's go see that
+actually going up here to the
+top the Inner Circle would show the same
+time period as the Outer Circle quarter
+two but for the previous year in this
+case that would actually be
+2023 and that brings us to the end of
+this tutorial video if you've been
+paying attention you'll know that
+there's quite a lot that you can do with
+the production analysis report now this
+video provided a few examples but it
+would be impossible to cover every
+single way the report can be used there
+is simply far too many options which is
+exactly what makes it so powerful so
+that doers the best thing that you can
+do is jump into your database and play
+around with all the different options to
+see how they interact and whether or not
+you break stuff that's all for today
+folks I'll see you next time

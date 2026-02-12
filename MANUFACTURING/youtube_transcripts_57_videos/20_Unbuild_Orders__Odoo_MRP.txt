@@ -1,0 +1,185 @@
+Video: Unbuild Orders | Odoo MRP
+Video ID: GvzVKID1Wro
+URL: https://www.youtube.com/watch?v=GvzVKID1Wro
+Playlist Index: 20
+================================================================================
+
+welcome back my friends to the tutorial
+That Never Ends I'm so glad you could
+attend step inside step inside today
+we're going to be discussing how to use
+unbuild orders in the manufacturing app
+you co doers running and Manufacturing
+operation isn't always about building
+stuff sometimes you have to unbuild
+something that you've previously built
+this can be necessary for a variety of
+reasons for example you maybe you built
+too many units of an item or perhaps you
+want to unbuild a product so you can use
+its components to manufacture a
+different product whatever your reason
+and I'm sure you've got a good one Odo
+makes it exceptionally easy to unbuild
+products all while ensuring that
+inventory counts for finished products
+and components remain accurate so enough
+chitchat let's jump into our Odo
+database now to see how this all works
+so before we create an unbuild order I
+want to quickly show you a couple of
+things first let's take a look at the
+actual onhand count for the product that
+we're going to be unbuilding our coat
+rack as well as the components that are
+used to build it so to do so I'm
+actually going to jump into the
+manufacturing application over here I'm
+going to select products up at the top
+and products once again now as you can
+see from each product card I have one
+unit of the coat rack in stock over here
+as for the coat rack's components they
+actually happen to be the wooden dowels
+and the wooden pole and I have whatever
+units that I have on hand but you need
+to remember these numbers which happens
+to be 750 and 91 so write them down
+somewhere and spoiler alert something is
+going to change now next we're going to
+take a look at the build of materials or
+bomb for our coat rack so I'm going to
+get there by clicking on the coat rack
+product card right there and immediately
+I could just use the smart button up at
+the top and there we are right there now
+let's take a look at in our case we
+actually want the very first one right
+there on the list so we're going to
+select that one and let's take a look at
+the components tab right here here we
+can see that one coat rack is is made up
+of a wooden pole and then six of these
+actual dowels down there this means that
+when we unbuild a CRA we should be left
+with that number of each component to
+see this in action let's get to what
+this video is really about the unbuild
+order itself so to create a new unbuild
+orderer all I actually need to do is
+select the operation sub heading up at
+the top and then I want to select you
+guess it unbuild orders now we're going
+to select new in the top left on this
+new order I'm going to start by
+selecting our coat rack product over
+there and then everything is set when I
+do that you'll notice that the main
+build of materials or bomb for the
+product is automatically selected in the
+Bill of material field that we have
+right below it if I want to choose a
+different bomb I can actually do so by
+clicking on the drop down menu right
+there inside of here and selecting
+something else in our case I'm not going
+to do that I don't want to mess things
+up alternatively I could also select a
+specific bomb in the build of materials
+field before selecting a product in
+which case the product field would autop
+populate with the corresponding product
+which is kind of nice now inside of the
+quantity field I can actually specify
+the quantity of the product that we need
+to unbuild for this example I'm going to
+leave it at just one unit now if the
+product being unbuilt was originally
+created in a specific manufacturing
+order I can actually select it in the
+manufacturing order field over here and
+let's see actually gives us a full list
+right there we can actually select any
+of them we'll just pick one now the
+source location field that we have which
+happens to be right below it is used to
+specify the location where the product
+being unbuilt is stored the destination
+location field is used to specify the
+location where the reclaimed components
+will be stored after unbuilding is
+completed both of these fields are set
+by default to our main warehouse
+location I'm just going to leave them as
+is for this order all right now that
+this form is all filled out let's
+actually go ahead and pretend that we've
+disassembled our coat wack into its
+components and they're all behind me now
+with that done all we have to do to
+complete the unbuild order is click on
+the unbuild button in the top left boom
+once that we do that we'll no that the
+stage indicator in the top right corner
+of the form moves from draft to done and
+just like that we've unbuilt one unit of
+our coat rack product and registered it
+inside of ododo now you would expect the
+inventory counts for a coat rack and its
+components to have updated automatically
+but let's just do a quick check to make
+sure that that's actually what's
+happened so to do so products up at the
+top and
+products now from the product cards I
+can actually see that the number of coat
+racks on hand happens to now be Zero
+from one and while the onand counts for
+the wooden D and wooden P wooden poem
+wooden pole components sorry smaller
+dupsy have actually increased by six
+which happens to be the dowels and one
+for the actual pole perfect that's just
+what we expected to happen now you may
+be thinking to yourself what happens
+when I try to create an unbuilt order
+for a product that I don't have on hand
+well like all things that we try inside
+of Jose's Odo Labs let's take a quick
+look as an example we're going to use
+the C Rak product which now is actually
+at zero so for that I need to First is
+Select operations once again un build
+orders and you guessed it once again new
+select that coat rack once again inside
+of our products let everything pop you
+click out of that and you'll notice once
+that everything is done we're going to
+select unb build and oh my goodness
+would you look at that I have a warning
+and this warning is that I have an
+insufficient quantity of corax to
+unbuild now ODU will allow me to proceed
+with the unbuild order which I can do by
+clicking on confirm right there on the
+right however as the popup States this
+may lead to inconsistencies in my
+inventory I don't want that to happen so
+I'm just going to click discard right
+there all right before I let you go
+there's just one more thing sometimes
+during the unbuilding process a
+component becomes unusable for one
+reason or another when this happens it
+is necessary to remove the component
+from in inventory using a scrap order if
+you want to learn how to do so check out
+the video in the description below or
+I'm going to include a link to our video
+on scrap orders and that's all I've got
+for you folks today I showed you how to
+disassemble finished products into their
+components using unbuild orders stay
+tuned for more exciting tutorials
+because I know you will I love you have
+a great night

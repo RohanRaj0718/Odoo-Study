@@ -1,0 +1,204 @@
+Video: Dropship to Subcontractor | Odoo MRP
+Video ID: HsNSF43ZHg0
+URL: https://www.youtube.com/watch?v=HsNSF43ZHg0
+Playlist Index: 29
+================================================================================
+
+welcome back o doers my name is Jasio
+today I've got another subcontracting
+video for you this time we're going to
+be taking a look at drop ship
+subcontractor on order route which
+allows us to supply a subcontractor with
+components by having a vendor drop ship
+them you see sometimes we want to send a
+subcontractor components without even
+possessing them ourselves in that type
+of situation we can purchase them from a
+vendor and then have them shipped
+directly to the subcontractor this
+benefits us because we don't have to
+worry about the cost of receiving and
+storing the components once the
+subcontractor receives everything they
+need they manufacture the product as
+usual and ship it to us so enough
+chitchat let's jump in and see how it
+all works so once again we're going to
+be starting with configuration now I've
+already covered all of the general
+subcontracting settings in the basic
+subcontracting video so be sure to watch
+that one if you haven't already I'm also
+going to make sure to link that below so
+inside of this video I'm just going to
+go over over the specific configuration
+settings to the drop ship subcontractor
+on order route so first off we need to
+open up the bomb for the product of this
+example which happens to be a bicycle so
+to do that I'm going to head on over to
+the inventory application and then we're
+going to select the word products and
+products now remember what did I say
+we're looking for a bicycle perfect so
+once that we're inside of here at the
+top of this page we select the smart
+button for bill of materials perfect
+select the bicycle one and there we are
+now if you watch the basic sub
+Contracting video you'll know that we
+don't need to add components to a bomb
+for a product manufactured using that
+workflow however in this case we are
+responsible for supplying the
+subcontractor with components and need
+to list them on the bomb as you can see
+on our components tab over here I've
+added the components needed to
+manufacture the bike which happens to be
+a frame and a wheel well quantity to CU
+you need two wheels on a bike now let's
+go to the product page for in our case
+the frame so we can actually SEL the
+internal link right there and takes us
+right there so you'll notice inside of
+the purchase tab over here we happen to
+have a vendor bike World along with the
+price that they are selling this to us
+which is $50 as well as a delivery lead
+time over here now this is the vendor
+that will send the components to our
+subcontractor once we purchase them next
+let's click back over here to this
+inventory tab so here inside of the
+routes as you guessed it I've selected
+the drop ship subcontractor on order
+route and that's what we need with this
+route selected every time we confirm a
+purchase order or PO for the bicycle
+over there a request for quotation or
+RFQ for my acronym lovers will be
+generated to purchase the component from
+the vendor and then have a drop ship to
+the subcontractor all right I've already
+configured our wheel component in the
+same way so let's move on to the drop
+chip subcontractor workflow wow that is
+a
+mouthful so the first thing that we need
+to do is to create a purchase order to
+buy a bicycle from our subcontractor so
+I'm actually going to go out of here and
+we're going to open up our handy dandy
+purchase application right there and
+inside of here we're going to select on
+the word orders up at the top and you
+guessed it purchase orders and now we're
+going to select new over here in the top
+left okay so on the new purchase order
+I'm going to add the bicycle vendor
+which happens to be bike friends it's
+kind of nice so that goes inside of our
+vender field then I need to add the
+bicycle down on the product tab so add a
+product down here we're going to select
+the bicycle okay great we're moving
+pretty fast right here everything looks
+good so I'm going to confirm our order
+over here in the top and then a couple
+of things have just happened first a
+receipt smart button has appeared up in
+the top Center and then second an RFQ is
+generated to purchase the bicycle's
+components from the vendor however the
+RFQ is not linked to the PO by a smart
+button this is one of the key
+differences between the drop ship
+subcontractor on order and the resupply
+subcontractor on order routes when a PO
+is confirmed for a product that uses the
+resupply subcontractor on order route a
+resupply smart button appears
+automatically at the top of this page
+however when using Dropship
+subcontractor on order the smart button
+does not appear right away instead the
+vendor RFQ must first be confirmed which
+creates a drop ship order to send the
+components from the vendor to the
+subcontractor at that point a resupply
+smart button appears on the
+subcontractor purchase order which opens
+the drop ship order when when clicked I
+know that's a bit confusing so let me
+show you what I mean so we're going to
+start by clicking on orders once again
+and then inside of here remember it's an
+RFQ so request for quotation right there
+now we need to select the one that was
+just created so we'll usually find this
+as the main one up at the very top right
+there perfect now before we confirm it
+let's take a look at a few things first
+we can see our component vendor which
+happens to be Bike World and that's
+already listed in the Bender field right
+there in the deliver to field over here
+here you'll notice it says Dropship
+subcontractor and bike friends is listed
+for the drop ship address it's kind of
+important because finally inside of our
+products tab it lists all of our
+components which happens to be the frame
+and the wheels altogether this
+information tells us that bike world
+will drop Shi a frame and two wheels to
+bike friends so let's confirm this right
+now by selecting right there and let's
+see what happens when we do that so what
+do you know as I had just stated a
+Dropship smart button appears at the top
+of the page when we click the drop ship
+smart button over here it opens up the
+drop ship order so once that the vendor
+has sent the components to the
+subcontractor all we need to do is Click
+validate up here at the top of the order
+now the subcontractor has everything
+they need to start manufacturing the
+bicycle before we move on there's just
+one more thing I want to show you on the
+drop ship order so up at the very top of
+the page let's click on the source Po
+and that's a little smart button right
+there there we go back over here to our
+subcontractor po remember how I said a
+resupply smart buone would appear after
+we confirmed the vendor RFQ well what do
+you know o doers it's right there up at
+the top of the page clicking it takes us
+right back to the Dropship order that we
+just came from so once the subcontractor
+manufactures the bicycle and ships it
+back to us we need to process the
+receipt to enter it into our inventory
+to do so I can either click on the
+receipt smart button which happens to be
+at the top of the page or the received
+products and remember that will only
+happen after you have validated these
+types of things and it's perfect either
+option opens up the receipts then I just
+have to click that validate button that
+you just saw me talk about and the
+bicycle will be entered so once that we
+do all of that it's all done we're done
+today I showed you how to configure a
+product that happens to use the drop
+ship subcontractor on an order route you
+now know how to supply a subcontractor
+with components without ever having
+having to handle them yourself and
+that's pretty nifty right that's it for
+today I'm going to see you next time

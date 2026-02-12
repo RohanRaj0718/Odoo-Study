@@ -1,0 +1,130 @@
+Video: Work Order Dependencies | Odoo MRP
+Video ID: YSW_SxmyG5E
+URL: https://www.youtube.com/watch?v=YSW_SxmyG5E
+Playlist Index: 35
+================================================================================
+
+what's up o doers it's good to see you
+again today we're talking about work
+order dependencies as you've already
+learned work orders are smaller
+operations within manufacturing orders
+or MOS it's very common for anmo to have
+more than one work order and often times
+it's critical that certain work orders
+be completed before others that's where
+work order dependencies come in let's
+use our table product as an example
+manufacturing the table requires two
+work orders cut the table legs and
+attach legs to the table it doesn't take
+a genius to figure out that we should
+cut the table legs first then attach
+them to the table if we didn't we'd end
+up with a table that was way too tall
+one might even say cartoonishly tall
+let's jump into Odo now so I can show
+you how to make sure all of your tables
+are the right height with the help of
+work order
+dependencies in order to use work order
+dependencies we need to make sure a
+couple things are enabled first I'll
+start by navigating to the manufacturing
+application clicking on configuration
+and then down to settings here I need to
+make sure that I have ticked the check
+boxes for work orders and work order
+dependencies the later setting only
+appears once the former one is checked
+with these settings enabled I can add
+work orders to Emos and make specific
+work orders dependent upon the
+completion of others pretty cool right
+I've already enabled both settings but
+once you've done so in your database
+make sure to click save up at top just
+to make sure that the changes are
+applied now let's take a look at the
+bill of materials or bomb for our table
+product to do that I'll navigate to
+products and then select bill of
+materials and then select our table
+bomb I click on the operations tab I can
+see that the manufacturing process
+requires two operations cut table legs
+and attach legs to table top as I
+previously mentioned we want to make
+sure that we cut the table legs before
+we attach them to the table top to do so
+I'm going to start by clicking on our
+miscellaneous Tab and then I want to go
+ahead and tick the checkbox next to
+operation
+dependencies and then I'll go ahead and
+click the save button to put the changes
+into
+effect now if we return back to the
+operations
+Tab and click on the attached legs to
+tabletop
+operation this popup appears and we also
+have a blocked by field that appears in
+the popup window I'll click into that
+field and select the cut table legs
+option from the drop- down menu and now
+the attach legs to table top operation
+is blocked by the cut table legs
+operation meaning we must complete that
+operation first finally I'll go ahead
+and click
+save and by default the blocked by
+settings are not displayed on the
+operations tab but if we do want to see
+them all I have to do is click the extra
+options button here on the right make
+sure that's teched and then here we have
+it doing so causes the block by colum to
+appear on the tab where I can see the
+attached legs to tabletop operation is
+blocked by the cut table legs operation
+all right our bomb is configured the way
+we want it now let's see it in action
+first I'll click on operations and then
+manufacturing orders and then I'll click
+new in the upper hand
+corner then I'll add our table to the
+product field and then just click
+confirm next I'll click on the work
+orders tab to see that both of our work
+orders in the status column and as we
+can see the cut table legs appears as
+ready and the other operation attached
+legs to tabletop appears as waiting for
+another operation because ODU knows that
+we need to cut the table legs first now
+I'll click the plan button up at the
+top and to see this carried out we can
+click on the planning button here at the
+top and click on Planning by production
+and then we'll be able to see the
+overall calendar so let's zoom into the
+planning calendar Day by clicking on the
+calendar button here and selecting today
+now we can see the cut table legs work
+order has been scheduled first and the
+attach legs to tabletop work order is
+scheduled
+after this is also indicated by the
+arrow leading from the first work order
+to the second if I drag attach liks to
+tabletop work order first it'll appear
+as
+red to fix this I can simply drag and
+drop the work order so it's scheduled
+after
+and now we're ready to manufacture the
+table by completing these work orders
+and that's all I've got for you today
+folks thanks for sticking around and
+like always I'll see you next time

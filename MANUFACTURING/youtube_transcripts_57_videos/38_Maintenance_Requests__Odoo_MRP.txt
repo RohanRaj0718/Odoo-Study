@@ -1,0 +1,195 @@
+Video: Maintenance Requests | Odoo MRP
+Video ID: yj6ko6AVjqQ
+URL: https://www.youtube.com/watch?v=yj6ko6AVjqQ
+Playlist Index: 38
+================================================================================
+
+what's up B doers like most
+manufacturing operations our production
+line consists of several work centers
+along with the equipment we use at them
+as you can imagine our work centers and
+Equipment suffer from occasional
+malfunctions and must be fixed when this
+happens we can create a maintenance
+request to make sure the issue is
+brought to the attention of the relevant
+maintenance team now there are multiple
+ways to create maintenance requests
+including through the maintenance app
+itself from the emo on the manufacturing
+app or from a work order in the shop
+floor app so let's jump into our Odo
+database so we can see how to create and
+manage maintenance requests all right
+the first thing we need to do is learn
+how to create a new maintenance request
+as I mentioned there are a few different
+ways we can do this so let's start in
+the maintenance
+application from the maintenance
+dashboard which shows me each of my
+maintenance teams all I need to do is
+navigate to maintenance at the top of
+the screen and then click on maintenance
+request and then click new to open up a
+new maintenance request form I also have
+the option to navigate to maintenance
+once again and then maintenance calendar
+and here I can click on a specific cell
+to schedule a request for that date and
+time and once I do this popup appears in
+which I can give this request a name
+before clicking create which would open
+up the same form that we just
+saw next let's hop over to the shop
+floor
+application here we need to select the
+tab for a specific work center like our
+saw station for example then I'll pick a
+work order and click on the gear icon
+that appears at the bottom right and
+when I do all I have to click on is
+request maintenance from the popup
+window the final way to create a
+maintenance request is through the
+manufacturing application which I'll
+navigate to
+now then select operations at the top of
+the screen and then manufacturing orders
+then I'll select a manufacturing order
+or Mo and at the top of the mo I can
+click the maintenance request button and
+when I do you guessed it maintenance
+request form appears as you can see we
+have a lot of options for creating
+maintenance requests this provides
+manufacturing options with lots of
+flexibility in terms of who can create
+requests and when they are created
+during the manufacturing process now
+let's see how to actually fill out one
+of these forms we'll use this blank form
+that we just opened and for example
+let's say the power stopped working at
+our saw station so let's give this
+maintenance request a name something
+simple and straightforward like no power
+at saw
+station perfect the created bu field is
+automatically filled out with my name
+but I can always choose a different
+employee if
+necessary below that we have the four
+field which allows me to specify if the
+request is being created for a piece of
+equipment or the entire work center
+we're creating this request for our saw
+station so let's change this from
+equipment to work
+Center and when I do this causes a work
+center field to appear and in this field
+all I have to do is Select saw station
+now directly below that in the worksheet
+template field we can select a worksheet
+for our maintenance employees to fill
+out while processing this request we'll
+cover worksheet templates in a different
+video so I'm just going to leave this
+blank for now the request date field is
+locked in for today's date since today
+is the day we're creating the request in
+the maintenance type field here I can
+select whether this maintenance is
+corrective intended to fix an existing
+issue or preventative which is intended
+to prevent issues from occurring in the
+future I'll leave this as corrective for
+now now in the manufacturing order field
+Theo is automatically selected since we
+created the request from thato anytime
+ano work order is selected a work order
+field appears below and let's just say
+the power issue occur during the cut
+legs operation so we'll select that from
+the drop- down field below
+next I'll use the team field to assign
+this request to our work center
+team then I'll select a employee in the
+responsible field to manage this request
+and we'll use
+Jose this is pretty urgent so for the
+scheduled date let's select on the
+calendar date for tomorrow by selecting
+the date and then simply clicking apply
+and I'm not too sure how long this
+request is going to take so we'll leave
+the duration field blank at zero so the
+maintenance team can fill it out once
+they're done now since this request is
+created for a work center a block work
+center checkbox appears this allows me
+to prevent work orders from being
+scheduled at the work center however
+since we're creating this request from
+anmo with the work orders that need to
+be carried out at the saw station
+ticking this checkbox will return an
+error when we try to save the request so
+I'm going to leave this blank for
+now finally since this is such an
+important issue issue let's give this a
+three star priority so it appears at the
+top of the maintenance request camand
+view now in the notes section I'll leave
+a brief note about the problem at the
+work center I can do something
+like not of the work Center's Outlet
+provide any power can also provide
+instructions through the instructions
+tab but I'm not going to worry about
+this for now since I'm not sure how to
+fix the
+issue all right now that we've created a
+maintenance request let's see how to
+manage them to do that I'll navigate to
+the maintenance
+application and here I can see all the
+to-do or scheduled requests from a
+specific team by clicking the to-do
+buttons I can also see every request
+regardless of the assigned team by
+clicking on maintenance and then
+maintenance requests and doing so shows
+the selected request in a can band view
+this view works the same as most other
+can band views in ODU so I'm not going
+to go into too much detail about that
+but there is one specific maintenance
+option that I will mention and if I
+click the gear icon of a specific stage
+and then click on edit I can see there's
+a request confirmed option if this is
+enabled I can move a maintenance request
+for a work center to this stage the work
+center will be blocked for a duration
+that's specified on the request
+form finally I want to show you another
+way how to manage maintenance requests
+and that's through the maintenance
+calendar which I can navigate to
+maintenance and then maintenance
+calendar once again and the calendar
+shows me all of my scheduled requests
+and I can reschedule any of them simply
+by dragging and dropping them to another
+date or time if I click on that specific
+request I am shown all of its key
+details and I can also delete or edit
+this to open its form and that's all
+I've got for you today folks if you've
+made it all the way to the end of this
+video you now know how to create and
+manage maintenance requests thanks for
+sticking around and I'll see you next
+time

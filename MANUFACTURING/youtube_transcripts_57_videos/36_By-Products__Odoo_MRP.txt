@@ -1,0 +1,128 @@
+Video: By-Products | Odoo MRP
+Video ID: J65h3-WFIKU
+URL: https://www.youtube.com/watch?v=J65h3-WFIKU
+Playlist Index: 36
+================================================================================
+
+what's up B doers as always I'm glad
+you're back today we're talking
+byproducts and no I don't mean when I
+buy products on the internet although I
+do love a bit of online shopping
+sometimes during Manufacturing in
+addition to the product we want to
+create an additional product is created
+as well take our chair product for
+example we need 10 units of wood to
+manufacture it while most of the wood
+itself ends up in the chair some of it's
+left over to form scrap wood in the case
+of residual materials like scrap wood it
+sometimes makes sense to dispose of them
+entirely in that case check out our
+scrap orders tutorial to learn more
+about that however sometimes byproducts
+can be useful in other ways for example
+we can use our scrapwood to create
+cutting boards by using byproducts in
+odo's manufacturing app we can designate
+a byproduct on another product's bill of
+materials or bomb allowing us to track
+the quantity we produce of the byproduct
+so let's jump into our database now to
+see how it all works all right the first
+thing I need to do is make sure that the
+byproduct setting is enabled to do so
+I'm going to click on configuration and
+then down to settings and I'm going to
+make sure that the checkbox next to
+byproducts is ticked I've already done
+so but after you enable it in your
+database make sure you to click save
+before moving on now let's take a look
+at our bomb that I've created for our
+chair product I can find that by
+selecting products and then build of
+materials and then selecting our chair
+bomb on the components tab we can see
+that the producing chair requires 10
+units of wood the chair also requires
+two operations to be completed which I
+can see by clicking on the operations
+tab first I need to cut the wood and
+then second we'll use that wood to
+assemble our
+chair next in the operations tab we have
+the byproducts tab this appears because
+we enabled a byproduct setting and it
+allows us to specify the residual
+products that are created while
+processing the manufacturing order as I
+previously mentioned manufacturing the
+chair also creates some SCP scrap wood
+so I'll specify that on the byproducts
+tab by clicking add a line and then
+selecting our scrap wood in the
+byproduct
+field I know that three units of our
+scrap wood will be created each time so
+I'm going to enter a quantity of three
+here finally we have the produced in
+operation field here we can specify
+during which operation the product is
+created our scrap wood is produced while
+cutting the wood for our chair so I'm
+going to select our cut wood W operation
+for the produced in operation
+field all right that's all we need to
+worry about for our bomb now let's
+produce one unit of our chair product to
+see how the byproducts are created so
+I'm going to select on products first
+and then products once again just so we
+can get a hand count of how much chair
+units we have as well as scrapwood and
+as you can see we have five units of our
+chair and 15 units of our scrap
+wood now I'm going to click on
+operations and then select Manufacturing
+orders and select new to create a new M
+Mo in the product field I'm going to
+select
+chair and then simply just confirm this
+m
+Mo let's go ahead and select the
+byproducts
+Tab and this is where I can see the
+scrapwood product listed you'll also
+notice the checkbox in the produced
+column is unticked since there isn't a
+process yet to create the
+scrapwood so I'll do that now by
+clicking on the work orders tab
+where I can see both of my work orders
+and I'm just going to go ahead and click
+start for the cutw operation and then
+one I'm finished with this all I have to
+do is click done now when I return to
+the byproducts tab I can see that the
+checkbox next to scrapwood is now ticked
+confirming that the byproduct has been
+created all right let's go ahead and
+complete the rest of the mo by simply
+clicking produce
+all and now if I navigate to products
+and then products once again I can see
+my up updated onhand count of scrapwood
+has increased by three as well as my
+chair as expected with scrapwood
+available in my inventory I can use it
+to produce units of our cutting board
+product like I mentioned in the
+beginning of this video and that's it
+for today folks you now know how to
+designate byproducts on a build
+materials and how to track the time of
+byproducts produced in each
+manufacturing order until next time
+thanks for watching

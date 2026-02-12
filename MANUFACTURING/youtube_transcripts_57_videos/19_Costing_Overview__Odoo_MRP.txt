@@ -1,0 +1,187 @@
+Video: Costing: Overview | Odoo MRP
+Video ID: oYsMx8Mt_bs
+URL: https://www.youtube.com/watch?v=oYsMx8Mt_bs
+Playlist Index: 19
+================================================================================
+
+[Music]
+foreign
+hello doers and welcome back my name is
+Jose Ignacio now let's talk costing now
+in manufacturing costing involves
+totaling the cost associated with
+production including the cost of direct
+materials operations and any additional
+overhead you might have now in the next
+couple videos we'll cover how each of
+these work and what Odo has to offer
+when it comes to them and how to
+configure them now inside of Odo there
+are three primary costing methods
+standard price
+average cost or avco and first in first
+out which is fun to say at fifo now
+following the standard price method the
+product cost is defined strictly by what
+the product form says now with the
+average cost method odoo averages the
+values of the products in stock which is
+particularly useful if components are
+sourced from multiple vendors or they're
+bought at different prices now the fifo
+costing method uses the cost of the
+earliest manufactured product in stock
+as the product cost and then once that
+product is removed from the stock the
+next earliest manufactured product will
+determine the product cost now enough
+Chit Chat let's hop into our database
+and see these in action
+all right deer so here we are on the
+manufacturing dashboard now first let's
+check out my billing materials or bombs
+now today I'll be manufacturing a table
+so let's go up here to our products fill
+the materials table and we're there now
+to build my table I'll be using four
+table legs and one table top now if we
+select the table legs internal link with
+this little arrow right there you'll
+notice something we can see that the
+table leg has an Associated cost of five
+dollars on the product template now if
+we select the actual tabletop you'll
+notice something similarly it has a ten
+dollar cost over here
+perfect now we know what we're working
+with in terms of cost all right now back
+on over here when we go through the
+operations tab we can actually see that
+it's going to be at the work center
+assembly line one not to view the actual
+details we're going to select the actual
+work center by selecting assembly line
+one and you'll get a bit of information
+here including the worksheet and some
+other info now if we want to actually
+directly see information about assembly
+line one we just click on this little
+internal link and there we have it now
+you'll notice that the cost per hour for
+assembly line one is defined right over
+here
+and that's pretty useful in our case
+since the table assembly is scheduled on
+the bomb to take one hour to complete
+the operation will cost us 50 dollars
+because basic math easy enough let's get
+out of here enough math
+all right next I want to show you the
+overview report so we're going to select
+the overview smart button and there we
+are now you may notice that there are
+two cost columns over here to the right
+we have a bomb cost product cost now
+let's go over bomb cost so bomb cost is
+simply the sum of the component and
+operational costs according to the last
+manufacturing order that was processed
+and then to the right product cost is
+the cost stated on the product form and
+depending on the costing method it may
+give a different value from the bomb
+cost now there are certain cases in
+which I may want to use the bomb cost as
+the product cost for example if we don't
+produce tables very often and we
+experience a lot of fluctuation around
+component costs the bomb cost will
+update unlike the product cost therefore
+using the bomb cost as our Benchmark is
+a good way to stay current now to do so
+we're actually going to go back to the
+product template for the final product
+in our case we can actually just select
+the word table over here boom we're back
+over there now up next over here next
+the cost I can click on this compute
+price from bomb button over here and
+when we select it magic happens oh look
+at that eighty dollars it went from zero
+to 80. now you can see that the cost
+just changed to eighty dollars since
+that's what the materials and labor
+costs in the bomber reflect now when I
+look at the structure and cost report
+again when we go back over here to our
+bomb overview
+boom look at that product cost now
+matches the bomb cost the stars have
+aligned though doers now let's examine
+how to configure the costing methods in
+odoo which will determine the product
+cost of each of our components now to
+change our costing method we need to go
+to the inventory app we're going to
+reach that
+there we are and then we're going to go
+into configuration and product
+categories and in our case
+components
+you want to select your relevant product
+category now here you can view all the
+products in this category by selecting
+up here where we have this listed and
+you'll notice in our case we have table
+legs and table tops but we're going to
+go back over here now as you'll notice
+over here looking at the product
+category I've established the costing
+method as standard price now you can
+change the costing method by selecting
+from a drop down you can change it to
+fifo although it'll give you a warning
+and a few other things because
+thankfully it'll give you a lot of
+warnings we're going to discard that
+real quick all right now you'll notice
+that if we go back over here to product
+categories each product category can
+have its own costing method associated
+with it as you saw I change components
+and you can change a lot of other ones
+over here now for example let's assume
+that a simple manufacturing process the
+components and the final products will
+share the same costing method so in our
+case let's select finish goods and
+you'll notice also standard price right
+there now it should be noted that if you
+want to change the costing method of an
+individual product you'll either have to
+change the category it belongs to or
+you'll have to change the costing method
+on the existing product category now to
+change the product category on the
+product template I'll jump on over to it
+and select it so that I could show you
+that so let's go up here to products
+we're going to select products again
+um let's select tablex and if you look
+over here there it is right there odors
+it also has a little internal link that
+you could jump to but here's where you
+change the product category now
+there you have it odors now we know how
+to find the structure and cost report
+from a bill of materials and how to
+change the costing method through
+product categories in the inventory app
+for more in-depth information on how
+each of these work be sure to check out
+the following costing tutorials when
+they pop up now
+I say this because you'll know it'll
+cost you a little bit of your time so
+that's it for now I'll see you next time
+oh doers go grab a snack

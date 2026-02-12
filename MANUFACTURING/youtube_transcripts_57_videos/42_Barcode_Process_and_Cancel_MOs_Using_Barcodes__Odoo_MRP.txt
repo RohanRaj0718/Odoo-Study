@@ -1,0 +1,133 @@
+Video: Barcode: Process and Cancel MOs Using Barcodes | Odoo MRP
+Video ID: 6zBz93AIXBo
+URL: https://www.youtube.com/watch?v=6zBz93AIXBo
+Playlist Index: 42
+================================================================================
+
+hey hey hey what's going on o doers
+today I'm going to show you odo's
+barcode app and how it can help
+facilitate the manufacturing process
+specifically we're going to see how ODU
+lets you scan barcodes to open process
+and cancel manufacturing orders or Os
+using barcodes to open OS is more
+convenient if you don't want to mess
+around on a tablet in the middle of a
+building process imagine if while on the
+shop floor you had to go to your
+computer every time something was being
+produced in order to track the
+components sounds pretty impractical but
+with a scanner you can stay with the
+production team and simply scan the
+components as you're building the
+finished product now that you know how
+odo's barcode app can help you with
+manufacturing let's see how it works
+there's one quick setting we need to
+enable to scan barcodes so I'm just
+going to hop into my settings
+application and click on inventory in
+our left side navigation menu once we're
+here we're just going to find the
+barcode section and we want to make sure
+that the bar code scanner setting is
+enabled this looks fine so I'll head
+back to our main Odo
+dashboard one of the coolest Parts about
+the barcode app is that you can process
+orders without entering the
+manufacturing app that said I'll show
+you how to create a new emmo just as a
+refresher so let's head to the
+manufacturing app and in a make to order
+manufacturing situation Emos are
+triggered when a sales order is
+confirmed but at stealthy wood we like
+to have a safety stock for our most
+popular products so we often generate
+Emos manually to access my manufacturing
+orders I'm just going to click
+operations at the top followed by
+manufacturing orders and this shows us
+all the existing emos that we currently
+have to create a new one I'm just going
+to click new at the upper leftand
+corner lately we've been selling out of
+our floor length Teakwood mirrors a lot
+of people will doing last minute bit
+checks slay so I'm going to set the
+product field to Teakwood
+mirror and let's say we need to produce
+around 10 mirrors so I'm just going to
+update this quantity here to
+10 as you can see ODU populates the
+components that are needed to make this
+mirror based off of the build materials
+selected it also shows how many of those
+components will be used to make this
+product everything else looks fine so
+I'm just going to click confirm here in
+the upper leftand corner for this
+Mo now we hav't an official Mo number
+and when I click this gear icon here at
+the top I can go ahead and print this
+production order I'll need this later on
+to scan my Emo's barcode so make sure to
+print
+this give me one minute I have to go
+borrow my friend's
+printer all right now that I have my
+os's barcode ready let's head to the
+barcode
+app the first step of the manufacturing
+process in barcode is to find the right
+manufacturing order there are two ways
+to achieve this through the barcode app
+first we we can click this operations
+button and then the manufacturing card
+and this shows us all of the emos in our
+system and all I'd have to do is click
+the one that I want to process or I
+could go back to the barcode dashboard
+via the breadcrumbs and use my handy
+dandy barcode scanner to scan
+ouro what we see here are 10 mirrors
+that we want to manufacture
+as well as the components from the bill
+of
+materials now at this point in the
+manufacturing process we want to build
+the mirrors while I'm actively building
+the mirror I'll register the components
+I'm using to keep track of them there
+are a few different ways to do this
+including just by clicking this plus 10
+button here on the right or most likely
+you want to use your Barcode Scanner so
+I'll just scan the barcode of our mirror
+and that'll register the production of
+these mirrors
+[Music]
+to learn more watch our tutorial on
+consuming and scrapping components using
+barcodes before we officially close this
+emmo you should know that you can also
+cancel Emos from this screen click on
+the gear icon at the top right and you
+can see the the last button in here
+allows you to cancel the mo but we don't
+actually want to cancel this so I'm just
+going to use the back arrow to get back
+to this screen and great now we're ready
+to close out the MMO so I'm just going
+to click produce
+all and then we receive a message saying
+the emmo has been validated the mirrors
+have now been put together and are on
+the shop floor talk about vanity
+projects don't forget to check out our
+tutorials and documentation on
+manufacturing order ERS thanks for
+stopping by and I'll see you next time

@@ -1,0 +1,239 @@
+Video: Manufacturing Time and Costs | Odoo Shop Floor
+Video ID: ecR7gxBP_Vo
+URL: https://www.youtube.com/watch?v=ecR7gxBP_Vo
+Playlist Index: 44
+================================================================================
+
+hello doers my name is Jose ignasio did
+you miss me I know you did because I
+missed you and I bet you missed shop
+floor even more in that case I've got
+some good news for you I'm back today
+for More Shop floor schooling now today
+we're going to be looking at how
+employees can track the amount of time
+they spend working on each work order
+and we'll also look at an emmo on the
+back and to see the total time spent on
+its work orders as well as the cost of
+processing them you see dear viewer time
+is money I mean that quite literally in
+this case you know since we're talking
+about manufacturing employees getting
+paid for the amount of time they spend
+working at a work center and I need to
+keep track of Steve so if you want a
+more granular understanding of your
+manufacturing cost it's helpful to be
+able to see how much time and in this
+case money is being spent to
+manufacturer each product that you
+produce now luckily shop floor makes it
+easy to track how much you spend on each
+work order down to the scent so let's
+take a look how that works and I'm
+watching you Steve all right before we
+jump into shop floor I just want to show
+you how to set cost per hour for
+employees and work centers now this is
+important because in order to calculate
+how much it cost to process each work
+order we need to basically know how much
+our work centers cost to operate and how
+much we need to pay employees because we
+got to pay them a livable wage it's very
+controversial so we're going to take a
+look at employee cost first so to do so
+we're going to click on the employees
+app select an employee how about jimjo
+okay so here we see the page for one of
+our employees jimjo Kelly now jimjo is
+stealthy Woods in-house spiritual
+advisor and we also have him work the
+production line sometimes now to see
+where we pay jimjo we actually go into
+HR settings and over here at hourly cost
+so in this case we pay Jim Joo $40 an
+hour I can edit this if I want to but it
+looks good for now I also want to make a
+note that I have an option for a pin
+code up here now this is basically the
+code that jimjo will be using to sign
+into work centers that he's at in this
+case we have a tattoo 1 two 3 4 I think
+Jim Joe can remember that all right now
+let's see where we can actually set the
+cost for our work center so I'm actually
+going to return to the main dashboard
+select manufacturing and go up to
+configuration and work centers um in our
+case I'm going to select our paint
+station over here great now in this cost
+per hour section that we have over here
+under the general information tab I want
+to talk about something and it's
+actually that I can set the hourly
+processing cost either per work center
+or per employe now what does each mean
+well per work center is used to specify
+cost associated with operating the work
+center like how much it cost to I don't
+know use a band saw and operate it per
+employee is used to specify how much we
+pay each employee per hour to work at
+the work center now this is a blanket
+cost for every employee meaning you
+should only use it if every employee
+working at the work center is paid the
+same amount I should also note that the
+hourly cost field on the employee form
+and the per work center field on the
+work center form override the per
+employee field that we have right there
+on the actual work center form unless
+they're both set
+to0 so for example since I have the per
+work center cost set over here to $20
+any amount I enter in the per employee
+field will be ignored because the per
+work center field takes precedence
+additionally since Jim Joo has an hourly
+cost of as you remember $40 set on his
+employee form the cost will be used
+instead of the per employee cost that we
+have for any work center that he works
+at however the per work center cost is
+not overridden by the hourly cost on an
+employee form so if Jim Joe works at the
+paint station his hourly cost of $40
+will be added to the paint stations per
+work center cost of $20 this results in
+a total cost of $60 per hour to operate
+the paint station because simple math
+all right there's just one more thing I
+want to show you on the work center form
+so here we actually have an allowed
+employees field over here and what does
+that basically mean well I can specify
+which employees are allowed to use and
+work at this work center over here if I
+leave it blank any employee can use it
+in this case I have it set so that only
+Jim Joo can use the paint station
+because we don't want somebody like me
+painting over here all right I know that
+was a lot of information so I think it's
+time we go look at the shop floor so
+here we are on the shop floor now on the
+left hand side we have the operator
+panel which shows us all the operators
+who are currently logged in at this
+moment I'm the only active operator now
+I've also already created anmo for our
+stool product that I can use as an
+example so I'm just going to search for
+the product up here and it happens to be
+the number 80 just so I can focus on it
+all right now I'm going to click on the
+assembly line button which takes me over
+here to the first work order for the
+ammo which happens to be assembling the
+stool to get started on it I'll just
+click on the header of the card and
+you'll notice once I do a timer appears
+on the work order showing the total
+amount of time it's been worked on by
+every employee now next time my name
+appear on the operator panel another
+timer appears and this one shows the
+amount of time that I personally have
+spent working during this work session
+this timer counts in increments of
+minutes so it's going to stay at zero
+until a minute has passed all right
+let's say that we finished assembling
+the stool which means it's time to close
+the work order to do that all I actually
+have to do is hit Mark is done and then
+after I do that some cool magic happens
+now the next work order happens to be
+painting the stool and we have to wait
+for this to fully disappear because
+what's going to happen is it's going to
+move over to the paint station and
+that's actually the work center that we
+need to access and we can access it just
+by clicking on the word paint station up
+here and oh my god oh dupsy oh no the
+work order is great
+out and I can't interact with it at all
+I guess we're just going to have to give
+up on manufacturing this
+stool just kidding oh my God I
+remembered something remember how we
+made it so that Jim Joe is the only
+employee who is allowed to use the paint
+station well since I'm currently signed
+in as myself as Jose I can't work on
+this or interact with work orders at
+this work center so to process this
+order Jim Joe will have to sign into the
+Shor module and complete it himself so
+to do so he actually just needs to click
+on ADD operator down here select himself
+and oh no again we need his pin his very
+difficult pin and boom would you look at
+that oders I can now basically work on
+this and it's no longer gr out and Jim
+Joe can process it so to do so he's
+going to click on the header starts the
+timer again and then he finished
+painting at light speed so he can close
+production since he is done now since
+this is the final work order for the
+emmo both the MMO and work order are
+closed so so far we've seen how to set
+up cost for work centers and employees
+and how to sign into the shop floor app
+to record the amount of time spent on
+work orders but how do you see the
+statistics for the total cost of
+processing each work order or even the
+total time spent working on them well
+it's really hard just kidding it's super
+simple I can actually see all of that
+from the manufacturing order so let's
+take a look at that now to start we're
+going to return out of here by hitting
+close and we're going to go into the
+manufacturing app and you guessed it
+operations and Manufacturing orders go
+ahead and at this point oh no would you
+look at that we can't select ours
+because it's been closed so we're going
+to take away this filter and go find it
+there we have it now I want you to make
+your way over to the work orders tab
+over here all right now here I can
+actually see the total time spent
+working on each work order in the real
+duration column that we have over there
+if I want to see work order cost I just
+need to select the overview smart button
+up here at the top and boom gives us all
+of that over here now the operation
+section that we have right here on this
+page it basically lists the cost of each
+work order in the MMO cost column that
+we have over here the time spent on each
+work order is also available on this
+page in the quantity column that we have
+over there as well and there you have it
+o doers we covered quite a lot in
+today's lesson you should now know how
+to record and view the time spent
+working on individual work orders you
+should also be able to easily find the
+processing cost of each work order
+that's it for today folks see you next
+time

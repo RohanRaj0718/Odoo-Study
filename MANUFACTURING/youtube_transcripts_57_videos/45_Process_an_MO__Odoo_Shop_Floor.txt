@@ -1,0 +1,199 @@
+Video: Process an MO | Odoo Shop Floor
+Video ID: NBH30rhhXiI
+URL: https://www.youtube.com/watch?v=NBH30rhhXiI
+Playlist Index: 45
+================================================================================
+
+welcome back OD doers in our last lesson
+we took a look at all the bells and
+whistles of the brand new shop floor
+module now today we're going to put that
+lesson into practice how you may ask
+well I'm going to show you how to
+process a manufacturing order Oro for my
+acronym lovers using the shop floor as
+we just learned the shop floor module
+makes it easy to process multiple MOS
+even if eacho has multiple work orders
+within it it does this by grouping work
+orders based on the work center where
+they're actually carried out all right
+I'm hyped up so let's make a coffee
+table so before we get started let's
+take a quick look at the product that
+we're going to be making now to do that
+I'm going to jump inside of the
+manufacturing app go up here to products
+and products now we're going to select
+that coffee table and select that bill
+of materials smart button up at the top
+and then click on the first one all
+right now I've already configured a Bild
+of materials or bomb for this product
+because you need to remember that every
+product we manufacture must have at
+least one bomb otherwise we wouldn't
+know how to make it all right now on the
+bomb we have all of our components
+listed inside of the components tab that
+we have right there and if I click into
+the operations tab over here we can see
+that there are two operations required
+to manufacture our coffee table we have
+assemble table and stain the table now
+the stain table operation as you can
+tell is actually blocked by the assemble
+table operation which means we need to
+assemble the table before we can stain
+it additionally if you look over towards
+the instructions column over here we can
+actually notice that there are multiple
+steps to complete complete I can
+actually view all of the required steps
+by clicking on the show instructions
+button which happens to look like these
+little lines with the dots so let's
+click on the one for assemble table over
+here for example this one actually
+requires three steps to complete we have
+inspecting attaching legs and adding the
+Shelf as well so to sum it all up we
+have our coffee table product along with
+its bomb the bomb itself has two
+operations required to manufacture the
+table and each of those operations is
+further broken down into multiple steps
+oh my God it's all complicated right and
+all of that is required to manufacture
+just a single product imagine when you
+have dozens no hundreds of products that
+you need to manufacture each with
+multiple operations and steps well the
+good news is that the shop module was
+designed for exactly that problem so
+let's jump into it now so I can show you
+how it can simplify everything for us
+all right first off we need to create a
+manufacturing order for our coffee table
+so we're going to make a way to
+operations and Manufacturing orders
+select new and type in that coffee table
+over here in conf firm it out all right
+will you want to make a quick note of
+this actual MMO number that we have up
+here at the top and that's so that we
+can easily distinguish it from otheros
+in the shop floor module and since we're
+using two-step manufacturing for this
+workflow a pick components order is
+automatically created to transfer the
+required components to the production
+location this is also true for
+three-step manufacturing I can actually
+access the picking order by clicking on
+the transfer smart button that
+automatically appeared up here at the
+top now once the components have been
+transferred I just need to valid
+validate this Mark all is done and we're
+all set and this is so that we can
+confirm everything has occurred now
+completing the picking order for the
+ammo is important because it marks the
+ammo as ready to start by default the
+shop floor app only shows emos that are
+ready to start if you're using one step
+manufacturing no picking order is
+required and a confirmed ammo will be
+ready to start as long as the required
+components are available inside of your
+inventory now I can actually head over
+to the shop floor application over here
+and like I talked about
+since it replaced the tablet view the
+shoper module has its own dedicated icon
+on the Odo dashboard that you saw me use
+now on the actual module homepage over
+here there's a card for our coffee table
+emmo which we can easily find by
+searching for that emmo with that copied
+text that I showed you earlier now that
+makes it a lot easier now this card list
+the first war order we need to complete
+which happens to be assembled table
+along with a button to take me to the
+work center where it will be carried out
+which happens happens to be the assembly
+line over here perfect now on the page
+for our assembly line work center Theo
+number filter remains in the search bar
+so we only see the work order for that
+Mo if I remove that filter we would see
+every work order assigned to this work
+center but I'm not feeling chaotic today
+so I'm just going to leave it as is so
+we can focus on this specific work order
+that we have right there all right let's
+start manufacturing our coffee table
+first off I'm going to click on the
+header that says assemble table over
+here and there's a reason for that boom
+it starts the timer over here this timer
+keeps track of the time spent working on
+the work order this information can be
+viewed later on Theo along with the
+total cost to process the work order
+we'll talk about how to basically see
+that info in a later video then I'm
+going to complete the steps one by one
+to do so I'll click on the first step
+which is inspect
+components okay now this one in this
+case it's a past fail quality check that
+requires me to inspect our components
+for defects thankfully looking at our
+metaphorical not real table over here it
+passes great now we can move on to the
+next step so we'll hit next over here
+and we're going to keep going through
+this alternatively I can close this out
+and I can click on the little check
+boxes that we have over here to finish
+them all off which I just did for the
+last part over here great with all the
+steps completed I'll click on Mark is
+done over here and that causes the
+assemble table work order to fade away
+as that's happening take a look up at
+the paint station that we have over here
+and this work center at the moment said
+zero and that's because there's nothing
+assigned to it right now however once
+the previous work order disappears
+completely ah look at that I love it
+when that happens boom there's now one
+work order assigned to the paint station
+this is because ODU recognizes that the
+next work order stain table is finally
+ready for processing so we're going to
+click on that paint station over there
+and it's time to complete all the steps
+for the same table work order now once I
+do that by once again clicking on all of
+this stuff all over again we can
+actually close production because the
+button appears since this was the final
+work order for the ammo once I click it
+the ammo itself is completed and the
+work order starts to fade away Death
+Leopard said it you know it's better to
+burn out than fade away but in this case
+the work order fading away means we've
+produced a brand new coffee table if
+that's not rock and roll I don't know
+what is well that's it for today oo
+doers don't worry though this won't be
+the last time that we talk about the
+shop module so stay tuned grab a snack
+listen to some Death
+Leopard

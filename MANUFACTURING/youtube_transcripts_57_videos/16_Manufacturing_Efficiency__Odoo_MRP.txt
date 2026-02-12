@@ -1,0 +1,104 @@
+Video: Manufacturing Efficiency | Odoo MRP
+Video ID: GPMH4r3CpDo
+URL: https://www.youtube.com/watch?v=GPMH4r3CpDo
+Playlist Index: 16
+================================================================================
+
+Hello Odooers, and welcome back! There 
+is a key element we shouldn’t overlook  
+in Stealthy Wood’s manufacturing process: the 
+Overall Equipment Effectiveness, also known as  
+OEE. OEE is the gold standard for measuring a 
+company’s manufacturing productivity. But why  
+do we use OEE in a small-to-medium enterprise like 
+Stealthy Wood? The reason is simple: OEE helps us  
+identify the percentage of truly productive 
+manufacturing time across my work centers.  
+Identifying productivity losses helps me pinpoint 
+areas for improvement, making operations more  
+efficient and cost-effective. OEE can lead to a 
+significant return on investment, especially when  
+we launch a new product. After all, making sure 
+that existing equipment is being used efficiently  
+reduces the amount of money we need to spend to 
+meet our production needs. Keeping an eye on the  
+Overall Equipment Effectiveness is vital for when 
+trying to reach a company’s true potential. So,  
+let’s see how we can take advantage of it in 
+Odoo. At first, OEE might seem difficult to  
+understand and compute. Luckily, Odoo calculates 
+and records these values automatically. That means  
+that the complicated steps are taken care of 
+in the background while regular production  
+operations continue like normal. This is very 
+convenient, since not everyone is an expert in  
+manufacturing. So let’s hop into the Manufacturing 
+application, where I have a dashboard overview of  
+my work centers. As you can see, there’s an OEE 
+field with a percentage for each of my active work  
+centers. Right now, the OEE percentage for each 
+work center is in green, which indicates that the  
+work centers are meeting their targets. If the OEE 
+drops below the target, then the number will turn  
+red. For example, I can change the OEE target for 
+this work center to be greater than its current  
+OEE by clicking on the 3 dots on the top right and 
+clicking on Settings. Under Product Information,  
+in the OEE Target field, let’s change it to 
+100%. Let’s see what happens when I go back  
+to my dashboard via the breadcrumbs. Ah, and 
+now the percentage is red, since my team didn’t  
+reach the OEE Target I set. But let’s cut my team 
+some slack, since we don’t expect the work center  
+to operate at 100% efficiency. So let’s change 
+it back to 90%. I can learn more about my work  
+center’s production statistics when I click on the 
+Work Center’s OEE button. This helps me identify  
+factors that are affecting the work center’s 
+effectiveness. For example, we can see that  
+this Work Center, Drill Station 1, has been doing 
+really well with its “Fully Productive Time”,  
+with just a small portion of the total time being 
+taken up by “Reduced Speed”. If I want to access  
+an overall OEE report for all of my work centers, 
+I can go to Reporting subheading at the top,  
+and click on Overall Equipment Effectiveness. By 
+default, this view is grouped by Work Center and  
+Loss Reason. I can even remove some of the 
+sections from view. This is a great method  
+for visually gauging efficiency. For example, 
+let’s click on the “Fully Productive Time” at  
+the top of the graph. To further understand 
+OEE and how it’s computed, let’s see how it  
+changes when it takes longer than expected to 
+manufacture a product. I’ll start by opening an  
+MO for a Wood Panel that's already confirmed. 
+So let’s go to the Operations subheading, and  
+click on Manufacturing Orders, and select the Wood 
+Panel MO. Then, I’ll go to the “Work Orders” tab,  
+and in the Drill Operation, in the “Real Duration” 
+field, let's change it to “80.” That’s 20 minutes  
+longer than the Expected Duration of 60 minutes, 
+which was set on the Operations tab of the Wood  
+Panel’s Bill of Materials. Okay, let’s head back 
+on the manufacturing dashboard by clicking on the  
+Overview menu at the top. And would you look at 
+that Odooers! Odoo has automatically calculated  
+the new OEE, which has been instantly impacted 
+from 95% to 93%. When I click on the OEE link,  
+I can see that the work center’s “Fully 
+Productive Time” has decreased by just a smidge,  
+due to an increase in the “Reduced speed”. If 
+I click on the Reduced Speed pie chart segment,  
+I am shown a list of every time the loss reason 
+occurred. If I want, I also have the option to  
+manually create and report a loss reason. 
+So let's go ahead and click New. Let’s say  
+I experienced a material availability issue that 
+wasn’t immediately reflected on the work order.  
+So in the Loss Reason field, let’s select Material 
+Availability. As promised, everything related to  
+the OEE calculation is automatically handled by 
+Odoo based on the actions that employees record  
+during the manufacturing process. Thanks 
+for watching, and I’ll see you next time!

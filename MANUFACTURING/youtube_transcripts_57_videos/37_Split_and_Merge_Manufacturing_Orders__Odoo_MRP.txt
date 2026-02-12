@@ -1,0 +1,135 @@
+Video: Split and Merge Manufacturing Orders | Odoo MRP
+Video ID: c5cFwTaD2I8
+URL: https://www.youtube.com/watch?v=c5cFwTaD2I8
+Playlist Index: 37
+================================================================================
+
+what's up o doers and welcome back today
+we're talking about the split and merge
+functions in odo's manufacturing app the
+split function allows me to split a
+single emmo into multiple OS for smaller
+quantities on the other hand the merge
+function allows me to merge multiple OS
+of the same product into a single MMO so
+let's jump into the Odo database to see
+how this works all right here we are on
+the manufacturing app first let's focus
+on splitting a single emmo into multiple
+smaller Emos to do so I'm going to start
+by creating a new emmo which I'll do by
+clicking on operations then
+manufacturing orders and new then in the
+product field I'm going to select our
+table product and we're going to create
+a quantity of 12 and enter 12 in the
+quantity
+field then all we have to do is Click
+confirm and now let's say we've decided
+that we want to produce these 12 tables
+using more than just one Mo to split the
+current emmo I'm going to start by
+clicking the gear icon at the top of the
+screen and then selecting the split
+option here I can decide how many
+smaller MOS the Maino should be split
+into along with the quantity of the
+product produced in eacho in the split
+number field I'll enter how many os the
+main emo should be split into by default
+a quantity of two is entered but let's
+change this to a quantity of three
+instead great after doing so a line
+appears for each manufacturing order
+that will be created showing the
+scheduled date the employee responsible
+and the quantity to produce each of
+these fields are automatically set but
+we can change them if we need to so for
+the first line Theo is scheduled to be
+carried out today by me to produce a
+quantity of four
+units that looks good so we're going to
+leave that as is however for the second
+line the first two Fields look good but
+I only want to manufacture a quantity of
+two for thiso so in the quantity to
+produce field we're going to change this
+from 4 to
+two once I do a warning appears telling
+us the total in the quantity to produce
+column must match the number displayed
+in the quantity to produced field
+displayed at the top of the popup window
+this ensures we don't overlook any
+quantities while splitting orders due to
+miscalculations to fix that we'll add
+two units to the third line and change
+this from four to
+six all right for the final line I want
+to change change the date of when Theo
+is scheduled since I won't have time to
+complete it today I can do so by double
+clicking on the schedule datee which
+will open the calendar popover and from
+here I'm just going to select tomorrow's
+date and click
+apply now I won't be at work tomorrow so
+I'm going to change the responsible
+person by clicking on the field and a
+drop down will appear and here I'm going
+to select
+Jose all right all this looks good so
+let's go ahead and click the split
+button at the bottom of the window to
+split this
+Mo once I do we're automatically taken
+to the first page of the three MOS I can
+tell this is the first emmo reference
+number at the top of the page is because
+we have the old emmo number with a 001
+following if I want to see all the split
+Emos off the old emmo I can click on the
+back order smart button and we're taken
+to a page that displays all three each
+with a three-digit tag added to the end
+of the reference numbers to help tell
+them apart
+all right now that you've seen how to
+split Emos let's take a look how to
+merge two or more Emos together I can do
+this from the back orders page but the
+most common way to do this is by
+navigating back to operations and then
+manufacturing
+orders now I can merge as many Emos as I
+want but they all have to be for the
+same product for example I can't merge
+an emmo for a table with another emo for
+a chair so let's say I want to merge two
+of the Emos I just split to do so I'll
+tick the check boxes for the 001 and 002
+MOS then I'll click actions at the top
+of the
+page and then here all I have to do is
+Click merge from the drop down
+menu once I do I'm automatically taken
+to the page for the merged emmo this
+emmo is given the first available
+reference number the schedule date for
+the merged emmo is automatically set to
+the earliest date on which Theo can be
+processed regardless of the scheduled
+dates of Theo that were merged to create
+it now if we navigate back to operations
+and then back to manufacturing
+orders we can see the emmo listed on the
+page with the reference numbers of the
+OS merged to create it listed in the
+source column and that OD doers brings
+us to the end of another great tutorial
+you now know how to split a single MMO
+into multiple smaller OS and how to
+merge a multiple MMO into a single MMO
+thanks for sticking around and I'll see
+you next time

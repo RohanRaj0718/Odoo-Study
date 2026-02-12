@@ -1,0 +1,204 @@
+Video: Manufacture in 2 or 3 Steps | Odoo MRP
+Video ID: qqNEEBNtArA
+URL: https://www.youtube.com/watch?v=qqNEEBNtArA
+Playlist Index: 51
+================================================================================
+
+What's up o doers and welcome back.
+Previously we covered how to manufacture
+products with onestep manufacturing
+process. But today we're going to take
+it a step further or two and explore how
+to manufacture products using two and
+three-step processes. And that's a must
+for companies with larger manufacturing
+and inventory operations. Tracking not
+only what gets made, but also where
+components come from and where finished
+products are stored helps keep
+everything run smoothly. In two-step
+manufacturing, ODU creates a transfer to
+move components from storage to the
+production area. However, once
+manufacturing is complete, finished
+products don't get an automatic transfer
+to storage. On the other hand, in
+three-step manufacturing, ODO adds
+another transfer. First moving
+components to production where we do the
+building, then moving finished products
+to storage. While these workflow change
+how materials and products move, the
+actual manufacturing process remains the
+same as in the one-step manufacturing.
+So, we won't dive into that again here,
+but if you need a refresher, check out
+our previous video linked down below.
+All right, let's get started and see how
+these workflows come to life in
+Odo. All right, to start, let's define
+how the products move by opening up our
+inventory application. And from here,
+we're going to select configuration
+followed by settings. On our settings
+page, we're going to scroll all the way
+down to our warehouse section and make
+sure that we have multi-step routes
+ticked and enabled, just like so. So, if
+you haven't done so in your database,
+make sure to tick that and click save
+before moving on. Now, there's two ways
+we can configure our warehouse routes.
+First, we can click back into
+configuration and click this warehouses
+option right here. Or we can click this
+set warehouse routes link directly under
+the multi-step routes option.
+When we click that link, it takes us to
+a page that shows us all of our current
+warehouses in this database. From here,
+you can select any warehouse that you
+want to configure. And in this case,
+it's going to be our main
+warehouse. So, this page defines the
+default paths that products move through
+in your warehouse, including when you
+have to manufacture something. For more
+about this page, check out our basic
+warehouse setup video. But on the
+warehouses page, we're going to find the
+manufacturer field, and we're going to
+enable one of these three options. For
+this video, I'm going to select pick
+components, manufacture, then store
+products, aka our three-step
+manufacturing
+process. So, even though we're selecting
+the three-step option, we'll still see
+the entire two-step process before
+moving on to that third step. That way,
+we get the best of both worlds. Now, if
+you need to make sure to enable the
+options and then click save before
+moving
+on. So, for this video, we'll be using
+our wooden bird feeder product as an
+example. So, let's jump into our
+manufacturing application, head to
+products, and select products once
+again. And here, we could check the
+stock counts for our wooden bird feeder.
+Looks like we have four. And we can also
+see the components used to manufacture
+it. So, when we click into the wooden
+bird feeder product, we can see that we
+have four on hand. And we also have a
+smart button for our bill of materials.
+And when we click into this bill of
+materials, select our wooden bird feeder
+bomb. Here we can see all the components
+used to make the wooden bird
+feeder. Now we're going to click
+products and products once again to see
+our quantity on hand for each component.
+And here I can see that I have 184
+pieces of cedar wood, 46 units of
+hanging wire, and another 46 units for
+our hook.
+So keep these numbers in mind because
+we'll be checking on them later. All
+right, now it's time for the fun part.
+We're going to select operations and
+then manufacturing orders. And then to
+create a new MMO, we're just going to
+click new in the upper lefthand corner.
+Now for the product field, we're just
+going to select our wooden bird
+feeder. And we're also going to leave
+the quantity set to one. And if we hit
+confirm, we can go ahead and see that
+our to consume column right here will
+require four pieces of cedar wood, one
+piece of our hanging wire, and one hook
+as
+well. So now once everything's
+confirmed, I can see the component
+status right here shows available, but
+it says available in orange. The color
+is orange because the components still
+need to be transferred to our production
+location. ODO reminds us to grab our
+components in another way in our work
+orders tab right here. And here for
+assembly line one in the status column,
+it shows that we are waiting for
+components. Okay, so since everyone's
+telling us to, let's go ahead and grab
+those components. I'm going to click
+this transfer smart button here at the
+top. And doing so takes us to a pick
+operation for my components. Here we can
+see our source location is our warehouse
+stock and the products will be moved to
+our destination location which is our
+pre-production area. Now remember odoers
+if you don't find your components when
+you know you have them in stock double
+check whether or not they're at your
+pre-production
+location. Now once the components are
+moved over all we have to do is click
+validate and then I'll click this
+manufacturing smart button to get back
+to the
+MO. Very cool. Now that we have
+everything we need, we can see that the
+component status is now available but in
+green. So, let's go ahead and click into
+the shop floor button right here and
+choose assembly line one for our work
+center. And you might not see anything
+at first, but don't panic. That just
+means you're not logged in. And to log
+in, all you have to do is click add
+operator and add yourself right there.
+So, I'll build the bird feeder, then
+click register product, and then click
+validate. And since I'm done with this
+operation, I'm just going to click mark
+as
+done. Amazing. Now, we need to paint the
+bird feeder. And we can find that here
+in our paint center. And once that's all
+done, I'm just click mark as done and
+then close
+production. So, if we were using
+two-step manufacturing on the settings
+page for our warehouse, the
+manufacturing process would be complete
+at this point. However, since we're
+using that three-step manufacturing
+process, there's still one more thing we
+need to do. So, let's click into the
+MOS's breadcrumb here at the top. And we
+have a second transfer that's been added
+to the transfer smart button. So, let's
+click
+it. This time, we can see we have to
+complete the SFP or store finished
+product transfer to move our finished
+bird feeder into inventory. So, to do
+so, I'm going to click this SFP
+transfer.
+And here we can see that the current
+status is
+ready. Then I'll click validate here in
+the upper leftand corner at the top of
+the page. And voila, we've manufactured
+one bird feeder and stored it. And
+that's a wrap odoers. You now know how
+to manufacture products using two and
+three-step workflows. Keep exploring ODO
+to streamline your operations and stay
+tuned for more tips and tutorials. Until
+then, I'll see you in the next video.

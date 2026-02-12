@@ -1,0 +1,189 @@
+Video: Allocation Reports | Odoo MRP
+Video ID: RWY3nh16T_E
+URL: https://www.youtube.com/watch?v=RWY3nh16T_E
+Playlist Index: 25
+================================================================================
+
+welcome back my
+alligators wait a second that's supposed
+to say allocators I need to talk with my
+script writers about that o dupsy
+anyways as you may have guessed we're
+talking about allocation today you see
+when products or components are
+manufactured we sometimes want to use
+them to prioritize certain sales orders
+or manufacturing orders for example
+maybe we have a super super important
+customer who has just ordered one of our
+cabinets we get a lot of cabinet orders
+but this customer is so important that
+we want to send them the very next
+cabinet that we manufacture well by
+using the allocation reports feature
+inside of the Odus manufacturing app we
+can quickly reserve a cabinet from our
+next Mo to make sure it gets sent to the
+VIP customer and isn't used for a
+different order so enough chitchat let's
+jump into our database and see how that
+works all right the first thing that we
+need to do is make sure that allocation
+reports are enabled so to do so I need
+to head into the manufacturing
+application select configuration and
+settings so underneath the operations
+header over here you want to scroll down
+to the very bottom and the check box
+next to allocation report for
+manufacturing orders should be checked
+off I've already done it on my database
+so make sure you do the same in yours
+and remember what am I going to say here
+hit save always save if you haven't done
+so already now moving forward let's say
+that I've just gotten a call from Jim
+Joo Kelly you may remember him from
+previous videos that's because he orders
+a lot of stuff from us that makes him a
+true VIP a very important purchaser as
+such we want to make sure that we
+prioritize any orders he places with us
+so Jim Joe wants to order one of our
+cabinets to get started on his order
+we're going to head out of here and head
+over to the sales application select new
+RFQ request for quotation for my non
+acronym lovers so for a customer select
+Jim Joe Kelly got to make sure he
+selected right there and in our order
+lines I'm going to select a new cabinet
+right there
+perfect and then once we're done with
+that let's confirm this so that we turn
+it into a sales order so with the sales
+order confirmed I'm going to click on
+the delivery smart button up at the top
+over here so inside of the product
+availability wow actually the product
+availability itself right now it says
+it's not available which means we don't
+have any cabinets available to fulfill
+this order so since we manufacture our
+cabinets we're going to need to make one
+to send the Jim Joe however we need to
+make sure that the first cabinet we make
+goes straight to his order and not to
+any other this is where an allocation
+report comes into play to start let's
+head over to the manufacturing app right
+there and then what do we want to select
+well we need to create create anmo for
+10 cabinets which allows us to fulfill
+Jim Joe's order and we have to have some
+cabinets left over so to do that I'm
+going to select operations manufacturing
+orders and you guessed it now you want
+to select new perfect so from here I'm
+going to add the cabinet up at the top
+for the product and the C the quantity
+right there for the cabinets is 10 as I
+said before now I'm going to confirm
+this with a big old purple confirm
+button so once I confirm the emmo an
+allocation smart button appears in the
+top Center and in this case the smart
+button appears immediately because we
+have SOS oros that require one or more
+cabinets and there is not enough stock
+available to fulfill those orders if
+there were enough cabinets available to
+fulfill any existing SOS the allocation
+smart button would still appear but only
+after we complete the ammo by clicking
+produce all which is over here on the
+left and as you may have guessed if
+there are no SOS oros that require the
+product being manufactured the
+allocation smart button does not appear
+at all anyways in this case I'm just
+going to click on the produce all at the
+top of the ammo just to complete the
+manufacturing of our cabinets and make
+them available for order f
+filment now let's click the allocation
+smart button which in this case opens up
+the MRP reception report for this MMO
+the report lists every open order for
+which one or more cabinets are required
+this includes our order of one cabinet
+for as you guessed it Jim Joe Kelly
+right there at the bottom as well as
+orders for Abigail Peterson not a VIP
+Jacob Johnson also not a VIP you may
+notice that all of the orders listed
+here are sales orders ERS this is
+because our cabinet is a finished
+product one that is sold to customers if
+we were manufacturing a component like
+the wood used to make our cabinets for
+example this page would show any
+manufacturing orders that require that
+component very very cool now like all of
+our customers we love Abigail and Jacob
+and appreciate that they've decided to
+come to us to fulfill their cabinet
+needs however we don't love them quite
+as much as we love Jim Joe he is quite a
+big spender after all so we need to make
+sure that one of the cabinets in this
+emo was allocated for Jim Joe's order
+specifically we wouldn't want to receive
+an order for 10 cabinets and have all of
+the ones we manufacturing get used for
+that order instead of Jim Joe's am I
+right right so what I'm going to do is
+click on the in our case assign button
+to Jim Joe
+Kelly and doing so reserves one unit of
+the cabinet this means it will appear as
+unavailable for other orders even though
+we have it in stock I'm sure you notice
+that there's also an assign all Button
+as you saw over here if we click this it
+would assign cabinets to every quantity
+required for the order this doesn't
+apply to Jim Joe's order since he only
+ordered one cabinet however it's useful
+for orders like in our case Jacobs where
+his order requires one quantity of three
+units and another quantity of one unit
+as well all right after clicking assign
+on Jim Joe's order the button changes to
+in our case unassign if we wanted to if
+I click this it would unassign the
+cabinet from his order and make it
+available for others addition Al we also
+have the option to print a label to the
+extreme right of the order and that can
+now be selected as well clicking this
+would generate and download a PDF
+document with a label that I could print
+out to attach to the cabinet to signify
+it has been reserved for this specific
+order now that we've assigned a cabinet
+to jimjo Let's return out of this and
+into his delivery order by clicking on
+the wh and our case out button over here
+next to his sales
+order so here we can actually see
+product availability now is green this
+means the cabinet is available to be
+shipped out once we ship it all we need
+to do is click on the validate button up
+here at the top and we're all
+done and that's all I've got for you
+today o doers you now know how to use
+allocation reports to reserve products
+for specific orders thanks for tuning in
+and I'm going to see you next time

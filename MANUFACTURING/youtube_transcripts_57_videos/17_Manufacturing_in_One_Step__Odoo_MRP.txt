@@ -1,0 +1,136 @@
+Video: Manufacturing in One Step | Odoo MRP
+Video ID: p5szofPcN8I
+URL: https://www.youtube.com/watch?v=p5szofPcN8I
+Playlist Index: 17
+================================================================================
+
+Hello, Odooers, and welcome back! Today, 
+we’re taking a look at the Manufacturing  
+app to see how one-step manufacturing works.
+When using one-step manufacturing to produce  
+a product, Odoo creates a manufacturing order, 
+but does not create a transfer order for the  
+movement of components to the production location, 
+nor does it create one to move finished products  
+to the location where they are stored.
+Product counts still update, based on the  
+amounts used or produced, but there’s no 
+need to worry about validating transfers. 
+This makes it a great option for companies with 
+smaller inventory and manufacturing operations. 
+Don’t worry, though. If you want to create 
+transfer orders for those stock movements, you  
+can always enable two or three-step manufacturing, 
+which we’ll cover in the next tutorial. 
+But for now, let’s dive into our database to 
+see how Manufacturing in One Step works in Odoo! 
+First off, I should mention that Odoo 
+enables one-step manufacturing by default. 
+However, I want to quickly show you where 
+that setting is enabled, just in case  
+it’s been changed for some reason.
+So, let’s open the Inventory app,  
+and let's click on the Configuration 
+subheading, and select Warehouses. 
+Then, I’ll select ‘Main Warehouse’ 
+to open its settings page. 
+In the “Manufacture” field on the 
+bottom right, I can select the number of  
+manufacturing steps used for the warehouse.
+As you can see, “Manufacture (1 step)”  
+has already been enabled. Great!
+Now, we do have one more setting  
+we need to worry about, which is Work Orders.
+Work orders allow us to break our manufacturing  
+orders down into smaller operations, which 
+can be carried out at different work centers. 
+All you need to do for that is to jump into the 
+Manufacturing app, so let’s jump into here, click  
+on the Configuration subheading and Settings, 
+Then, I’ll enable the checkbox next to ‘Work  
+Orders’ here at the top, which you can see I’ve 
+already done. And don’t forget to save it too! 
+Awesome!
+Ok, now we’re ready to start manufacturing  
+some products! So let’s select the Operations 
+subheading and click on Manufacturing Orders. 
+As you can see here, I've already created 2 
+MOs for our “Coat Rack” product in advance,  
+so we can skip right to the fun part.
+Now, there are 2 ways to process an  
+MO in Odoo: from the MO itself, 
+and from the Shop Floor module. 
+Let’s use the first manufacturing order as an 
+example of processing an order on the MO itself. 
+On the MO, we can see the components 
+required to manufacture the Coat  
+Rack under the Components tab.
+By clicking on the Work Orders tab,  
+we can see the work order operations that need 
+to be performed to manufacture the product. 
+In this case, we have two work orders: 
+“Drill Pole” and “Insert Dowels”, which  
+are carried out at two different work centers 
+as we can see here in the Work Center column. 
+In the Status column, we can see that the first 
+work order is “Ready”, while the second work order  
+is “Waiting for another WO,” since we need 
+to complete the Drill Pole work order first. 
+To process a work order, all I need to 
+do is click “Start” to begin work at  
+the work center, and then “Done” when 
+I’m finished. Pretty simple, right? 
+Once I do that, the work order’s status 
+changed to “Finished”, and the next work  
+order’s status changed to “Ready”.
+So, I’ll just complete the second  
+work order the same way that I completed the 
+first. So I'll click "Start" and "Done". Great! 
+Now that all work orders have been completed, 
+we can close the MO by clicking the “Produce  
+All” button at the top of the page.
+Awesome, we’ve just produced one  
+unit of our Coat Rack product!
+Now, I want to show you how to  
+complete the same workflow using the Shop 
+Floor module. So, let’s jump over there to  
+see how that’s done. So I’m going to go back 
+to the dashboard and click on Shop Floor. 
+The Shop Floor module is great because it 
+allows your Manufacturing employees to see  
+an overview of every MO, as well as the 
+work orders assigned to each work center. 
+For a full overview of the module, make sure 
+to check out the Shop Floor overview video,  
+which I’ll link down below.
+Okay, right now, we just have  
+one MO for our second Coat Rack.
+The MO lists our first work order,  
+“Drill Pole”, and I can see that the work center 
+where it’s scheduled to be carried out by clicking  
+the “Drill Station 1” button.
+After completing the order,  
+I just need to click “Mark as Done”, 
+which causes the work order to fade away. 
+Once it disappears completely, the next 
+work order appears at its assigned work  
+center. We can go there by clicking on 
+the Assembly Station 1 here at the top. 
+Let’s go ahead and “Mark as Done” as well. 
+Since this is the final work order for the MO, a  
+“Close Production” button appears.
+This button has the same effect as  
+the “Produce All” on the MO itself. 
+I’ll click it now to close the MO. 
+And BOOM! That’s another Coat Rack 
+ready to be sent to a lucky customer! 
+Once again, we find ourselves at the 
+end of another incredible Odoo tutorial. 
+Today, we learned about 
+the one-step manufacturing,  
+and walked through two different ways to 
+complete a manufacturing order using one step. 
+Join us next time, and we’ll get you up-to-speed 
+on manufacturing products using two and three  
+step manufacturing.
+See ya there, Odooers!

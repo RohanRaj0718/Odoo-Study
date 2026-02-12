@@ -1,0 +1,169 @@
+Video: Subcontracting: Resupply Vendors | Odoo MRP
+Video ID: JW53OkdLPeg
+URL: https://www.youtube.com/watch?v=JW53OkdLPeg
+Playlist Index: 5
+================================================================================
+
+[Music]
+foreign
+we'll be talking about how
+subcontracting works when using the
+resupply vendors workflow not stealthy
+would we partner with subcontractors to
+help us complete tasks that can't be
+performed internally now this allows us
+to focus on our key operations while the
+subcontractors perform those other
+activities Now using this workflow our
+company can diversify our products
+without hiring more people or investing
+in expensive equipment we're running low
+on money now moreover our partners can
+provide us with expertise that we can't
+always Source from our staff now there
+are two primary subcontracting methods
+in odoo resupplying and Drop Shipping
+now this video will cover resupplying
+where we send raw materials to our
+subcontractors so that they can
+manufacture the finished product and
+send it back to us this is advantageous
+because it allows us to keep the
+finished product in our inventory
+without having to make the product
+ourselves so enough Chit Chat let's see
+how this works in odoo
+I heard of doers so first we're going to
+navigate over to our manufacturing
+application configuration and settings
+make sure the little check box next to
+over here on subcontracting is checked
+off all right now let's configure our
+desk lamp and its components which is a
+base bulb and shade Each of which we've
+already created to save you time so from
+the products menu select products and oh
+no would you look at that we actually
+don't have a lamp in stock or on hand
+yet however we have all three of the
+components in stock that are required to
+manufacture it so I'm going to select
+the desk lamp and I want to show you
+something real quick I'll do this now
+when we select the inventory tab you'll
+basically see that since we'll be
+purchasing this desk lamp from Super Sub
+contractor after the manufacture it I
+need to make sure that the Buy Route
+over here under operations is selected
+now let's create a bomb for that lamp
+and just so I can show you how to
+configure this so we're going to select
+products bombs new one
+lamp
+and in our case we want to select for
+the bomb type subcontracting and when we
+do so ODU tells us who is subcontracting
+this now I'd like to make make a very
+quick note actually about that when we
+selected the subcontracting it's so that
+Odun knows we won't be manufacturing
+this product ourselves you can basically
+designate as many as you like and in
+this case we've just chosen the one now
+moving on we'll add our stuff in our
+case what do we have for this lamp we
+have a base
+Bob
+and finally a shade
+once that we are all set we save this
+and we also want to make sure
+additionally that each of these
+components is set up to basically be
+resupply subcontractor on order and
+that's the route that is needed to be
+selected under the inventory Tab and
+I'll show you what that means go into
+inventory make sure that this is checked
+off or else it won't work make sure you
+check it for each of the components that
+belong to a bomb for that now this tells
+Odo that we need to supply super
+subcontractor with each of the lamps
+components every time we order a lamp
+from them all right that takes care of
+config so let's move on to having super
+subcontractor actually manufacture the
+desk lamp so we're going to go out of
+here go into purchase
+create a new RFQ in our case we need a
+vendor who did we just say we're using
+super subcontractor they've given us a
+great deal on a lamp and it is beautiful
+once that we're done we save always save
+confirm this out and boom we're done all
+right now after confirming it I need to
+deliver the components to our partner I
+can do so through the resupply smart
+button that we have up here or I can
+also do so from the inventory app so let
+me show you that I'm going to go into
+inventory and right here we can see it
+immediately now from the inventory
+overview page I can see that the
+resupply subcontractor has one to
+process we click into that
+and boom there we have it now as you'll
+notice on this document line there's a
+few bits of information that it tells us
+it shows that the delivery address is
+basically set to
+super subcontractor's address and that
+the source from is our main Warehouse
+over here now remember we can also print
+the delivery slip for this order to
+review the full source and destination
+addresses by selecting the print icon
+after you select the line and print now
+that document will give you all the
+information pertaining to the delivery
+and we can save it for our records as
+well
+now let's head into that actually oops
+go out of there
+save sorry about that oh doers little
+dupsy will validate this and apply boom
+we're done now from the operations tab I
+can see that all three components were
+reserved already and they're ready to be
+sent now once that this has been
+dispatched I can actually finish this
+off so we'll go back over here where 2o
+doers in our case
+I want to set the done quantities to
+this to confirm that the components have
+already been set so let's suppose that
+they finish the desk lamp and they've
+shipped it back to us by returning again
+to the inventory overview you can see we
+have one receipt to process we select it
+there it is outdoors now on this one
+we'll go in there and validate it apply
+and by Magic we've received the finished
+product now when we take a look at our
+products up here over products you'll
+see that we now have a lamp in stock and
+it's manufactured by removing one unit
+from each of our actual products over
+here as well and our components have
+changed ah beautiful it's ready for a
+customer that's it for this video just
+like that we've used a subcontractor to
+handle production of a desk lamp
+eliminating the need to hire additional
+workers or purchase expensive stuff be
+sure to check out our other
+subcontracting tutorials to learn about
+subcontracting using Drop Shipping
+thanks for watching see you in the next
+one

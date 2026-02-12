@@ -1,0 +1,271 @@
+Video: Costing: FIFO | Odoo MRP
+Video ID: WUOz-0Tk2rM
+URL: https://www.youtube.com/watch?v=WUOz-0Tk2rM
+Playlist Index: 11
+================================================================================
+
+foreign
+welcome back to the final boss of the
+costing series the first in first style
+casting method AKA fifo
+today we'll be jumping between a Womble
+combo of apps so get ready to continue
+growing your knowledge fifo
+manufacturing is like waiting in line in
+a workshop products are manufactured and
+stored in a specific order the stuff
+that gets made first are sent out for
+sale first and then the next items in
+line are basically delivered next now
+here's the interesting part so the fifo
+costing method pools the cost of the
+oldest manufactured item in stock and
+uses it to determine the product cost so
+right now the cost to make a table is a
+hundred and ten dollars but once that
+product is removed from the stock the
+next oldest manufactured product
+determines the cost now fifo is
+straightforward to gears and has been
+useful to update fluctuating product
+costs in this video you'll see how fifo
+works when we produce two tables
+constructed with the same components but
+bought at different prices so enough
+Chit Chat let's get started right now
+first to check the value and the
+quantity of the components I have in
+stock let's go to the inventory
+valuation report now firstly you're
+going to want to have developer mode on
+otherwise you won't see it I'm going to
+quickly show you where you would find
+that we're going to go into settings
+down at the bottom under developer tools
+you don't see this it might be related
+to access rights for more information on
+that please check out the documentation
+otherwise let's make our way over to
+inventory reporting valuation and there
+we have it all right let me show you
+basically a couple tips now first we
+want to group this by the product and
+that'll make it a whole lot nicer and
+easier to see and then another thing
+that I could show you is a quick tip
+while we're here if you click this
+favorites filter right there save the
+current search you could change the name
+if you'd like we're going to use that by
+default and hit save perfect now
+whenever we open this up it'll default
+us to the nicer view right there which
+makes it a lot easier now we're going to
+look for the fifo components we have our
+table which currently doesn't have a
+value or anything moved our table legs
+and our tabletop you see the nested
+table legs and table tops where the with
+their actual respective values over here
+now right now the components we have in
+stock are four table legs for a total of
+twenty dollars and one tabletop for ten
+dollars these are to manufacture my
+first table which we'll do now now
+before I go remember those two values
+twenty dollars four legs ten dollars one
+table top as we go through the flow Oda
+will update my components prices over
+here in the terms of the valuation as I
+process manufacturing orders which we
+will come back to later at some point so
+remember that all right I'll begin
+making my first table so we're going to
+go into the manufacturing app operations
+and Manufacturing orders and now to
+prepare to build one we can select new
+up here and what product did we want we
+want that fifo table
+all right everything here initially
+looks pretty good and the table is
+already added so we can now click
+confirm beautiful
+we can see that this manufacturing order
+will use four table legs and one table
+top eventually in the two consume field
+over here now we'll click on the work
+orders Tab and we're going to type in
+right now that I spent 60 Minutes
+working on this very hard worker we're
+gonna log that time and we can easily
+adjust the time spent on a manufacturing
+order right here all right now that
+we're done with everything we're gonna
+hit Marcus done and we're gonna apply
+this and we're gonna finish everything
+manufacturing now if you want to review
+the cost analysis of the mo you have to
+do is click that smart button I've been
+showing you give that a second to load
+and it'll tell us everything so right
+now we can see that the table costs
+eighty dollars total to make because it
+used thirty dollars under the cost of
+components plus fifty dollars of
+operational cost for the assembly line
+that we have right here
+and we'll show you what that means now
+all right for the next table I'll use
+more expensive components so here's a
+Jose Ignacio quick tip to help save time
+we're going to go back to the ammo using
+the breadcrumbs which today is Wonder
+Bread because all of you are wonderful
+we're gonna hit duplicate boom we've got
+our draft set up and we're going to make
+the same table and now we're gonna
+finally confirm it with the new ammo
+confirmed we see that we need to order
+more components oh no it's red and not
+available well let's pause this go out
+of here and we need to restock so in our
+case we're going to go into inventory
+and what do we need to do oh doers we
+need to replenish we're going to go into
+replenishment we can see that our
+components appear in the replenishment
+report and it's that convenient no doers
+let's select the boxes next to the stuff
+that we need and then what do we do well
+we just gotta hit oh doers
+or doers that's a terrible joke with the
+PO created let's finish ordering
+components inside of the purchase app so
+we're going to go back over here into
+purchase we're gonna find the one that
+we need for today which happens to be
+right there there's our replenishment
+report now let's say that due to a
+shortage of lumber we had to buy from
+the greedy Giant and he doubled the
+price of our components so we're going
+to change the unit price of each of
+these These are now ten dollars
+these are twenty dollars
+oh no that is very sad and now I want to
+cry nothing we could do about that so
+we'll go ahead and confirm the order
+receive our products
+and now we're finally done with all our
+parts over here and also we gotta
+validate this before I forget oh doers
+and apply with all our parts let's give
+back to our manufacturing so let's go
+back to our table so we're going to go
+inside of the manufacturing app
+operations manufacturing orders the most
+recent one all right there we are now
+you'll see that the component status
+field has been updated and everything is
+there so let's go back over here and lie
+about working a full hour right now and
+we're basically done we're gonna Mark is
+done and again hit apply
+all right
+we're almost done I promise you let's
+check the cost analysis report again now
+this time and you'll see that it's a
+more expensive table now it's a hundred
+and ten dollars due to the more
+expensive components that we use nearly
+doubling ugh can't do anything about it
+all right now we'll see though however
+if we go back over here and we check all
+of this what ended up happening though
+well we can see that the cost if we
+click on the actual table itself
+is still eighty dollars per unit now why
+is this well when we check our overview
+report for the table which you can do
+using the bill of material smart button
+up here and checking it
+inside of here and now finally I almost
+forget we actually want to see this
+overview report right there we can
+actually see that even though the bomb
+cost has been updated to a hundred and
+ten dollars the actual product cost
+follows the cost of the earliest
+manufactured product that we have in
+stock which is that first table at
+eighty dollars
+and isn't that interesting
+but let's see what happens when we sell
+off the first product we manufacture the
+eighty dollar table our customer Mark is
+super excited to get one of our awesome
+tables because they're awesome so we'll
+just navigate over to the sales app
+because we'd like to sell something and
+we're gonna make a new quotation and who
+did I just say is buying this well I
+said Mark is buying it so there's Mark
+all right we're gonna sell them one of
+our fifo tables so we'll find that out
+all right everything looks good here so
+once that we're done we're going to
+confirm this
+and finally when the delivery order is
+processed which in our case we click on
+the delivery
+validate immediate transfer and apply
+I want to show you something the 80
+table will be removed from stock which
+we can see in the inventory valuation
+report which if we go out of here and go
+back into inventory reporting valuation
+and finally here we go to our fifo
+section you'll notice immediately
+remember the valuations for the table
+legs and the tabletop from before since
+we sold off the last table to Mark and
+purchase the more expensive components
+those values have actually changed
+accordingly notice instead of what we
+had before now we actually have it set
+to
+forty dollars because of the changes for
+the table legs and finally
+twenty dollars for the actual top now
+and when we click on the actual fifo
+table drop down you noticed immediately
+the first table was taken out at the
+eighty dollars in the 110 one is right
+below it as well the table delivered to
+Mark is the first eighty dollar one
+we're actually going to click on that
+row just so that I could take you over
+here to the order and so that I could
+show you something immediately
+and basically if we click on that little
+product form over here
+what does that cost say now doers and
+here we arrive on the table's product
+form which tells us the product cost is
+automatically updated to the cost of the
+next earliest manufactured product that
+we have on hand which happens to be a
+hundred and ten dollars now instead of
+the eighty dollars how cool
+all right so that's how fifo works so
+doers thanks for sticking through to the
+end of this costing series hopefully you
+found a costing method that works for
+you and if you have any questions be
+sure to drop them in the comments send
+me an email smash that like I don't know
+everything for more manufacturing videos
+and everything else odoo be sure to
+check out the description below and as
+always remember I'll see you next time
+foreign

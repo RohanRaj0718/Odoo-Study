@@ -1,0 +1,297 @@
+Video: Work Center Controls \u0026 Parameters | Odoo MRP
+Video ID: uieYaraELOQ
+URL: https://www.youtube.com/watch?v=uieYaraELOQ
+Playlist Index: 3
+================================================================================
+
+[Music]
+foreign
+hello doers my name is Jose Ignacio and
+I'm here to greet you my hard-working
+manufacturers now let's talk more about
+work centers I can't shut up about them
+now the planned production time for a
+work order is based on the duration that
+we assigned to that particular operation
+however
+when we take other factors like
+efficiency and capacity into account
+calculating how long a work center
+remains in use becomes a tad more
+complicated we don't like math here now
+luckily Oda does the math and the
+planning for us now when we configure
+values for efficiency and capacity along
+with setup and cleanup times odoo
+factors these numbers into the work
+center schedule now being able to assign
+custom values to each work center ahead
+of time gives us a more realistic
+picture of what our short-term
+manufacturing plan should look like now
+I'm getting excited again hero doers so
+let's hop into our database and see how
+customizing workcenter parameters can
+affect your planning
+all right before we get to our work
+centers let's examine the product that
+we're going to be using which is the
+rusty crate not a brand new crate rustic
+so let's go over to our manufacturing
+app products going back in here and
+there we are Rusty crate all right now
+let's take a look at our bill of
+materials or bomb for my acronym lovers
+so let's look over here into our
+operations tab as well now we see that
+this product requires one operation in
+the assembly line one work center wow
+that is a mouthful and it's expected to
+take 60 minutes or an hour using basic
+conversion now we know about this
+product's basic setup and everything
+just using these quick little checks but
+let's take a closer look at assembly
+line one work sender so let's see how it
+gets manufactured so we're gonna go to
+configuration work centers assembly line
+one all right now here we can custom the
+work Center's production specifications
+like time efficiency capacity as well as
+the setup and the cleanup times as well
+but let's go over each of these features
+one by one I don't want you to miss
+anything so put your thinking ears on
+right now all right so first let's see
+how time efficiency affects our
+production planning now right now this
+value is set to what oh doers it is
+actually set to a hundred percent
+which means we expect the work orders to
+take just as long as the operation says
+it will a hundred percent efficiency
+means that now for example since we set
+the rustic rustic crate I'm always
+thinking about chairs small little
+doopsy The Rustic crates assembly
+operation to 60 minutes and the work
+center has a Time efficiency of 100 what
+does that mean that means it should take
+exactly 60 Minutes as well now
+however what happens if we change that
+though now that I'm thinking about that
+if I set it to 200 percent then clearly
+it should take 30 minutes by basic math
+simple enough right now moving on beyond
+that the capacity field well what does
+this represent now this represents how
+many products can be produced
+simultaneously for this particular work
+center now if we think about that how
+does capacity affect the work center
+timing well if my work Center capacity
+is one
+and I plan a manufacturing order of two
+of the crates Oda will reserve the work
+center for 120 Minutes essentially it
+knows that I need double that time and
+that is basically because the work
+center can only create one crate at a
+time and each one of them takes 60
+minutes sorry if I'm going over this
+basic math a little bit but it's good to
+know however if I increase the work
+Center capacity to two the same
+manufacturing order for the two crates
+should technically take only one hour
+since we would be able to produce both
+crates at the same time at the work
+center and in programming we call that
+parallel programming or parallel
+processing
+now
+yeah
+uh we're just doing this today now over
+here we have oee or the overall
+equipment Effectiveness and this is an
+important concept that I'll cover in
+another video and I would love it if you
+watch that video so that you know that
+concept because it is actually a little
+bit of a bigger topic that I can't just
+cover really quickly so be sure to check
+that out so for now we're going to leave
+this at a mysterious zero that you don't
+know why yet
+now if you process a lot of different
+products at the same work center the
+work center might accommodate different
+capacities for different products for
+example your work center might be able
+to handle five wood panels at a time
+since they're easy to produce now to
+configure these specific capacities all
+we have to do is go to the specific
+capacities Tab and then you click align
+and then well what did we just say we
+need a wood panel
+and five
+now odoo knows the disassembly line is
+able to produce and handle five wood
+panels at a time and isn't that Dandy
+now if I wanted to I can also configure
+specific setup and cleanup times for
+product by accessing again the
+additional options over here and as you
+can see to the right of the capacity
+column
+there we have everything but we don't
+need any cleanup and setup at this
+particular
+you know type of assembly of wood panels
+they don't need that so we don't have to
+fill them in all right now going back to
+the general information tab what do we
+have outdoers well we also have setup
+and cleanup times again under operations
+now these are useful to configure
+especially if you have rigorous safety
+protocols in place now when you assign
+setup and cleanup times to a workcenter
+ode will automatically add these times
+to any work orders that need to be
+completed at the work center now lastly
+under the operations tab again we have
+one more thing and in here I can also
+require employees to log into work
+centers this is especially useful if you
+need to ensure that the right people are
+getting into the right buildings and you
+can even restrict work center access to
+a certain employees
+but we won't need any of these digital
+buildings blocks right now
+so in our case we don't need any
+sign-ins at this work center so we're
+actually going to uncheck this
+all right we're done
+finally now you know what it means to do
+all of this and you know what time it is
+outdoors it's time for us to test this
+so let me show you how we set this all
+up
+all right so first I'll create a ammo or
+manufacturing order using the default
+settings for this work center so we're
+going to go with 100 efficiency capacity
+of one no setup or cleanup times now to
+reset my work center to its default
+settings all I have to do is just
+discard my changes by clicking on this
+icon that I like to call the forget
+about it button over here now
+once that you do that you notice
+something else happens only the settings
+revert the products in our specific
+capacities tab always remain and that's
+kind of useful as a little Pro tip so
+that you don't get scared about or
+forget about it button all right now as
+well as this it's time to make our
+manufacturing order so we're going to
+manufacture two rusted crates now let's
+plan this ammo for tomorrow at 8am so we
+can easily identify it in the work
+center schedule and then once we get
+that going
+all of this looks good right now and I
+love how easy it is for everything to
+always work in Odo it makes my job very
+easy oh doers and then we confirm this
+now after we confirm the ammo there's a
+few other things that I'd like to talk
+about now the very first thing is we'll
+see that the plan button appears finally
+up here now it's a very important button
+because when we click this button
+ODU will reserve a work center for us
+just for us to manufacture our little
+thing here now if you see the scheduled
+date appears finally in the work orders
+tab now for more in-depth explanation
+about how planning Works in odoo check
+out some of our other tutorials please
+now
+let's view our plan work orders for the
+work center which we can actually do so
+by clicking on the planning menu and
+selecting Planning by work center now to
+get a closer look we'll view the weekly
+schedule in our case and as you can see
+this work order is planned from eight to
+ten since we're making two rustic crates
+and we're expecting to spend an hour
+manufacturing each one
+that's pretty much a lot of time right
+there and this is basically our base
+operation time now let's see what
+happens
+when I actually change the time here
+after I change our work center
+specifications so we're going to go into
+configuration work centers assembly line
+one now this time we'll change the
+capacity to two
+setup time to 10.
+and cleanup time of also 10. it looks
+like I'm raising the roof today now
+let's create a new ammo just to test
+this Auto doers I feel like whenever I
+change things I have to show you so
+we're going to go to manufacturing
+orders and we're going to create a new
+one now just like last time we'll
+manufacture two rustic crates and let's
+plan this for the day after tomorrow so
+that we can actually see how clearly it
+is inside of the schedule now
+once that we confirm this we're gonna
+finally hit our big old plan button just
+like before now let's take a look at the
+work Center calendar again and you're
+going to see something really cool now
+as we could see here this work order is
+planned between 8 and 9 20 a.m since we
+upped our work Center capacity to two we
+can do both of them at the same time now
+and I find that to be so cool that
+everything worked out now therefore even
+though we created an identical ammo for
+two rustic crates we only need to spend
+an hour manufacturing both of the crates
+after adjusting the work Center capacity
+now if you notice over here too ODU also
+takes our 10 minute setup and 10 minute
+cleanup times into account which is why
+we have that odd 920 because nine plus
+ten setup plus 10 cleanup you get your
+920. now I also want you to keep in mind
+in this example I didn't change the time
+efficiency if I had changed the time
+efficiency or te we would have further
+impacted the scheduled time and I'm
+going to sit up for this because we had
+a lot of setup
+there you have it Outdoors if I had been
+sitting on a rustic crate I'd be feeling
+way more revitalized right now but
+all I could tell you is that customizing
+workcenter specifications with Odo gives
+you a more realistic idea of when your
+work centers are going to be used and
+and this is especially important how
+much they can produce in a given time
+frame allowing you to plan your
+manufacturing with greater case and
+efficiency
+foreign

@@ -1,0 +1,205 @@
+Video: Sub-Assemblies | Odoo MRP
+Video ID: a8Dl1Ip0jtI
+URL: https://www.youtube.com/watch?v=a8Dl1Ip0jtI
+Playlist Index: 30
+================================================================================
+
+hello doers my name is hosio and welcome
+back for another great tutorial So today
+we're actually talking about subassembly
+which is when we manufacture a component
+before using it to manufacture another
+product you see not every product we
+manufactur has made with pre-made
+components that are bought ready to use
+sometimes we have to get into the
+nitty-gritty and manufacturer products
+components ourselves so for example
+let's take a look at our wheelie table
+product product unsurprisingly it's a
+table with wheels so to manufacture this
+table we need to attach our four wheelie
+legs to a tabletop however before the
+legs can be attached we have to assemble
+them as well by adding our wheel
+component to the bottom of our leg
+component that means that from start to
+finish manufacturing our table requires
+not one but two manufacturing orders
+oros now I could just manufacture a
+bunch of the wheelie legs ahead of time
+you know they're ready whenever we want
+to build a table however I i' rather
+manufacture four legs each time I need
+them for a table and luckily Odo allows
+me to do just that by automatically
+creating anmo for our four wheelie legs
+each time an emmo for the table is
+confirmed so let's manufacture one unit
+of our wheelie table now just so I can
+show you how all of this
+works okay so before we create an emmo
+we need to make sure that our wheelie
+table product and all of its components
+are correctly configured so in order for
+us to do that we actually want to open
+up our manufacturing application and
+we're going to select the word products
+and products object
+obviously so once that we're here we
+want to select our wheelie table so
+let's find that at the bottom over here
+now from the inventory tab that I've now
+opened up over here you can actually see
+that I've enabled the manufacturer route
+now let's actually take a look at the
+table's bombs by clicking on our bill
+material smart button up at the top as
+well and we're going to select it in
+there great so we're there so if I click
+inside of the operations tab you can
+actually see that this product requires
+one operation at our assembly station
+and that happens to be attaching the leg
+to the tabletop so on the components tab
+over here well that requires two
+different components four of the wheelie
+legs as you can tell by the quantity and
+then one of the tabletops so we
+purchased the tabletop from a vendor and
+already have a bunch in stock so we
+don't have to worry about manufacturing
+that we will need to manufacture the
+wheelie leg however so let's open up X
+product so that we could take a look at
+that as well and if we want to jump to
+it we can actually just click on this
+little internal link Arrow right there I
+love that about ODU now inside of here
+let's go to inventory now inside here
+you can see that I've selected the
+replenishment order MTO route as well as
+the manufacturer routes the MTO route
+creates a replenishment order every time
+there's a need for the component since
+the manufacturer route is selected as
+well it creates an ml now I want to take
+a look at this bomb as well for the
+wheelie leg so let's go in there as well
+go into our build materials wheelie leg
+great so here we can actually see that
+each wheelie leg requires one table leg
+and then one wheel as well much like the
+tabletop we purchased both of these
+components but if we wanted to
+manufacture them I could open the
+product pages and configure them the
+same way that I've configured the
+wheelie leg so if I did that eacho for
+the wheelie leg would also create ano
+for each component so if we go over here
+to our operations tab as you can tell we
+also have one operation listed for the
+assembly workstation all right since we
+have both of the wheelie components in
+stock we're actually all ready to
+manufacture the our table so let's go do
+that so I am actually going to start by
+creating an emmo for one unit of the
+wheelie table so to do that we click on
+the word operation and then
+manufacturing orders and then we want to
+select the word new you've done this
+dance with me a lot so let's select our
+wheelie table as our product that we're
+going to be manufacturing and then
+confirm this real quick great so once
+that I do that a few things happen first
+the forecast section over here on our
+components tab as you can tell it tells
+us something it displays today's date
+for the wheelie leg component as well
+this is because we don't have the legs
+available yet but OD recognizes that we
+should be finishing manufacturing for
+them today have do we go about
+manufacturing them well you may have
+also noticed the child Mo smart button
+happens to appear right there H what
+does that do so since we enabled the MTO
+route on our wheelie leg component an
+ammo was created automatically to
+fulfill our need for it as such Odo
+considers that emmo the child of this
+source emmo so we can actually access it
+by clicking on the childo button let's
+click into that so the child emmo is
+linked back to its parents by this
+Source emmo smart button that we have
+now here and down on the component tab
+wouldn't you notice that we can see that
+both the components we need are
+available as we can tell from our
+forecast all right we're now ready to
+begin manufacturing our wheelie table
+but first let me show you how planning
+works for OS that use sub assemblies we
+actually want to make sure that the Emos
+are planned in the correct order so that
+we won't start working on our wheelie
+table ammo before we've actually
+manufactured the wheelie legs so to do
+so we're actually going to head back to
+the manufacturing orders we have the
+breadcrumbs which are Wonder Bread today
+we're going to select them both and
+select plan and then once we do that
+we're going to actually select the
+planning dropdown from the top and then
+we're going to select Planning by
+production and on this page I'm going to
+click on the time period drop down that
+we have over here and I'm going to
+select the day option and would you look
+at that that's going to give me more
+detail about how ouros have been planned
+so we're actually going to select the
+first one that's set to open which
+happens to be our attach wheel component
+right there this is because ODU
+recognizes that the child emmo must be
+completed before the parent emmo do you
+notice that the time listed in the stop
+date field on the popover window for the
+child activity it actually gives us
+something there well if I click away and
+then I click on the parent emmo you'll
+notice something the start date happens
+to be the exact same time this is
+because ODU knows that once the child
+demo is completed all components will be
+available for the parent emmo so it
+schedules it to begin immediately after
+now all we have to do is complete the
+child emo and then we'll be ready to
+start work on the parent emmo at that
+point we'll have Manu ufactured one unit
+of our wheelie table that's pretty cool
+right so for today's example we use a
+manufactured product that requires
+another manufactured product as its
+components however the really cool thing
+about subassembly products in ODU is
+that they can have as many levels as you
+want for example you can manufacture a
+bike spoke which is then used to make a
+bike rim which is then used to make a
+bike wheel which is finally used to
+produce a full bike and as you can see
+ODU simplifies the production of even
+the most complicated multi-step
+Manufacturing workflows that's the best
+part of it well that's it for today
+folks you now know how to manufacture
+products using sub assemblies I'm going
+to see you next time go grab a snack

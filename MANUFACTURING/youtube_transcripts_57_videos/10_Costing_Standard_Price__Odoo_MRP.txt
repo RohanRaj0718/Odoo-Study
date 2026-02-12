@@ -1,0 +1,324 @@
+Video: Costing: Standard Price | Odoo MRP
+Video ID: lXec1UUYdAI
+URL: https://www.youtube.com/watch?v=lXec1UUYdAI
+Playlist Index: 10
+================================================================================
+
+foreign
+welcome back in this video we'll be
+discussing how to use the standard price
+costing method this video is part three
+of my four part series on evaluating
+production costs links to the other two
+videos are going to be inside of the
+description now the standard price
+costing method is often used for
+production planning purposes or in
+situations where actual cost of goods
+aren't well defined and an estimate is
+more appropriate to use this makes for
+more straightforward inventory
+management and better cost control at a
+high level in odoo the product cost for
+standard price comes from straight out
+of the products actually therefore the
+cost of components for the finished
+product must be updated manually on the
+product form in this tutorial I'll be
+making two tables using differently
+price components we'll see that the
+product at the end will actually stay
+the same as far as costs are concerned
+unlike other costing methods and lastly
+we'll update costs from the bottom up
+that means updating the component costs
+first to reflect the accurate cost of
+the finished product let's show you some
+started from the bottom now we're here
+action right now
+we'll begin on the overview report for
+our final product which is the table so
+to get there we're actually going to go
+into inventory product product page and
+select our table now once that we're
+inside of here you want to select this
+build a material smart button and we're
+going to select it and finally for our
+last step we're going to select this
+overview smart button up here boom there
+we have it now reflected inside of this
+bomb overview is four table legs that we
+have and a single tabletop with costs at
+the ten dollars and five dollars a leg
+over here making for twenty dollars
+total
+and over here we can see that the
+product costs on this report correspond
+to the cost listed on the product forms
+as well and that's kind of Handy and
+there's an important note here and that
+is that the bomb overview includes the
+cost of goods and the cost to operate
+work centers as well it does not factor
+in labor costs please remember that now
+both the finished product and components
+follow the standard price method to find
+in the product category but how do we
+Define that product category well let's
+click on our table again directly from
+here because ODU is that intuitive
+always
+all right now look at that we've
+actually already set the field over here
+that we have which is the product
+category and in our case this is
+standard and finished good then when we
+select that internal link over here it
+takes us to a lot more information now
+under the inventory valuation you
+guessed it right there you can actually
+see that we can confirm the costing
+method is set to standard price here now
+let's actually go back to the bomb
+overview through the breadcrumbs which
+today is a croissant
+for my people who like croissants
+they're back over there bill of
+materials and there we have it now you
+also might notice that for this the
+actually we're going to go back over to
+the overview fully sorry about that oh
+dears you'll also notice that the
+product cost itself is actually zero
+dollars listed but why is that
+that's because that is the default for
+new products that don't yet have an
+assigned cost in this case I want my
+table's product cost to be the sum of
+the components and the operational cost
+now how would I update the cost of
+finished products when using standard
+price well I'll tell you when we go to
+the tables product form once again
+and as you can tell here what are we
+going to do our doers and this is
+actually going to apply the bomb cost as
+the cost of the table because if you see
+over there the compute price from the
+bottom we're going to do that right
+there we're going to select it boom
+immediately we have a price now that is
+a useful button of doers and with that
+the costs are all set here
+alrighty odor since I've shown you this
+flow in previous videos I actually made
+an ammo ahead of time just to speed
+things up and to speed things up I've
+already confirmed it and applied
+everything now the same as before the
+green forecast meant that I had
+essentially enough to produce a single
+table and if we go to the work orders
+tab you'll see that I set the expected
+duration to be a full hour this ensures
+that the hourly labor and Machinery
+costs are accounted for even though only
+the Machinery costs are used then once
+that everything is complete and we look
+at this over here through a cost
+analysis report you'll see that the
+total cost per unit over here has
+actually been updated to eighty dollars
+total to make the finished product
+thirty dollars to buy the components
+which we have up here
+as the total cost of components and then
+finally our cost of operations at fifty
+dollars which is the cost that it
+essentially costs us to operate our
+Machinery at assembly line one it's a
+very expensive place
+now if you remember earlier this was
+actually set the zero before but finally
+we have a cost set up and we're going to
+talk further about a few other things
+and now let me illustrate what happens
+when I manufacture a table using more
+expensive components so back inside of
+manufacturing we're going to select new
+and in our case we're going to create an
+Mo again and it's for that same table
+that we love
+and once that everything looks good
+you'll actually notice something
+immediately oh no we actually don't have
+enough components and you can see that
+immediately by the red
+not available Reserve thing that we have
+over here it's basically telling us we
+don't have it but don't worry our doers
+I can easily order components by going
+out of here into the inventory app
+and in our case where do we go doers we
+go into operations and replenishment if
+you haven't watched that video please
+watch that video and finally we need to
+talk about what we need now if you see
+over here the two order and the forecast
+columns have been updated with the
+demand according to the ammo I just
+confirmed I'll select the components
+that I need in our case which is this
+one and this one and I'm going to select
+order over here
+boom we're done it was just that easy
+now let's say that the component costs
+have been fluctuating a lot in our case
+everything is getting more expensive
+these days they don't tell you why but
+it just is that way we go over here and
+we look at our purchase order for this
+let's assume that this time around our
+unit prices have actually been
+fluctuating a lot in fact they're
+actually now double so what used to cost
+five is now the number 10 and when you
+use the cost 10 is now the number 20 and
+we're basically done here we're going to
+confirm this it's so much more expensive
+we're receiving our expensive goods and
+finally we are validating and applying
+this great we have everything and it
+cost us an arm and a leg in this case it
+literally did
+so here's where things get spicy so grab
+a drink and start by making sure that
+you were in developer mode if you don't
+know what that is
+please check out our documentation on
+how to enter it or please watch a
+tutorial on that as well outdoers now
+once that you have that set up go into
+inventory reporting valuation and over
+here we're going to group these by
+product and finally we're going to open
+up the two that we've been talking about
+which is the STD table actually not the
+table sorry actual odoopsy we're gonna
+open up the table legs and the table top
+all right beautiful now once the you
+have these all set up you'll notice
+something wait a minute the components
+are valued according to their original
+prices at five dollars a table leg if
+you recall earlier and ten dollars a
+table top
+remember I paid double the price for
+them
+uh excuse me but is that also another
+odoopsy no actually odoo is always right
+since we set the valuation method of our
+components the standard price they will
+always be valued according to the cost
+stated on the product form regardless
+actually of how much we got price gouge
+by vendors but let's take a look at that
+a little bit further
+forgetting about that for a bit let's
+complete the ammo and see how the
+production costs are calculated so
+inside of the manufacturing app you want
+to head over here to operations
+manufacturing orders there it is again
+now in our case because the components
+were restocked the reserve component
+status icon itself over here is actually
+green now because we have enough now
+let's go over here to our work orders
+Tab and set the expected duration now
+which was 60 also to the real duration
+at 60. perfect now that that's all set
+up let's mark this as done
+and hit apply
+and boom we're done
+all right now let's check that cost
+analysis report again by clicking on
+cost analysis and when we go in there
+you'll notice the finished product cost
+is again it's still eighty dollars the
+product and the operational costs are
+still the same which follows the
+standard price costing method this means
+that this cost is always listed on the
+product form when we check back to the
+table's product form by clicking over
+here
+go over here to table
+and there we are actually there it is
+right there as you can tell it's still
+eighty dollars calculated using the
+standard component cost of five dollars
+per leg and ten dollars per tabletop
+all right now for our final section
+let's say that our company has
+reevaluated its purchase reports and
+wants to update the product cost itself
+we're actually going to go up here to
+products
+and you guessed it in our case we're
+going to go to bomb and we're going to
+go to that table itself
+all right so once that we're here it's
+important to note that the process of
+manually updating costs should be done
+from the bottom up now what does that
+mean remember in order to make sure that
+the cost of the finished product
+accurately reflects the new component
+cost we need to update the components
+themselves first then we can use the
+compute price from bomb button to
+accurately calculate the updated product
+cost all right so to update the
+component cost to the more expensive
+prices we actually need to go to the
+individual component product forms so
+we're going to first select in our case
+the table legs
+all right they are five right now we're
+gonna manually change this to
+10.
+now we're gonna go back
+we're gonna go to the tabletops internal
+link as well and this one as you guessed
+it is now 20.
+I'm going to go back over here
+all right once that you are finished
+with all of that what do you need to do
+well if you go over here to the overview
+report you'll notice it actually changed
+right now it's been updated and the bomb
+cost have been updated to 110 compared
+to the 80 from earlier next we want to
+update the product cost so we'll click
+on the tables product form in our case
+through the little breadcrumbs all right
+there we are and in our case we select
+the table right there with that little
+internal link and finally this is when
+we get to actually click this so we're
+going to compute and look at that boom
+the cost to manufacture table is updated
+to reflect the cost of the components
+and that's beautiful and there you have
+it out doers every manufacturing order
+Hereafter will use these costs and they
+will be reflected on both the bomb
+overview and the cost analysis of mos
+that's it for this video for more
+information on the fifo costing method
+be sure to check out the next video see
+you next time outdoers go grab a snack
+and if no one's told you this you're
+doing great today
+foreign

@@ -1,0 +1,177 @@
+Video: Bill of Materials Basics | Odoo MRP
+Video ID: WQec3vmGp5o
+URL: https://www.youtube.com/watch?v=WQec3vmGp5o
+Playlist Index: 31
+================================================================================
+
+how's it going o doers it's wonderful to
+see you as always today we'll be diving
+into the basics of build materials or
+bombs you see in order for a business to
+manufacture a product the employees need
+to know the steps or operations required
+to create it and the components needed
+to do so this is where a bomb comes into
+play a bomb contains everything we need
+to know to manufacture a specific
+product take our bookshelf product for
+example to assemble our bookshelf we
+need four shelves two side panels and
+eight screws putting all of that
+together requires one assembly operation
+carried out at our assembly line work
+center now it wouldn't make sense to
+have our employees keep all that
+information in their heads so we need to
+put it in a bomb so they can reference
+each time they build a bookshelf let's
+jump into our Odo database Now to create
+our bookshelf bomb all right here we are
+in the manufacturing app first thing we
+need to do is make sure that the work
+orders feature is enabled this allows us
+to add operations to bombs and specify
+the work centers where they should be
+carried out so I'll head to
+configuration and then settings and we
+want to make sure that the checkbox next
+to the work orders option is ticked
+great I've done so already but make sure
+to click save once you enable it in your
+database now let's take a look at the
+product we'll be using for today's
+example the bookshelf so to access that
+I'll click on our products option and
+then products once again and select our
+bookshelf card now on the product form
+I'm going to select the inventory Tab
+and make sure that the manufacturer
+route is enabled in the route section
+enabling this routes tells Odo that the
+product can be manufactured which allows
+us to create manufacturing orders or MOS
+for it all right we're all set to
+configure a bomb for this product so to
+do so I have two options first I can
+navigate to products and select the bill
+of materials option this page shows me
+every bomb configured for any product in
+my database so to create one all I have
+to do is click the new option in the
+upper left hand corner now second I can
+create the bomb directly from the
+product form so let's return to the
+bookshelves form to use that method and
+once again we'll select products
+products again and then click on that
+bookshelf
+card now on the form I'll click the bill
+of material smart button at the top and
+this opens a new page where I can create
+every bomb created for this specific
+product it's important to mention that
+you can create as many bombs as you want
+for a single product and that the bomb
+that's listed first on this page is the
+one that's selected by default for Emos
+now let's create a new Bomb by clicking
+new and since we navigated to this bomb
+from the bookshelf's product form the
+product is automatically selected in the
+product
+field in the quaity field here I can set
+the quantity of the product that the
+bomb is used to create but we're going
+to leave it for one for this example
+in the reference field I can enter a
+code that will distinguish this bomb
+from others created for the same product
+and below that we have the bomb type
+field since we want to manufacture the
+bookshelf I'll leave it to manufacture
+this product there are a few other
+options that can appear in this field
+but we'll cover those in other videos
+now let's focus at the bottom for the
+top of the form and first we have our
+components tab which allows us to
+specify the components needed to
+manufactur the product along with the
+required quantity of each I'll add the
+first component which is our
+Shelf and to do that all we have to do
+is Click add a line type your component
+and select in the drop- down menu in the
+component field then in the quantity
+field here I'll go ahead and enter
+four cool and I'll also go ahead and add
+the rest of the components which is two
+side panels and eight screws
+now let's move to the operations tab
+where I can specify the operations
+needed to build the bookshelf the
+assemble operation so I'll go ahead and
+do that by clicking add a line and this
+create an operation popup window appears
+in the operation field I'll just go
+ahead and title this Assemble
+then I'll select the work center where
+the work is carried out and the work
+center field below which will be our
+assembly
+workstation and in the two fields to the
+right I can choose the duration of how
+the operation is determined if I click
+compute based on track
+time ODU calculates the duration based
+on a certain number of the most recent
+work orders which I can specify in the
+based on field right
+here however I'll just set it to set
+duration manually which allows me to
+enter the specific duration in the
+default duration field below I know it
+takes about half an hour to assemble the
+bookcase so I'll go ahead and type 30
+right
+here and finally we have a worksheet tab
+that appears at the popup here at the
+bottom now I can include instructions
+for how to perform the operations in
+either a PDF Google slide or text format
+luckily I have got a PDF already so I'll
+go ahead and select a PDF option and go
+ahead and upload my file through my
+computer's file manager
+all right that's it for this operation
+if I wanted to add another I could go
+ahead and click save and new but since
+this is the only one I'll go ahead and
+click save and close
+instead and just like that the assemble
+operation has been added to the bomb now
+we can create a MMO for this bomb and
+use it in the manufacturer process of
+the product to do so I'll go ahead and
+navigate to operations and click on
+manufacturing orders then simply click
+new now on the Blanko form I'll select
+our bookshelf
+product and after doing so the bill of
+materials field automatically populates
+with the associated
+bomb in addition the required components
+automatically appear on the components
+Tab and the required operations on the
+work orders
+tab now when a manufacturing employee
+looks at this ml they'll see all the
+information they need to assemble the
+one unit of the bookshelf and that
+brings us yet to another close of an
+incredible tutorial you now know all the
+basics of bomb configuration which puts
+you well on your way to producing
+products using the Odo manufacturing app
+thanks for watching and I'll see you
+next time

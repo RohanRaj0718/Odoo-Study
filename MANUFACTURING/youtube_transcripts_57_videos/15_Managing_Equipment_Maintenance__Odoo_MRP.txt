@@ -1,0 +1,310 @@
+Video: Managing Equipment Maintenance | Odoo MRP
+Video ID: QlYltSfU4FU
+URL: https://www.youtube.com/watch?v=QlYltSfU4FU
+Playlist Index: 15
+================================================================================
+
+hello o doers and welcome back today I'm
+going to show you how to use ODU to
+schedule preventative maintenance which
+is used to avoid high cost and time
+losses we can also perform corrective
+maintenance to fix things that are
+already broken here at stealthy wood
+preventative maintenance helps keep our
+manufacturing equipment in tiptop shape
+if not correctly managed Machinery can
+break down or M function causing
+unscheduled downtimes production stops
+and significant emergency repair costs
+nobody wants to deal with wasting money
+on major breakdowns so that's why we
+encourage regular maintenance on your
+equipment I think most facility managers
+would agree with me when I say
+maintenance matters so without further
+Ado let's jump into the
+video let's go ahead and start in the
+maintenance application where I have an
+overview of my maintenance teams I'm
+going to go to the equipment menu here
+at at the top where I have access to my
+work centers quick reminder work center
+is a place where workers use machines
+and tools for
+manufacturing first let's take a look at
+these machines and tools by clicking on
+machines and
+tools over here we can see all the
+equipment listed on the menu let's go
+ahead and take a look at our first
+Samsung
+monitor on the equipment form I'm going
+to click on the equipment category I can
+select the category this piece belongs
+to additionally I can also select who
+this monitor is used by we can also
+change who's in charge of the
+maintenance and it looks like our trusty
+internal maintenance team is already set
+I can also see the equipments aside work
+center and location I can also add a
+description at the bottom here when I
+click on the product information tab we
+can see more specific information like
+the serial number and warranty
+expiration date now let's check out our
+maintenance tab
+here we can arrange how often we want to
+have preventative maintenance as well as
+how long it takes I'm going to go ahead
+and set the preventative maintenance
+frequency to one day and I'm going to
+set the maintenance duration to half an
+hour we can also set up an expected
+meantime between failure or mtpf for our
+acronym lovers below that ODU
+automatically calculates the mtbf value
+based on previous maintenance request
+as well as the estimated next failure
+and meantime to repair based on this
+equipment's performance
+data with the expected mtbf all set we
+can tell ODU how often we need to
+perform maintenance with the real mtbf
+ODU tells us how often the maintenance
+fails and needs repairs for a monitor
+let's say the expected mtbf value is 100
+and 20
+days and once we have an actual
+equipment failure the latest failure
+field will display the date of that
+failure the field above that will tell
+us when the estimated next failure date
+is which is based on historical data
+this helps us prepare accordingly and
+switch up our maintenance schedule to
+repair the equipment before that
+happens lastly the meantime to repair
+field or mttr measures how long it takes
+us to complete a maintenance request for
+this equipment when a failure occurs
+again that'll automatically adjust based
+on real data as it becomes available in
+ODU I know that was a lot oders but to
+wrap this all up ODU will automatically
+generate a maintenance request if we've
+defined a preventative maintenance
+frequency these requests are only
+generated once daily so don't be alarmed
+if the request isn't generated right
+away all righty let's view our work
+centers by navigating to equipment and
+work
+centers I'll check out assembly line one
+under the equipment tab we can see all
+of the equipment used at this work
+center and they're computed meantimes
+between failure and meantimes to repair
+I can also add equipment here if I want
+to at the adline section if I click on
+this X on the right I can remove pieces
+for example if they're outdated or being
+replaced now that we've reviewed where
+to find machines equipment and work
+centers let's create a maintenance
+request
+let's go ahead and head to our dashboard
+here I have three preconfigured
+maintenance teams let's go ahead and
+create a maintenance request for my
+internal maintenance team by clicking on
+the Zero Todo
+button like other teams in ODU each
+maintenance team has its own unique
+pipeline let's click new to create a
+maintenance request
+manually and I'll say one of our
+printers is
+jammed
+then let's select the cor corresponding
+piece of equipment let's say the HB
+inkjet
+printer all righty since this is an
+active issue that needs to be fixed I'll
+ensure that the corrective maintenance
+type is
+selected I can also tie a specific
+manufacturing order to this maintenance
+request I can also schedule a date for
+the fix when I click on schedule date it
+will show a calendar and I'm going to
+select today's date and click
+apply all righty for the duration let's
+set it to 1
+hour and this is a super super super
+important request so let's mark it as
+three stars in the
+priority and if we have any additional
+information we can type it right here in
+the description field and boom we've
+just created a maintenance request when
+I click on the maintenance request
+breadcrumb the request is shown at the
+dashboard during manufacturing equipment
+hiccups may occur and sometimes it may
+be more convenient to create a
+maintenance request directly from a work
+order now let's walk through creating a
+maintenance request for a beastro table
+while in the middle of a manufacturing
+order I'm going to head to our
+manufacturing app and then I'm going to
+go to the operations menu and
+Manufacturing orders and I'm going to
+click on our m o for our bastro table
+now I want to start a work order for
+this bistro table so I'll click on the
+work orders Tab and then I'm going to
+click on this blue external link arrow
+on the right that says open work order
+this will open a pop-up window with a
+smart button that says open shop floor
+let's go ahead and click on
+that all righty now that we're here in
+our shop floor app we can see our emmo
+for the beastro table right here to
+start production we'll just click on the
+title of Theo at the top here you can
+see that we're executing this emmo at
+assembly line one in the emmo itself we
+can see the work order steps so we've
+got four steps for this particular work
+order table supports table legs register
+production and print labels let's hop in
+and start the first
+step all righty so we have a few things
+here telling us what to do we have the
+WR instructions and the visual
+instructions pretty cool right I'm going
+to close out of this tab and indicate
+that I want to go to the next step so
+I'll complete this step by clicking on
+the check box in the table support line
+let's check out our next step here we
+have new instructions specific to the
+table legs it lets us know how we need
+to attach the legs to the rest of the
+table I've got Lightning Fast hands so
+I'm going to say I finished this this
+step by clicking on the next button done
+what's nice too is that ODU moved us to
+the next step in the work order which is
+register
+production now OD doers we track our
+popular beastro tables with unique
+serial numbers to do that we need to
+enter the produced quantity which is one
+and then we can click on the big blue
+plus button to generate and assign a
+brand new unique serial number boom
+we're all set here so let's go ahead and
+click
+validate and yay we're on our final step
+of our work order but wait a second our
+table I think is a little uneven so
+we're going to need to shave down one of
+these legs by using a scrub plane which
+is conveniently located at our work
+center so I'm using the scrub plane but
+something's just not right I'm going to
+need to request a maintenance for it so
+I'm going to do so by clicking on the
+three dots icon here at the bottom right
+of Theo and I'm going to click on the
+request maintenance button a pop up for
+a brand new request appears let's go
+ahead and fill this bad boy out I'm
+going to call this maintenance request
+scrub plane blade needs
+replacement for the equipment I'll put
+the scrub
+plane all righty and the maintenance
+type is going to be set as corrective
+and the assigned team is internal
+maintenance looks good for the schedule
+date I'll put today and click
+apply and for the duration we're going
+to be setting it to 1
+hour and obviously we're super high
+priority so the priority is going to be
+three
+stars everything looks good so let's
+save this maintenance
+request all righty now that the Quest
+EST is in let's pause production for now
+by clicking on the title of the M Mo and
+the timer stops ticking the operator
+filling out this maintenance request
+will need to keep the work order paused
+until the equipment is ready to use so
+let's go ahead and take care of that now
+and we can click close at the top right
+corner over
+here let's go back to my internal
+maintenance team by going to the
+maintenance app on the internal
+maintenance team I'll click on the two
+to do
+button all righty and let's go into the
+scrub plane maintenance request that we
+just
+created once the responsible maintenance
+team member addresses the request they
+can move it to the repaired stage here
+at the top right this will notify the
+request's followers Additionally the
+repair person can use the chatter to
+message the operator to resume
+manufacturing let's go ahead and Mark
+this maintenance request as done in the
+the
+chatter yay now that our equipment is
+repaired production can begin again for
+the beastro table we were working
+on before we wrap up I'd like to make a
+quick note that if I want an overview of
+all maintenance requests not just for
+the internal maintenance team but for
+all maintenance teams I can also view a
+calendar of all the tasks by heading to
+the maintenance here at the top of the
+maintenance
+calendar here I can see the scrub plane
+maintenance request I just submitted we
+can also switch to different views here
+at the top right for example using the
+camben view will allow us to see what
+stages the maintenance requests from
+every team are in not just the internal
+maintenance team so we can manage all
+requests easily using the drag and drop
+cards other helpful views here are the
+list and graph view the list view will
+show all of the maintenance requests in
+a list along with those requests
+metadata the graph few has a visual
+breakdown between the stages that the
+requests are in which can be pretty
+handing for reporting
+purposes so there you have it OD doers
+now of course corrective maintenance
+should be avoided as much as possible
+and you should always try to put
+preventative actions in place but
+sometimes you don't have a choice
+luckily ODU helps you process both kinds
+of Maintenance in efficient and timely
+manner thanks for watching oers and see
+you next
+time

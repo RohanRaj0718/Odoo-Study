@@ -1,0 +1,172 @@
+Video: Manufacturing Steps | Odoo MRP
+Video ID: grZ9oj8CqNI
+URL: https://www.youtube.com/watch?v=grZ9oj8CqNI
+Playlist Index: 40
+================================================================================
+
+what's up OD doers and welcome back
+today we're discussing the options for
+how many steps to use when processing
+manufacturing orders or Os odu's
+manufacturing app allows us to process
+OS using one two or three steps in one
+step manufacturing we only need to worry
+about the MMO itself when using two
+steps we need to pick the components and
+transfer them to the production location
+before processing the ml finally for
+three-step manufacturing this requires
+one additional step which is
+transferring the finished product into
+storage of course all of these steps
+happen in real life for everyo the only
+difference is whether or not ODU tracks
+the transfer of components and or
+finished products so let's jump into our
+database to see how this all works all
+right when an Odo database is first
+created onstep manufacturing is enabled
+by default so let's start by looking at
+the onstep workflow from the
+manufacturing dashboard all we have to
+do is create a new emmo by navigating to
+operations at the top and then selecting
+manufacturing orders and then we're
+going to click new in the upper leftand
+corner we cover all the basic steps of
+creating and processing manufacturing
+orders in our manufacturing orders and
+work order Basics video so be sure to
+check that out if you need a refresher
+for this video however this only covers
+the details essential for this workflow
+so first we need to pick a product that
+we want to manufacture and for this
+tutorial we'll be producing one unit of
+our lamp product so in the product field
+I'm just going to select our lamp
+we're also going to leave the quantity
+field here set to one and go ahead and
+click confirm to confirm the
+MMO in the chatter if we scroll down we
+can see the Readiness of the MMO is set
+to ready this is because we have all the
+required components in stock this is one
+of the key differences between
+manufacturing step options in one step
+manufacturing confirmed MOS are set to
+ready when we have enough components to
+complete them when using two or
+three-step manufacturing there are a few
+extra steps required by before Theo is
+ready even if all the required
+components are available we'll see this
+later in action later in the
+video okay since this ammo is already
+ready let's go ahead and process it now
+by clicking produce all in the upper
+left hand
+corner and there you have it we've
+processed an emmo using onstep
+manufacturing now even though we never
+processed a transfer of components or
+finished product ODU has automatically
+registered the number of components
+consumed and the product that we
+manufactured I can confirm all this
+information by clicking on the product
+moves smart button at the top and this
+is where I can see all the inventory
+movements for this specific
+Mo this makes one-step manufacturing
+ideal for small scale manufacturing
+operations companies that don't need to
+worry about an excessive amount of
+components or products might not need to
+worry too much about tracking those type
+of
+transfers however for many other
+companies tracking this operation is
+absolutely critical to ensuring that
+inventory counts remain accurate in such
+case two or three-step manufacturing
+would be the best options to use when
+processing MOS to enable either of them
+I need to head over to the inventory
+application and from the inventory
+application we'll just hit configure at
+the top here and then click on
+settings here if we scroll down to the
+warehouse section we can make sure that
+the multi-step routes operations are
+enabled this will allow us to use
+multiple steps for a variety of
+operations including MOS now if we hit
+to configuration and then warehouses and
+click into our main Warehouse here in
+the manufacturing field I can select the
+number of steps needed for
+manufacturing since this is set on a
+warehouse level it allows companies with
+multiple warehouses to use different
+settings for each Warehouse in this case
+I'm going to select pick components
+manufacture then store products or the
+three-step
+process don't worry the three-step
+workflow includes the twostep workflow
+within it so we'll be able to see both
+at
+once let's take a look at them now by
+heading back to the manufacturing
+application and we're going to create
+another MMO for our lamp product so once
+again we're going to select operations
+manufacturing orders select new up our
+left hand corner add our lamp to the
+product field and simply click
+confirm the first thing I want to point
+out is the emo Readiness if we scroll
+back down it's no longer ready it now
+says waiting another operation this is
+because we need to process the transfer
+of components to our production location
+can open that transfer simply by
+clicking on the transfer smart button at
+the top of the
+page once these components have been
+transferred all we have to do is Click
+validate to confirm the
+transfer then once that's completed I'll
+go back to the manufacturing ammo by
+clicking the manufacturing smart button
+at the top and if we scroll back down
+the Readiness of this emmo now appears
+as ready since we have all the
+components we need
+now once the lamp has been assembled
+I'll process Theo once again by clicking
+produce
+all if we were to use twostep
+manufacturing the workflow would now be
+complete and the onhand count of lamps
+would automatically be updated based on
+the number we produced however there's
+one more step required to complete the
+three-step manufacturing workflow
+processing the transfer of the finished
+product to our inventory so I'll open
+that now by clicking on transfers once
+again and now we have a second transfer
+that appears on this page so if we click
+onto that transfer then click validate
+to confirm that the product has been
+sent to the inventory and just like that
+we've completed the three-step
+manufacturing process and that brings us
+yet to the conclusion of another amazing
+tutorial you now know how to process
+anmo using one two and three step
+manufacturing thanks for sticking around
+to the end and I'll see you in the next
+video

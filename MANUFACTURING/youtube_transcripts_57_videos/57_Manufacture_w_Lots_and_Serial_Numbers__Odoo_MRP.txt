@@ -1,0 +1,142 @@
+Video: Manufacture w/ Lots and Serial Numbers | Odoo MRP
+Video ID: UUr5EK3ocxU
+URL: https://www.youtube.com/watch?v=UUr5EK3ocxU
+Playlist Index: 57
+================================================================================
+
+[music]
+What's going on o doers? Nathan here.
+Today we're diving into one of the most
+powerful traceability features used
+across manufacturing, inventory, and
+quality control. Lots and serial
+numbers. In manufacturing, accurate
+traceability is crucial at every stage
+from production to storage to final
+delivery. Serial numbers allow you to
+track each finished unit individually
+through the entire process, ensuring
+complete visibility for every item that
+comes off the production line. Lots, on
+the other hand, allow you to track
+groups of products produced or received
+together, making them ideal for
+batch-based manufacturing where items
+don't require individual identifiers.
+Whether you're producing large batches
+or assigning unique serial numbers to
+every unit, ODO gives you the tools to
+manage traceability with precision and
+ease. So, let's hop into our database
+and see how this works. All right, we're
+kicking things off on the main ODO
+dashboard. Before we start working with
+lotser serial numbers, we first need to
+make sure the proper settings are
+enabled. So, we're going to head over to
+the settings app and on the left
+sidebar, we're going to click inventory.
+Then, we're just going to scroll down
+till we find the traceability section.
+Oh, there it is. And you'll see an
+option for lots and serial numbers. Go
+ahead and make sure that box is ticked.
+And one quick reminder, if you're
+enabling this setting for the very first
+time, don't forget to click save before
+moving on. Now that our lots and serial
+number settings are enabled, we're going
+to take a look at how we actually
+configure products to actually use them.
+Here on our manufacturing dashboard,
+we're going to head up to products and
+select products once again, and we're
+going to select our luxury office chair.
+Inside the product form, we're going to
+take a look at our general information
+tab. Here you'll find the track
+inventory field which determines how the
+product will be tracked through your
+operations. You'll see when we open up
+this drop-own menu, we have three
+different options. We have track by
+quantity, by lots, and by unique serial
+number.
+For this example, we're manufacturing
+and tracking this product with serial
+numbers, which means every finished
+product will be assigned its own unique
+identifier. Once you've selected your
+tracking method, we're ready to start
+manufacturing.
+To create a manufacturing order for our
+luxury office chair, we're just going to
+click operations at the top, followed by
+manufacturing orders. And then we'll
+click new in the top left corner. On the
+MO, I'll add our luxury office chair.
+And I'm also going to update the
+quantity to 10 since that's how many we
+need to produce. Once everything looks
+correct, I'll click confirm.
+And at this stage, we can either assign
+serial numbers through this generate
+serial button or we can click produce
+all.
+Once we click produce all, this assign
+serial numbers popup will appear. Here
+you can enter your own serial numbers or
+let ODO generate them for you. When
+generating serial numbers, ODO
+automatically fills in the first serial
+number with the next available serial
+number for that product. However, if you
+prefer to start with a different number,
+you can manually update that here.
+However, this looks good though, so I'll
+click generate followed by apply.
+And now to fully complete this MO, we'll
+click produce all. And as soon as this
+MO is completed, you'll notice there's a
+traceability smart button that appears
+at the top. When we click that smart
+button, it opens a full traceability
+report for every serial number that we
+just produced. And here on the right, we
+can see the full product journey. In
+this case, we can see the serial number
+started in production and they are now
+in our warehouse stock. Manufacturing
+with serial numbers is pretty
+straightforward, right? The good news is
+that manufacturing with lots is even
+easier. So, let's take a look at how
+that works. As we can see, our cable
+management box is tracked by lots. Just
+like our previous example, we'll click
+operations at the top, followed by
+manufacturing orders, and then click
+new. In the product field, we're just
+going to add our cable management box.
+And in the quantity field, we're going
+to enter 10 and then confirm.
+Now, all we have to do is click produce
+all to complete the MO. And once it's
+finished, you'll notice that a lot
+number has been automatically assigned
+to the entire batch. And that's it.
+Today we checked out how to configure
+products for tracking, walked through
+manufacturing with serial numbers, and
+then we just saw how easy it is to
+handle batches with lot numbers. ODU
+takes care of assigning and organizing
+everything for you. And the traceability
+views make it super simple to follow
+each product's journey from production
+all the way to stock. Whether you're
+dealing with unique items or bulk
+batches, the whole process stays clean,
+clear, and easy to manage. Thanks for
+watching, Odoers, and I'll see you in
+the next video.

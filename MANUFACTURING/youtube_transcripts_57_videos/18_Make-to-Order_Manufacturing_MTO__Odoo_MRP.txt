@@ -1,0 +1,154 @@
+Video: Make-to-Order Manufacturing (MTO) | Odoo MRP
+Video ID: Y0XV_AMn7vg
+URL: https://www.youtube.com/watch?v=Y0XV_AMn7vg
+Playlist Index: 18
+================================================================================
+
+Hello Odooers, and welcome back!
+Do you know what I really love?  
+Making cool products for cool people, even 
+when it isn’t exactly a “best seller.” For  
+those types of products, we tend to 
+use a manufacturing route known as,  
+Make-to-order. Let me explain what that means.
+See… Here at Stealthy Wood, we keep most products  
+on hand at all times, like our basic wooden 
+tables, for example. They’re super popular  
+and customers order them all the time.
+But, some customers have more unique  
+tastes. Take little Margo here… she wants one of 
+our S-shaped tables. She’s one of the “cool” ones. 
+However, that particular item isn’t exactly 
+“flying off the shelves,” so we don’t actually  
+keep them on hand in our warehouse.
+For products like this, we’ve enabled  
+a route called Replenish on order, or 
+Make-to-Order. That means when “Cool  
+Margo’s” order is confirmed, Odoo triggers 
+a replenishment order to source the product. 
+That can take shape as either a Manufacturing 
+Order or a Purchase Order, depending on how  
+you set up that product’s form.
+Once the product is available,  
+you can fulfill the customer’s order. And 
+it’s worth noting that the replenishment  
+occurs even if there is enough stock on hand.
+In this video, I’ll show you how to configure  
+an MTO route, and walk through what happens 
+when a customer orders a product that you do  
+not have on hand. So, let’s get started!
+Alrighty, before we get going, you should  
+know that, by default, the MTO route in Odoo is 
+archived. This is because not every manufacturer  
+uses it. So, for our demonstration today, we 
+need to unarchive it, which is super easy to do. 
+To do that, we’ll first go to the Inventory 
+app, click on the Configuration subheading,  
+and select on Warehouses.
+From here, we’ll select our  
+main Stealthy Wood warehouse, and let's go 
+ahead and click on the Routes smart button at  
+the top. This will show us all the routes 
+available for this particular warehouse. 
+To find the MTO route, we’ll need to select the 
+Archived filter, by clicking the downward arrow  
+next to the Search bar, and let's go ahead 
+and select ‘Archived’ in the Filters section. 
+And just like that, the MTO route pops 
+up! Now, let's go ahead and select the  
+MTO route by clicking on the checkbox next to 
+the route, and let's go ahead and go to the  
+“Actions” button here at the top, and let's 
+select “Unarchive” from the drop-down menu. 
+Now, let’s go ahead and remove the Archived 
+filter from the search bar. And voila! We  
+now have access to the MTO route in all our 
+manufacturing processes. See, I told ya it  
+was easy! Next, let’s set MTO as the route for 
+our S-Shaped Tables. Like I mentioned before,  
+we don’t sell this product very often so we 
+don’t keep it in-stock. However, I’ve already  
+set up a bill of materials to use for when we 
+do need to manufacture it for an MTO order. 
+To get this process going, let's go ahead and 
+navigate to the Products subheading, and click  
+on Products. And you’ll notice we have 0 units of 
+our S-Shaped Table on hand. So, let’s select the  
+S-Shaped Table to check on a couple things.
+On the product form, let's go ahead and  
+click on the Inventory tab, and under the 
+Operations section, we have our Routes,  
+including Replenish on Order (MTO). So, 
+let’s go ahead and click the box next to it. 
+Keep in mind that MTO always needs to be 
+paired with another route - either Buy,  
+Manufacture, or Resupply Subcontractor, 
+if that option is available. So it won’t  
+do anything when it is selected on its own.
+Alright, since we’re manufacturing this product,  
+and not purchasing it from a vendor, I 
+want to make sure the box next to Buy is  
+not checked. And we want to make sure the 
+box next to Manufacture is checked. So it  
+should look like a checkbox sandwich.
+Okay, now, let’s see what happens when  
+Cool Margo orders an S-Shaped Table! 
+For that, let’s go into the Sales app,  
+and Create a New Quotation, by clicking on ‘New.’
+On the quotation form, we’ll enter “Cool Margo”  
+as the Customer, and then we’ll add 
+1 S-Shaped Table to the quotation. 
+Alrighty, let’s go ahead and Confirm the 
+sales order. Odoo automatically triggers  
+the Make-to-Order replenishment rule, 
+which creates a Manufacturing order,  
+which is represented by the Manufacturing 
+smart button that appears at the top. 
+Also, if we click this graph icon on the 
+Order Line, we'll see that there are currently  
+0 S-Shaped Tables available. That’s 
+where the MTO route comes into play. 
+Ok, let’s go ahead and click on the 
+Manufacturing smart button at the top.  
+This brings us directly to the corresponding 
+manufacturing order for this table. 
+Okay, let's go ahead and go into the 
+MO’s Miscellaneous tab, and we can  
+see that the source document for this MO is 
+the sales order we just processed. Perfect! 
+Now, we could jump into the Shop Floor module 
+to manufacture this table, but I'll go ahead  
+and do it here on the MO to save us some time. 
+To do that, we'll click on the Work Orders tab,  
+where we’ll see the two operations that go 
+into making this S-Shaped Table. One is,  
+“Assemble the table,” and two is, “Apply veneer.”
+Let’s go ahead and click Start on the first  
+work order - Assemble the Table. That begins a 
+timer. Once I’ve finished working on this step,  
+I’ll go ahead and click Done. And we’ll see 
+that the status of that work order has changed  
+to “Finished.” Okay, now let's go ahead and do the 
+same for the next step. I’ll click Start and once  
+I'm finished, I'll click Done. Awesome!
+Now that I’ve finished all the steps,  
+I’ll click Produce All in the top-left 
+corner to finish manufacturing the table. 
+Now, if I click on the smart button at the top 
+for Sale, it’ll take me back to the sales order,  
+and let’s go ahead and click 
+on the graph icon again. Now,  
+I can see the quantity has changed from 0 
+to 1, because I’ve manufactured the table,  
+and Odoo now recognizes that it is 
+in stock and ready to ship. Awesome! 
+We’re almost at the end here Odooers. All we 
+need to do is to process the delivery. For that,  
+I’ll go to the delivery order by clicking 
+the Delivery smart button at the top,  
+and we’ll click Validate to complete the delivery. 
+And there you have it! You just learned how the  
+MTO route automates the creation of manufacturing 
+orders directly from a sales order, streamlining  
+the workflow for make-to-order products.
+Thanks for watching, and I’ll see you next time!

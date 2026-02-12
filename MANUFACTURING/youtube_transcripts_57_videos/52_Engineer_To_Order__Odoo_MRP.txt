@@ -1,0 +1,478 @@
+Video: Engineer To Order | Odoo MRP
+Video ID: f-w5sVsl0Vg
+URL: https://www.youtube.com/watch?v=f-w5sVsl0Vg
+Playlist Index: 52
+================================================================================
+
+What's up, Odoers, and welcome back.
+Every now and then, a customer comes to
+us with a request for something a little
+different, like a custom piece of
+furniture that maybe you can't find
+anywhere. When that happens, we don't
+just say no. We switch gears and use
+what's called the engineering to order
+approach. ETO, as we call it, lets us go
+beyond just selling products. We're able
+to offer our design expertise, our
+engineering knowhow, and our
+manufacturing capabilities all bundled
+together. It's a great way to increase
+value, boost sales, and most of all,
+deepen customer trust. Now, you might be
+wondering, isn't this kind of like make
+to order? They're definitely related,
+but here's the key difference. It all
+comes down to the design. With make to
+order or MTO, the design is already
+locked in. It's a special product that
+we don't keep in stock. So once a
+customer places an order, all we have to
+do is follow the blueprint and build it
+to spec. But with ETO or engineering to
+order, there is no blueprint, at least
+not yet. Our design team works with the
+customer to come up with a design all
+from scratch. That means ETO projects
+are more collaborative and more
+detailed. It also requires us to build
+customers for design consultation.
+And that closer relationship, it can
+lead to stronger partnerships, repeat
+business, and just word of mouth
+referrals. All because we took that time
+to build exactly what the customer
+needed. So, how does this all come
+together? In an ETO workflow, nothing
+gets made until the order is placed and
+the design is finalized. Only once we
+fully understand the customer's
+requirement, then we can move forward
+with engineering, production, and of
+course, delivery. So let's jump into ODO
+and see how engineering to order works
+all in
+action. So for ETO projects, there are a
+few things we need to set up. First,
+let's head to the accounting
+application. And from here, we're going
+to click configuration followed by
+settings and just scroll all the way
+down to our analytics section. Here in
+our analytics section, we just want to
+make sure that the analytic accounting
+feature is ticked and enabled. This
+feature is crucial because it lets us
+keep all project related costs like
+components and labor costs all organized
+in one place. Now in ETO projects, it's
+extremely common to have designers,
+engineers, and reviewers collaborating
+closely with the customer. Since these
+team members are billing for time, we
+need to make sure that we're capturing
+the costs accurately. So, let's also hop
+into the employees
+application and check out each of our
+staff members that have a time sheet
+cost set up under their profiles HR tab.
+For example, we have our engineer here,
+Cherry Nelson. And if we click into his
+settings tab here, we can see that he
+costs about $50 an hour. This will come
+into play when we manufacture the
+customer's custom order.
+Now, let's make sure we can actually
+track their work hours. So, we're going
+to head back to our home screen and
+click into our project application. From
+here, I just need to click on
+configuration and then settings again.
+And here, we just want to double check
+that time sheets is ticked and enabled.
+With that turned on, our teams can log
+their time directly against project
+tasks, which is super handy for both
+billing and analysis.
+Next, to ensure we can invoice on time
+sheets properly, we're going to click
+into sales here on the left
+sidebar. And we're just going to scroll
+down to our invoicing
+section. And here in our invoicing
+section, we just want to make sure that
+invoice what is delivered is the setting
+that's ticked and
+enabled. Now that the groundwork is in
+place, it's time to create a project
+template that we can reuse for ETO
+cases. So I've already made one here and
+I've named it ETO design service. This
+project contains two tasks which is
+design and review. And these are the
+tasks that our team uses to track the
+progress of each ETO project. And since
+we're selling our design services
+throughout this project, we need to link
+it to a product in Odo. So for that,
+we're just going to jump into our sales
+application. Click on products followed
+by products once again. And here we'll
+see that I've prepared a service called
+ETO design
+service. This product is what we'll use
+to charge customers for designing their
+custom orders. And we set up the product
+type here as a service. And we've also
+priced this at $500 an hour. Yes, it's a
+little costly. But now here's the cool
+part. I've configured it so that a new
+project is automatically created every
+time that this product is ordered
+through this create on order field here
+and set as project. It's also linked to
+the template that we just looked at ETO
+design service. So every order kicks off
+with a fresh ETO project with the
+structure and stages that we're ready to
+use. And just like that, we're all set
+up to engineer to order a completely new
+product.
+at the request of a customer, of course.
+So, let's get into it, shall
+we? Now that everything's in place here
+in the sales app, we'll place an order
+for our custom ETO project and show you
+how the sales design and manufacturing
+process is all tracked in Odo. So, I'm
+going to start by creating a new
+quotation by clicking new. And this
+project is for our good friend Michael
+BB. So, I'm going to go ahead and type
+his name in here and hit create. He's a
+new customer who's requesting a
+customuilt table. So, I'm going to click
+add a product. And here we're going to
+add our ETO design
+service. We asked about the design
+specs. And we'll just say based off of
+similar projects that we've had in the
+past, we estimate that this design will
+take about 10 hours. So, I'm going to
+quote him here.
+Now, once that's all good, we can just
+confirm this order.
+And I can see that ODO has automatically
+created an analytic account. And I can
+view that by clicking these extra dots
+here and clicking analytic distribution.
+And look at that. There it is right here
+for sales order 49, which matches up.
+And of course, if that column isn't
+available for you, just follow what I
+did and click the sliders and add that
+in. The analytic account is named after
+the sales order number and the customer,
+which makes it extremely easy to track.
+And this analytic account right here is
+definitely something worth remembering.
+You'll also notice some new smart
+buttons have appeared here at the top.
+One for a project. We also have two
+tasks. And if we click into the project
+smart button
+here, here the project is automatically
+labeled with the sales order number as
+well as the product name. So everything
+stays organized and easy to trace. And
+if we take a look here at the settings
+tab and scroll down, we can see that
+this is already linked to the same
+analytic account that keeps our sales
+services and project costs all linked
+together. So since ODO's apps are fully
+integrated, I could manage the entire
+project and its tasks from right here in
+the sales order. But for a better view
+of the overall project pipeline, I'm
+going to head over to our project app.
+And now that we've checked our project's
+details, we're ready to kick off the
+design and review process. So here is
+our ETO design service project that we
+just created for Michael BB. So let's go
+ahead and open it up. So inside we see
+the tasks that were automatically
+generated according to how we configured
+the ETO template. Here at Stealthy Wood,
+we'll typically have a designer/engineer
+assigned to the project. And then our
+designer/engineer will then create a
+design based off of the customer's
+requirements. Then the lead product
+engineer aka me will review the design
+and create a bill of materials before
+passing it over to our manufacturing
+team. So let's say our
+designer/engineer Cherry has been
+working on a product design. So we're
+going to move this card here into in
+progress. So to log his time spent and
+eventually bill it, we're going to click
+into this time sheets tab right here and
+click add a new line here. I'm going to
+change this to Cherry Nelson instead of
+myself. And we're going to add a quick
+description and we'll just say reviewing
+customer
+requests. And that only took him an
+hour.
+And we're also going to add another line
+here. Put this for Cherry. And this time
+it's for
+designing a really, really,
+really cool
+table. And we're going to mark this down
+for 7
+hours. And once this is all complete,
+we're just going to save this entry
+manually just to make sure we have
+everything here. and we'll move this
+stage into
+done. Then we'll use the breadcrumbs to
+go back to the
+project. So, next up is the review task.
+And as the lead engineer, it's my turn
+to weigh in. And just like before, we're
+going to move this into the in progress
+stage. And then followed by that, we'll
+click into our time sheets tab. And this
+is so we can log my hours this time. So,
+we're going to click add a line. We'll
+leave this on me. And I'm just gonna put
+design review. And believe it or not,
+this was a long review and it took me
+four
+hours. So we'll go ahead and save this
+once again, mark this as done, and move
+it into the done
+stage. And with the design and review
+stages wrapped up, we're ready to move
+this onto the next phase of the
+process. Now that we've finalized the
+design, it's time to put the product
+specs into the bill of materials here in
+Odo. so we can hand it off to our
+skilled manufacturing team. But before
+we do that, let's set up our work center
+costs. So the costs to keep our lights
+on in our shop floor get factored into
+the cost of the overall project. So
+we're going to head over to the
+manufacturing
+application. Then I'll click into
+configuration followed by work centers.
+Now, if you don't see work centers in
+your menu, just a heads up, you'll need
+to enable them in the manufacturing
+settings like we've done in the work
+centers basic video. But here, I've
+already set up two work centers, one for
+cutting and one for assembly. And I've
+already assigned a cost per hour to
+each. And that's important because these
+hours will directly feed into the total
+cost of manufacturing.
+Next, let's take a look at the bill of
+materials or bomb. We're going to head
+over to products followed by bill of
+materials. And here we have several ETO
+product bombs listed here, but we're
+going to click into the blank one that's
+also referenced as
+template. All of our ETO products use
+this one as a starting point. and
+creating one ahead of time isn't
+required, but it keeps all of our custom
+design projects linked together and
+helps us save time when we have a handy
+template for future
+products. So, to customize it for our
+current project, I'll go ahead and
+duplicate
+this. And now I'm going to change this
+template reference to say S
+O49 which is in reference to the sales
+order number for Michael
+BB. And I'll also click into the
+miscellaneous tab right
+here. Here I'll assign the analytic
+account that we created earlier for this
+sales order. And we just have to add it
+here in the project section.
+And this will add the costs of the MMO
+to our project and keep all the related
+costs in one
+place. Now we can start adjusting the
+components to match the customer
+specifications. So we're just going to
+click into the components tab
+here. Here I'll click add a line. And
+the customer Michael has a really unique
+request and wants a maplewood table with
+seven stainless steel legs. You know
+what they say, the customer is always
+right in terms of taste, I guess. So,
+with that said, we'll add the maple wood
+table. And then let's go ahead and add
+seven stainless steel legs to
+this. Now, it's also important to make
+sure that your component costs are set
+up correctly. If we click into our Mabel
+tabletop
+product through this link
+here, we're able to see that this
+component costs us
+$250. This is important because these
+costs are also added to the expenses
+section of this ETO project. Now, if I
+use the breadcrumbs to get back to this
+bill of
+materials, the component cost will
+always be reflective of the quantity
+that the bomb is requesting. This
+ensures that the amount consumed in the
+operation becomes the total component
+costs of the
+operation. So here over in the
+operations tab, I'll adjust the timing
+as well. For cutting, I'm going to keep
+the duration to 60 minutes, but for
+assembly, we'll also upload a PDF
+worksheet for the assembly employee to
+follow. And I can do that simply by
+clicking into here on the assemble
+operation. We're just going to add our
+worksheet here by selecting PDF and
+selecting upload file. Then we'll just
+choose our
+PDF. And once it's uploaded and looks
+good, I'm just going to click save. So
+our employees can reference this during
+the manufacturing process. And just like
+the components, you can always add or
+remove operations here based on what the
+customer needs. It's flexible, just like
+the ETO process itself.
+All right, we're finally ready to create
+the manufacturing order. So, let's head
+to operations followed by manufacturing
+orders. On the MO page, I'm just going
+to click new in the upper leftand
+corner. And since we're producing one
+custom ETO table, I'll start by
+selecting the product ETO
+product. Here, I also want to make sure
+that we're using the correct bill of
+materials. And we're going to make sure
+we're using the one with sales order 49
+in reference. So we'll hit this option
+here and select sales order 49 ETO
+project. That way we're pulling in the
+exact configuration that we set up
+earlier. Now is also a good time to
+quickly review the components and
+operations just to confirm that
+everything looks
+right. Looks good to me. And once that
+all checks out, we'll go ahead and click
+confirm to confirm the manufacturing
+order.
+Next, let's hop over to our work orders
+tab. Here, I'll say that all the
+operations, cutting, and assembly were
+completed exactly as planned. So, I'm
+just going to click produce all. And
+when I do, this completes the
+manufacturing process for this ETO
+product. You'll also notice that ODO
+gave us a unique serial number right
+here. And as you can see, it's labeled
+as serial number O8. Let's also remember
+that for later. Now, heading back to the
+components tab, I can double check and
+see that we've used all the quantities
+and materials here in the consumed
+column. This ensures all the directions
+for our one-of-a-kind table has been
+followed. And that's it. We've gone from
+a custom sales order to a fully
+manufactured ETO product. Now that our
+product is finished, let's head back to
+the sales order to wrap things up. So,
+we'll just hit our home screen here. Hop
+into the sales application and select
+our sales order with Michael
+BB. And now it's time to charge the
+customer for the product that we just
+manufactured. So, I'm going to select
+add a
+product, select ETO
+product, and then for the unit price
+here, we're going to charge him
+$2,000. Then I'll go ahead and click
+save.
+And you'll notice a new smart button has
+appeared showing that we've got one
+delivery task to complete. So let's go
+ahead and do that now and click into
+this delivery smart
+button. And on the product line, we're
+just going to select this hamburger icon
+right here. And we just want to verify
+that we are using the right product to
+deliver. And in this case, it's the ETO
+product with the serial number O8.
+And once that's been added to the
+delivery order, you can just click save
+here and then
+validate. And just like that, the custom
+product has been delivered. Closing the
+loop on our engineering to order
+workflow in
+Odo. Now we need to invoice the
+customer. So let's go back to the sales
+order through the breadcrumbs here at
+the
+top. And now we're just going to click
+create invoice. And I'll also use the
+regular invoice option followed by
+create
+draft. So observant odoers may remember
+that we originally added 10 hours to the
+sales order. However, since we worked a
+total of 12 hours, ODO recognized the
+extra hours and updated it on the
+invoice. That being said, this invoice
+looks good. So I'm going to click
+confirm.
+Last thing, since I've completed the
+sales flow, let's review the project
+details in the project
+app. I'll select the three dots in the
+right corner of our ETO project and then
+I'll select dashboard under the
+reporting section. Here I can see all of
+the costs associated with the project
+from the revenues costs and overall
+profit at the
+bottom. And that's a wrap. With just a
+bit of setup, engineering to order can
+be a gamechanging strategy, giving your
+teams the tools they need to build
+exactly what your customers want while
+keeping your costs and revenue crystal
+clear in one space. Thanks for watching
+and remember when it comes to custom
+manufacturing, it's not can you do it,
+it's oh do it.

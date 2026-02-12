@@ -1,0 +1,152 @@
+Video: Manufacturing Backorders | Odoo MRP
+Video ID: OIrkwN0RXRo
+URL: https://www.youtube.com/watch?v=OIrkwN0RXRo
+Playlist Index: 41
+================================================================================
+
+welcome back oo doers or should I say
+welcome back orders because that's
+exactly what we'll be talking about
+today you see whenever we create a new
+manufacturing order ormo using OD
+manufacturing app we need to specify the
+quantity that we want to manufacture
+however when it actually comes time to
+process Theo we may want to manufacture
+only a portion of the specified product
+quantity while worrying about the rest
+at a later date luckily we can do just
+that using the back orders feature in
+odo's manufacturing app this allows us
+to split the Emos into two smaller Emos
+the firsto is processed immediately
+while the second back order or Mo gets
+processed at a later date this provides
+manufacturing employees with more
+flexibility when managing MOS so let's
+jump into our Odo database now to see
+how this all works all right here we are
+on the manufacturing app dashboard if
+you've watched any of our previous
+manufacturing tutorials and I sure hope
+you have have you'll know the first
+thing we need to do is create a new ml
+so to do that I'm going to click on
+operations at the top followed by
+manufacturing orders and then we're
+going to select new in the upper leftand
+corner now today we'll be manufacturing
+our chair product for this tutorial so
+let's go ahead and select that in the
+product
+field and before we confirm this MMO I
+need to decide how many chairs we want
+to manufacture let's say it's the
+beginning of the workday and I think I
+can complete five whole chairs it's a
+bit ambitious but hey I'm feeling pretty
+limber today so I'm going to go ahead
+and enter five in the quantity field
+here and then click confirm on the Mo's
+top now on the bottom of the MMO if we
+click on the work orders tab I can see
+that manufacturing each chair requires
+two different work orders first we have
+cut the wood followed by assemble the
+chair so let's hop over to our shop
+floor module now to start processing
+these work
+orders on the shop floor dashboard I see
+a card for Theo that I just created if I
+click into the saw
+station this opens a page for that work
+center where our first work order is
+scheduled to be carried out now let's
+say halfway through the workday I've
+only completed the cut work order for
+four of the five chairs that we need
+I'll need the rest of the day to just
+assemble those four so it looks like I
+won't be able to complete all five
+chairs today seems that my eyes were
+bigger than my capacity for chair
+production oh well I'll just go ahead
+and complete this work order for the
+four chairs right now and normally I
+would click on the five units button
+here to confirm that all five work units
+have been completed instead I'm going to
+click on this register production button
+and enter the quantity of four in the
+quantity produced field then I'll click
+validate now I'll go ahead and complete
+the work order by clicking on the mark
+As done button and when I do the work
+order disappears in the next work order
+assemble chair appears at assembly line
+one now there are a couple of things I
+want to point out here first the work
+orders card is titled with original Mo
+number followed by a 001 tag added to
+the end of it this confirms that the
+emmo has been split into two and that
+this work order belongs to the first of
+the two new Emos now on the register
+production line we can see that this
+work order is for four units of the
+chair since that's how many we finished
+during the previous work order now if I
+go ahead and refresh my page here we're
+taken back to the shop dashboard where
+both of the newos appear Additionally
+the first work order of the secondo now
+appears at the saw
+station we can also see that this work
+order only contains one single unit
+remaining and all of this is confirmed
+on the Emo's back end as well so if I go
+back to the first emmo
+click on the gear icon and then click on
+the open manufacturing orders for the
+001
+tag here we can see that the quantity of
+this emmo is
+44 and if I click into the work orders
+tab we can see that there are zero
+quantities remaining for the first work
+order and the second has four remaining
+the back order emmo is linked to this
+emmo by the back order smart button at
+the top of the page
+from this page I'll select the emmo with
+the 002 tag at the end of
+it and on thiso we can see the quantity
+is set to one and on the work orders tab
+it looks like we have both work orders
+remaining for
+each all right now let's just say I
+finished lunched and I'm ready to
+complete the second work order for the
+four chairs in our first ml we're going
+to head back to our shop floor dashboard
+and then click on the assembly line one
+button at the top of the
+page and then click our card for our
+firsto now all I have to do is Click
+Mark is done to complete the work order
+and then close production to confirm
+that the four chairs have been
+manufactured few that was quite a day I
+didn't get as much done as I wanted but
+four chairs is no small manufacturing
+order now when I return to work tomorrow
+and open our shop floor module I'll be
+able to see the back order Mo waiting
+for me to complete and that brings us to
+the close of what I'm sure you can agree
+was another amazing video today we
+learned how to create and process back
+order manufacturing orders using the
+manufacturing app and Shop floor module
+thanks for sticking around and I'll see
+you next time

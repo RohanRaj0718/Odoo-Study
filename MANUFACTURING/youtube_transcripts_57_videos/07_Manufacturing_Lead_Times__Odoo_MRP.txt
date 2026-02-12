@@ -1,0 +1,318 @@
+Video: Manufacturing Lead Times | Odoo MRP
+Video ID: M6EvYnXT160
+URL: https://www.youtube.com/watch?v=M6EvYnXT160
+Playlist Index: 7
+================================================================================
+
+[Music] twinkling
+Hello Odoo-ers.
+Have you ever waited so long for a package you 
+forgot you ordered it? 
+Like when I waited two years for my KAT Atlantis keycaps? 
+and I was so over them by that time, 
+so I have these ones now.
+You see, at Stealthy Wood, we take *Ctrl*, 
+and we avoid production delays by scheduling  
+orders based on production and delivery times. 
+By accurately estimating delivery times,
+ we ensure that the parts
+ arrive just as we need them.
+And Manufacturing Orders are completed just in  time for shipping. 
+Now this not only eliminates 
+the need to keep parts and finished product in stock, 
+But it keeps us efficient because
+to put it simply 
+a lead time is the amount of calendar days  
+that it takes for a process to be completed from 
+start to finish.
+now there are lots of different types of lead times, including
+Customer Lead Time, which it's the number of days between  
+when the product is ordered and when it's left the warehouse basically
+ Now remember Odooers, this is actually important here
+Whenever we're talking about Customer Lead Time,  
+we're referring to the delivery lead time. 
+Next, we have Manufacturing Lead Time,
+or the number of days
+it actually takes us to build a product. 
+now in this video,
+I'm going to show you a cool new feature 
+inside of Odoo called... 
+Days to Prepare 
+Manufacturing Order
+Now with it,
+we'll know when we need to order necessary parts.
+They are mini deadlines and reminders 
+to help us finish manufacturing on time.
+Now let's start clickety-clacking away 
+at the essence of logistics!
+All right so let's begin on the Manufacturing app
+and we're going to take a quick look at
+ the Sturdy Table that I'm selling.
+Now we can find it by going 
+up here to Products > Products
+and selecting Sturdy Table. Perfect.
+we're here at the product form.
+Now to start (and this is important!)
+We define the Manufacturing Lead Time on the product form. 
+so, we'll also click on the Inventory Tab
+and you'll find the
+Manufacturing Lead Time field, located in 
+the Logistics section over here.
+In our case, we're going to say that
+it takes us five days to build a Sturdy Table.
+Now, the Customer Lead Time below here:
+is the time between when a customer places an 
+order and when we ship our sturdy table out.
+We're using the 0,0 reordering rule to replenish 
+our stock and plan when to begin manufacturing,  
+so we can estimate that the whole process takes us 
+two weeks
+14 days. Now again this is also known as  
+the delivery lead time and if you don't believe me, 
+hover over these little question marks.
+they always give you small little information and bits of stuff.
+Alright, next-- let's check on the 0,0 reordering rule configs
+by clicking on the Reordering Rules 
+smart button up here.
+Beautiful, all right now
+0,0 is a nickname for a reordering rule where 
+the minimum and the max quantity are both set to zero.
+This means we don't want to keep 
+any finished table or its components in stock.
+but we'll start manufacturing one when 
+a customer places an order.
+So what happens if a customer cancels that order?
+ Well Odoo stores that 
+table and seeks to deplete it when someone else orders it,
+bringing the max quantity again to zero.
+now the same goes for the opposite--
+when a customer orders a Sturdy Table
+the forecasted quantity over 
+here turns to -1 
+which is a signal for Odoo to reorder and bring the number back to 
+zero.
+With how 0,0 works in mind, 
+here's a Jose quick tip:
+Click on this awesome little 
+"i" and that'll take you to a lead time breakdown  
+to get a better idea of when we can expect the 
+finished product. 
+which is a forecasted date,
+ but like with all things such as forecasts...
+Forecasts 
+on the Replenishment Info page
+calculate estimated dates based on
+ lead time values (from the product 
+form) and global Security lead times 
+and then they output those estimated date values in calendar 
+days 
+meaning they don't take work center working time into account.
+Now let's tackle days to supply 
+components.
+So let's take a look at the Bill of Materials, or BOM (for my acronym lovers)
+For these Sturdy Tables so we're going to go back over here and  
+select our Bill of Materials smart button and 
+we're going to go right in there.
+Beautiful
+we'll notice that the parts needed to build the 
+table are the table legs and the large wood planks 
+but next let's click on this Overview and would 
+you look at that:
+Currently the Availability column for both the Sturdy Table and the table legs
+is showing "Not Available"
+because we haven't properly set up the Purchase Lead time for the table leg 
+component. 
+So let's take a look at the table legs 
+directly from the Table
+ now if we do 
+that that'll actually open up the product form  
+and then we're going to switch on over here to 
+Purchase. And there's our problem!
+We don't have a default vendor. In our case,
+we're going to use 
+the one we've been working with a lot.
+and they said those were five dollars, and our delivery lead 
+time is--  four days 
+all right beautiful. Everything is set up.
+manual cloud save up here
+okay so if we 
+go back to the BOM Overview
+in our case using the breadcrumbs (which today are sourdough)
+Ah, look at that!
+ It went from "Not Available" to 
+giving us estimated dates 
+and that's because now that the 
+lead time for the table legs is set up,
+the report has been updated with an availability for both of 
+them 
+and it tells us the exact estimated date 
+that we anticipate finishing manufacturing the table 
+Beautiful! So based on the lead time set previously  
+that we have over here
+the earliest date will have 
+the finished product is in nine days.
+because even if we ordered the components today, 
+the large wood plank comes in two days
+and the table legs come in four days. 
+I'd also like 
+to make a quick note that the component with the longest lead time
+is used to calculate the Days to 
+Prepare Manufacturing order,
+and I'm going to show you what that means.
+So in our case, we're actually 
+going to go back to the Sturdy table product page  
+using the breadcrumbs and it's 
+the leftmost one at this point 
+all right, now that we're here
+ in the Logistics area
+you'll notice 
+we could either manually select Days to Prepare  
+Manufacturing order or compute from BoM and boom-- 
+would you look at that? Beautiful 
+It pulls four days, which was the longest lead time to manufacture 
+or purchase the components from the BOM. Now this
+is helpful when you have tons of components and 
+lead times.
+and now I'm going to show you a quick
+summary of all of that.
+Alright so in summary, 
+the 14-day customer lead time
+is a default timeline for producing a Sturdy Table
+Five days from when 
+we've placed a Sales Order, 
+we get an alert on the Replenishment Report to create a Manufacturing 
+Order.
+Now this triggers 0,0 to get our parts from the vendor,
+which arrives on the ninth 
+day (June 1st).
+This date is also the scheduled date on the MO,
+which is the last day to begin 
+manufacturing the Study Table to ship it on time
+on June 6th, Odoers. 
+but let's see how this 
+works when we create a sales order for a different  
+product, our Driftwood table
+ which has all of the 
+lead times set up exactly like the Sturdy Table  
+we were working on earlier. Alright, so 
+here we are, and
+ 
+we're gonna make a new quotation.
+and in this case our customer Tom Hanks
+wants to order one Driftwood Table 
+because he *cast away* his last one
+Perfect-- Driftwood table...
+and we are all set.
+ Alright now, Tom Hanks
+ while we're determining the delivery date tells us 
+hey I really don't want to wait even 
+one extra day.
+ I'm anticipating my first meal with Wilson on this table
+Let's not disappoint him. 
+In our 14-day timeline for our regular customers,  
+we don't even order components until the fifth day. 
+Skipping all of the waiting,
+we'll use the BOM Overview  
+to give them an estimate of the 
+soonest available table 
+so we're going to go directly using our internal link
+just for him; because 
+we're trying to be very kind
+[click] Bill of Materials  
+in there.. and (BoM) Overview
+all right now-- Boom!
+The date's right there. The finished
+ table will be ready in
+seven days; two days earlier than the Forecasted 
+Date I showed you before.
+and that's because I have all the table legs in stock
+so I only need to wait 
+two days to prepare the other components 
+Combined, we get five days to manufacture the table 
+over here using the lead times. 
+and then--
+we can finish it in seven days.
+Now this report can give 
+accurate time estimates for different quantities as well.
+Now if Tom wanted-- let's say
+another table-- 
+you'll see  
+and we click up here and we do, two--
+something else happens.
+The Forecasted Date 
+is updated now to show us a longer time because  
+we'd have to wait the full four days for Vintage 
+Goods to ship the table legs 
+so we promised Tom that he will receive his table 11 days from now,
+the Estimated Date, May 30th, on the BoM Overview tells us
+we can ship the table out of our workshop 
+in seven days
+ we only need two days to procure components
+ and five days to manufacture. 
+We check 
+the distance from our workshop in San Francisco to  
+Tom's location and verbally told him to expect the 
+package on June 3rd,
+four days from the Estimated Date.
+Then if we go back over here to the Sales Order...
+Now in this new one, we go inside of Other Info (tab).. 
+down here to Delivery Date
+and we're going 
+to set this to seven days from today. Perfect.  
+would you look at that! Remember, the Delivery Date 
+is the day you're planning to ship the finished product out of your workshop. 
+We'll get an alert 
+since we set the product to deliver sooner than the 14 days we sat on the Customer Lead Time 
+shown as the Expected Date down below. 
+but we can actually just ignore it because you, Odoers, have 
+the power!
+ Now we can save, confirm this and we're done.
+Boom! Since we set our Driftwood Table with a 
+0,0 Reordering Rule,
+ the need will show up on  
+the Replenishment Page inside of our Inventory 
+app 
+go to Operations > Replenishment and there we are, Odooers!
+ Now with this "To Reorder" 
+filter up here, 
+we only see tasks that need to be done.
+and this one needs to be done right 
+now 
+so let's reorder by selecting "Order Once"  
+and what did that just do, Odoers? 
+Well Odoo generates a 
+Manufacturing Order for us.
+Would you look at that! 
+Let's hop in there. 
+And looking into this on this MO
+to build one Driftwood Table,  
+we could see the Scheduled Date is three days from 
+now since we need two days to get the component.
+And would you look at that. 
+We have a Purchase 
+Order since we set up the 0,0 reordering  
+rules for the components. Odoo automatically creates 
+POs for the components that we're missing. 
+now as you'll see the Order Deadline is tomorrow 
+but we're just going to order it, in our case because  
+we need it ASAP. 
+And if we head back over here to our Manufacturing Order...
+ you'll finally see  
+that in yellow over here that the large wood 
+planks are expected in three days. 
+Now the Scheduled Date is still indicating the latest 
+start time for the production
+ to ensure on-time delivery.
+Since we already ordered the components, 
+we can begin building once they arrive so we're  
+on track to finish before the May 30th deadline.
+Beautiful, Odoo-ers, and there you have it!
+Odoo makes estimating dates and planning productions easy. 
+While 0,0 gives you a comprehensive view of scheduled
+ dates to ensure timely manufacturing .
+Now check out our other videos on planning and the Master Production Schedule
+coming out soon, 
+for more scheduling features.   
+Goodbye for now Odoo-ers ~
+Go grab a snack. And if no one's 
+told you today, you're doing great. These are hard

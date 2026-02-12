@@ -1,0 +1,157 @@
+Video: Work Center Parameters | Odoo MRP
+Video ID: 4lus18iXc3U
+URL: https://www.youtube.com/watch?v=4lus18iXc3U
+Playlist Index: 33
+================================================================================
+
+what's going on o doers and welcome back
+today we're taking a deep dive into work
+centers specifically we'll be talking
+about how to use a few settings on the
+work center form to influence the
+expected duration of work orders carried
+out at those centers so let's jump into
+our database to see how we can provide
+ODU with the information it needs to
+make those
+calculations all right let's start by
+opening the form for one of our work
+centers I'm going to go ahead and do
+that by opening our manufacturing
+application selecting configuration at
+the top and then down to work centers
+and then we're going to click on our
+finished station work center which is
+used to apply wood finishes to our wood
+products now we've already covered the
+fields at the top of the form in our
+work center Basics video If you haven't
+watched that one already be sure to
+check it out I'll also leave a link to
+it in the description below today we'll
+be focusing on a few of the fields in
+the general information tab starting
+with our production
+information first up we have our time
+efficiency field the value entered here
+represents how efficient the work center
+is when it comes to processing work
+orders in relation to their expected
+duration for example the field currently
+shows 100% which means a work order with
+an expected duration of 60 Minutes will
+take 60 Minutes to process now if I
+enter 200% here
+instead it means the work center
+processes work orders twice as fast so a
+work order that normally take 60 Minutes
+would only take 30 minutes with this
+example let's enter a Time efficiency
+value of 50% which means work orders
+processes here take twice as long next
+we have the capacity Field capacity this
+one's a little bit simpler to explain
+basically this represents how many units
+of a product can be produced at this
+work center so if I enter five in the
+capacity field here this means this work
+center could process five units of a
+product at the same
+time we'll just leave it set to this
+capacity of five for our example for now
+up next we have our OE Target which
+stands for overall equipment
+Effectiveness here we can set a goal for
+how efficient we want the work center to
+be this is calculated on the expected
+duration versus actual duration of work
+orders by default this is set to 90%
+since we don't usually expect a work
+center to be 100% productive but of
+course we can adjust it as needed OE is
+based on a fairly complicated
+calculation that we examine in Greater
+detail in our overall equipment eff in
+this video so be sure to check that out
+for all the ins and outs of oee so
+before we move on to the workflow I also
+want to point out two Fields here in our
+costing information section which is our
+setup time as well as cleanup time these
+fields represent the amount of time
+needed to set up the work center before
+processing a work order and how long it
+takes to clean up after finishing one
+unlike the time efficiency and capacity
+Fields these are just flat values that
+are added on the total duration of each
+work order so let's say it takes 15
+minutes to set up as well as 10 minutes
+to clean
+up and that takes care of all the fields
+we need to worry about for this work
+center now let's create an emo that
+requires this work center to process a
+work order and that will allow us to see
+how the values we just entered affects
+the expected duration of the work order
+so I'm going to go ahead and select
+operations then manufacturing orders and
+then select
+new then I'm going to select our bench
+product in the product
+field and this product requires the
+stain operation which is carried out at
+our finished station work center under
+normal condition it takes 10 minutes to
+complete the stain operation and we can
+go ahead and see that in the products
+bill of materials or bomb if I wanted to
+view the bomb I could go ahead and do so
+by clicking this right arrow next to the
+build materials field however let's just
+keep moving on with this workflow now I
+want to manufacture a total of 10
+benches so we'll go ahead and enter that
+in the quantity field and then from here
+let's go ahead and click on our work
+orders tab to see our stain
+operation in the expected duration
+column we can see that it takes 65
+minutes for this operation for all 10
+benches but if it takes 10 minutes for
+each bench to be stained and we're
+manufacturing 10 benches shouldn't the
+number be 100 how did we get to this
+number well let's do a little bit of
+whiteboard math it takes 10 minutes to
+stay in one bench and we're carrying out
+the operation for 10 benches that leaves
+us with a total number of 100 minutes
+however since this work center has a
+Time efficiency value of 50% it's going
+to take twice as long to complete the
+operation which gives us a duration of
+200
+minutes this work center can also
+process five benches at once meaning we
+can process a work order in 1 of the
+amount of time it would normally take
+which leaves us with 40 minutes finally
+we have to consider the 15minute setup
+time and 10-minute cleanup time after
+adding both of these values to our time
+of 40 minutes we arrive at our final
+value of
+65 with those calculations already done
+for us all we have to do is confirm Theo
+and keep processing and moving on from
+there and there you have it OD doward
+you now know how to use the fields on a
+work center form to properly calculate
+the expected duration of work orders now
+that you've seen one example I encourage
+you to play around with the work center
+form by entering different values and
+seeing how they interact that's all for
+today and I'll see you next time

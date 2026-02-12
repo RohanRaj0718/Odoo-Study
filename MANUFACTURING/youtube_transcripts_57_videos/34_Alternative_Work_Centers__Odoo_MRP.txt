@@ -1,0 +1,148 @@
+Video: Alternative Work Centers | Odoo MRP
+Video ID: 7BjUXSlx6lo
+URL: https://www.youtube.com/watch?v=7BjUXSlx6lo
+Playlist Index: 34
+================================================================================
+
+what's up o doers today we're talking
+about Alternatives alternative work
+centers that is you see larger
+manufacturing operations often require
+multiple work centers that can process
+the same type of work order this allows
+for a work order to be rerouted to an
+alternative work center in the case that
+the main work center is busy or blocked
+for any other reason by doing so we're
+able to process work orders more quickly
+preventing them from piling up at a
+single work center let's jump into our
+database to see how it
+works all right I'll begin by clicking
+on configuration and then down to work
+centers here I can see every Works
+Center I've created as you can see I've
+already got a few including one assembly
+line titled assembly line one now
+recently we've been having a backup of
+work orders at this work center so we've
+decided to create a second assembly line
+that can also process them I'll
+configure it an Odo Now by clicking on
+the new button in the upper leand corner
+and I'll start by entering assembly line
+two
+as the work Center's name I also need to
+give this work center a code to
+distinguish it from the other work
+centers the code at our first assembly
+line is ASL one so let's enter
+asl2 as the code of this work center I'm
+also going to add the assembly tag in
+the tag field to make it easier to find
+this work center when we're trying to
+see all of our assembly lines the last
+field I need to worry about in this
+section is the alternative work centers
+field this field is where we declare
+which other work centers can accept to
+work orders that this particular work
+center might be unable to handle I'll
+select assembly line one from this
+dropdown and now if this assembly line 2
+work center is too busy or inoperative
+clicking the plan button on a
+manufacturing order will reroute its
+work orders to assembly line one
+instead I'm also going to select this
+work center assembly line two as the
+alternative for assembly line one but
+first let's take a look at the equipment
+tab this is where we specified the
+equipment required for this work center
+to function F when configurating
+alternative work centers it's essential
+that each work center is configured with
+the same equipment this ensures an
+operation carried out at one work center
+can also be carried out at the others
+for example it would be really
+inconvenient if we try to start a work
+order at our saw station and instead of
+finding a table saw the only work center
+that was equipped with a
+orange at our assembly line the only
+piece of equipment we need is the power
+drill I'll add the drill to this work
+center by clicking add a line
+selecting our power drill in the
+checkbox and in the resulting popup
+window I'll just click
+select all right that's all we need to
+configure for this work center before we
+move on I'm going to return to the work
+Center Page by clicking on configuration
+and then work centers once again we're
+going to click on assembly line one and
+add assembly line two in the alternative
+work centers
+field you should to also notice that on
+the general information tab below here
+this work centers capacity is set as one
+this means it can only process one
+product at a time for more information
+about work Center capacity as well some
+of the other settings that you're seeing
+on this page here check out our work
+center parameters
+video now if I go back to the work
+center page through the breadcrumbs you
+can see in the alternative work centers
+column that assembly line one and
+assembly line two have each
+other all right we're all set to use our
+work centers to manufacture some
+products for this example let's manual
+facture a couple of units of our chair
+we'll start by looking at the products
+build materials and we can access that
+by clicking on products and then build
+materials and then we're going to select
+our chair
+product if I click on the operations tab
+here we can see that the manufacturing
+has one step which is our assemble
+operation which is carry it out at
+assembly line one now let's go ahead and
+create a manufacturing order or M Mo for
+that chair and to do that we're going to
+select on operations and select on
+manufacturing orders select new in the
+upper leftand corner and we're just
+going to add chair to our product field
+and then all we have to do is click on
+confirm then when I click on the work
+orders tab where I can see our assemble
+operation is as expected it's scheduled
+to be processed at assembly line one so
+I'll go ahead and just click Start on
+this and since our assembly line one
+work center has a capacity of one this
+work center is now at capacity until the
+work order is completed so let's go
+ahead and create an an identical emmo by
+clicking on this gear icon here and
+selecting duplicate and then just like
+the same time before I'm going to hit
+confirm as you can see in the work
+centers tab assembly line one is still
+scheduled however if I click on the plan
+button here at the top of Theo the
+column updates to assembly line two with
+the work orders for thato scheduled at
+different work centers were now able to
+process them simultaneously and take
+full advantage of our assembly line
+facilities and that's all I've got for
+you today folks thanks for sticking
+around and I'll see you next time

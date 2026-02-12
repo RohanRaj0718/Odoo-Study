@@ -1,0 +1,213 @@
+Video: Manufacturing Order \u0026 Work Order Basics | Odoo MRP
+Video ID: r5JewejnfQ4
+URL: https://www.youtube.com/watch?v=r5JewejnfQ4
+Playlist Index: 47
+================================================================================
+
+what's up oders and welcome back today
+we're discussing manufacturing orders
+oros as well as the work orders within
+them not's manufacturing app a mo or
+manufacturing order specifies which
+product needs to be produced including
+the quantity required materials and
+production timeline it serves as a key
+document in the manufacturing process
+ensuring that the right products are
+made according to the demand and
+operational capacity for example let's
+say that we received order for I don't
+know five office desks to ensure that we
+manufacture the right quantity while
+tracking the raw materials used and
+assembly steps we create anmo for five
+units within thato work orders break the
+process into structured steps helping
+manufacturers managed task to fulfill
+ano like maybe cutting wood assembling
+parts and applying finishing touches
+that makes sense right enough chitchat
+let's jump into ODU so I can show you
+exactly what I mean all right let's
+start off on the Odo Manufacturing app
+dashboard to create a new ammo all I
+need to do is Select operations and then
+manufacturing orders follow this by
+selecting new at the top left over here
+and here we have a newo form for us to
+fill out so here the first thing we need
+to do is sel the product that we want to
+manufacture inside of our product field
+since we already mentioned it think we
+should go with the office
+desk okay it's important to remember
+that Emos can only be created for one or
+more units of a single product if I want
+to manufacture a coat rack as well I
+need to create a separate Mo for it now
+after I select the product a few things
+change on the mo form first the build of
+material field autop populates right
+there with the build of materials are
+bomb for the product essentially if you
+don't know a bomb is the blueprint for
+how the product should be made including
+the full list of all of the required
+ingredients components work orders you
+name it if you already know a bit about
+bombs you'll also know that a single
+product can have multiple bombs I want
+to select a different one inside of voto
+for thiso I can do so by clicking in the
+bill material field now you notice
+there's an option for a standing office
+desk bomb I'm not going to do that
+though right now believe it or not
+standing desks are great Until you
+realize you've been standing still like
+you're waiting in line at the DMV we
+don't want that right now it's also
+worth mentioning that you can select a
+specific bomb before a product is
+selected which causes the product feeli
+to autop populate instead in the reverse
+however by selecting the product first
+it makes the build material field only
+show bombs for that specific product So
+Below the product field is the quantity
+field that we also happen to have right
+there here we can enter the amount of
+desks that will be manufactured for
+example I can enter a quantity of five
+we're going to click away doing so would
+automatically update the component
+quantities that we have over here for
+the work orders and you'll kind of
+notice if we go over to work orders
+expected duration has gone up as well
+right here that's pretty interesting but
+being said we're going to go back to one
+the two other sections of the form that
+autop populate when I Pro product or
+bomb is selected are the components and
+the work orders so the components tab
+shows us as I said all the components
+needed to manufacture the specific
+product in the case of the office test
+it needs a desktop a single one and then
+four wooden legs right there on the
+right side of the product lines we also
+see the required quantity for each
+component as I just talked about if I
+click into our work orders tab over here
+I could see the operations required to
+manufacture the product in this case we
+need to cut the desktop and I'm going to
+stretch so you can see so we need to cut
+the desktop over there and then we add
+the wooden legs afterwards the line for
+each operation also shows the work
+center where it will be carried out
+assembly one and assembly two and the
+expected duration that we happen to have
+right over here and then you can also
+have a real duration as well as you can
+see both of these operations will take
+exactly 60 Minutes to complete now
+you've probably already figured out that
+the combined time to complete both
+operations as a total of 2 hours so
+where can we see that reflected on the
+MMO
+form okay so if we click confirm up in
+the top left of the MMO we will see in
+our case a scheduled end over here and
+if we take a look at the scheduled date
+and end fields we will see that these
+fields are automatically updated based
+on the two operations estimated times
+right there the estimated time end for
+the scheduled end happens to be exactly
+2 hours after the schedule date makes
+sense right if I want to I can also
+change the schedule datee up at the top
+by selecting into it and this indicates
+when I need to start building the desk
+however the end field can't be modified
+and will always be set to the scheduled
+date plus the expected duration of all
+the work orders as servant OD doers
+might notice
+this we actually happen to new have a
+new component status field that has
+appeared right there since we have all
+the required components in stock the
+status is available and it's green if we
+were missing one or more required
+components it would instead read not
+available furthermore the word available
+appears in a green font as I just
+mentioned this means that the ammo is
+good to go ready to start we can also
+see this reflected in the chatter as
+well as you could tell over
+here so everything happens to be ready
+what else can that mean well that means
+that we can go right now we have one
+step manufacturing enabled this means
+that Emos will be marked as ready as
+long as we have enough components in
+stock if we were using two or resep
+manufacturing we would need to transfer
+components to the production location
+before the emmo would be ready to start
+in that situation component status would
+still be available but it would appear
+in an orange color or perhaps yellow if
+you are a little bit colorblind which
+means waiting for components so down
+over here in our work orders tab we see
+a real duration column that I was
+talking about earlier which was there
+before the ammo was confirmed but it now
+reads a zero for each work order the
+real duration represents the actual time
+that it takes to complete a work order
+we also see in our case a new status
+column over there which displays the
+current status for each work order the
+cut desktop one is ready right now since
+it's the first work order and the emo
+itself is ready if I happen to click on
+the green start button right there on
+the right the real duration timer Begins
+Counting as you can tell right there and
+the status changes itself to in progress
+the insert wooden legs work order is
+marked as waiting right now because you
+guessed it the cut desktop work order
+needs to be completed first if I click
+on the green done check bar right over
+there would you look at that the status
+of insert wedding insert the wooden leg
+small little dupsy right there happens
+to be ready since it's no longer waiting
+on the other work orders I'm just going
+to also very quickly complete that one
+right there and now we're done
+fully okay so everything is done with
+both War quarters completed and marked
+as finished I'm ready to close out the
+ammo so to do that all I need to do is
+click on our produce all button at the
+top of the screen right there and just
+like that Theo is closed and we've
+officially produced One office test not
+too shabby right and that actually
+brings us to the end of this amazing
+tutorial today you learn how to create
+and process manufacturing orders along
+with the work orders within them see you
+in the next video doers I'll catch you
+on the flip side today's snack was I ran
+out of snacks I've been eating all day

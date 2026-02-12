@@ -1,0 +1,263 @@
+Video: Master Production Schedule (MPS) | Odoo MRP
+Video ID: x6axssGJb-k
+URL: https://www.youtube.com/watch?v=x6axssGJb-k
+Playlist Index: 14
+================================================================================
+
+hello doers and welcome back today we're
+going to discuss how to use the master
+production schedule or MPS for my
+acronym lovers so that you can pump up
+your company's planning capabilities to
+the max Master production schedule is a
+long-term planning tool that gives you a
+bird's eye view of your overall
+production it's based on your company's
+aggregate plan but requires additional
+inputs like the demand forecast
+inventory levels and customer orders in
+return the master production schedule
+provides you with the quantity you need
+to produce the remaining inventory and
+the overall amount of product you can
+promise to customers when set up
+correctly the MPS prepares you for
+fluctuations in demand so that you can
+prevent stockouts perform effective cost
+control and plan your company's cash INF
+flow MPS is also helpful for dealing
+with seasonal products if we use models
+to help us forecast Peak demand periods
+the MPS can help us plan our
+manufacturing taking production capacity
+and Lead times into account here at
+stealthy wood we also work with seasonal
+products like winter holiday decorations
+and if you're like me you know it's
+never too early to start decorating for
+the holidays so enough chitchat let's go
+make our house look spooky and very
+festive first things first let's quickly
+review the bill materials or bomb for
+our Christmas painting by going up here
+to products Bill materials and selecting
+it now I can see that it's made up of a
+frame backing board and printed canvas
+now that's easy enough
+we also need to make sure that we've
+activated the master production schedule
+Itself by going up to configuration and
+settings underneath the planning section
+make sure that little checkbox next to
+master production schedule is checked
+off and save your settings great while
+we're here we also have the option to
+choose what time range over here that we
+want to view in our MPS as well as the
+number of columns for now I'm going to
+keep the default settings which will
+show us 12 months now to go view that
+MPS we're going to select planning and
+master production schedule great but
+it's blank so first you need to add the
+products to schedules that you want to
+plan out so select add a product let's
+go with that Christmas painting again
+now we also have the option to select
+the build of materials I filled it out
+what what happens if you don't if you
+leave this field blank the MPS will only
+show the product and not the bomb itself
+now here I can also Define Safety stock
+Target which is the extra inventory we
+can keep to prevent a stock out I can
+also indicate the minimum and the
+maximum values to replenish for now I'm
+going to leave these all as they are and
+just hit save great stuff has appeared
+now and now we can see the forecast for
+the painting as well as all of its
+components over here now by default the
+following fields are displayed we have
+the forecaster demand which is the
+estimated future demand for a product we
+also have the suggested replenishment
+which tells us how much of a product we
+should order to keep up with demand and
+finally we have forecasted stock which
+tells us how much inventory we should
+keep to keep up with that demand as well
+everything right now is zero because we
+haven't set up a forecasted Demand yet
+for each product I can actually adjust
+the Safety stock Target or minimum and
+maximum replenishment quantities
+whenever I want to all I have to do is
+hit this little Target across from
+forecasted stock and a popup appears
+over here I could adjust it to my liking
+but for right now I'm going to hit
+cancel on that now clicking on over here
+where we have the unequal or less than
+sign above it takes us to the same exact
+popup so we're going to cancel that out
+too now finally if I have a lot of
+products visible on the MPS and I want
+to view just one of them I can simply
+search for it by typing in something
+like let's see the frame over here and
+boom there it is all right now that
+we've reviewed the default settings it's
+time to get crazy over here let's add
+some of those additional fields to this
+bad boy now the way we do that by
+clicking on rows that we have right
+there and now we can add some of them
+now right here we have the actual demand
+which is based on confirmed sales orders
+so when we check actual demand it'll
+show as a fraction of the forecasted
+demand value now let's say that I want
+to view the last year's actual demand so
+we're going to do actual demand y one
+over there boom this generates a new row
+containing last year's demand and then
+over here we have the actual
+replenishment that we have right there
+and what does that do well it provides
+us replenishment values based on
+confirms rfqs along with manufacturing
+orders so when we have that option there
+boom we have it and now it displays as a
+fraction of the suggested replenishment
+and then finally we have available to
+promise over here and that is the
+quantity of products we can sell at the
+end of a period when we check it look at
+that it can be viewed as well as a
+fraction of the forecasted stock on the
+same page few all right that was a lot
+of info I out so why don't we enter
+actual values into the MPS and see how
+that magic works so the first value
+we'll want to Define for each month is
+the forecasted demand since the MPS is
+based on forecasted and actual demands
+and the forecasted demand has to be
+entered manually but this is a seasonal
+product so we only got to do a couple
+months so I'm Loosely going to base my
+estimates on last year's actual demand
+so starting with no November over here
+we had 800 then we had
+950 somehow a th000 and finally it goes
+down again at 900 a lot of stuff
+happened when I did that now you'll
+notice that these forecast of demand
+values for the final product will affect
+the indirect demand forecast for each of
+my components so I don't need to
+manually forecast everything which is
+super handy and in this case the ratio
+of each component to the finished
+product is 1: one so the demand values
+are directly proportional as you could
+tell when we have the 800 there and then
+each of them is also there great now the
+suggested replenishment value that we
+have up here has also been populated
+automatically and since I don't have any
+products or components in stock it's
+going to be the same as the forecast of
+Demand right above it if I want to
+change the adjusted replenishment value
+manually I can actually just do that by
+changing it in here let's assume that
+this was actually
+950 oh no would you look at that when I
+click away an x button shows up and it
+tells me it gives me the option to reset
+this to what it actually was in case I
+had butter fingers now the available to
+promise value is you guessed it also
+calculated automatically and it equals
+the replenishment minus the actual
+demand okay now that we understand what
+the MPS values mean and everything let's
+move on to replenishment when I hover
+the word replenish over here look at
+that Odo ODU highlights the earliest
+cell that needs replenishment when I
+click on replenishment
+Boom it applies the actual replenishment
+the cell has now turned gray since the
+adjusted and actual replenishment values
+are equivalent when I hover it again now
+this time it's showing me the next
+earliest month December this time let's
+see what happens when I replenish more
+than is required by the demand so we're
+going to hit a th000 in here instead of
+950 now when I hit
+replenish and click on that X would you
+look at that the cell turns red since we
+replenish more than the originally
+suggested quantity now for the next
+month let's see what happens when I
+replenish less than the suggested
+quantity so for this one we're going to
+put 900 right there boom look at that o
+doers if I click away you'll notice that
+my forecasted stock is now negative
+relative to the forecasted demand which
+means I'm replenishing too little over
+hero doers now for the purpose of this
+example I'm going to click replenish
+anyway on that one and then when we hit
+the
+X look at that the sell is now yellowy
+orange because the actual replenishment
+is less than suggested right there all
+right one more thing and then we're done
+if I want to look at my actual
+replenishment documents all I have to do
+is click on the Bolen number that
+represents the actual replenishment
+right there if we click over here we see
+we have 800 of these manufacturing
+orders and look at that they are all at
+this point
+confirmed and what does that mean oo
+doers well if we go back over here to
+the master production schedule I'll talk
+about that now the process of
+determining and applying replenishment
+values for components is the same as the
+final product for example let's look at
+in our case we have the frame component
+that we had over here if we click over
+here to the actual replenishment button
+and then we select the value in this
+case we have 800
+rfqs and I'll see that that's because we
+purchased the frames instead of
+manufacturing them now for this to work
+you'll need to have a vendor setup on
+the component product form as well so
+make sure that you have that and finally
+if a component is manufactured instead
+of purchased it's replenishment document
+will be a manufacturing order but
+everything follows the same general flow
+of logic these OS and everything as you
+guessed it will either be in an RFQ or a
+confirm stage in the case of mos and
+that's it now you know how to use the
+master production schedule and odu's
+Manufacturing app now it's time to use
+this through your advantage and become a
+production scheduling Master anyways as
+always OD doers thanks for watching this
+one was pretty complex so go grab
+yourself a
+snack

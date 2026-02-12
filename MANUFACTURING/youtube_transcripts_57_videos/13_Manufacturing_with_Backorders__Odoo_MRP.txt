@@ -1,0 +1,237 @@
+Video: Manufacturing with Backorders | Odoo MRP
+Video ID: UWCeeU2aVV4
+URL: https://www.youtube.com/watch?v=UWCeeU2aVV4
+Playlist Index: 13
+================================================================================
+
+hello doers and welcome back in some
+cases we don't have enough components on
+hand to produce all of the items listed
+in a manufacturing order now when that
+happens Odo allows us to create a back
+order for the remaining products so that
+we know they still need to be
+manufactured now when manufacturing an
+item uses the three-step manufacturing
+process we can create backorders at each
+step of the process picking
+manufacturing and transferring I'm glad
+that's all three now since ODU
+integrates operations across its apps
+back orders are easily created and
+tracked throughout the platform now in
+this video I'm going to demonstrate how
+back orders can help us get back on
+track with manufacturing demands and
+inventory levels so enough chitchat
+let's jump right into our ODU
+database so before following this flow
+make sure that multi-step brouts is
+activated in your inventory settings and
+three-step Manufacturing is selected for
+your warehouse for more details on this
+check out the tutorial on manufacturing
+and two and three steps which I'm going
+to link below now while we don't need to
+have three-step manufacturing selected
+since ODU is going to create back orders
+for one or twostep manufacturing we are
+going to use it as an example since it's
+the most complicated manufacturing
+workflow so here we are on the main
+dashboard now today let's check out what
+we'll be manufacturing and that's our
+bestselling product which happens to be
+a tambourine so go into manufacturing
+products and products select that
+tambourine and go into the build of
+materials real quick all right so as you
+can tell this instrument is made up of
+one frame six dowels and 12 zills what
+is a Zill you may be asking yourselves
+it's those small little metal discs that
+make it go jingle
+jangle all right now let's create anmo
+so we're going to go up here to uh
+operations manufacturing orders and
+select new we're going to select that
+tambourine right there and keep an eye
+on that two consume column because we're
+going to be making two of these bad boys
+today and would you look at that once
+that we added a quantity of two a red
+graph icon appears over here in the two
+consume field letting us know we don't
+have enough of those components but what
+happens when we confirm this well even
+further than that our component status
+tells us it's not available and If you
+divert your eyes over here to the
+reserved column it happens to say not
+available as well further confirming
+that we don't have all the products
+needed to complete the full Mo a smart
+button also appears for two transfers up
+here now you'll notice there are two of
+them one of them happens to be for
+picking over here and the other one is
+for the transfer of the assembled
+tambourines back into the stock let's
+take a look at that picking transfer
+first okay now this is where all the
+magic happens now since we don't have
+all the components available to produce
+two tambourines Odo reserves enough of
+each to produce just one as you could
+tell over here let's go ahead and
+validate this and then apply this over
+here oh and would you look at that is
+that magic as you probably guessed ODU
+already knows that we picked fewer
+components than we needed for the fullo
+to address this a popup has appeared
+that tells us we need to create a back
+order if we want to this splits the
+picking operation and lets me pick only
+the components that I do have on hand so
+we're going to select create order over
+here boom now this transfer is now
+marked as done up here in the top right
+corner let's go back to the mov of the
+breadcrumbs which today is wonderbrad
+because you're all wonderful every time
+and now we see that there are two
+transfers that we have or sorry three
+small o dupsy it went up by one now
+that's because ODU created a new picking
+operation for the remaining components
+that we don't have on hand yet as you
+can tell right there with the new
+waiting one before the one that we just
+finished that's pretty cool right but
+we're going to come back to that later
+so here we are back on the manufacturing
+order we've picked enough components to
+manufacture one tambourine but we still
+don't have the quantity needed for both
+as you can tell with our not available
+still there so what we can do is change
+the quantity on thiso so that we only
+manufacture one tambourine by changing
+it over here to one all right and now
+that we're done we'll click on validate
+up here now once again we are prompted
+to create a back order for the remaining
+tambourine that we need to manufacture
+so we're going to do that once again now
+we have a smart button over here for two
+back orders one that is actually done
+and completed and one that is awaiting
+component so it's just confirmed right
+now and it's telling us it's not
+available so let's check our transfers
+Again by clicking on the breadcrumbs for
+the second demo and then selecting the
+transfer smart button again so we're
+going to select that and select our
+transfers now inside of here we can
+actually see that the transfer from post
+production to our stock is actually
+ready down there why since we
+successfully made manufactured one of
+our tambourines we can transfer the
+finished product to storage so we're
+going to select this last one right here
+and when we validate and apply this once
+again we get another back order message
+since only one of our tambourines is
+manufactured and ready to be stored so
+we're going to go ahead and create a
+back order with that one which will once
+again create another back order for the
+remaining tambourine all right so right
+now at this point I want us to go back
+over here to the well back over to ouro
+and then we're going to go back over to
+our transfers now you'll notice we have
+a new one that says waiting for another
+operation all right up to this point we
+finished the entire manufacturing flow
+for one tambourine we've picked the
+components assembled the instrument and
+mark the manufacturing order as done and
+we've transferred the product back to
+our stock all that's left to do is
+complete the same flow for the second
+one however we still don't have enough
+components so we're going to need to
+order Miller so to do that we actually
+have to go out of here and go inside of
+our inventory application over here and
+then we're going to select operations
+replenishment this is where the really
+cool thing happens now since I have a
+vendor designated on the component's
+product forms and the system knows that
+I need one more frame six more dowels
+and 12 more zills to make the remaining
+tambourine Odo actually shows me what I
+need for each of these components and I
+could do it all at once and isn't that
+fabulous all I have to do is click on
+order once for each component which will
+start to create that purchase order for
+me look at that boom we're all done
+right there and what's really neat is is
+that ODU only creates a single purchase
+order for all three components since we
+buy them from the same vendor all right
+sweet let's go check out our purchase
+order so we're going to go out of here
+and where are we going OD doers well we
+just purchased a bunch of stuff so we're
+going into the purchase app and we're
+going to go into our latest one over
+here now we're going to confirm the
+order and I'm going to pretend that I
+see everything inside of our warehouse
+so we're going to basically we're going
+to receive the products and apply this
+validating it and applying boom we're
+all done awesome now when we go out of
+here and back inside of manufacturing to
+our work order over here our
+manufacturing order sorry o doers we'll
+actually see that the component status
+is now available and If I click on the
+transfer smart button what does it say
+as well oo doers that first one that we
+were waiting on is now ready since we
+have the components on hand so we're
+going to go in there and now we're going
+to validate the pick we're going to
+apply this with the components picked we
+can actually complete the manufacturing
+order so we're going to go back into
+that manufacturing order over here here
+we're going to Mark as done we're going
+to apply this and we're all done at this
+point would you look at that o doers and
+when I click on at this point our
+transfers look at that it's already
+ready now we can validate this and apply
+this as well because we've made
+everything and finally when we go look
+at our tambourines product page what
+does it say out doers says we have two
+units right there and that's it for this
+video today we learn how to use back
+orders throughout the entire three-step
+manufacturing process process now we can
+move forward with any manufacturing
+orders that are partially ready even if
+we can't manufacture all the products at
+once thanks for watching grab a snack
+this one was complicated so probably
+grab a full
+dinner

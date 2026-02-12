@@ -1,0 +1,238 @@
+Video: Costing: AVCO | Odoo MRP
+Video ID: E5YDrUDxQD8
+URL: https://www.youtube.com/watch?v=E5YDrUDxQD8
+Playlist Index: 8
+================================================================================
+
+foreign
+ERS welcome back my name is Jose Ignacio
+now in this episode on our costing
+method series we'll be focusing on the
+average costing method which is avco for
+my acronym lovers now this is for
+valuing the cost of our manufactured
+products now if you missed our costing
+overview make sure to check out the key
+Concepts I covered before continuing now
+for those who already watched the
+costing overview well let's ask what
+exactly is average costing now this is
+important to remember but average
+costing is a method that calculates cost
+by averaging the prices of purchased
+products that are already in stock now
+it Updates this value whenever new
+products are received or manufactured
+now this approach is pretty useful when
+the prices of products and their
+components tend to change or you Source
+them from multiple vendors and that type
+of thing in this video I'll be creating
+two manufacturing orders for tables
+using differently price components to
+illustrate how the average cost method
+determines the product cost so without
+further Ado let's get to our database
+all right oh doers so to track the cost
+of manufactured products we'll Begin by
+setting a cost on our work center to
+reflect hourly labor and Machinery costs
+so inside of the manufacturing app make
+your way over to assembly line one work
+center and under the costing information
+heading do you see this cost per hour
+field well as you guessed here we have
+it set to fifty dollars since I pay
+Steve quite well to build tables lucky
+Steve he has a job okay next let's move
+on to the component cost so in order to
+check that out we're gonna hop on over
+here into the inventory app now we can
+see the overview report for our final
+product which is the table now to get
+there navigate to its product page from
+here we go up the products products
+table
+all right now once that we're here in
+the products general information tab you
+see this cost per units right now it's
+currently set to zero now for more
+different information or detailed
+information we can actually just click
+on the build a material smart button and
+when we click on our product
+and then the overview smart button boom
+we have a report now what does this
+report give us well it provides
+information on the number of products
+that currently can be produced along
+with the cost now by checking the
+materials I need to make this table over
+here via the quantity and everything
+what does that tell us well I see that
+all the required parts are in stock and
+that's a very good thing and that means
+that I can basically produce one table
+right now and that also means that
+inside of the bomb cost column we could
+see the cost of production for all of
+this as well now as you could tell
+that's the work center cost we set up
+earlier
+beautiful now if you check over here too
+the product cost column over here tells
+us how much it costs to buy all of the
+raw materials as well and that's kind of
+important now for the first
+manufacturing order I'll be building a
+table using a 10 table top and four of
+those beautiful legs now before moving
+on let's remember
+you know this costs what thirty dollars
+because 10 and then 20 and that's 30.
+all right using that photographic memory
+let's create our first manufacturing
+order now since you've definitely
+watched my manufacturing and one step
+tutorial video before I'm going to use a
+ammo I created in advance so in our case
+make our way over there to our
+operations manufacturing order and
+select it perfect now once that this
+ammo is confirmed I can start the work
+order over here by going over to the
+work orders tab now I'll say that I
+spent 60 Minutes working on this table
+like a very hard worker now I can
+complete the manufacturing order marking
+it as done and applying it and when we
+check the table's product form and this
+is where it's very cool because all the
+magic comes together we see that the
+cost is automatically adjusted from zero
+to 80 which is a very large jump now
+that's really cool but wait there's more
+let's see what happens to the product
+cost when I process a second
+manufacturing order because this is a
+very cool thing now this time using more
+expensive components so we're going to
+go back to our manufacturing orders via
+the breadcrumbs which today are
+sourdough
+and we're going to create a new one all
+right now after I confirm this Mo red
+icons under reserved indicate that I
+don't have enough components but that's
+not a problem for stealthy wood I can
+refresh my components quickly because I
+set up zero zero reordering rules again
+if you don't know what that is be sure
+to watch my replenishment tutorial but
+you already saw that right oh doers all
+right so in our case we're gonna go to
+the inventory app operations
+replenishment and now since the
+manufacturing order is confirmed we can
+actually see the components appear on
+the replenishment page reminding us two
+replenishment now if we order four more
+table eggs and one more tabletop we're
+pretty much all set up now this creates
+a RFQ for my acronym lovers and this
+basically tells us that I can process it
+in the purchase app so let's go do that
+now so we're gonna go to the purchase
+app select it I hear everyone's excited
+about DIY furniture these days so our
+vendor raise their prices to double
+economy and whatnot per usual now we'll
+confirm this order and receive the parts
+so that we can make our table beautiful
+now after ordering the more expensive
+components the product cost on a
+components form is automatically updated
+again from five to ten dollars now the
+cost is determined by the average price
+of table legs in stock now since the
+five dollar table legs were consumed
+well that only leaves us with a ten
+dollar ones boom now
+that's what I've been talking about oh
+doers and I'm going to show you another
+neat trick right now all right so now if
+we make our way back over here to the
+manufacturing app and going into our
+Mo's from the operations we've basically
+received the parts and I can see that
+the component status is available
+because of this nice little green status
+change now to switch things up we're
+going to tackle this order as if we were
+the assembler so we're going to go back
+to the manufacturing overview and I see
+we have a work order ready to launch at
+our workstation assembly line one so
+let's select that and it's time to do
+this so we're going to click ready and
+there we have it now when we want to
+begin assembling our table we simply go
+here and to log our completed work we
+simply enter the number of units built
+which in our case is one and then we
+select Mark is done and I want to make a
+quick note that while you cannot adjust
+the time spent on the workstation here
+we can still change it on the
+manufacturing order so if we select the
+green back arrow over here go back into
+operations and into the menu
+manufacturing orders although the
+Builder finished the assembly the mo
+status is still as to close which is
+kind of interesting since this means the
+ammo requires a verification before it
+is completely marked as done now inside
+of the Mo's work orders tab you can
+manually change the real duration to 60
+Minutes in our case right here perfect
+oh doers now I want to make a quick side
+note on the components tab there's no
+need to manually fill in the amount of
+components used or quantity of produced
+tables because updates are automatically
+pulled from where oh doers from the
+workstation but we still need to Mark
+the ammo as done so checking the cost
+analysis report over here that's
+available after closing the ammo as well
+odoers we're going to be able to see
+that the table manufactured with pricey
+components cost a total of 110
+ouch that is a lot of dollars basically
+right there now when we check back at
+the table's product form over here
+I see that the product cost has been
+updated to 95 now how did odoo come up
+with this number and that's kind of the
+interesting thing well this is very
+important the first table cost eighty
+dollars to make and the second table
+cost 110 now you divide the sum of the
+cost by two to get the average cost of
+95. odoo did the math for us friends so
+we don't have to it's also important
+hero doers the average cost is updated
+automatically every time an MO is
+processed now this feature also applies
+to components which I also have
+categorized under average cost and there
+you have it that's how you know how to
+evaluate the average cost of
+manufactured products for more
+information on the standard price and
+fifo costing methods in this case be
+sure to check out the next two videos
+now see you next time oh doers go grab a
+snack
+foreign

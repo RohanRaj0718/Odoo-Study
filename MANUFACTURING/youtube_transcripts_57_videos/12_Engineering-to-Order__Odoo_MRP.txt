@@ -1,0 +1,403 @@
+Video: Engineering-to-Order | Odoo MRP
+Video ID: fix2LGkv13c
+URL: https://www.youtube.com/watch?v=fix2LGkv13c
+Playlist Index: 12
+================================================================================
+
+hello my ODU Cadets and welcome back for
+another training Mission at stealthy
+wood HQ today's assignment complete a
+sales order for a customer who wants a
+dining table designed and manufactured
+to their exact specifications why
+because here at stealthy wood we have a
+wide selection of products available in
+our regular inventory this includes
+standard products as well as those with
+variants enabling customers to choose
+from a range of customization options
+however
+sometimes a customer wants us to design
+and manufacture an item that we don't
+normally sell this process is referred
+to as engineer to order or etto for my
+acronym lovers and it allows us to work
+with a customer to create a custom
+product that would be otherwise
+unavailable to them so enough chitchat
+Cadets let's jump in now to see how that
+platform supports this
+workflow so before getting started on
+the engineer to order workflow we need
+to make sure that ODU is properly
+configured the first thing to do is
+confirm that the replenish on order or
+MTO route is an archive the MTO route is
+used to automatically create a
+manufacturing or purchase order for a
+product only after a sales order for it
+is confirmed this is useful for products
+that are engineered to order since they
+are only manufactured when a customer
+orders them the MTO route is archived by
+default as I said to unarchive it we're
+actually going to go over here into
+inventory and configuration and settings
+now you want to scroll down over here to
+reach warehouse and you see that
+checkbox next to multi-step routes well
+you guessed it at this point you want to
+make sure that that is enabled and that
+you hit save up here at the top all
+right now that you do that a routes
+option will appear on the top
+configuration menu so you want to go up
+to configuration and routes once the
+select it it basically shows you all of
+them now as you can tell I've already
+unarchive the MTO route so let's
+unarchive a different route as an
+example instead to do so we're going to
+click on filters appear here archived
+and there we have it we have this uh
+cross do one now once that you select it
+over here you you can actually click on
+this action button and boom you guessed
+it unarchive and just like that if I
+remove the archive filter there it is
+right there and then now appears on the
+routes page meaning it can be used for
+our workflows all right so up next let's
+head over to the project app because I
+want to show you something okay so here
+you can see that I've already created an
+engineer to order project this will help
+us keep track of the stages for each
+etto order if I click on the actual
+project you'll see that I've also
+created four stages over here we have
+waiting design review and finished now
+let's head out of here because I want to
+show you more stuff I'm just doing that
+today we're going to go into sales over
+here okay and you want to look at the
+products perfect so inside of here I
+want to make sure that our products are
+set up correctly so first we have the
+etto service product over here now this
+represents the process of having our
+employees design and engineer the
+product based on the customer
+specifications here you can see that
+I've actually set the product type over
+here to service why and the units of
+measure all also to hours why well this
+is basically set that way since the
+customer will be build per hour of work
+that our employees do this service will
+cost $100 per hour and that's how that's
+calculated and then finally I've also
+set the create on order field that we
+have right there to task inside of the
+project engineer to order just so that
+everything works properly now this will
+ensure that a new task is created in the
+project every time we confirm a sales
+order for the etto service all right now
+let's go out of here and go back via the
+breadcrumbs which today is ETO bread and
+select the actual product over here now
+this is a generic product that we've
+created that can be added to the initial
+sales order and then reconfigured after
+the design process on the general
+information tab you'll notice
+immediately that the product type over
+here is set to storable why well since
+this will be a physical product that
+we're going to manufacture the sales
+price is left as $1 just because we
+don't know yet how much the final
+product will cost this will be updated
+later on the sales order itself next if
+I click on inventory over here I want to
+direct your attention over here you want
+to make sure that the MTO and
+manufacturer routes are both enabled the
+MTO route must always be selected
+alongside another route or else ODU
+won't know how to replenish the product
+this configuration tells ODU to create a
+manufacturing order for the product
+every time a sales order is placed for
+it finally if I click on the building
+material smart button up here at the top
+here we see all of the product bombs and
+if we select this bottom one called
+template over here we can actually see
+something that I've already configured
+this bomb is just a template with the
+components and the operations tabs both
+empty over here now why did I do that
+well that's because during the
+manufacturing process I can duplicate
+this template and configure it as needed
+this is useful because it means that I
+don't have to create a new bomb for each
+ETO product I just need to configure a
+new variation of the template and you do
+that by selecting action and
+duplicates so right now the other thing
+that you can also tell for this this is
+that in the reference field up at the
+top I've entered template this will
+allow us to easily distinguish between
+the blank bomb and the ones that we can
+figure for each custom product that we
+produce and boom we're all set to sell
+the etto service to a customer so let's
+move on so now that we're all set to
+sell the etto service to a customer and
+then design and manufacture the exact
+product that they're looking for we can
+actually start the whole process by
+actually staying here on the sales app
+and selecting new on the quotations so
+let's assume that our customer over here
+is
+corner and we need to now start adding
+our product so we have an etto product
+as well as an etto service over here now
+for the service we do build it at a
+minimum of 10 hours over here and it's
+kind of important because additional
+hours are added later depending on how
+long the process actually takes so for
+now we're going to leave it at the 10
+hours now for the etto product I'm going
+to enter what they wanted and they told
+us they want a dining table very fancy
+and I'm going to leave the unit price
+right now at one because we won't know
+the final price until the design is
+complete we still want to add it to the
+sales order though so that ano can
+actually be automatically created once
+the sales ORD is confirmed speaking of
+that let's go confirm this over here and
+we're ready now once that we did that a
+few new smart buttons appeared at the
+top of the page here we can actually see
+that the sales order is now linked to
+one project as well as one task over
+here how to find it real quick now if I
+click on the task smart button it's
+going to take us over here to the
+service one I could see that a new task
+has been created with the sales order
+number attached to it as a followup and
+the task also displays the project it is
+a part of which happens to be in our
+case the engineer to order one that we
+had and that's perfect so heading back
+to the sales order using the breadcrumbs
+which are sales order breadcrumbs the
+manufacturing smartphone that we have up
+here at the top it basically tells me
+that a manufacturing order has been
+created for the dining table I'm not
+going to worry about that right now
+though since the emmo is just a template
+that we must must configure after the
+components and operations for
+manufacturing the product have actually
+been confirmed and lastly we have the
+create invoice button up here at the Top
+This Way a customer is built for an etto
+product and that will actually vary
+based on the invoicing policies of each
+company now for the purposes of this
+demo we'll build the customer for
+everything at the very end of the
+workflow so don't worry about that
+button for now with all of that out of
+the way we can actually finally start to
+work on the etto service itself so I'm
+going to go out of here and head over to
+the project app click on engineer to
+order and you can already see that one
+task right there and this is the one
+that's titled with our sales order
+perfect okay so for this project we'll
+need the help of two employees Donald
+Johnson who is the designer who will
+Design the dining table and Robert Smith
+the engineer who will review the design
+plans so I'm going to select both of
+them inside of this asses field so we
+have Donald Johnson as I said and Robert
+Smith now they're assigned and now we're
+finally ready so now once the we're here
+we can actually go over to the design
+stage so that we can get things started
+now our design Old Donald works with the
+customer to design the dining table it
+takes him 12 hours which he logs in the
+time sheets tab over here you can do so
+by hitting add a line select Donald
+Johnson and at this point we're going to
+put 12 right there
+designing just because we could have
+that just for the description right
+there and finally with the design
+finished he moves the task to the review
+stage over here and we're going to go
+through this now our engineer Robert
+reviews the design that Donald created
+and determines how much the finished
+dining table will cost in this case he
+says it's going to be
+$1,000 which we're going to enter into
+the sales order later so keep that in
+mind right there now review takes an
+additional 4 hours which he also logs
+inside of the time sheets once again and
+this time we are Robert so for this time
+we're going to put a description of just
+review because he reviewed that and he
+said four hours
+oh something new has happened all right
+now that we're done here we're actually
+going to move it over to the Finish
+stage now I want you to make a quick
+note of something now notice that the
+remaining hours on the sales order field
+over here is -6 this is because we've
+exceeded the allocated hours specified
+at the top of the time sheets tab that
+we have up here at 10 which was set to
+10 automatically based on the number of
+hours on the sales order this is helpful
+as it allows us to see how many
+additional hours we need to build a
+customer four so before moving on let's
+return to the sales order using the
+sales order smart button up at the top
+very convenient actually we want to make
+sure that all the pricing information
+for the etto service and etto product is
+correct we're going to have to do some
+updates so for the service over here if
+you notice our delivered column has
+automatically updated to reflect the
+total number of hours logged by our
+employees we're going to enter that same
+number over here for the quantity just
+so that we can match these up boom
+perfect and now the total price of the
+service service updates automatically
+now for the product we're actually going
+to change this right now since our unit
+price is different remember it happens
+to be $1,000 as I said earlier it's a
+very nice very nice dining table all
+right now that we know the design of the
+table and therefore the components and
+operations required to create it we can
+properly configure that template bomb
+for the etto product so it's time we
+head over to manufacturing outdo so here
+the first thing I need to make sure is
+that the template bomb is ected in the
+bill of materials field over here and
+now that it is we're going to select
+that internal link over here all right
+if I wanted to configure this template I
+would want to actually first duplicate
+it because I don't want to mess up the
+template all right great now this
+ensures that the template remains blank
+and can be used for other custom
+products in the future on this duplicate
+one we're going to get rid of this
+reference and we're going to put our
+actual sales order that we had over here
+which was 19 and now we can get started
+by adding our components which happens
+to be a table
+top and then we also have six table legs
+so you want to do this rather quickly
+it's a pretty big table actually and
+then for screws how many screws do we
+want to say it takes well let's just say
+that each one each leg has two all right
+there we have 12 all right finally I'm
+going to add the operations which
+happens to be one which is going to be
+cutting so we're going to type in cut
+it's going to give it a work center and
+we're going to do a new one and then the
+next one is going to be I don't know we
+have to assemble that table to O doers
+so we're going to assemble and that one
+is going to be at the assembly station
+and we're going to close that out great
+now after confirming that the new bomb
+is saved we're going to return back over
+here to our sales order or actually
+sorry our manufacturing order my
+apologies and back over here where the
+bill of material template is selected we
+want to select the right one which
+happened to be 19 right there and you'll
+notice everything has populated both in
+the components and the work orders tab
+as was specified by the bomb now after
+we hit confirm up here at the top we
+have something cool that happens I'm
+going to select the work orders tab over
+here and at this point normally our
+workers would go into the tablet view to
+complete them but I'm just going to
+click Start and we're going to do done
+on each one we're just going to move
+very fast so that we can do this for
+this flow all right and we're finished
+now we can move on with all the work
+orders completed I can actually mark
+this as done up here at the top and that
+basically confirms that the dining table
+is completed so let's go back to our
+sales order now and that's because we're
+pretty much finished now so we're going
+to go back over to our sales order and
+now that the dining table has been
+manufactured we can ship it out to our
+customer however we still need to
+invoice them so to do so I'm going to
+click on the create invoice button up
+here at the top and make sure that the
+regular invoice option is selected on
+the actual popup right there and now
+once that we're done with that we're
+going to click and create and view an
+invoice and I'm going to wait at this
+point because payment has been received
+from the customer so I'm going to click
+confirm and then I'm going to register
+the payment from the customer and I'm
+going to create the payments boom we're
+all done right there with the payment
+registered we're ready to process the
+delivery of their new custom dining
+table so finally we're going to return
+to the sales order via our smart button
+up at the top and I am finally almost
+done so now that we're here we're going
+to click on the delivery smart button
+we're going to validate this and we're
+going to apply this and that's to
+confirm that the order has been shipped
+to the customer and we're done with that
+and so ends another training Mission
+good job ODU cadetes

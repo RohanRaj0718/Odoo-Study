@@ -1,0 +1,155 @@
+Video: Work Center Basics | Odoo MRP
+Video ID: UUGbGjRvXtg
+URL: https://www.youtube.com/watch?v=UUGbGjRvXtg
+Playlist Index: 56
+================================================================================
+
+[music]
+What's going on, Odoers? Welcome back.
+Nathan here, and in today's video, we're
+going to walk through the basics of work
+centers in ODO manufacturing. If you're
+new to ODO or just getting started with
+the manufacturing module, work centers
+are one of the foundational pieces
+you'll want to understand. They help
+define where production happens, what
+resources are used, and how long
+operations take. Think of a work center
+in Odo as a location where manufacturing
+operations are performed. Here at
+Stealthy Wood, we have our cutting
+station, sanding station, varnishing
+booth, and assembly station. These work
+centers allow us to track capacity,
+efficiency, working hours, and OEE
+metrics. In short, work centers help you
+organize your production flow and give
+structure to your manufacturing process.
+So, let's jump into our database and see
+how this all works. Today we're starting
+off in the manufacturing app. The first
+screen we land on is our work centers
+overview page which provides a
+comprehensive snapshot of all the work
+centers in our stealthy wood database.
+Each card shows how many work orders are
+ready to be launched as well as the
+current OEE for that work center. OEE
+stands for overall equipment
+effectiveness. The higher the
+percentage, the better the work center
+is performing. And if we click on this
+work orders button,
+we can see every operation that's ready
+to be started. In the event you see a
+plan orders button, that simply means
+there are no work orders currently
+scheduled for that particular work
+center. Next to those buttons, you'll
+also notice a small monitor icon. And
+clicking that button takes you straight
+into the shop floor module. We won't be
+covering shop floor today as we have a
+separate video that goes into depth, but
+I'll make sure to link that down below.
+Today, we're going to create a brand new
+work center because Stealthy Wood is
+introducing a new product that requires
+a table saw during production. To create
+a new work center, we're going to head
+to configuration at the top and click
+on, you guessed it, work centers. Then
+on this work centers page, we're just
+going to click new in the top left
+corner. And that brings us to a brand
+new setup page where we can configure
+all the necessary settings. First, we're
+going to give our new work center a
+name. I'm just going to type in saw
+station.
+And to help identify it easily, I'll
+also assign a unique code, which will be
+saw one, as well as a classifying tag.
+The working hours field defaults to the
+standard 40hour work week. If you ever
+need to shorten or expand that schedule,
+you can select a different schedule from
+the drop down.
+Since this is our only table saw, we're
+going to leave this alternative work
+center station blank. And then we're
+going to move down to the general
+information tab. The first section is
+titled production information. The time
+efficiency here tells ODO whether the
+station is typically working faster or
+slower than expected. In addition, the
+OEE target field is the minimum
+performance level we want this work
+center to maintain. Both of these
+suggested values look good, so we're
+going to keep them as is. Next, it takes
+10 minutes to set up and another 10
+minutes to clean up the station. So, in
+the setup field, I'm going to enter 10.
+In the cleanup time field, I will enter
+another 10. The table saw used at this
+station is extremely dangerous. Only one
+employee, Joseio, is trained to operate
+it. So, we're going to add him in the
+allowed employees field.
+If this field is left empty, it means
+anyone can use this work center, which
+of course is not what we want in this
+case. Below that, we can add a brief
+description of what this work center
+does. Since the name SA station is
+already pretty clear, we're going to
+leave this blank.
+Going back up on the right, we can add
+some costing and accounting information.
+We're not going to set those up today.
+So, I'll skip over to the product
+capacities tab.
+Inside the product capacities tab, we
+can control the number of products that
+can be processed simultaneously. I'm
+going to set the capacity to five by
+clicking add a line and then entering
+five in the capacity field
+just to keep things from getting too
+crowded around the saw. By default,
+you'll see all products is listed in the
+product column. However, if you ever
+need to set a specific capacity for a
+specific product, we can click add a
+line and select that product here.
+And that's it. Our new saw station is
+officially set up. If we head back to
+the work center overview page, we can
+see it's listed and now ready for use.
+From here, we can add it to a bill of
+materials and begin using it to carry
+out work orders. And that's a wrap.
+Today, we explored how work centers help
+organize and manage production inside of
+Odo. The work center overview gives
+clear visibility into performance OEE
+and any work orders that are ready to be
+launched. Creating a new work center
+enables you to define how that station
+operates from its working hours and
+efficiency settings to safety
+restrictions, setup times, cleanup
+times, and even the maximum number of
+products that can be handled
+simultaneously.
+Altogether, these tools make it easy to
+maintain an efficient, consistent, and
+well ststructured production
+environment, ensuring everything on the
+shop floor runs smoothly. Thanks for
+watching, Odoers, and I'll see you in
+the next video.
+[music]

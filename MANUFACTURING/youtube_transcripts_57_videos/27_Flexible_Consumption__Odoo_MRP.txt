@@ -1,0 +1,215 @@
+Video: Flexible Consumption | Odoo MRP
+Video ID: yP2Tji_WyNY
+URL: https://www.youtube.com/watch?v=yP2Tji_WyNY
+Playlist Index: 27
+================================================================================
+
+[Music]
+hello again my dear OD doers so excited
+that you decided to join me on another
+awesome tutorial today we're talking
+about consumption and I don't mean
+tuberculosis that's something I should
+talk to my doctor about no I'm talking
+about flexible consumption for
+manufacturing components you see
+sometimes it's necessary to use a
+different quantity of components that is
+what specified on the bill of materials
+or bomb this is pretty common in
+Industries like food service where the
+size of specific ingredients may vary
+for example let's say I'm making a dozen
+suets which normally requires the use of
+24 eggs however I wasn't able to get the
+extra large eggs that I normally buy so
+I had to settle for the regular sized
+eggs this means I'll actually need 30
+eggs to make my sule in ODU the flexible
+consumption feature allows me to use a
+different component quantity than the
+one specified on my bomb while still
+keeping my inventory accounts accurate
+so let's jump in and see how this all
+works
+now the cool thing about flexible
+consumption is that we can choose
+whether it's allowed or blocked for each
+product we manufactur to do so we need
+to navigate to the guest it the bomb of
+our specific product for that I'm going
+to jump to our manufacturing application
+click on products and head to our build
+of
+materials on the Bild of materials page
+I'm going to go ahead and search for my
+cheese
+suet then open up the miscellaneous tab
+right right here and here you're going
+to notice there's a section called
+flexible consumption which includes
+three different operations to choose
+from if I select the allowed option
+flexible consumption will always be
+allowed if I select the allowed with
+warning section then flexible
+consumption will be allowed but users
+will receive a warning notification that
+requires them to confirm that they're
+intentionally using a different amount
+finally if I select the blocked option
+only managers will be able to close
+manufacturing orders for which a
+different component quantity has been
+used for this video though I'm going to
+just go ahead and leave it on the
+allowed withth warning option all right
+what do you say we make some sus I've
+already created a ml for a dozen suls so
+let's go ahead and open that now by
+heading to our operations and selecting
+manufacturing orders and then we're just
+going to select the most recent chees
+sleo with the lower uho
+number on the components tab at the
+bottom of the emmo we can see the two
+consume that is producing a dozen suets
+that typically requires 24 eggs 500 G of
+Parmesan cheese and then one liter of
+heavy cream now let's use the example
+from the introduction and say that we
+actually need 30 eggs to fulfill thiso
+no problem all I need to do is click on
+the quantity field right here and then
+enter the number
+30 then I need to enable the check boox
+in the column
+consumed and if you don't see this
+column in your database you can enable
+it by clicking the additional options
+button to the right of the emo Tab and
+then enabling the consume check box if
+necessary all right now I'm going to go
+ahead and close this emmo out by
+clicking produce all once I do as you
+can see a pop-up window appears titled
+consumption warning which requires me to
+confirm that I'm intentionally consuming
+a greater quantity of components than
+what is listed in the bomb this pop-up
+window appears because I selected alloud
+with warning as the option for the
+product's bomb if I had selected alloud
+the emmo would be closed out without
+giving me a warning the bottom of the
+popup are three buttons here the confirm
+button confirms that a different
+quantity is being consumed on purpose
+and then simply just closes out the mo
+the set quantities and validate button
+goes ahead and reverts the consumed
+quantities back to what is specified on
+the botb and then closes out the mo the
+discard button closes the pop-up window
+and then just leaves the emmo open if we
+had selected the blocked flexible
+consumption option on the products bomb
+the confirm button would not appear for
+regular users in that case a manager
+would need to close the emmo out
+themselves but I'll go ahead and just
+click confirm to close this out and just
+like that we've made a dozen to
+plays now if you've watched a lot of our
+manufacturing app tutorials then you
+probably know that Emos can also be
+processed from the shop Flor module if
+so you're probably wondering if it's
+possible to use flexible consumption in
+shop floor as well and the answer is of
+course out ofo we really think of
+everything to do so you'll need to
+create a quality control point or qcp
+that creates registered consumed
+materials quality checks during the
+manufacturing process to create a new
+qcp I just need to go to the Quality
+application and then I'm going to go
+ahead and click on quality control and
+then quality control points and then
+what we can go ahead and do is Select
+this new button here but for this
+example I've already configured a qcp so
+let me show you how it's configured
+first I'm just going to go to the search
+bar remove our quality points filter and
+then choose our qcp 001
+here as you can see we have our cheese
+sulle product selected here in the
+product form field and we also have in
+our manufacturing field in the
+operations Tab and then in the mix
+operation or the work order operation
+field this means that every time a
+manufacturing order is confirmed for
+ches suls a quality check will be
+created for the mix
+operation we also have to select the
+register consumed materials in the type
+field and select
+eggs in the product register field as a
+result the quality check that gets
+created will ask us to confirm the total
+number of eggs we use for Theo that's
+just a basic overview of how to
+configure a qcp for the specific
+workflow but qcp behaviors vary greatly
+based on the setting of this form so be
+sure to check out our quality control
+points video for a full overview of all
+their configuration options I'll make
+sure to link that down below now we're
+all ready to produce another batch of
+suets using the shop Flor module I've
+already created a second emmo to use as
+an example so let's go ahead and head
+over to the shop floor now
+on the card for the MMO I'll go ahead
+and collect on or click on assembly
+station one and open up the page for the
+work center where the mix operation can
+be carried out then I'm going to go
+ahead and click on egg check right here
+to register and open it up in the
+quantity field it's currently set to 24
+so I'll just go ahead and change this to
+30 like we did in the previous example
+and click on
+validate after that I can just go ahead
+and Mark this as done and complete the
+work order by clicking to close
+production to close
+Theo once I do the consumption warning
+pop-up window appears just like it did
+on the last emmo we processed in the
+back end and just like last time I'll
+just click on the confirm to close Theo
+out now let's go ahead and hop over to
+the back end of the
+emmo and to do that we're just going to
+head over to the manufacturing
+applications hit operations and then
+Manufacturing orders once again and this
+time I'm just going to remove the to-do
+filter so see all of our completed MOS
+and click on our most recent chiu fle
+MMO if we look here we can go ahead and
+see in the quality consumed in the
+components tab we have 30 units set that
+were consumed just like we expected and
+that's it for now my dear o doers today
+you learned how to use flexible
+consumption on OS in both the backend
+and Shop floor module stay tuned for
+another awesome tutorial but until then
+I'll see you soon

@@ -1,0 +1,133 @@
+Video: Recurrent Maintenance | Odoo MRP
+Video ID: 6zUVbOa5arY
+URL: https://www.youtube.com/watch?v=6zUVbOa5arY
+Playlist Index: 39
+================================================================================
+
+what's up o doers and welcome back
+missed you so much since our last chat
+sometimes equipment or work centers
+require regular maintenance to prevent
+them from breaking down this is called
+you guessed it preventative maintenance
+which I can schedule using the recurrent
+maintenance feature when creating new
+maintenance requests we can use
+recurrent maintenance to schedule the
+creation of identical maintenance at
+regular intervals let's jump into our
+Odo database now so we can see
+how all right here we are on the main
+dashboard of the maintenance app first
+thing we need to do is create a new
+maintenance request and to do so we're
+just going to click at maintenance on
+the top and then maintenance requests
+followed by clicking new in the upper
+leftand corner now for this maintenance
+request let's say we have a handsaw that
+needs to be sharpened once a week to
+keep it sharp so in the request field
+I'm going to enter sharpen
+handsaw now in the equipment field I'm
+going to click into it to show the drop
+down menu and then we're just going to
+click on
+handsaw now we want this to be sharpened
+on Friday at 4:30 p.m. so it's ready for
+work first thing on Monday morning on
+the schedule date field to the right if
+we click into that a popup calendar
+appears and here's where we can select
+the upcoming Friday and down at the
+bottom I can enter the minute and hour
+the request should be processed these
+fields use a 24-hour clock so I'm going
+to enter the values of 16
+and
+30 which corresponds to 4:30 p.m.
+finally it will'll just click apply to
+schedule the date at this date and
+time now let's make this maintenance
+recurring first we're going to change
+the maintenance type from corrective to
+preventative and when we do this causes
+a recurrent check boox to appear here on
+the right directly below the duration
+field now if I take the recurrent check
+box
+repeat every setting appears here I can
+specify how often and for how long the
+maintenance request should repeat and by
+default requests are scheduled to recur
+once a week forever now I can enter any
+number here in the first field and then
+in the second field I can change this to
+days weeks months and even years but
+we'll change this back to weeks and in
+the Third Field I can change forever to
+an until field which causes a fourth
+field to appear where we can enter
+another date when we want this
+maintenance to
+end as I mentioned we want this
+maintenance request to occur once a week
+and forever so we're going to change
+this from until back to
+Forever and just like that we've
+scheduled a recurrent maintenance
+request now let's navigate to
+maintenance at the top and then
+maintenance calendar to see how these
+requests have been
+scheduled first in the drop down menu
+here in the top left we're going to
+change this from week to month
+and when we do we're able to see the
+maintenance requests have been scheduled
+for each
+Friday for each request after the
+current one a number is attached so we
+know how many repetitions it is after
+the upcoming
+request for example the second request
+has a plus one tag after its title this
+tells us that it's the first repetition
+of the current request you should also
+know that deleting any of these requests
+will delete every other request for
+example let's use the right arrows to
+show the calendar for next
+month and if we click into any of these
+requests and select delete every request
+will be deleted however if I return to
+the form by clicking
+edit I also have the option to untick
+the recurrent checkbox doing so will
+delete every request except for the one
+that's scheduled to be completed next
+now let's see how to manage requests
+from the can band view which I can
+access by navigating to maintenance and
+then maintenance
+requests despite the fact that multiple
+requests are scheduled for our
+maintenance calendar only the next
+upcoming request appears on the can band
+view however let's see what happens when
+we complete this request I can drag and
+drop it into the repaired section which
+marks it as done now when I reload my
+screen
+the next scheduled request appears in
+the new request
+column I can tell it's the next request
+because the date on its cand card is one
+week ahead from the previous
+one this will continue to happen each
+time we complete a recurrent maintenance
+request and that's all I've got for you
+today folks you now know how to create
+and manage recurring maintenance
+requests thanks for stopping by and I'll
+see you next time

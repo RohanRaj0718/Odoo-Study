@@ -1,0 +1,218 @@
+Video: Replenishment Methods for Manufacturing | Odoo MRP
+Video ID: vtjeMGcG8aM
+URL: https://www.youtube.com/watch?v=vtjeMGcG8aM
+Playlist Index: 9
+================================================================================
+
+foreign
+hello doers my name is Jose Ignacio and
+welcome back I'm here at stealthy wood
+our business is expanding especially in
+the morning now our manufacturers are
+eager to build products and the
+procurement team has to make sure they
+have everything they need for the day so
+today we'll discuss replenishment
+methods now since there's so much to do
+how can we reduce all of the tedious and
+time-consuming tasks that surround
+procurement one side of odoo we use a
+specific method for automatic reordering
+which we call reordering rules now in
+manufacturing we want to ensure our
+components are in stock to avoid
+unnecessary production delays we can
+skip having to manually check which
+components are running low and instead
+use reordering rules to automatically
+create purchase orders ah it's beautiful
+now when you set up reordering rules Odo
+performs a series of procurement
+operations automatically based on the
+logic you give it for the product or the
+groups of products now how it works is
+when inventory levels drop beneath a
+certain threshold odoo automatically
+creates a request for quotations or rfqs
+for my acronym lovers now odoo also lets
+you use reordering rules to automate the
+creation of manufacturing orders from a
+sales order I'll explain how to
+configure this at the end of the video
+as well so enough Chit Chat let's hop
+into our stealthy Wood Database
+all right I'll do is let's start by
+setting up reordering rules for a wood
+panel component now first let's take a
+look at the bill of materials for the
+wood panel so we're gonna head into
+manufacturing app products bill of
+materials wood panel now we can see that
+the wood panel consists of three ply
+layers and a wear layer now we
+manufacture a lot of wood panels at
+stealthy wood so I want to automate the
+ordering process for its components
+using reordering rules now I can set up
+reordering rules directly on the product
+itself and in our case I already
+configured a reordering rule for my wear
+layer so we're all good right there but
+let's see one setup for my ply layer so
+I'm actually going to go into the ply
+layer product form by clicking right
+onto it through this little direct link
+an important thing to know here before I
+set up any actual reordering rules I
+need to designate a vendor on the
+purchase tab of the product template now
+since we need to let odoo know who to
+purchase from it's very helpful and
+required so in our case once they are
+there you can actually see that I have a
+few vendors already set up and I can add
+more if I wanted to and if I want I can
+also change the order by clicking and
+dragging them up and down now
+another thing to keep in mind the order
+of these vendors actually matters with
+reordering rules odor will automatically
+create requests for quotations to the
+vendor placed at the top of the list in
+our case wood corner now that we know at
+least one vendor is selected and listed
+let's go ahead and set up our reordering
+rule so we're going to select our smart
+button and go right in there now here I
+can set a minimum and maximum quantities
+these values tell ODU how much of a
+component we want to keep in stock and
+when to create a request for quotation
+so in our case we're going to do 10 and
+100 and this looks good now I also want
+to note that you can view and create
+reordering rules in the inventory app
+under the configuration menu instead of
+just going through the product form now
+this is helpful for keeping track of all
+of the reordering rules that are set up
+since they can be seen and managed in
+one place all right up next let's see
+what happens when we create an ammo 4r
+wood panel so we're going to go back
+into our manufacturing app operations
+menu manufacturing orders new one follow
+me here and we're going to do this wood
+panel and we're gonna confirm it now
+what just happened with yours well odoo
+lets us know when the components are
+unavailable with these red not available
+there we go beautiful little doers you
+can see what oh dear is that the
+quantity ordered reflects the maximum
+quantity we set on our reordering rules
+while also talking sorry about that
+taking the manufacturing orders demand
+into account now we want to have what we
+wanted to have a hundred pieces in stock
+of each component but we use three ply
+layers and one wear layer in our current
+manufacturing order so what did ODU do
+it ordered 103 and 101 because math oh
+doers now while Odo automatically
+generates an RFQ for us we still have to
+manually confirm the order receive the
+products into our inventory and also
+validate it now for the purposes of this
+video in our case we're going to go
+ahead and do that since we have the
+fastest vendors and procurement team in
+town
+grillio doers they're lightning fast in
+fact they just confirm it receive it and
+validate it and we're going to follow
+this Dutch crunch breadcrumbs back to
+the ammo and look at that we have enough
+raw materials now outdoers beautiful
+okay
+now I want to show you a Nifty trick
+using reordering rules we just saw how
+we can use reordering rules to
+automatically generate purchase orders
+but we can also use them to create
+manufacturing orders whenever customers
+buy products that we manufacture
+in-house there are a couple of different
+ways to automatically generate
+manufacturing orders from a sales order
+in odoo now one is by using the MTO
+route for manufacturer of our products
+now I cover this in a separate video my
+MTO video and I invite you to check it
+out if you haven't already now we can
+also accomplish this same outcome by
+sending a reordering rule with both the
+minimum and Max set to zero now I'll use
+our table product as an example of how
+to do that this time I'll set up the
+reordering rules from the inventory app
+so we're going to go into inventory
+and what are we going to do there as
+well we're gonna go and look at our
+products in this case we're going to go
+into configuration and reordering rules
+now I'll create a new rule for my
+product the table and Define both the
+Min and maximum as I talked about as a
+solid zero now I'll double check that
+the manufacturer route is activated on
+my tables basic product form and look at
+that it is
+now let's create a sales order because
+we need to see how this works in action
+so we'll hop over to the sales
+application and make a new quotation so
+while we're here we'll do that and let's
+say our customer as our interior wants
+to buy one table we'll confirm this
+quotation turning it into a sales order
+now when we head over to the
+manufacturing app
+and this time view our manufacturing
+orders we'll see a new ammo connected to
+our sales order was automatically
+created and look at that if we check it
+and look at this miscellaneous tab Boom
+the source document States what it
+states op and that stands for order
+point which indicates that this Mo was
+created as an inventory replenishment
+using reordering rules since I didn't
+set up any work orders for this product
+all that's left to do is to mark this Mo
+as done and then you basically just hit
+apply now we can go back to our sales
+order using over here into the sales app
+and
+process the delivery and then in this
+case we'll finally hit validate and then
+apply the done quantities thus
+completing the delivery and the sales
+flow and boom there we have it oh doers
+what a hot fast day now we know how to
+use reordering rules to automate the
+procurement process to ensure that we
+always have parts available for
+manufacturing we also reviewed how you
+know reordering rules set to zero to
+link over to sales order and into
+manufacturing orders as well oh my God
+we went through so many things now this
+reordering trick over here is also
+useful for managing sub assemblies for
+products with multi-level bombs I know
+you can use oda's reordering rules to
+your company's advantage and as always
+I'll see you in the next video go grab a
+snack
+foreign

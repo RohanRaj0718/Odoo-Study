@@ -1,0 +1,158 @@
+Video: Product Kits | Odoo MRP
+Video ID: nyXngfghtaY
+URL: https://www.youtube.com/watch?v=nyXngfghtaY
+Playlist Index: 28
+================================================================================
+
+[Music]
+welcome back o doers today we're talking
+about how to create product kits using
+the build materials feature in the
+manufacturing app what is the kit you
+ask well have you ever purchased a
+product you had to build yourself I'm
+sure you know what I'm talking about
+maybe you bought a desk that you had to
+assemble and spent the rest of the night
+fighting with your roommate or
+significant other about whether the legs
+are screwed on correctly well that
+product is known as a kit a kit benefits
+manufacturers since they only have to
+worry about purchasing or producing the
+required component and packaging them
+together ODU allows you to add kits to
+other bills of materials or bombs which
+is useful if the item in the kit are
+used to manufacture a variety of
+different products in your catalog all
+right let's jump into our database to
+see how it all works let's say we run a
+personal computer business called cows
+computers here at cows we sell ready to
+use computers as well as computer kits
+that customers can assemble at home to
+create a kit we need to start by
+configuring a build of materials or bomb
+I've created a bomb ahead of time so
+I'll open that by navigating to the
+manufacturing application selecting
+products and then bill of
+materials and then selecting the
+computer Essentials kit
+bomb this kit contains three Essential
+Elements used in every computer we sell
+a power supply computer case and then a
+cooling fan in the bomb type field on
+the right here I've selected
+kit this means that when whenever this
+kit is included in a manufacturing or
+delivery order it gets broken down into
+its individual components now let's
+click on products and then products
+again then find the computer Essentials
+kit you'll notice on the onhand field we
+have 100 units of this kit this is
+despite the fact that we haven't
+actually created one of these kits yet
+how can that be you may ask well the one
+on hand for a kit always defaults the
+number of kits that can be created with
+the quantity of components on hand since
+we have 100 of each component on hand
+for 100 computer cases 100 cooling fans
+and 100 power supplies we can create 100
+total kits so the onhand count defaults
+to that number now for this particular
+kit we sell it to customers so they can
+build their own computers we also use it
+to build computers that we sell fully
+built let's see an example of each of
+these
+workflows first let's sell a kit to a
+customer a jump over to my sales
+application click new and in the
+customer field I'll select our old
+friend Jim Joe
+Kelly then I'll go ahead and click on
+add a
+product and in the order lines tab I'll
+select the computers Essentials kit in
+the product
+field all right everything looks good so
+I'll click confirm to turn this RFQ into
+a sales order or
+so after doing so you'll notice the kit
+is still the only product listed in the
+order lines tab this is what the
+customer sees when they receive a copy
+of their so however the workers picking
+the components of the kit need a little
+bit more information than that which is
+where the delivery order comes into play
+I'll open it now by clicking the
+delivery smart button at the top of the
+page on the delivery order the kit is
+broken down into its individual
+components this tells our warehouse
+workers that they need to create the kit
+by picking each of these components
+putting them in the same
+package once that's done and the package
+has been sent they just need to click
+validate to complete the delivery
+order pretty awesome but what about
+using a kit during the manufacturing
+process well one of the really cool
+things about kits is that they can also
+be added as components to bombs or other
+products in the case of our computer
+Essentials kit we use all of the
+components within it in almost every
+computer model we build so instead of
+adding these components to every
+computer bomb individually we can just
+add the kit see what I mean let's jump
+back into the manufacturing
+app and we'll go ahead and select
+products and then build
+materials and we'll go ahead and select
+our example bomb turbo
+computer for this bomb I've actually
+added two different kits to the
+components tab the computer Essentials
+kit contains all the basic compon
+components we use in each computer model
+we sell and then the turbo computer kit
+contains all the components specific to
+our turbo computer product with both of
+these kits included in the bomb we have
+everything we need to build our turbo
+computer now let's see what happens when
+we use this bomb for a manufacturing
+order or ml to do so I'll click on
+operations manufacturing orders and then
+click on new to create a new
+ml in the product field I'll select our
+turbo computer
+once I do the components tab
+automatically updates with all the
+components needed to build the
+computer as you can see the kits
+themselves are not included here only
+the individual components within them
+the best part is I can continue using
+our computer Essentials kit to configure
+the bombs for different computer models
+for example if we wanted to start
+manufacturing a basic computer product
+all I would need to do is add the
+essentials kit to the new bomb along
+with the other required components or a
+kit that contains them and just like
+that You' made it to the end of another
+amazing tutorial you now know how to
+configure kits sell them to customers
+and use them in manufacturing orders
+thanks for sticking around and I'll see
+you next time

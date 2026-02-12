@@ -1,0 +1,221 @@
+Video: Consuming Components Using Barcodes | Odoo MRP
+Video ID: 2ojxIbTq41Q
+URL: https://www.youtube.com/watch?v=2ojxIbTq41Q
+Playlist Index: 48
+================================================================================
+
+what's up OD doers and welcome back
+today I'm going to show you how to
+consume components with odu's barcode
+app no I'm not talking about eating food
+I'm talking about manufacturing Goods
+we'll see how to consume both tracked
+and untracked components how to consume
+multiple components at once and how to
+add or scrap components on a day's work
+am I right the barcode app helps
+expedite the manufacturing process by
+making it more more handsfree imagine if
+you're assembling a product that had
+five or more parts and each time you had
+to go register a component at a computer
+sounds like a lot of tedious work
+luckily with Odo you can scan these
+components as you go without even having
+to leave the shop floor so let's see how
+to do this in
+Odo okay first things first we need to
+enable one setting for our Barcode
+Scanner so let's click into the settings
+application and we're just going to
+select the inventory app on the left
+side of our navigation bar
+in this section we just want to scroll
+down to our Barcode Scanner and make
+sure that that option is enabled looks
+good another important step is making
+sure that product barcodes are actually
+set up on each component that needs to
+be scanned when I click on this
+configure barcodes button right here I
+can see a list of all of our products
+with their respective barcodes as well
+as their IDs assigned so these barcodes
+are found on product labels they can be
+printed or stuck onto products
+so now we need to have a manufacturing
+order or ano we'll open that in the
+barcode app today we're going to be
+making someone star Piñata since they're
+having a fiesta tonight so let's go back
+to the ODU dashboard and we're just
+going to click into the barcode app and
+there are a few different ways we can
+open orders in the barcode app which are
+covered in our tutorial on processing OS
+but for now we're just going to use our
+Barcode Scanner right
+here and scan the printed Mo slip that
+we have for our star pinata which looks
+like this right
+here nice so we can see all Theo details
+now on the star Pata and here we see the
+components needed to build it like
+cardboard colored paper and we even have
+some of the fillings that go within this
+Pata so one thing to not ODU lets us
+record the consumption of all these
+products in one swoop all I have to do
+is use the barcode scanner to scan the
+finished product which is our
+pinata and now all the components are
+populated and we can just click produce
+all and then we'll get a confirmation
+that this MMO has been
+validated okay so now I'm going to show
+you how to consume components
+individually so I'm just going to scan
+the emmo for my rainbow Pata
+and I'll see all the components needed
+to make it many of these components can
+be consumed without worrying about
+tracking for example we have our string
+right
+here so it doesn't really matter which
+specific string is glued to hold the top
+of the pinata up but there are three
+ways to record these untracked
+components as consumed in the barcode
+app first if I wanted to see the
+detailed line item of the string I could
+click on this pencil icon right here
+and here I can manually type in the
+product
+quantity and this is especially useful
+when there are large quantities being
+consumed or another thing I can do is
+Click any of these buttons right here to
+update the quantity accordingly in many
+cases though that method may be overly
+meticulous so let's head back to
+Theo the second way to consume a
+component is by clicking this plus one
+button right here and if there were
+let's say five strings needed to make
+this Piñata then this button would say
+plus five and let me consume all five at
+once third way to consume an untracked
+component is you guessed it scanning the
+barcodes product as we know those
+barcodes are found on the product form
+so all you have to do is simply scan the
+product
+barcode and ODU will register the
+component as consumed it's extremely
+easy now for components tracked by lot
+or serial numbers I'll need to input it
+directly
+similar to untrack components I can do
+this three different ways so if we
+scroll up here to our gummy
+candy I see that there's supposed to be
+30 gummies in this Piata you might also
+notice there's a barcode icon as well as
+a lot number and this is the lot that is
+reserved for this component to be picked
+from so a documentation on picking from
+reserved Lots or seal numbers for more
+information so one thing I could do is
+click this plus one or plus 30 button
+right there to consume all of it without
+checking a lot or serial number data but
+I want to see more details so instead
+I'm going to click this pencil icon
+right
+here and here I can see that there are
+multiple lots of gummies in stock all
+with varying quantities on hand in each
+one in this serial number lot field I
+can specify which lot I want to pick
+from in this case we're okay with taking
+these from the first available lot so
+I'm just going to leave this as is and
+pick from gummy
+O3 our pinata needs 30 gummies so I'll
+type 30 into this field right
+here and now I'll click
+confirm and boom we've officially
+consumed 30 gummies I mean I mean I
+haven't eaten 30 gummies but they're for
+the pinata party of
+course anyway there's one more way we
+could track consumed components and you
+guessed it it's through the barcode
+scanner I could scan the component's
+barcode but it's recommended to scan the
+barcode of the lot instead and that's so
+Odo knows the specific lot I want to
+pull this component from so let's scan
+our other tra component our chocolate
+gummies and there we go our chocolates
+have been consumed
+now let's say we accidentally squished
+three chocolates while producing this
+order H Agony we could scrap this
+component two different ways the first
+way is I could scan the scrap command
+barcode from Odo or I can also click the
+gear icon up here and then choose
+scrap in the product search I'm just
+going to type in chocolate
+candies and select
+it and we've lost three chocolates so
+I'm going to change the quantity
+here to
+three I can also choose which lot the
+candy came from and I'm just going to
+choose the third one right
+there and I'm ready to click
+scrap sometimes ODU might ask you to
+confirm that you want to scrap the
+material so just make sure to click
+confirm if that happens now if I click
+into the pencil icon next to the
+chocolate candies
+I can see that the onhand quantity in
+lot 3 has depleted by three chocolates
+it's a sad
+day now what if I want to make this
+rainbow Pata extra special by adding
+components that maybe weren't originally
+part of the build materials like for
+example we have purple paper that I
+decided I wanted to add so if we go back
+to the
+MMO and click add component
+all I have to do is scan the product
+barcode there or if I click
+back I could just scan the purple
+barcode which I will do right
+now and when I do it just adds it to the
+current Mo great so it looks like we
+have some components registered as
+consumed but not all of them aside from
+scanning the finished products barcode
+another way to quickly consume all
+components at once is simply by clicking
+the plus one button right here for
+rainbow
+Pata when we do all components have been
+recorded as consumed so I can just click
+produce
+all and from here we have our
+consumption warning since we added some
+purple paper to this ml so we'll just
+click
+confirm and the manufacturing order has
+been manufactured it's time to party
+and today we covered a lot about
+consuming components in odo's barcode
+app thanks for learning with me and I'll
+see you in the next video
