@@ -18,8 +18,9 @@ Do NOT load the entire documentation repository for every query — that is slow
 expensive. Use targeted lookup only.
 
 ### Tier 1 — Local Docs (default for Odoo questions)
-Search the local `odoo-official-docs` repo which is already at branch `19.0` and uptodate with remote, using specific keywords
-from the question. Read only the relevant file(s), not the whole repo.
+Search the local `odoo-official-docs` repo at branch `19.0` using specific keywords
+from the question. **Primary search location: `odoo-official-docs\content\`** — this
+is where all readable documentation lives. Read only the relevant file(s), not the whole repo.
 Use for: module behavior, configuration steps, menu paths, field names,
 feature capabilities, Indian localization (`l10n_in`).
 
@@ -31,12 +32,49 @@ community workarounds, anything not in official docs.
 ### Tier 3 — Model Reasoning (last resort)
 Use when neither local docs nor web search resolves the question.
 
+### Step 1 — Use Known Folder Paths First
+
+Before running a broad search, check the known folder structure.
+All paths are relative to `odoo-official-docs\content\applications\`:
+
+| Module | Folder Path |
+|--------|------------|
+| Inventory | `inventory/` |
+| Inventory Valuation | `inventory/warehouses_storage/` |
+| Purchase | `inventory/purchase/` |
+| Manufacturing / MRP | `manufacturing/` |
+| Accounting | `finance/accounting/` |
+| India Localization | `finance/fiscal_localizations/india.rst` |
+| Sales | `sales/` |
+| CRM | `crm/` |
+| HR & Payroll | `hr/` |
+| Point of Sale | `sales/point_of_sale/` |
+| E-commerce | `websites/ecommerce/` |
+| Multi-company | `general/companies/` |
+
+Using the folder path + keyword is faster and more accurate than a full repo search.
+
+
+### Step 2 — Silent Failure Prevention Rule
+
+**This is critical.** If a file path guess returns "not found":
+- Do NOT answer from model memory
+- Do NOT proceed silently as if the file was read
+- Instead, run `search_files()` with the expanded keyword in the known folder
+- Only answer after a file has been successfully opened and read
+- If no file is found after search, switch to Tier 2 (web) and label the answer `[Web]`
+
+A wrong answer delivered confidently is worse than saying the file wasn't found.
+
+---
+
 ### Mandatory Source Label
+
 Every Odoo answer must begin with one of these labels:
 
 | Label | Meaning |
 |-------|---------|
-| `[Local Docs]` | From local 19.0 documentation repo — version accurate |
+| `[Local Docs]` | Read from local 19.0 repo — version accurate |
 | `[Web]` | From web search — may not reflect Odoo 19.0 accurately |
 | `[Model Reasoning]` | Inferred from training data — not verified against docs |
 

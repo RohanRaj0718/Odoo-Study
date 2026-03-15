@@ -67,6 +67,9 @@ These rules are non-negotiable:
    - `[Web]` — from web search, may not be Odoo 19.0 accurate
    - `[Model Reasoning]` — inferred from training, not verified
    For `[Web]` or `[Model Reasoning]`, append: *"Verify against your local 19.0 docs if critical."*
+7. **Never answer silently from memory after a failed file read.** If a local file
+   path is not found, run a keyword search before falling back. Do not pretend the
+   file was read. Do not answer as if local docs confirmed something they didn't.
 
 ---
 

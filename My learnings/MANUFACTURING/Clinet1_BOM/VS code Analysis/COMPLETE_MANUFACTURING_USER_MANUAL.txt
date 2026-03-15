@@ -1,0 +1,2254 @@
+================================================================================
+ODOO 19 MANUFACTURING MODULE - COMPLETE USER MANUAL
+================================================================================
+
+FROM SCRATCH TO PRODUCTION: A STEP-BY-STEP GUIDE
+
+Version: Odoo 19 Community Edition
+Purpose: Complete Manufacturing Implementation Guide
+Audience: End Users, Managers, Implementation Teams
+
+================================================================================
+TABLE OF CONTENTS
+================================================================================
+
+PART 1: INITIAL SETUP AND CONFIGURATION
+PART 2: PRODUCT CREATION AND BILLS OF MATERIALS
+PART 3: WORK CENTERS AND OPERATIONS
+PART 4: CREATING AND PROCESSING MANUFACTURING ORDERS
+PART 5: WORK ORDER MANAGEMENT
+PART 6: SUBCONTRACTING
+PART 7: QUALITY CONTROL AND MAINTENANCE
+PART 8: COSTING AND ANALYSIS
+PART 9: INTEGRATION WITH OTHER MODULES
+PART 10: REAL-LIFE SCENARIOS AND BEST PRACTICES
+
+================================================================================
+INTRODUCTION
+================================================================================
+
+The Odoo Manufacturing module (MRP) enables companies to manage production
+processes from raw materials to finished goods. This manual covers complete
+manufacturing workflows including product creation, bill of materials setup,
+work center configuration, production execution, quality control, and
+integration with Inventory, Purchase, and Sales modules.
+
+================================================================================
+PART 1: INITIAL SETUP AND CONFIGURATION
+================================================================================
+
+SECTION 1.1: ACTIVATING THE MANUFACTURING MODULE
+--------------------------------------------------------------------------------
+
+Step 1: Login to Odoo 19
+- Open your web browser
+- Navigate to your Odoo instance URL
+- Enter your username and password
+- Click "Log in"
+
+Explanation: You need administrative access to activate modules.
+
+Step 2: Access Apps Menu
+- Click on the "Apps" icon in the main menu (grid icon with 9 squares)
+- Wait for the applications list to load
+
+Explanation: The Apps menu shows all available Odoo modules.
+
+Step 3: Search and Install Manufacturing
+- In the search bar at top, type "Manufacturing"
+- Locate "Manufacturing" module (icon shows a factory/gear)
+- Click "Install" button
+- Wait for installation to complete (may take 30-60 seconds)
+
+Explanation: This installs the core MRP module. It will automatically install
+dependent modules like Inventory if not already present.
+
+Step 4: Verify Installation
+- Main menu now shows "Manufacturing" icon
+- Click "Manufacturing" to open the module
+
+Result: Manufacturing module is now active and ready for configuration.
+
+--------------------------------------------------------------------------------
+
+SECTION 1.2: BASIC CONFIGURATION SETTINGS
+--------------------------------------------------------------------------------
+
+Step 1: Access Manufacturing Settings
+- Click "Manufacturing" in main menu
+- Click "Configuration" in the top menu bar
+- Click "Settings"
+
+Explanation: Settings control which features are enabled in the module.
+
+Step 2: Enable Work Orders
+- Scroll to "Operations" section
+- Check the box "Work Orders"
+- This enables: Work Centers, Operations, Time Tracking
+
+Explanation: Work Orders allow you to track production steps separately and
+assign them to specific work centers (machines or workstations).
+
+Step 3: Enable Quality Control
+- Scroll to "Quality" section
+- Check the box "Quality Control"
+- This enables: Quality Checks, Quality Alerts, Quality Control Points
+
+Explanation: Quality control adds checkpoints during production to ensure
+standards are met.
+
+Step 4: Enable Maintenance
+- Check the box "Maintenance"
+- This enables: Equipment management, Maintenance requests, Preventive maintenance
+
+Explanation: Maintenance module tracks equipment health and schedules repairs.
+
+Step 5: Enable Subcontracting
+- Scroll to "Operations" section
+- Check the box "Subcontracting"
+
+Explanation: Subcontracting allows you to send materials to external vendors
+who manufacture products for you.
+
+Step 6: Enable By-Products
+- Check the box "By-Products"
+
+Explanation: By-products are secondary items produced during manufacturing
+(e.g., sawdust when cutting wood).
+
+Step 7: Enable Product Variants
+- Scroll to "Products" section
+- Check the box "Variants"
+
+Explanation: Variants allow single product with multiple variations (size,
+color, etc.).
+
+Step 8: Save Configuration
+- Scroll to top or bottom of page
+- Click "Save" button
+
+Result: All essential manufacturing features are now enabled.
+
+--------------------------------------------------------------------------------
+
+SECTION 1.3: CONFIGURING INVENTORY SETTINGS FOR MANUFACTURING
+--------------------------------------------------------------------------------
+
+Manufacturing tightly integrates with Inventory. Proper inventory setup is
+essential for smooth manufacturing operations.
+
+Step 1: Open Inventory Module
+- Click "Inventory" in main menu
+- Click "Configuration"
+- Click "Settings"
+
+Step 2: Enable Multi-Step Routes
+- Scroll to "Warehouse" section
+- Under "Manufacture", select "Manufacture (3 steps)"
+  Options shown:
+  * Manufacture (1 step): Manufacture goods directly
+  * Manufacture (2 steps): Pick components then manufacture
+  * Manufacture (3 steps): Pick components, manufacture, then store products
+
+Explanation: 
+- 1 Step: Simple, direct manufacturing
+- 2 Steps: Pick materials from warehouse first, then manufacture
+- 3 Steps: Pick materials, manufacture, then move to stock (best for large operations)
+
+For training purposes, select "Manufacture (1 step)" initially.
+
+Step 3: Enable Lots & Serial Numbers
+- Scroll to "Traceability" section
+- Check "Lots & Serial Numbers"
+
+Explanation: This allows tracking products by batch (lot) or individual units
+(serial numbers), crucial for quality tracing.
+
+Step 4: Enable Expiration Dates
+- Check "Expiration Dates"
+
+Explanation: Useful for perishable raw materials or finished goods.
+
+Step 5: Save Settings
+- Click "Save"
+
+Result: Inventory is configured to support manufacturing operations.
+
+--------------------------------------------------------------------------------
+
+SECTION 1.4: SETTING UP LOCATIONS FOR MANUFACTURING
+--------------------------------------------------------------------------------
+
+Manufacturing uses specific inventory locations for materials and products.
+
+Step 1: Access Locations
+- In Inventory module, click "Configuration"
+- Click "Locations"
+
+Step 2: Verify Manufacturing Locations Exist
+- Look for these locations:
+  * WH/Stock/Pre-Production
+  * WH/Stock/Production
+  * WH/Stock/Post-Production
+
+Explanation: 
+- Pre-Production: Materials staged before manufacturing
+- Production: Where manufacturing happens
+- Post-Production: Finished goods before moving to stock
+
+Step 3: Create Custom Location (Optional)
+- If you need a specific location, click "Create"
+- Fill in:
+  * Location Name: "Assembly Area"
+  * Parent Location: Select "WH/Stock"
+  * Location Type: Select "Internal Location"
+- Click "Save"
+
+Result: Manufacturing locations are ready for use.
+
+================================================================================
+PART 2: PRODUCT CREATION AND BILLS OF MATERIALS
+================================================================================
+
+Real-Life Scenario: You manufacture wooden tables. Each table requires:
+- 1 Table Top (wooden board)
+- 4 Table Legs (wooden legs)
+- 20 Screws
+- 1 hour of assembly work
+
+--------------------------------------------------------------------------------
+
+SECTION 2.1: CREATING RAW MATERIAL PRODUCTS
+--------------------------------------------------------------------------------
+
+Step 1: Access Products
+- Click "Manufacturing" in main menu
+- Click "Products"
+- Click "Products" again from dropdown
+
+Step 2: Create Table Top Product
+- Click "Create" button
+- Fill in Product Details:
+  * Product Name: "Table Top - Wood"
+  * Can be Sold: Uncheck (this is a component, not sold directly)
+  * Can be Purchased: Check
+  * Product Type: Select "Storable Product"
+  * Invoicing Policy: Keep default
+- Click "Save"
+
+Explanation: Storable products track inventory quantities. Components should
+be marked as purchasable so procurement knows to buy them.
+
+Step 3: Set Purchase Information
+- Click "Purchase" tab
+- Fill in:
+  * Vendor: Click "Add a line", select or create a vendor "Wood Supplier Co."
+  * Price: 50.00
+  * Delivery Lead Time: 7 days
+- Click "Save"
+
+Step 4: Create Table Legs Product
+- Click "Create" button (or back to products list and create new)
+- Fill in:
+  * Product Name: "Table Leg - Wood"
+  * Can be Sold: Uncheck
+  * Can be Purchased: Check
+  * Product Type: "Storable Product"
+- Click "Save"
+- In "Purchase" tab:
+  * Vendor: "Wood Supplier Co."
+  * Price: 10.00 per unit
+  * Delivery Lead Time: 7 days
+
+Step 5: Create Screws Product
+- Click "Create" button
+- Fill in:
+  * Product Name: "Screws - Stainless Steel"
+  * Can be Sold: Uncheck
+  * Can be Purchased: Check
+  * Product Type: "Storable Product"
+  * Unit of Measure: "Units"
+- Click "Save"
+- In "Purchase" tab:
+  * Vendor: "Hardware Supplies Inc."
+  * Price: 0.05 per unit
+  * Delivery Lead Time: 3 days
+
+Explanation: We've created all raw materials needed for manufacturing.
+
+Result: Raw materials are defined and ready to be used in Bill of Materials.
+
+--------------------------------------------------------------------------------
+
+SECTION 2.2: CREATING FINISHED PRODUCT
+--------------------------------------------------------------------------------
+
+Step 1: Create Finished Product
+- Click "Create" button
+- Fill in:
+  * Product Name: "Wooden Dining Table - Classic"
+  * Can be Sold: Check
+  * Can be Purchased: Uncheck
+  * Product Type: "Storable Product"
+- Click "Save"
+
+Explanation: This is your finished good that customers will buy.
+
+Step 2: Set Sales Information
+- Click "Sales" tab
+- Fill in:
+  * Sales Price: 299.00
+  * Customer Taxes: Select appropriate tax if configured
+- Click "Save"
+
+Step 3: Set Product Route
+- Click "Inventory" tab
+- In "Operations" section, check:
+  * "Manufacture": Check this box
+  * "Make To Order": Optionally check (produces only when sold)
+
+Explanation: "Manufacture" route tells Odoo this product is manufactured,
+not purchased or dropshipped. "Make To Order" triggers production only when
+a sales order is confirmed.
+
+Step 4: Save Product
+- Click "Save"
+
+Result: Finished product is created and configured for manufacturing.
+
+--------------------------------------------------------------------------------
+
+SECTION 2.3: CREATING BILL OF MATERIALS (BOM)
+--------------------------------------------------------------------------------
+
+A Bill of Materials defines what components and operations are needed to
+manufacture a finished product.
+
+Step 1: Create BOM from Product
+- While viewing "Wooden Dining Table - Classic" product
+- Click "Bill of Materials" smart button (shows "0" initially)
+- Click "Create" button
+
+Alternative Path:
+- Manufacturing → Products → Bills of Materials → Create
+
+Step 2: Fill BOM Header Information
+- Product: Auto-filled "Wooden Dining Table - Classic"
+- BOM Type: Select "Manufacture this product"
+  Options:
+  * Manufacture this product: Normal production
+  * Kit: Components are sold together but not assembled
+- Quantity: 1.00 (this BOM produces 1 table)
+- Reference: Leave blank or enter "BOM-TABLE-001"
+
+Explanation: BOM Type "Manufacture" means these components will be consumed
+to create the finished product. "Kit" just groups items for sale.
+
+Step 3: Add Components to BOM
+- In "Components" tab
+- Click "Add a line"
+
+Component 1:
+- Product: Select "Table Top - Wood"
+- Quantity: 1
+
+Click "Add a line" again
+
+Component 2:
+- Product: Select "Table Leg - Wood"
+- Quantity: 4
+
+Click "Add a line" again
+
+Component 3:
+- Product: Select "Screws - Stainless Steel"
+- Quantity: 20
+
+Explanation: Each line specifies what materials are consumed and in what
+quantity to produce 1 unit of the finished product.
+
+Step 4: Save BOM
+- Click "Save"
+
+Result: Basic BOM is created. When you manufacture 1 table, system will
+consume 1 table top, 4 legs, and 20 screws from inventory.
+
+--------------------------------------------------------------------------------
+
+SECTION 2.4: ADDING OPERATIONS TO BOM (WITH WORK CENTERS)
+--------------------------------------------------------------------------------
+
+Operations define the production steps and where they occur.
+
+Step 1: Create Work Center First
+- Go to Manufacturing → Configuration → Work Centers
+- Click "Create"
+- Fill in:
+  * Work Center Name: "Assembly Station 1"
+  * Default Capacity: 1 (how many products can be worked on simultaneously)
+  * Time Efficiency: 100%
+  * Costs per hour: 25.00 (labor + machine cost)
+- Click "Save"
+
+Explanation: Work Center represents a physical location or machine where
+work happens. Costs help calculate production costs.
+
+Step 2: Open Your BOM Again
+- Manufacturing → Products → Bills of Materials
+- Click on "Wooden Dining Table - Classic" BOM
+
+Step 3: Add Operations
+- Click "Operations" tab
+- Click "Add a line"
+
+Operation 1:
+- Operation: Type "Cut and Prepare Wood"
+- Work Center: Select "Assembly Station 1"
+- Default Duration (minutes): 15
+- Description: "Cut table top to size and sand edges"
+
+Click "Add a line" again
+
+Operation 2:
+- Operation: "Assemble Legs"
+- Work Center: "Assembly Station 1"
+- Default Duration: 20 minutes
+- Description: "Attach 4 legs to table top using screws"
+
+Click "Add a line" again
+
+Operation 3:
+- Operation: "Quality Check and Finish"
+- Work Center: "Assembly Station 1"
+- Default Duration: 10 minutes
+- Description: "Inspect assembly and apply finish coating"
+
+Explanation: Operations define the sequence of work. Each operation has a
+duration that impacts scheduling and costing.
+
+Step 4: Save BOM
+- Click "Save"
+
+Result: BOM now includes both components and operations. Total manufacturing
+time is 45 minutes per table.
+
+--------------------------------------------------------------------------------
+
+SECTION 2.5: ADVANCED BOM FEATURES
+--------------------------------------------------------------------------------
+
+SUB-SECTION: By-Products
+--------------------------------------------------------------------------------
+
+If your manufacturing process creates secondary products (like sawdust when
+cutting wood), you can define by-products.
+
+Step 1: Edit BOM
+- Open your "Wooden Dining Table" BOM
+- Click "By-products" tab
+- Click "Add a line"
+
+Step 2: Add By-Product
+- Product: Create/Select "Wood Sawdust"
+- Quantity: 0.5 kg
+- Operation: Select "Cut and Prepare Wood"
+
+Explanation: For every table manufactured, 0.5 kg of sawdust is also produced
+and added to inventory during the cutting operation.
+
+Step 3: Save BOM
+
+Result: By-products are tracked and can be reused or sold.
+
+--------------------------------------------------------------------------------
+
+SUB-SECTION: Component Consumption
+--------------------------------------------------------------------------------
+
+Step 1: Configure Component Consumption
+- In BOM, Components tab
+- Click on a component line to edit
+- You'll see consumption options:
+  * Consume: When to consume this component
+    - Strict: Consume exact quantity (default)
+    - Warning: Allow over-consumption with warning
+    - Flexible: Allow any quantity
+
+Explanation: 
+- Strict: System won't allow manufacturing if exact components aren't available
+- Flexible: Useful when component quantities vary slightly
+
+Step 2: Set Consumption Timing
+- Manual: User confirms consumption
+- At operation: Consumed when specific work order operation completes
+
+Result: Component consumption is configured for accurate inventory tracking.
+
+================================================================================
+PART 3: WORK CENTERS AND OPERATIONS
+================================================================================
+
+Real-Life Scenario: You expand production and need multiple work centers:
+assembly stations, painting booth, quality inspection area.
+
+--------------------------------------------------------------------------------
+
+SECTION 3.1: CREATING MULTIPLE WORK CENTERS
+--------------------------------------------------------------------------------
+
+Step 1: Access Work Centers
+- Manufacturing → Configuration → Work Centers
+- Click "Create"
+
+Step 2: Create Assembly Work Center
+- Work Center Name: "Assembly Station 2"
+- Code: "ASM-02"
+- Working Hours: Select "Standard 40 hours/week" (default calendar)
+- Capacity: 1
+- Time Efficiency: 100%
+- Costs per hour: 25.00
+- Click "Save"
+
+Step 3: Create Painting Work Center
+- Click "Create" again
+- Work Center Name: "Painting Booth"
+- Code: "PAINT-01"
+- Working Hours: "Standard 40 hours/week"
+- Capacity: 2 (can paint 2 tables at once)
+- Time Efficiency: 100%
+- Costs per hour: 30.00 (paint booth costs more)
+- Click "Save"
+
+Step 4: Create Quality Work Center
+- Click "Create"
+- Work Center Name: "Quality Inspection Station"
+- Code: "QC-01"
+- Working Hours: "Standard 40 hours/week"
+- Capacity: 1
+- Time Efficiency: 100%
+- Costs per hour: 20.00
+- Click "Save"
+
+Result: Multiple work centers are available for assigning operations.
+
+--------------------------------------------------------------------------------
+
+SECTION 3.2: ALTERNATIVE WORK CENTERS
+--------------------------------------------------------------------------------
+
+If a primary work center is busy, alternative work centers can be used.
+
+Step 1: Open Primary Work Center
+- Manufacturing → Configuration → Work Centers
+- Click "Assembly Station 1"
+
+Step 2: Add Alternative Work Centers
+- Click "Edit"
+- Scroll to "Alternative Workcenters" section
+- Click "Add a line"
+- Select "Assembly Station 2"
+- Click "Save"
+
+Explanation: When Assembly Station 1 is at capacity, system can schedule
+work to Assembly Station 2 automatically.
+
+Result: Production scheduling is more flexible.
+
+--------------------------------------------------------------------------------
+
+SECTION 3.3: WORK CENTER TIME TRACKING
+--------------------------------------------------------------------------------
+
+Step 1: Configure Time Tracking
+- Open a Work Center (e.g., "Assembly Station 1")
+- Click "Edit"
+- Note these fields:
+  * Time Before Production: Setup time (e.g., 10 minutes)
+  * Time After Production: Cleanup time (e.g., 5 minutes)
+  * Time Efficiency: 100% means no efficiency loss
+
+Step 2: Set Realistic Times
+- Time Before Production: 10 (minutes)
+- Time After Production: 5 (minutes)
+- Click "Save"
+
+Explanation: Setup and cleanup times are added to each production run. If
+manufacturing 10 tables, setup happens once, not for each unit.
+
+Result: Accurate time calculation for scheduling and costing.
+
+================================================================================
+PART 4: CREATING AND PROCESSING MANUFACTURING ORDERS
+================================================================================
+
+Real-Life Scenario: You receive a sales order for 5 wooden tables. You need
+to manufacture them.
+
+--------------------------------------------------------------------------------
+
+SECTION 4.1: MANUAL MANUFACTURING ORDER CREATION
+--------------------------------------------------------------------------------
+
+Step 1: Access Manufacturing Orders
+- Click "Manufacturing" in main menu
+- Click "Operations"
+- Click "Manufacturing Orders"
+
+Step 2: Create New Manufacturing Order
+- Click "Create" button
+
+Step 3: Fill Manufacturing Order Details
+- Product: Select "Wooden Dining Table - Classic"
+- Quantity: 5.00
+- Bill of Materials: Auto-selected based on product
+- Scheduled Date: Select production deadline (e.g., 7 days from now)
+
+Explanation: Scheduled date helps plan when to start production to meet
+delivery dates.
+
+Step 4: Review Components and Operations
+- Click "Components" tab
+- System automatically calculates:
+  * Table Top - Wood: 5 units
+  * Table Leg - Wood: 20 units
+  * Screws: 100 units
+- Click "Operations" tab (if Work Orders enabled)
+- System shows operations from BOM:
+  * Cut and Prepare Wood: 75 minutes (15 min × 5 tables)
+  * Assemble Legs: 100 minutes (20 min × 5 tables)
+  * Quality Check and Finish: 50 minutes (10 min × 5 tables)
+
+Explanation: System multiplies component quantities and operation times by
+the number of units being manufactured.
+
+Step 5: Check Availability
+- Click "Check Availability" button
+- System checks if required components are in stock
+- Status shows:
+  * Available: Green indicator
+  * Partially Available: Yellow
+  * Not Available: Red
+
+Step 6: Confirm Manufacturing Order
+- If components available, click "Confirm" button
+- Status changes to "Confirmed"
+- Work Orders are created (one per operation)
+- Components are reserved in inventory
+
+Explanation: Confirmation locks in the component quantities and creates
+detailed work orders for production floor execution.
+
+Result: Manufacturing Order is confirmed and ready for production.
+
+--------------------------------------------------------------------------------
+
+SECTION 4.2: HANDLING COMPONENT UNAVAILABILITY
+--------------------------------------------------------------------------------
+
+What happens if components aren't in stock?
+
+Step 1: Check Availability Shows Missing Components
+- After clicking "Check Availability"
+- Red indicator shows unavailable items
+- Click on red text to see details
+
+Step 2: Option A - Wait for Purchase
+- If components have "Buy" route set
+- System may have automatically created Purchase Orders
+- Go to Purchase module → Orders → Purchase Orders
+- Check for pending orders
+- Validate and receive goods
+- Return to Manufacturing Order and "Check Availability" again
+
+Step 3: Option B - Manually Add Stock
+- Go to Inventory → Operations → Inventory Adjustments
+- Click "Create"
+- Add products and quantities that are missing
+- Click "Validate"
+- Return to Manufacturing Order and "Check Availability" again
+
+Step 4: Option C - Replenish Stock
+- In Manufacturing Order, while viewing missing components
+- Some products may show "Replenish" button
+- Click "Replenish"
+- Choose:
+  * Buy: Creates Purchase Order
+  * Manufacture: Creates another Manufacturing Order (for sub-assemblies)
+- Complete the replenishment
+- Return to original Manufacturing Order
+
+Result: Components are available and Manufacturing Order can proceed.
+
+--------------------------------------------------------------------------------
+
+SECTION 4.3: PRODUCING WITHOUT WORK ORDERS
+--------------------------------------------------------------------------------
+
+If Work Orders feature is disabled, you produce directly from Manufacturing
+Order.
+
+Step 1: Open Confirmed Manufacturing Order
+- Manufacturing → Operations → Manufacturing Orders
+- Click on your order (Status: Confirmed)
+
+Step 2: Start Production
+- Click "Produce" button
+- Enter quantity to produce: 5.00 (or partial quantity)
+- Click "Validate"
+
+Explanation: This single action consumes all components and produces finished
+goods in one step.
+
+Step 3: View Results
+- Status changes to "Done"
+- Components are removed from inventory
+- Finished products are added to inventory
+- Click "Inventory" smart button to see stock movements
+
+Result: Manufacturing is complete without detailed work order tracking.
+
+================================================================================
+PART 5: WORK ORDER MANAGEMENT
+================================================================================
+
+This section applies when "Work Orders" feature is enabled.
+
+Real-Life Scenario: Production floor workers need to execute specific
+operations in sequence at different work centers.
+
+--------------------------------------------------------------------------------
+
+SECTION 5.1: ACCESSING WORK ORDERS
+--------------------------------------------------------------------------------
+
+Step 1: From Manufacturing Order
+- Open your confirmed Manufacturing Order for 5 tables
+- Click "Work Orders" smart button (shows "3" if 3 operations)
+- List of work orders appears
+
+Alternative Access:
+- Manufacturing → Operations → Work Orders
+- Shows all work orders across all manufacturing orders
+
+Step 2: Understanding Work Order Status
+- Ready: Can start immediately
+- Pending: Waiting for previous operation to complete
+- In Progress: Currently being worked on
+- Finished: Completed
+- Cancelled: Stopped
+
+Explanation: Operations typically must be done in sequence, unless configured
+otherwise.
+
+Result: Work orders are visible and ready for execution.
+
+--------------------------------------------------------------------------------
+
+SECTION 5.2: EXECUTING WORK ORDERS (TABLET/KIOSK VIEW)
+--------------------------------------------------------------------------------
+
+Odoo provides a tablet-friendly interface for shop floor workers.
+
+Step 1: Access Work Center Planning
+- Manufacturing → Planning → Work Centers
+- Click "Plan" button (or Work Center Planning)
+- Shows Gantt chart of scheduled work
+
+Step 2: Open Tablet View for Work Center
+- Manufacturing → Configuration → Work Centers
+- Click on "Assembly Station 1"
+- Click "Work Orders" button in the form
+- Click "Open Tablet View" button (or directly navigate)
+
+Alternative:
+- Manufacturing → Operations → Work Orders
+- Apply filter: Work Center = Assembly Station 1
+- Switch to Kanban view
+- Click on a work order card
+
+Step 3: Start Work Order (Tablet View)
+- You see work order details:
+  * Product being manufactured
+  * Quantity
+  * Expected duration
+  * Instructions
+- Click "Start" button
+- Timer starts counting
+
+Explanation: Timer tracks actual time spent vs. planned time. This data
+feeds into efficiency reports.
+
+Step 4: Register Components Consumption
+- If components need manual confirmation
+- In "Components" section
+- Each component shows quantity to consume
+- Click "Register" or confirm consumption
+
+Explanation: Manual registration ensures accurate tracking if quantities
+vary slightly from BOM.
+
+Step 5: Mark Work Order as Done
+- After completing the operation
+- Click "Mark as Done" button
+- System records:
+  * Actual time taken
+  * Components consumed
+  * Quantity produced
+
+Step 6: Move to Next Operation
+- System automatically makes next operation "Ready"
+- Worker at next work center can start their work order
+- Repeat process for each operation
+
+Result: All operations are completed sequentially, tracked in detail.
+
+--------------------------------------------------------------------------------
+
+SECTION 5.3: WORK ORDER DEPENDENCIES
+--------------------------------------------------------------------------------
+
+Some operations can run in parallel, others must wait.
+
+Step 1: Configure Dependencies in BOM
+- Manufacturing → Products → Bills of Materials
+- Open your "Wooden Dining Table" BOM
+- Click "Operations" tab
+- Click on an operation to edit
+- Field: "Start After Operation"
+  * Leave empty: Can start immediately
+  * Select operation: Must wait for that operation to finish
+
+Example:
+- "Cut and Prepare Wood": No dependency (starts first)
+- "Assemble Legs": Start After "Cut and Prepare Wood"
+- "Quality Check": Start After "Assemble Legs"
+
+Step 2: Parallel Operations Example
+If you add "Paint Table" operation:
+- "Paint Table": Start After "Assemble Legs"
+- "Quality Check": Start After "Paint Table"
+
+But if painting and quality can happen simultaneously:
+- Both start after "Assemble Legs"
+- No dependency between them
+
+Explanation: Dependencies control workflow sequence. Parallel operations
+improve throughput.
+
+Result: Operations execute in correct order with optimal scheduling.
+
+--------------------------------------------------------------------------------
+
+SECTION 5.4: WORK ORDER BLOCKING AND QUALITY
+--------------------------------------------------------------------------------
+
+Step 1: Add Quality Check to Operation
+- In BOM, Operations tab
+- Select operation "Quality Check and Finish"
+- Check "Blocking" option if available in configuration
+
+Explanation: Blocking operations require explicit approval or quality check
+before proceeding.
+
+Step 2: During Work Order Execution
+- When worker marks operation "Done"
+- If quality check is needed
+- Quality Control Point triggers
+- Inspector must approve before Manufacturing Order completes
+
+Result: Quality is enforced at critical production steps.
+
+================================================================================
+PART 6: SUBCONTRACTING
+================================================================================
+
+Real-Life Scenario: You don't have painting equipment, so you send tables to
+an external vendor for painting.
+
+--------------------------------------------------------------------------------
+
+SECTION 6.1: SETTING UP SUBCONTRACTING
+--------------------------------------------------------------------------------
+
+Step 1: Enable Subcontracting
+- Manufacturing → Configuration → Settings
+- Enable "Subcontracting"
+- Click "Save"
+
+Step 2: Create Subcontractor Vendor
+- Contacts → Create
+- Fill in:
+  * Name: "Premium Painting Services"
+  * Company Type: Company
+  * Check "Is a Vendor"
+  * Check "Is a Subcontractor" (appears after enabling feature)
+- Click "Save"
+
+Step 3: Create Subcontracted Product
+You have two approaches:
+
+Approach A: Subcontract Entire Product
+- Create product "Painted Wooden Table"
+- Set route "Buy" (purchased from subcontractor)
+
+Approach B: Subcontract Operation
+- Add painting operation to BOM
+- Set it as subcontracted
+
+We'll use Approach B (operation-level subcontracting):
+
+Step 4: Create Painting Service Product
+- Manufacturing → Products → Products → Create
+- Product Name: "Painting Service - Tables"
+- Can be Sold: Uncheck
+- Can be Purchased: Check
+- Product Type: "Service"
+- Click "Save"
+- In "Purchase" tab:
+  * Vendor: "Premium Painting Services"
+  * Price: 25.00 per unit
+
+Step 5: Modify BOM to Include Subcontracted Operation
+- Open "Wooden Dining Table" BOM
+- Operations tab
+- Add operation:
+  * Operation: "External Painting"
+  * Work Center: Create/Select "Subcontractor - Painting"
+  * Subcontracted: Check this option
+  * Subcontractor: Select "Premium Painting Services"
+  * Duration: 1 minute (minimal, actual work done externally)
+
+Step 6: Add Components for Subcontractor
+- Still in BOM, Components tab
+- Add component:
+  * Product: "Paint - Red" (create if needed)
+  * Quantity: 0.5 L
+  * Operation: "External Painting"
+
+Explanation: Components assigned to subcontracted operation are sent to
+vendor. Vendor uses your paint to paint the table.
+
+Step 7: Save BOM
+
+Result: BOM includes subcontracted operation.
+
+--------------------------------------------------------------------------------
+
+SECTION 6.2: PROCESSING SUBCONTRACTED MANUFACTURING ORDER
+--------------------------------------------------------------------------------
+
+Step 1: Create Manufacturing Order
+- Create MO for "Wooden Dining Table - Classic"
+- Quantity: 2
+- Click "Confirm"
+
+Step 2: Complete Internal Operations First
+- Execute work orders up to subcontracted operation
+- "Cut and Prepare Wood" - Mark Done
+- "Assemble Legs" - Mark Done
+
+Step 3: System Creates Purchase Order Automatically
+- Go to Purchase → Orders → Purchase Orders
+- Find order for "Premium Painting Services"
+- Order contains:
+  * Service: Painting Service - Tables (Qty: 2)
+- This is a dropship/resupply order
+
+Step 4: Send Components to Subcontractor
+- A delivery order is created automatically
+- Go to Inventory → Operations → Transfers
+- Find transfer to subcontractor
+- Validate it (components leave your warehouse)
+
+Step 5: Subcontractor Completes Work
+- In real life, vendor paints tables
+- In Odoo, validate Purchase Order when work is done
+- Go to Purchase Order → Click "Receive Products"
+- Quantity: 2 (painted tables return)
+
+Step 6: Complete Manufacturing Order
+- Return to Manufacturing Order
+- Subcontracted operation is marked complete
+- Continue with remaining operations
+- Click "Mark as Done" to finish MO
+
+Result: Subcontracting process is complete, components tracked accurately.
+
+--------------------------------------------------------------------------------
+
+SECTION 6.3: RESUPPLY SUBCONTRACTOR
+--------------------------------------------------------------------------------
+
+If subcontractor runs out of materials and needs more:
+
+Step 1: Create Resupply Transfer
+- Inventory → Operations → Transfers
+- Create manual transfer
+- From: Your warehouse
+- To: Subcontractor location
+- Products: Paint, Screws, etc.
+- Validate
+
+Explanation: Manual resupply sends additional materials without creating new
+manufacturing order.
+
+Result: Subcontractor has materials to continue production.
+
+================================================================================
+PART 7: QUALITY CONTROL AND MAINTENANCE
+================================================================================
+
+Real-Life Scenario: You need to ensure every table meets quality standards
+and maintain equipment regularly.
+
+--------------------------------------------------------------------------------
+
+SECTION 7.1: SETTING UP QUALITY CONTROL POINTS
+--------------------------------------------------------------------------------
+
+Step 1: Access Quality Control
+- Quality → Configuration → Control Points (or Quality Control Points)
+- Click "Create"
+
+Step 2: Create Quality Check for Assembly
+- Title: "Check Leg Attachment Strength"
+- Pick Type: "Manufacturing"
+- Operation: Select "Assemble Legs" from your BOM
+- Product: "Wooden Dining Table - Classic" (or leave blank for all products)
+- Control per: "Operation"
+- Measure Frequency: "All"
+
+Step 3: Set Check Instructions
+- Type: Select check type:
+  * Instructions: Just follow text instructions
+  * Take a Picture: Attach photo evidence
+  * Pass - Fail: Simple pass/fail
+  * Measure: Numeric measurement
+  * Worksheet: Fill out form
+
+- For this example, select "Pass - Fail"
+- Instructions field: "Pull each leg with 20kg force. All must be secure."
+- Responsible Team: Select quality team
+
+Step 4: Set Failure Actions
+- Norm field: Leave blank (pass/fail has no numeric norm)
+- Alert Team if failed: Check this
+- Auto-assign to: Select quality manager
+
+Step 5: Save Quality Control Point
+- Click "Save"
+
+Result: Every time "Assemble Legs" operation runs, a quality check is
+triggered.
+
+--------------------------------------------------------------------------------
+
+SECTION 7.2: EXECUTING QUALITY CHECKS DURING PRODUCTION
+--------------------------------------------------------------------------------
+
+Step 1: Start Manufacturing Order
+- Create and confirm MO for "Wooden Dining Table - Classic"
+- Execute work orders
+
+Step 2: Quality Check Triggers
+- When "Assemble Legs" work order is marked "Done"
+- System creates Quality Check automatically
+
+Step 3: Perform Quality Check
+- Quality → Quality Control → Quality Checks
+- Find your check (Status: To Do)
+- Open it
+- Follow instructions
+- Select result:
+  * Pass: Click "Pass" button
+  * Fail: Click "Fail" button
+
+Step 4: If Check Fails
+- Quality Alert is created automatically
+- Quality → Quality Control → Quality Alerts
+- Alert shows:
+  * Product affected
+  * Operation where failure occurred
+  * Assigned team
+- Quality team investigates
+- Can create corrective actions
+- Document root cause
+- Status progressed: In Progress → Done
+
+Step 5: Manufacturing Order Continues or Blocks
+- If check is blocking, MO cannot proceed until quality issue resolved
+- If non-blocking, MO continues but alert exists for review
+
+Result: Quality is systematically enforced and tracked.
+
+--------------------------------------------------------------------------------
+
+SECTION 7.3: DIFFERENT QUALITY CHECK TYPES
+--------------------------------------------------------------------------------
+
+SUB-SECTION: Measurement Check
+--------------------------------------------------------------------------------
+
+Step 1: Create Measurement Quality Point
+- Quality → Configuration → Control Points → Create
+- Title: "Check Table Top Thickness"
+- Type: "Measure"
+- Norm: 25.00 (mm)
+- Tolerance Min: 24.00
+- Tolerance Max: 26.00
+- Instructions: "Use caliper to measure thickness at 4 corners"
+- Click "Save"
+
+Step 2: Execute Measurement Check
+- During production, check appears
+- Inspector enters measured value: e.g., 25.3 mm
+- If within tolerance (24-26mm): Automatically passes
+- If outside tolerance: Automatically fails
+- Click "Validate"
+
+Result: Numeric quality metrics are captured and enforced.
+
+--------------------------------------------------------------------------------
+
+SUB-SECTION: Picture Check
+--------------------------------------------------------------------------------
+
+Step 1: Create Picture Quality Point
+- Type: "Take a Picture"
+- Title: "Document Final Assembly"
+- Instructions: "Take photo of completed table from all 4 sides"
+- Click "Save"
+
+Step 2: Execute Picture Check
+- Check appears during production
+- Inspector clicks "Take Picture" or uploads image
+- Attaches photos
+- Clicks "Pass" when documentation complete
+
+Result: Visual evidence of quality is captured and archived.
+
+--------------------------------------------------------------------------------
+
+SECTION 7.4: MAINTENANCE MANAGEMENT
+--------------------------------------------------------------------------------
+
+Manufacturing equipment needs regular maintenance.
+
+Step 1: Create Equipment
+- Maintenance → Maintenance → Equipment
+- Click "Create"
+- Fill in:
+  * Equipment Name: "Assembly Station 1 - Pneumatic Screwdriver"
+  * Equipment Category: Create "Power Tools"
+  * Work Center: "Assembly Station 1"
+  * Used By: "Company" or select employee
+  * Technician: Select maintenance technician
+  * Cost per hour: 15.00
+- Click "Save"
+
+Explanation: Equipment is linked to work center. Downtime affects production
+scheduling.
+
+Step 2: Create Maintenance Request (Corrective)
+- Maintenance → Maintenance → Maintenance Requests
+- Click "Create"
+- Fill in:
+  * Equipment: "Assembly Station 1 - Pneumatic Screwdriver"
+  * Maintenance Type: "Corrective Maintenance" (repair)
+  * Request Subject: "Screwdriver losing torque"
+  * Priority: "Normal" (or High/Low)
+  * Request Date: Today
+  * Owner: Select employee who noticed issue
+  * Assigned To: Select technician
+- Click "Save"
+
+Step 3: Process Maintenance Request
+- Technician opens the request
+- Adds notes in "Description" field
+- Changes stage: New → In Progress → Repair → Done
+- When complete, clicks "Done" or moves to Done stage
+
+Result: Corrective maintenance is tracked and completed.
+
+--------------------------------------------------------------------------------
+
+SECTION 7.5: PREVENTIVE MAINTENANCE
+--------------------------------------------------------------------------------
+
+Step 1: Create Recurring Maintenance Plan
+- Maintenance → Maintenance → Maintenance Requests
+- Click "Create"
+- Fill in:
+  * Equipment: "Assembly Station 1 - Pneumatic Screwdriver"
+  * Maintenance Type: "Preventive Maintenance"
+  * Request Subject: "Monthly Lubrication and Inspection"
+  * Priority: "Low"
+  * Schedule Date: Select next maintenance date
+  * Repeat: Check this box
+  * Repeat Every: 1 Month
+  * Assigned To: Technician
+
+Step 2: Save Maintenance Plan
+- Click "Save"
+- System automatically creates recurring maintenance requests
+
+Step 3: Execute Preventive Maintenance
+- Each month, new request appears automatically
+- Technician performs maintenance
+- Marks as Done
+- Next month's request is created
+
+Result: Preventive maintenance prevents unexpected breakdowns.
+
+--------------------------------------------------------------------------------
+
+SECTION 7.6: LINKING MAINTENANCE TO WORK CENTERS
+--------------------------------------------------------------------------------
+
+Step 1: Schedule Maintenance Downtime
+- When maintenance is planned
+- Go to work center: Manufacturing → Configuration → Work Centers
+- Click "Assembly Station 1"
+- Click "Maintenance" smart button (shows pending requests)
+
+Step 2: Block Work Center During Maintenance
+- When maintenance is in progress
+- Work Center capacity is reduced or blocked
+- Production scheduler automatically avoids this work center
+- Work orders are rescheduled to alternative work centers or later times
+
+Result: Maintenance downtime is factored into production planning.
+
+================================================================================
+PART 8: COSTING AND ANALYSIS
+================================================================================
+
+Real-Life Scenario: Management wants to know production costs and efficiency
+metrics.
+
+--------------------------------------------------------------------------------
+
+SECTION 8.1: COSTING METHODS OVERVIEW
+--------------------------------------------------------------------------------
+
+Odoo supports three inventory costing methods:
+
+1. Standard Price (Default)
+   - Fixed cost per unit
+   - manually set on product
+   - Simple, good for stable costs
+
+2. FIFO (First In, First Out)
+   - Cost based on order goods were received
+   - Realistic for varying purchase prices
+
+3. AVCO (Average Cost)
+   - Weighted average of all purchases
+   - Smooths out price variations
+
+Explanation: Manufacturing cost includes raw material cost + operation cost
+(work center time × hourly rate).
+
+--------------------------------------------------------------------------------
+
+SECTION 8.2: CONFIGURING COSTING METHOD
+--------------------------------------------------------------------------------
+
+Step 1: Set Company-Wide Costing Method
+- Inventory → Configuration → Settings
+- Scroll to "Valuation" section
+- Costing Method: Select "FIFO" (or Standard Price / AVCO)
+- Click "Save"
+
+Step 2: Set Product-Specific Costing
+- Open a product (e.g., "Table Top - Wood")
+- Click "Edit"
+- In General Information tab
+- Cost: 50.00 (if using Standard Price)
+- If using FIFO/AVCO, cost is calculated automatically from purchases
+
+Step 3: Set Automated Inventory Valuation
+- Inventory → Configuration → Settings
+- Enable "Automatic Inventory Valuation"
+- Click "Save"
+
+Explanation: Automatic valuation posts accounting entries when stock moves,
+linking manufacturing to accounting.
+
+Result: Costing method is configured.
+
+--------------------------------------------------------------------------------
+
+SECTION 8.3: VIEWING MANUFACTURING COSTS
+--------------------------------------------------------------------------------
+
+Step 1: Check Product Cost Breakdown
+- Open finished product "Wooden Dining Table - Classic"
+- Click "Costs" button (or view in form)
+- Shows:
+  * Components Cost: Sum of all component costs
+  * Operations Cost: Sum of operation times × work center rates
+
+Example Calculation:
+Components:
+- Table Top: 1 × 50.00 = 50.00
+- Table Legs: 4 × 10.00 = 40.00
+- Screws: 20 × 0.05 = 1.00
+Total Component Cost: 91.00
+
+Operations:
+- Cut and Prepare: 15 min × (25.00/60) = 6.25
+- Assemble Legs: 20 min × (25.00/60) = 8.33
+- Quality Check: 10 min × (25.00/60) = 4.17
+Total Operation Cost: 18.75
+
+Total Manufacturing Cost: 91.00 + 18.75 = 109.75
+Sales Price: 299.00
+Gross Margin: 299.00 - 109.75 = 189.25 (63%)
+
+Step 2: View Cost on Manufacturing Order
+- Open completed Manufacturing Order
+- Click "Cost Analysis" button (if available) or view in form
+- Shows actual costs:
+  * Materials consumed (actual quantities)
+  * Time spent (actual work order durations)
+  * Total actual cost
+
+Result: Cost analysis helps price products correctly and identify margins.
+
+--------------------------------------------------------------------------------
+
+SECTION 8.4: PRODUCTION ANALYSIS REPORTS
+--------------------------------------------------------------------------------
+
+Step 1: Access Manufacturing Analysis
+- Manufacturing → Reporting → Manufacturing Analysis
+- Shows list of all manufacturing orders with:
+  * Product
+  * Quantity produced
+  * Date
+  * Status
+  * Delayed orders
+
+Step 2: Apply Filters and Group
+- Filter by:
+  * Date range (This Month, This Quarter, etc.)
+  * Status (Done, In Progress, etc.)
+  * Product
+- Group by:
+  * Product: See production volume per product
+  * Work Center: See workload per work center
+  * Employee: See productivity per employee (if tracked)
+
+Step 3: Switch to Graph View
+- Click "Graph" icon at top right
+- Shows visual charts:
+  * Bar chart of quantities produced
+  * Line chart of production over time
+  * Pie chart of production by product
+
+Step 4: Switch to Pivot View
+- Click "Pivot" icon
+- Drag and drop fields to analyze:
+  * Rows: Product
+  * Columns: Month
+  * Measures: Total Quantity
+
+Result: Comprehensive production insights for decision-making.
+
+--------------------------------------------------------------------------------
+
+SECTION 8.5: WORK CENTER EFFICIENCY REPORTS
+--------------------------------------------------------------------------------
+
+Step 1: View Work Center Load
+- Manufacturing → Planning → Work Centers Planning
+- Shows Gantt chart of scheduled work
+- Each work center shows:
+  * Current load (% capacity utilized)
+  * Scheduled work orders
+  * Bottlenecks (over-allocated time slots)
+
+Step 2: Analyze Work Center Performance
+- Manufacturing → Reporting → Work Center Performance (if available)
+- Or view from individual Work Center
+- Shows:
+  * Planned Time vs Actual Time
+  * Productive Time (working)
+  * Performance Loss (slower than expected)
+  * Availability Loss (downtime, maintenance)
+
+Step 3: Calculate OEE (Overall Equipment Effectiveness)
+OEE = Availability × Performance × Quality
+
+Example:
+- Availability: 90% (90% uptime, 10% downtime for maintenance)
+- Performance: 85% (took longer than planned)
+- Quality: 95% (95% passed quality checks)
+- OEE = 0.90 × 0.85 × 0.95 = 0.727 = 72.7%
+
+Odoo can calculate OEE automatically if data is tracked.
+
+Result: Work center efficiency is measured and can be improved.
+
+================================================================================
+PART 9: INTEGRATION WITH OTHER MODULES
+================================================================================
+
+Manufacturing deeply integrates with other Odoo modules for end-to-end
+business flow.
+
+--------------------------------------------------------------------------------
+
+SECTION 9.1: INTEGRATION WITH SALES
+--------------------------------------------------------------------------------
+
+Real-Life Scenario: Customer orders tables through Sales module, triggering
+automatic manufacturing.
+
+Step 1: Configure Make-To-Order
+- Open product "Wooden Dining Table - Classic"
+- Click "Inventory" tab
+- In Routes section, check:
+  * "Make To Order (MTO)"
+  * "Manufacture"
+
+Explanation: MTO means production starts only when sold. Without MTO, you
+manufacture to stock based on reordering rules.
+
+Step 2: Create Sales Order
+- Sales → Orders → Quotations → Create
+- Customer: Select customer
+- Add order line:
+  * Product: "Wooden Dining Table - Classic"
+  * Quantity: 7
+  * Unit Price: 299.00
+- Click "Save"
+
+Step 3: Confirm Sales Order
+- Click "Confirm" button
+- Status changes to "Sales Order"
+
+Step 4: Automatic Manufacturing Order Created
+- Go to Manufacturing → Operations → Manufacturing Orders
+- Find newly created MO:
+  * Product: Wooden Dining Table
+  * Quantity: 7
+  * Source: SO### (sales order reference)
+  * Status: Confirmed
+
+Explanation: System automatically created MO because product has routes
+"Manufacture" + "MTO".
+
+Step 5: Execute Manufacturing
+- Complete the manufacturing order (all work orders)
+- Mark as Done
+
+Step 6: Deliver to Customer
+- Return to Sales Order
+- Click "Delivery" smart button
+- Delivery order is created
+- Validate delivery
+- Products are shipped to customer
+
+Result: Sales order seamlessly triggers manufacturing and delivery.
+
+--------------------------------------------------------------------------------
+
+SECTION 9.2: INTEGRATION WITH PURCHASE
+--------------------------------------------------------------------------------
+
+Real-Life Scenario: Manufacturing order needs components that aren't in
+stock, triggering automatic purchase.
+
+Step 1: Configure Product for Auto-Purchase
+- Open component product "Table Top - Wood"
+- Click "Inventory" tab
+- In Routes section, check:
+  * "Buy"
+- Set reordering rules (optional):
+  * Inventory → Configuration → Reordering Rules → Create
+  * Product: "Table Top - Wood"
+  * Min Quantity: 10
+  * Max Quantity: 50
+  * Quantity Multiple: 10
+  * Trigger: Auto (or Manual)
+
+Explanation: "Buy" route tells system to purchase when needed. Reordering
+rules trigger purchases automatically when stock is low.
+
+Step 2: Create Manufacturing Order with Missing Components
+- Create MO for 20 Wooden Tables
+- Click "Check Availability"
+- System shows components are missing:
+  * Table Top - Wood: Need 20, Have 5, Missing 15
+  * Table Legs - Wood: Need 80, Have 10, Missing 70
+
+Step 3: Automatic Purchase Order Creation
+- System creates Purchase Orders automatically (if replenishment is run)
+- Or click "Replenish" button next to missing components
+- Select "Buy" option
+
+Step 4: View and Confirm Purchase Order
+- Go to Purchase → Orders → Purchase Orders
+- Find PO for "Wood Supplier Co."
+- Order contains:
+  * Table Top - Wood: 20 units
+  * Table Leg - Wood: 80 units
+- Review prices and terms
+- Click "Confirm Order"
+
+Step 5: Receive Purchased Goods
+- Click "Receive Products" button
+- Validate received quantities
+- Click "Validate"
+- Stock is updated
+
+Step 6: Return to Manufacturing Order
+- Components are now available
+- Click "Check Availability" → All green
+- Proceed with manufacturing
+
+Result: Purchasing is automatically triggered by manufacturing needs.
+
+--------------------------------------------------------------------------------
+
+SECTION 9.3: INTEGRATION WITH INVENTORY
+--------------------------------------------------------------------------------
+
+Manufacturing creates complex inventory movements.
+
+Step 1: View Stock Moves from Manufacturing Order
+- Open completed Manufacturing Order
+- Click "Inventory" smart button
+- Shows two types of moves:
+  * Consumption: Raw materials removed from stock
+  * Production: Finished goods added to stock
+
+Step 2: Trace Product Movement
+- Inventory → Products → Products
+- Open "Wooden Dining Table - Classic"
+- Click "On Hand" smart button
+- Shows current stock quantity
+- Click "Stock Moves" button
+- Filter: "Done"
+- Shows history:
+  * MO/000001: + 5 units (manufactured)
+  * MO/000002: + 7 units (manufactured)
+  * WH/OUT/00023: - 7 units (delivered to customer)
+  * Current stock: 5 units
+
+Step 3: Lot Number Tracking (If Enabled)
+- For products with lot tracking
+- During manufacturing, specify lot number:
+  * When marking MO as done
+  * Field: "Lot/Serial Number"
+  * Enter: LOT-2024-001
+- All units from this MO have this lot number
+- Traceability: Can trace which components went into which finished product
+
+Step 4: Component Traceability
+- Open finished product with lot number LOT-2024-001
+- Inventory → Products → Products → "Wooden Dining Table"
+- Click "Traceability" button
+- Shows:
+  * Lot number of product
+  * All components consumed:
+    - Table Top: From lot TOP-2024-015
+    - Table Legs: From lot LEG-2024-088
+    - Screws: From purchase PO/00045
+- Full upstream and downstream traceability
+
+Example: If customer has quality issue with table LOT-2024-001, you can trace
+which wood batch was used and check if other tables from same batch have
+issues.
+
+Result: Complete inventory tracking and traceability through manufacturing.
+
+--------------------------------------------------------------------------------
+
+SECTION 9.4: INTEGRATION WITH ACCOUNTING
+--------------------------------------------------------------------------------
+
+Manufacturing impacts financial statements through inventory valuation and
+cost of goods sold.
+
+Step 1: Enable Automated Accounting
+- Inventory → Configuration → Settings
+- Enable "Automatic Inventory Valuation"
+- Enable "Anglo-Saxon Accounting"
+- Click "Save"
+
+Explanation: This creates automatic journal entries when manufacturing occurs.
+
+Step 2: View Accounting Impact of Manufacturing
+- Complete a Manufacturing Order
+- Go to Accounting → Accounting → Journal Entries
+- Find entries related to MO reference
+
+Typical entries when manufacturing completes:
+```
+Debit:  Stock Valuation - Finished Goods    109.75
+Credit: Stock Valuation - Raw Materials      91.00
+Credit: Manufacturing Overhead               18.75
+```
+
+Explanation: Finished goods inventory increases by total production cost.
+Raw materials inventory decreases. Manufacturing overhead (labor, machine
+cost) is applied.
+
+Step 3: Cost of Goods Sold When Delivered
+- When delivery order is validated
+- Journal entry:
+```
+Debit:  Cost of Goods Sold    109.75
+Credit: Stock Valuation        109.75
+```
+
+Step 4: View P&L Impact
+- Accounting → Reporting → Profit and Loss
+- Shows:
+  * Revenue: 299.00 (from sales order)
+  * Cost of Goods Sold: 109.75 (from manufacturing)
+  * Gross Profit: 189.25
+
+Result: Manufacturing costs automatically flow to financial reports.
+
+--------------------------------------------------------------------------------
+
+SECTION 9.5: INTEGRATION WITH PLM (PRODUCT LIFECYCLE MANAGEMENT)
+--------------------------------------------------------------------------------
+
+If you use Odoo PLM module for engineering changes:
+
+Step 1: Create Engineering Change Order (ECO)
+- PLM → Engineering Change Orders → Create
+- Product: "Wooden Dining Table - Classic"
+- Change Type: "Component Change"
+- Description: "Replace standard screws with reinforced screws"
+- Affected BOMs: Select your table BOM
+
+Step 2: Modify BOM in ECO
+- In ECO, edit BOM components
+- Remove: "Screws - Stainless Steel"
+- Add: "Screws - Reinforced Steel"
+- Quantity: 20
+
+Step 3: Approve ECO
+- Request approval from engineering manager
+- Click "Approve"
+- ECO is validated
+
+Step 4: Apply ECO to Production
+- Select effective date
+- Click "Apply to Production"
+- All future Manufacturing Orders use new BOM version
+- Historical MOs still reference old BOM version
+
+Result: Engineering changes are controlled and versioned.
+
+================================================================================
+PART 10: REAL-LIFE SCENARIOS AND BEST PRACTICES
+================================================================================
+
+--------------------------------------------------------------------------------
+
+SCENARIO 1: MAKE-TO-ORDER MANUFACTURING
+--------------------------------------------------------------------------------
+
+Business Case: Custom furniture manufacturer makes products only when ordered.
+
+Configuration:
+- Product routes: Manufacture + Make To Order
+- Sales Order triggers automatic MO
+- Lead Time: Set manufacturing lead time on product
+
+Workflow:
+1. Customer places order in Sales
+2. System creates MO automatically
+3. Procurement generates POs for missing components
+4. Manufacture products
+5. Deliver to customer
+
+Benefits:
+- Zero finished goods inventory
+- No waste from unsold products
+- Cash flow optimized
+
+Setup in Odoo:
+- Product → Inventory tab → Check "Make To Order" and "Manufacture"
+- Inventory → Settings → Lead Times → Set "Manufacturing Lead Time" on product
+
+--------------------------------------------------------------------------------
+
+SCENARIO 2: MAKE-TO-STOCK WITH REORDERING RULES
+--------------------------------------------------------------------------------
+
+Business Case: High-volume standard products maintained in stock.
+
+Configuration:
+- Reordering rules trigger MO when stock is low
+- Min/Max quantities
+- Automatic or manual procurement
+
+Workflow:
+1. Product stock falls below minimum
+2. System creates MO automatically to reach maximum
+3. Scheduler runs (manual or automatic)
+4. MOs are executed
+5. Stock replenished
+
+Benefits:
+- Products always available for immediate sale
+- Production planning is smoother
+- Bulk manufacturing efficiency
+
+Setup in Odoo:
+- Inventory → Configuration → Reordering Rules → Create
+- Product: Select product
+- Min Qty: 20, Max Qty: 100
+- Route: Manufacture
+
+--------------------------------------------------------------------------------
+
+SCENARIO 3: MULTI-LEVEL MANUFACTURING (SUB-ASSEMBLIES)
+--------------------------------------------------------------------------------
+
+Business Case: Complex product requires manufacturing sub-assemblies first.
+
+Example: Office Desk
+- Desk Top (manufactured sub-assembly)
+  * Wood Board (purchased)
+  * Veneer Sheet (purchased)
+  * Gluing operation
+- Desk Frame (manufactured sub-assembly)
+  * Metal Tubes (purchased)
+  * Welding operation
+- Final Desk (manufactured)
+  * Desk Top (manufactured component)
+  * Desk Frame (manufactured component)
+  * Assembly operation
+
+Configuration:
+Step 1: Create BOMs for Sub-Assemblies
+- Create BOM for "Desk Top":
+  * Components: Wood Board, Veneer
+  * Operations: Gluing
+
+- Create BOM for "Desk Frame":
+  * Components: Metal Tubes
+  * Operations: Welding
+
+Step 2: Create BOM for Final Product
+- Create BOM for "Office Desk":
+  * Components: Desk Top, Desk Frame
+  * Operations: Final Assembly
+
+Step 3: Set Routes
+- "Desk Top": Route = Manufacture
+- "Desk Frame": Route = Manufacture
+- "Office Desk": Route = Manufacture
+
+Workflow:
+1. Create MO for "Office Desk" (qty: 10)
+2. System checks components:
+   - Desk Top: Need 10, Have 0
+   - Desk Frame: Need 10, Have 0
+3. Click "Replenish" on missing components
+4. System creates MOs:
+   - MO for 10 Desk Tops
+   - MO for 10 Desk Frames
+5. These MOs trigger their own component checks:
+   - Need Wood Boards, Veneer, Metal Tubes
+   - System creates POs for these raw materials
+6. Execution sequence:
+   a. Receive raw materials from suppliers
+   b. Manufacture Desk Tops (MO #1)
+   c. Manufacture Desk Frames (MO #2)
+   d. Manufacture Office Desks (MO #3)
+
+Result: Multi-level manufacturing is automatically planned and executed.
+
+--------------------------------------------------------------------------------
+
+SCENARIO 4: BATCH MANUFACTURING WITH VARIANTS
+--------------------------------------------------------------------------------
+
+Business Case: T-shirt manufacturer produces same design in multiple sizes.
+
+Configuration:
+Step 1: Enable Product Variants
+- Manufacturing → Settings → Enable "Variants"
+
+Step 2: Create Product with Variants
+- Product: "T-Shirt - Logo Design"
+- Attributes:
+  * Size: S, M, L, XL
+  * Color: White, Black, Red
+- This creates 12 variants (4 sizes × 3 colors)
+
+Step 3: Create BOMs
+Option A: One BOM for all variants (same components, same quantity)
+- BOM for "T-Shirt - Logo Design"
+- Applies to all variants
+
+Option B: Variant-specific BOMs (different components or quantities)
+- BOM for "T-Shirt - Logo Design (Size: XL)"
+- Uses more fabric than other sizes
+
+Workflow:
+1. Sales order includes:
+   - T-Shirt Size M, White: 50 units
+   - T-Shirt Size L, Black: 30 units
+2. System creates 2 separate MOs
+3. Each MO uses correct BOM (or same BOM with component calculations)
+
+Result: Variant manufacturing is automated.
+
+--------------------------------------------------------------------------------
+
+SCENARIO 5: KIT vs MANUFACTURING
+--------------------------------------------------------------------------------
+
+Business Case: When to use Kit (disassembly) vs Manufacturing.
+
+Use Kit When:
+- Components sold together but not assembled
+- Example: Computer parts bundle (CPU + RAM + Motherboard)
+- No manufacturing operation required
+- Customer receives individual components
+
+Use Manufacturing When:
+- Components are assembled into new product
+- Example: Assembled computer (CPU + RAM + Motherboard → Computer)
+- Manufacturing operations required
+- Customer receives single assembled product
+
+Configuration:
+For Kit:
+- Create product "Computer Parts Kit"
+- Create BOM with type "Kit"
+- Components: CPU, RAM, Motherboard
+- No operations
+
+For Manufacturing:
+- Create product "Custom Built Computer"
+- Create BOM with type "Manufacture"
+- Components: CPU, RAM, Motherboard, Case
+- Operations: Assembly, Testing
+
+Workflow Difference:
+Kit:
+- Sales Order → At delivery, kit is disassembled
+- Individual components are delivered
+- No manufacturing order
+
+Manufacturing:
+- Sales Order → Manufacturing Order created
+- Components assembled
+- Single finished product delivered
+
+Result: Choose correct method based on business need.
+
+--------------------------------------------------------------------------------
+
+SCENARIO 6: BACKORDER HANDLING
+--------------------------------------------------------------------------------
+
+Business Case: MO for 100 units, but only 60 can be completed due to
+component shortage.
+
+Workflow:
+1. Create MO for 100 tables
+2. During production, realize only 60 table tops available
+3. When marking MO as done, enter quantity: 60
+4. System asks: "Create backorder for remaining 40?"
+5. Options:
+   - Yes: Creates new MO for remaining 40 units
+   - No: Closes original MO, 40 units not produced
+
+Best Practice:
+- Create backorder if components will arrive soon
+- Cancel if order requirements changed
+
+Result: Partial production is tracked accurately.
+
+--------------------------------------------------------------------------------
+
+SCENARIO 7: SCRAP HANDLING
+--------------------------------------------------------------------------------
+
+Business Case: During production, 2 table tops are damaged and unusable.
+
+Workflow:
+1. During work order execution
+2. Worker notices damaged components
+3. Create scrap order:
+   - Inventory → Operations → Scrap
+   - Or from Manufacturing Order, click "Scrap"
+   - Product: Table Top - Wood
+   - Quantity: 2
+   - Source Location: WH/Stock/Production
+   - Scrap Location: Virtual Locations/Scrap
+   - Origin: MO/000123
+4. Validate scrap
+5. Components are removed from inventory
+6. MO still requires 2 table tops to complete
+7. Either:
+   - Add 2 more table tops to production
+   - Reduce MO quantity by 2
+   - Create backorder
+
+Result: Scrap is tracked for cost analysis and waste reduction.
+
+--------------------------------------------------------------------------------
+
+SCENARIO 8: UNBUILD ORDERS
+--------------------------------------------------------------------------------
+
+Business Case: Defective finished product needs to be disassembled back into
+components.
+
+Workflow:
+1. Quality check finds defects in 5 completed tables
+2. Create Unbuild Order:
+   - Manufacturing → Operations → Unbuild Orders
+   - Click "Create"
+   - Product: "Wooden Dining Table - Classic"
+   - Quantity: 5
+   - Source Location: WH/Stock
+   - Click "Confirm"
+3. System shows components that will be recovered:
+   - Table Top: 5
+   - Table Legs: 20
+   - Screws: 100
+4. Click "Unbuild"
+5. Finished products removed from inventory
+6. Components added back to inventory
+7. Components can be reused in new MOs
+
+Use Cases:
+- Defective products
+- Customer returns
+- Repurposing materials
+
+Result: Material recovery reduces waste.
+
+--------------------------------------------------------------------------------
+
+SCENARIO 9: MASTER PRODUCTION SCHEDULE (MPS)
+--------------------------------------------------------------------------------
+
+Business Case: Plan production for next 3 months based on demand forecast.
+
+Configuration:
+Step 1: Enable MPS
+- Manufacturing → Settings → Enable "Master Production Schedule"
+
+Step 2: Access MPS
+- Manufacturing → Planning → Master Production Schedule
+
+Step 3: Create Forecast
+- MPS shows products in rows, time periods in columns
+- For "Wooden Dining Table":
+  * Week 1: Demand forecast 50, Current stock 20, To produce: 30
+  * Week 2: Demand forecast 60, To produce: 60
+  * Week 3: Demand forecast 40, To produce: 40
+
+Step 4: Replenish Based on MPS
+- Click "Replenish" button for each period
+- System creates MOs for forecasted quantities
+- MOs are dated to complete before demand period
+
+Benefits:
+- Proactive production planning
+- Smooth workload distribution
+- Avoid stock-outs
+
+Result: Production is planned in advance based on forecasts.
+
+--------------------------------------------------------------------------------
+
+SCENARIO 10: FLEXIBLE CONSUMPTION
+--------------------------------------------------------------------------------
+
+Business Case: Sometimes production uses slightly more or less components
+than BOM specifies (e.g., paint coverage varies).
+
+Configuration:
+- In BOM, for specific component
+- Consumption: Set to "Flexible"
+
+Workflow:
+1. BOM specifies: 0.5 L of paint per table
+2. During production, actually use 0.6 L (more coverage needed)
+3. Worker records actual consumption: 0.6 L
+4. System accepts flexible consumption
+5. Actual cost reflects real usage
+
+vs. Strict Consumption:
+- Would only allow exactly 0.5 L
+- Requires BOM adjustment for different quantity
+
+Result: Real-world variations are accommodated.
+
+================================================================================
+BEST PRACTICES SUMMARY
+================================================================================
+
+1. BOMS
+   - Keep BOMs updated with accurate quantities
+   - Version BOMs for major product changes
+   - Use product variants instead of multiple similar BOMs
+
+2. WORK CENTERS
+   - Set realistic time estimates for operations
+   - Configure alternative work centers for flexibility
+   - Track maintenance to prevent unplanned downtime
+
+3. QUALITY
+   - Define critical quality checks
+   - Use blocking checks for essential quality points
+   - Review quality alerts regularly to identify trends
+
+4. INVENTORY
+   - Use lot/serial number tracking for traceability
+   - Set appropriate reordering rules
+   - Regular inventory counts to ensure accuracy
+
+5. COSTING
+   - Choose appropriate costing method for your business
+   - Review product costs regularly
+   - Update work center hourly rates annually
+
+6. PLANNING
+   - Use MPS for demand-driven production
+   - Balance Make-To-Order vs Make-To-Stock based on product type
+   - Review production analysis reports weekly
+
+7. INTEGRATION
+   - Configure automatic procurement (Buy + Manufacture)
+   - Link sales lead times to manufacturing lead times
+   - Enable automatic inventory valuation for accurate accounting
+
+8. PERFORMANCE
+   - Monitor work center efficiency
+   - Calculate OEE to identify improvement areas
+   - Reduce setup times through batching similar products
+
+9. DOCUMENTATION
+   - Use operation instructions for complex procedures
+   - Attach technical drawings to BOMs
+   - Document quality procedures clearly
+
+10. CONTINUOUS IMPROVEMENT
+    - Review production times vs actual regularly
+    - Analyze scrap and unbuild reasons
+    - Train workers on tablet interface for accurate tracking
+
+================================================================================
+COMMON TROUBLESHOOTING
+================================================================================
+
+ISSUE: Cannot confirm Manufacturing Order - Components not available
+SOLUTION:
+- Check Availability shows what's missing
+- Click Replenish on missing components
+- Or manually create Purchase Orders
+- Or adjust inventory if components are actually available
+
+ISSUE: Work Orders not appearing after confirming MO
+SOLUTION:
+- Enable "Work Orders" in Manufacturing settings
+- BOM must have operations defined
+- Re-confirm MO or create new one
+
+ISSUE: Subcontracted operation not creating Purchase Order
+SOLUTION:
+- Ensure "Subcontracting" is enabled in settings
+- Vendor must be marked as "Is a Subcontractor"
+- Operation in BOM must have "Subcontracted" checked
+
+ISSUE: Product costs seem incorrect
+SOLUTION:
+- Recalculate product costs from BOM
+- Check work center hourly rates
+- Verify component costs are updated
+- Review actual vs planned times in completed MOs
+
+ISSUE: Quality checks not triggering
+SOLUTION:
+- Quality Control Point must be active
+- Product and operation must match
+- Manufacturing Order must be confirmed
+- Check frequency is set (All, Percentage, Periodic)
+
+ISSUE: Inventory valuation journal entries not created
+SOLUTION:
+- Enable "Automatic Inventory Valuation" in Inventory settings
+- Check product categories have correct valuation accounts
+- Ensure products are "Storable" type
+
+ISSUE: Cannot see Manufacturing module
+SOLUTION:
+- Install Manufacturing module from Apps
+- Clear browser cache
+- Check user access rights: Settings → Users → Select user → Manufacturing role
+
+ISSUE: Lot numbers not appearing
+SOLUTION:
+- Enable "Lots & Serial Numbers" in Inventory settings
+- Product must have "Tracking" set to "By Lots" or "By Unique Serial Number"
+- Configure in product → Inventory tab
+
+================================================================================
+GLOSSARY
+================================================================================
+
+Bill of Materials (BOM): Recipe defining components and operations needed to
+manufacture a product.
+
+Work Center: Physical location or machine where manufacturing operations occur.
+
+Work Order: Individual operation task within a manufacturing order, assigned
+to a work center.
+
+Manufacturing Order (MO): Instruction to produce specific quantity of a
+product. Also called Production Order.
+
+Make-To-Order (MTO): Production strategy where manufacturing only occurs when
+sales order is confirmed.
+
+Make-To-Stock: Production strategy where products are manufactured for
+inventory based on forecasts.
+
+Subcontracting: Sending materials to external vendor who manufactures on your
+behalf.
+
+By-Product: Secondary product produced during manufacturing (e.g., sawdust).
+
+Kit: Product sold as a bundle of components without assembly.
+
+Operation: Single step in manufacturing process (e.g., cutting, assembly).
+
+Quality Control Point: Checkpoint that triggers quality check during
+production.
+
+Unbuild Order: Reverse of manufacturing - disassemble product back to
+components.
+
+Scrap: Material discarded due to damage or defect.
+
+Backorder: Remaining quantity when MO is partially completed.
+
+Lot Number: Identifier for batch of products manufactured together.
+
+Serial Number: Unique identifier for individual product unit.
+
+Lead Time: Time required to manufacture or procure a product.
+
+Master Production Schedule (MPS): Forward-looking production plan based on
+demand forecasts.
+
+OEE (Overall Equipment Effectiveness): Metric measuring work center efficiency
+= Availability × Performance × Quality.
+
+Reordering Rule: Automatic procurement trigger when stock falls below minimum.
+
+Route: Path defining how product is procured (Buy, Manufacture, MTO, etc.).
+
+Valuation: Method of calculating inventory value (Standard, FIFO, AVCO).
+
+Traceability: Ability to track product from raw materials through to customer.
+
+================================================================================
+KEYBOARD SHORTCUTS (IN ODOO WEB INTERFACE)
+================================================================================
+
+Global:
+- Alt + Shift + H: Open shortcuts help
+- Alt + Shift + C: Create new record
+- Alt + Shift + E: Edit current record
+- Alt + Shift + S: Save record
+- Alt + Shift + J: Discard changes
+- Alt + Shift + P: Previous record
+- Alt + Shift + N: Next record
+
+List Views:
+- Arrow Keys: Navigate between records
+- Enter: Open selected record
+
+Form Views:
+- Tab: Move to next field
+- Shift + Tab: Move to previous field
+
+Note: Shortcuts may vary by browser. These work in Chrome/Firefox on Windows.
+
+================================================================================
+MOBILE ACCESS
+================================================================================
+
+Odoo Manufacturing can be accessed on mobile devices for shop floor operations.
+
+Setup:
+1. Install Odoo Mobile App from App Store (iOS) or Play Store (Android)
+2. Login with your Odoo instance URL and credentials
+3. Access Manufacturing module
+
+Mobile-Friendly Features:
+- Work Order tablet view optimized for touch
+- Barcode scanning for components and products
+- Start/Stop timers for work orders
+- Quality check execution with camera
+- Maintenance request creation
+
+Best Practice:
+- Provide tablets at each work center
+- Keep tablet view open on Work Orders page
+- Workers can see their assigned work orders and execute them
+
+================================================================================
+CONCLUSION
+================================================================================
+
+This manual covers complete Odoo 19 Manufacturing implementation from initial
+configuration through complex production scenarios. By following these steps,
+you can:
+
+- Set up a fully functional manufacturing system
+- Create products, BOMs, and work centers
+- Execute production with quality control
+- Track costs and analyze performance
+- Integrate manufacturing with sales, purchase, and inventory
+- Implement real-world scenarios like MTO, subcontracting, and multi-level BOMs
+
+Key Success Factors:
+1. Accurate BOMs with correct components and realistic operation times
+2. Proper configuration of work centers and maintenance schedules
+3. Quality control integrated into production workflow
+4. Clear understanding of routes and replenishment methods
+5. Regular review of production reports and KPIs
+
+Next Steps:
+- Create test products and BOMs in your Odoo instance
+- Process sample manufacturing orders to understand the flow
+- Configure quality checks for critical operations
+- Set up reordering rules for high-volume products
+- Train production staff on tablet interface
+- Review production analysis weekly to optimize processes
+
+For further assistance, consult:
+- Odoo Official Documentation: www.odoo.com/documentation
+- Odoo Community Forums: www.odoo.com/forum
+- Your Odoo implementation partner
+
+Manufacturing module is powerful and flexible. Start simple, then gradually
+add complexity as your team becomes comfortable with the system.
+
+================================================================================
+END OF MANUAL
+================================================================================
+
+Document Version: 1.0
+Last Updated: February 13, 2026
+Odoo Version: 19 Community Edition
