@@ -1,95 +1,77 @@
 # Odoo 19 — Business Analyst Internship Repository
 
-Study materials, documentation, and tools for an **Odoo 19 Business Analyst Intern** at Infintor Solutions.
+Study materials, documentation, and tools for **Rohan Raj**, Business Analyst Intern at Infintor Solutions.
+
+Built to support Odoo 19 BA work: answering client questions, producing deliverables, and practising module knowledge.
 
 ---
 
-## 📁 Repository Structure
+## Repository Structure
 
 ```
-├── docs/                        Documentation & deliverables
-│   ├── user-manuals/            Polished .docx user manuals (14 docs)
-│   │   ├── WorkCenter.docx
-│   │   ├── Subcontracting.docx
-│   │   ├── Recruitment.docx
-│   │   ├── RealEstate.docx
-│   │   └── ...
-│   ├── blogs/                   Blog posts for infintor.com (22 files)
-│   ├── comparison/              ERP comparison documents
-│   └── guides/                  SEO & writing style references
+├── docs/                     All documentation & deliverables
+│   ├── user-manuals/         14 polished Word (.docx) user guides
+│   ├── blogs/                Blog posts for infintor.com
+│   ├── guides/               Style guide & SEO reference
+│   ├── comparison/           Odoo vs. traditional ERP
+│   └── media/                Screenshots & reference PDFs
 │
-├── transcripts/                 Video learning resources
-│   ├── manufacturing/           57 Odoo MRP video transcripts
-│   └── client-bom/              Client BOM reference materials
+├── transcripts/              Learning source material
+│   ├── manufacturing/        57 Odoo MRP video transcripts (start: 00_INDEX.txt)
+│   └── client-bom/           Client 1 BOM reference
 │
-├── scripts/                     Utility scripts
-│   ├── docx-generators/         JS scripts for creating Word documents
-│   ├── odoo-automation/         Python scripts for Odoo API & demo setup
-│   └── youtube/                 YouTube transcript downloader
+├── scripts/                  Utility scripts
+│   ├── odoo-automation/      Python: demo setup, audit, screenshots
+│   ├── docx-generators/      JS (Node): Word document generators
+│   └── youtube/              Python: YouTube transcript downloader
 │
-├── screenshots/                 UI screenshots for documentation
-│   └── referral-reports/        Referral module report screenshots
+├── .agents/                  AI agent skills & config
+│   ├── blog-style-guide.md   Infintor blog writing rules
+│   └── skills/               Supporting agent skills (docx, pdf, xlsx, etc.)
 │
-├── assets/                      Company assets & misc files
-│
-├── .agents/                     AI agent configuration & skills
-├── CLAUDE.md                    Agent bootstrap instructions
-└── odoo-official-docs/          Local Odoo 19 docs clone (gitignored)
+├── CLAUDE.md                 Agent bootstrap — read this first every session
+├── .gitignore
+└── odoo-official-docs/       Odoo 19 docs clone (local only, gitignored)
 ```
 
----
-
-## 📄 Key Documents
-
-| Document | Path | Description |
-|----------|------|-------------|
-| WorkCenter Guide | `docs/user-manuals/WorkCenter.docx` | Complete work center configuration & management |
-| Subcontracting Guide | `docs/user-manuals/Subcontracting.docx` | Subcontractor workflows in Odoo 19 |
-| Recruitment Guide | `docs/user-manuals/Recruitment.docx` | Hiring pipeline & applicant tracking |
-| Real Estate Module | `docs/user-manuals/RealEstate.docx` | Property management in Odoo 19 |
-| Shop Floor Guide | `docs/user-manuals/ShopFloor.docx` | Manufacturing shop floor operations |
-| Bank Reconciliation | `docs/blogs/BANK_RECONCILIATION_COMPLETE_GUIDE.md` | Step-by-step bank reconciliation |
-| Live Demo Script | `docs/blogs/LIVE_DEMO_PRESENTATION_SCRIPT.docx` | Presentation script for client demos |
+> **For AI agents:** Read `CLAUDE.md` first, then each subfolder's `README.md` before diving into files.
 
 ---
 
-## 🎥 Manufacturing Transcripts
+## Key Documents
 
-57 indexed transcripts from Odoo MRP video tutorials covering:
-- Bill of Materials, Work Centers, Sub-assemblies
-- Costing methods (AVCO, FIFO, Standard)
-- Subcontracting, Maintenance, Shop Floor
-- Manufacturing planning, lead times, backorders
-
-Start with the index: `transcripts/manufacturing/00_INDEX.txt`
+| Document | Path |
+|----------|------|
+| WorkCenter Guide | `docs/user-manuals/WorkCenter.docx` |
+| Subcontracting Guide | `docs/user-manuals/Subcontracting.docx` |
+| Recruitment Guide | `docs/user-manuals/Recruitment.docx` |
+| Real Estate Module | `docs/user-manuals/RealEstate.docx` |
+| Bank Reconciliation | `docs/blogs/BANK_RECONCILIATION_COMPLETE_GUIDE.md` |
+| Live Demo Script | `docs/blogs/LIVE_DEMO_PRESENTATION_SCRIPT.docx` |
+| Odoo Studio Guide | `docs/blogs/Odoo_Studio_Complete_Guide.docx` |
+| Inter-Company Ops | `docs/blogs/Odoo19_Inter_Company_Operations_Guide_V3.docx` |
 
 ---
 
-## 🛠️ Scripts
+## MRP Transcripts (57 videos)
 
-### Odoo Automation (`scripts/odoo-automation/`)
-Setup scripts for demo environments, data creation, and blog verification against live Odoo instances.
+Start with `transcripts/manufacturing/00_INDEX.txt` — covers BoM, costing, subcontracting, shop floor, maintenance, planning, and lot/serial tracking.
 
-### Document Generators (`scripts/docx-generators/`)
-Generate professionally formatted `.docx` files for blog posts and guides.
+---
 
-### YouTube Transcripts (`scripts/youtube/`)
+## Scripts Quick Start
+
 ```bash
-pip install pytube youtube-transcript-api
+# Download a YouTube transcript
 python scripts/youtube/youtube_transcript.py "<YouTube URL>"
+
+# Set up an Odoo demo environment
+python scripts/odoo-automation/setup_advanced_demo.py
+
+# Generate a blog .docx
+node scripts/docx-generators/generate_seo_blog_docx_v2.js
 ```
 
 ---
 
-## 📋 Agent Configuration
-
-This repo includes AI agent configuration (`.agents/` + `CLAUDE.md`) optimized for:
-- Answering Odoo 19 questions using local docs first
-- Producing blog posts following Infintor's style guide
-- Creating BA deliverables (BRDs, SOPs, user manuals)
-
-See `CLAUDE.md` for full agent bootstrap instructions.
-
----
-
-**Maintained for:** Rohan Raj — BA Intern, Infintor Solutions
+**Maintained by:** Rohan Raj, Infintor Solutions Intern
