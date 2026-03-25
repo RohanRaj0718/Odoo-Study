@@ -1,0 +1,128 @@
+<t name="Home" t-name="website.homepage">
+    <t t-call="website.layout">
+        <t t-set="pageName" t-value="'homepage'"/>
+        <div id="wrap" class="oe_structure oe_empty">
+
+            <!-- SECTION 1: HERO - Full-width Taj Mahal background with location pin icon -->
+            <section class="s_cover parallax s_parallax_is_fixed pt160 pb160" data-snippet="s_cover" style="min-height: 700px; background-color: #1a3a5c;">
+                <span class="s_parallax_bg oe_img_bg" style="background-image: url('/web/image/website.s_cover_default_image'); background-position: center center; background-size: cover;"/>
+                <div class="o_we_bg_filter bg-black-50"/>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12 pt80 pb40" style="text-align: center;">
+                            <div style="width: 80px; height: 80px; background: white; border-radius: 50%; margin: 0 auto 30px auto; display: flex; align-items: center; justify-content: center;">
+                                <span style="font-size: 36px; color: #001C47;">&#128205;</span>
+                            </div>
+                            <h1 style="text-align: center; color: white; font-size: 42px; font-weight: 400; letter-spacing: 1px;">&#8212; Your Gateway to Authentic Indian Adventures &#8212;</h1>
+                            <p style="text-align: center; color: rgba(255,255,255,0.9); font-size: 18px; margin-top: 15px;">Contact Us for Unforgettable Packages!</p>
+                            <p style="text-align: center; margin-top: 25px;">
+                                <a href="/contactus" class="btn rounded-pill" style="background-color: #001C47; border-color: #001C47; color: white; padding: 12px 40px; font-size: 16px;">Contact Us</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- SECTION 2: WHO WE ARE - Two columns: text left, shield-shaped image right -->
+            <section class="s_text_image pt48 pb48" data-snippet="s_text_image" style="background-color: #ffffff;">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-7 pt24 pb24">
+                            <h2 style="color: #1a1a1a; font-size: 32px; font-weight: 600; margin-bottom: 20px;">Who We Are</h2>
+                            <p style="font-size: 15px; line-height: 1.8; color: #444444; text-align: justify;">Welcome to Holibaba, your trusted travel partner for exploring India through our expertly crafted tour packages. Whether you're dreaming of a serene houseboat ride in Kerala, a vibrant experience in Goa, or a cultural journey through Rajasthan, we've got you covered. From the stunning landscapes of Kashmir to the captivating beauty of the North East, our packages cater to every traveler's dream. At Holibaba, we specialize in customized trips, including honeymoon getaways, adventurous college tours, and memorable family packages, designed to create unforgettable experiences.</p>
+                            <p style="font-size: 15px; line-height: 1.8; color: #444444; text-align: justify;">Immerse yourself in the magic of India with Holibaba, where every journey is carefully curated to offer authentic experiences and lasting memories. Let us guide you through the wonders of Delhi, the splendor of Rajasthan, or the picturesque beauty of Kerala. Join us and discover the true spirit of India with a travel experience like no other.</p>
+                        </div>
+                        <div class="col-lg-5 pt24 pb24" style="text-align: center; display: flex; align-items: center; justify-content: center;">
+                            <img src="/web/image/website.s_text_image_default_image" alt="Holibaba Travel" class="img img-fluid shadow" style="max-width: 350px; border-radius: 50% 50% 50% 50% / 40% 40% 60% 60%; object-fit: cover;"/>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- SECTION 3: CRAFT YOUR JOURNEY - Full-width text with CTA -->
+            <section class="s_text_block pt40 pb40" data-snippet="s_text_block" style="background-color: #ffffff; border-top: 1px solid #eee;">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12 pt16 pb16">
+                            <h3 style="color: #1a1a1a; font-size: 28px; font-weight: 600; margin-bottom: 20px;">Craft Your Perfect India Tour Package and Start Your Adventure Today</h3>
+                            <p style="font-size: 15px; line-height: 1.8; color: #444444; text-align: justify;">Embark on a personalized journey through India with our custom tour packages designed to match your travel style and interests. Whether you're looking for a romantic honeymoon in Goa, a cultural exploration of Rajasthan, an adventurous college trip to the North East, or a serene family vacation in Kerala, we tailor each experience to create unforgettable memories. Choose your destinations, preferred accommodation, travel dates, and must-see attractions, and let Holibaba craft the perfect itinerary for you. Experience India like never before &#8212; book your dream adventure today!</p>
+                            <p style="margin-top: 20px;">
+                                <a href="/contactus" class="btn" style="background-color: #001C47; color: white; padding: 10px 30px; border-radius: 4px; font-size: 15px;">Customize My Journey</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- SECTION 4: EXPLORE DESTINATIONS BANNER - Full-width parallax with heading -->
+            <section class="s_cover parallax s_parallax_is_fixed pt96 pb96" data-snippet="s_cover" style="min-height: 400px; background-color: #2a2a2a;">
+                <span class="s_parallax_bg oe_img_bg" style="background-image: url('/web/image/website.s_cover_default_image'); background-position: center center; background-size: cover;"/>
+                <div class="o_we_bg_filter bg-black-50"/>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12" style="text-align: center;">
+                            <h2 style="color: white; font-size: 36px; font-weight: 400; letter-spacing: 1px;">Explore India's Best Destinations with Our Tour Packages</h2>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- SECTION 5: DESTINATION CARDS - 3-column grid -->
+            <section class="s_three_columns pt48 pb32" data-snippet="s_three_columns" style="background-color: #ffffff;">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-4 pt16 pb16">
+                            <div style="border: 1px solid #eee; border-radius: 8px; overflow: hidden;">
+                                <img src="/web/image/website.s_three_columns_default_image_1" alt="Himachal" class="img-fluid w-100" style="height: 250px; object-fit: cover;"/>
+                                <div style="padding: 16px;">
+                                    <h5 style="color: #1a1a1a; font-weight: 600; margin-bottom: 12px;">Himachal Tour Packages</h5>
+                                    <hr style="border-color: #eee;"/>
+                                    <a href="/contactus" style="color: #c0392b; font-weight: 500; text-decoration: none; font-size: 14px;">view</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 pt16 pb16">
+                            <div style="border: 1px solid #eee; border-radius: 8px; overflow: hidden;">
+                                <img src="/web/image/website.s_three_columns_default_image_2" alt="Kashmir" class="img-fluid w-100" style="height: 250px; object-fit: cover;"/>
+                                <div style="padding: 16px;">
+                                    <h5 style="color: #1a1a1a; font-weight: 600; margin-bottom: 12px;">Kashmir Tour Packages</h5>
+                                    <hr style="border-color: #eee;"/>
+                                    <a href="/contactus" style="color: #c0392b; font-weight: 500; text-decoration: none; font-size: 14px;">view</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 pt16 pb16">
+                            <div style="border: 1px solid #eee; border-radius: 8px; overflow: hidden;">
+                                <img src="/web/image/website.s_three_columns_default_image_3" alt="Uttarakhand" class="img-fluid w-100" style="height: 250px; object-fit: cover;"/>
+                                <div style="padding: 16px;">
+                                    <h5 style="color: #1a1a1a; font-weight: 600; margin-bottom: 12px;">Uttarakhand Tour Packages</h5>
+                                    <hr style="border-color: #eee;"/>
+                                    <a href="/contactus" style="color: #c0392b; font-weight: 500; text-decoration: none; font-size: 14px;">view</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- SECTION 6: WHY TRAVEL WITH HOLIBABA - Bullet list -->
+            <section class="s_text_block pt40 pb48" data-snippet="s_text_block" style="background-color: #ffffff;">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-10">
+                            <h2 style="color: #1a1a1a; font-size: 30px; font-weight: 600; margin-bottom: 24px;">Why Travel with Holibaba?</h2>
+                            <ul style="font-size: 15px; line-height: 2.0; color: #444444; list-style: disc; padding-left: 20px;">
+                                <li><b>Tailored Itineraries:</b> Each tour package is customized to suit your preferences and timetable, guaranteeing a one-of-a-kind and memorable journey.</li>
+                                <li><b>Knowledgeable Guides:</b> Our experienced local guides offer in-depth knowledge about the culture, history, and hidden treasures of North India.</li>
+                                <li><b>Outstanding Customer Support:</b> From the initial planning stages to the conclusion of your trip, our devoted team is dedicated to delivering exceptional service and assistance.</li>
+                                <li><b>Genuine Experiences:</b> Our focus is on providing genuine experiences that allow you to fully immerse yourself in the authentic essence of North India.</li>
+                                <li><b>Reliable and Dependable:</b> With a proven track record of happy clients, Holibaba is a reputable name in North Indian tourism.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+    </t>
+</t>

@@ -1,0 +1,17 @@
+# Mega Menu for Packages - Paste in webshell
+# STEP 1: First run this to see current menu items:
+# pkg = env['website.menu'].search([('name', '=', 'Packages')], limit=1); children = env['website.menu'].search([('parent_id', '=', pkg.id)]); print('Packages ID:', pkg.id); [(c.id, c.name, c.url) for c in children]
+
+# STEP 2: After you know the IDs, paste this to convert to mega menu:
+
+pkg = env['website.menu'].search([('name', '=', 'Packages')], limit=1)
+
+# Remove duplicate child menu items (keep it clean)
+dupes = env['website.menu'].search([('parent_id', '=', pkg.id), ('name', 'in', ['Kullu Manali Packages', 'Manali Packages'])])
+dupes.unlink()
+
+mega_content = '<section class="s_mega_menu_odoo_menu o_colored_level" data-snippet="s_mega_menu_odoo_menu" data-name="Menu"><div class="container"><div class="row"><div class="col-lg-3 pt16 pb16"><h5 class="mb-3"><strong>HIMACHAL PRADESH</strong></h5><ul class="list-unstyled"><li class="mb-2"><a href="/manali-2n-3d-package" style="color: #333; text-decoration: none;">Manali 2N/3D</a></li><li class="mb-2"><a href="/manali-3n-4d-package" style="color: #333; text-decoration: none;">Manali 3N/4D</a></li><li class="mb-2"><a href="/manali-kasol-3n-4d-package" style="color: #333; text-decoration: none;">Manali-Kasol 3N/4D</a></li><li class="mb-2"><a href="/manali-kasol-4n-5d-package" style="color: #333; text-decoration: none;">Manali-Kasol 4N/5D</a></li><li class="mb-2"><a href="/kullu-manali-packages" style="color: #333; text-decoration: none;">All Kullu Manali Packages</a></li></ul></div><div class="col-lg-3 pt16 pb16"><h5 class="mb-3"><strong>NORTH INDIA</strong></h5><ul class="list-unstyled"><li class="mb-2"><a href="/agra-delhi-2n-3d-package" style="color: #333; text-decoration: none;">Agra-Delhi 2N/3D</a></li><li class="mb-2"><a href="/kashmir-packages" style="color: #333; text-decoration: none;">Kashmir Packages</a></li></ul></div><div class="col-lg-3 pt16 pb16"><h5 class="mb-3"><strong>KERALA</strong></h5><ul class="list-unstyled"><li class="mb-2" style="color: #999;">Wayanad (Coming Soon)</li><li class="mb-2" style="color: #999;">Allapuzha (Coming Soon)</li><li class="mb-2" style="color: #999;">Athirapilly (Coming Soon)</li></ul></div><div class="col-lg-3 pt16 pb16"><h5 class="mb-3"><strong>INTERNATIONAL</strong></h5><ul class="list-unstyled"><li class="mb-2" style="color: #999;">Japan (Coming Soon)</li><li class="mb-2" style="color: #999;">Thailand (Coming Soon)</li><li class="mb-2" style="color: #999;">Dubai (Coming Soon)</li><li class="mb-2" style="color: #999;">Malaysia (Coming Soon)</li></ul></div></div></div></section>'
+
+pkg.write({'is_mega_menu': True, 'mega_menu_content': mega_content})
+env.cr.commit()
+print('Mega menu created! Refresh the site and hover over Packages.')

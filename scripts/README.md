@@ -1,3 +1,13 @@
+<<<<<<< HEAD
+# scripts/ — Document & Root Generators
+
+This folder contains the root-level Javascript tools that were moved here to keep the repo clean.
+
+- `generate_*.js`: Node.js scripts used to generate formatted `.docx` files from Markdown or JSON data (e.g., `generate_seo_blog_docx_v2.js`).
+- `package.json` / `package-lock.json`: Dependencies for the Node tools (`docx` library).
+
+*Note on Python Tools:* The Odoo automation Python scripts remain in their original location: `My learnings/Additional pythons scripts/` to preserve the user's workflow.
+=======
 # scripts/ — Utility Scripts
 
 Helper scripts for Odoo automation, document generation, and research.
@@ -41,3 +51,4 @@ node scripts/docx-generators/generate_seo_blog_docx_v2.js
 | `odoo-automation/create_bank_statement_excel.py` | Creates bank statement Excel for reconciliation demo |
 | `docx-generators/generate_seo_blog_docx_v2.js` | Most up-to-date blog .docx generator |
 | `youtube/youtube_transcript.py` | Generic transcript downloader |
+>>>>>>> dabb357f8d4da860d0ebf466d30a56b1ab0b2abc

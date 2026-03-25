@@ -1,0 +1,37 @@
+# Agra-Delhi 2N/3D - FINAL VERSION with proper colors
+# Hero: white button | CTA: warm dark bg + white button
+# Paste in webshell
+
+view = env['ir.ui.view'].search([('key', '=', 'website.agra-delhi-2n-3d-package')], limit=1)
+
+html = '<t t-name="website.agra-delhi-2n-3d-package"><t t-call="website.layout"><div id="wrap" class="oe_structure oe_empty">'
+
+# Hero with white button
+html += '<section class="s_cover parallax s_parallax_is_fixed pt160 pb160" data-snippet="s_cover" data-name="Cover"><span class="s_parallax_bg oe_img_bg" style="background-image: url(/web/image/934-bf6d74a6/freepik__taj-mahal-at-golden-hour-clear-sky-detailed-white__16976.webp); background-position: center center;"/><div class="o_we_bg_filter" style="background-color: rgba(0, 0, 0, 0.5);"/><div class="container"><div class="row"><div class="col-lg-12 pt80 pb40" style="text-align: center;"><h1 style="color: #ffffff; font-size: 48px;">Agra &amp; Delhi Tour</h1><p style="color: #ffffff; font-size: 22px;">02 Nights / 03 Days | Discover the Taj Mahal, Red Fort, India Gate and more</p><a href="/contactus" class="btn btn-light btn-lg rounded-pill mt-3">Book This Trip</a></div></div></div></section>'
+
+# Intro paragraph
+html += '<section class="s_text_block pt40 pb40" data-snippet="s_text_block" data-name="Text"><div class="container"><div class="row"><div class="col-lg-8 mx-auto" style="text-align: center;"><p style="font-size: 17px; line-height: 1.8;">Discover the wonders of North India with Holibaba\'s incredible tour package to Agra and Delhi. Immerse yourself in the lively atmosphere of Delhi and marvel at the rich history of Agra. This all-encompassing journey promises an unforgettable experience filled with adventure, culture, and historical marvels.</p></div></div></div></section>'
+
+# Quick Info Cards
+html += '<section class="s_features pt32 pb32" data-snippet="s_features" data-name="Features"><div class="container"><div class="row"><div class="col-lg-3 pt16 pb16"><div class="text-center p-3" style="background-color: #e3f2fd; border-radius: 12px;"><h5><strong>Duration</strong></h5><p class="text-muted mb-0">2 Nights / 3 Days</p></div></div><div class="col-lg-3 pt16 pb16"><div class="text-center p-3" style="background-color: #fff3e0; border-radius: 12px;"><h5><strong>Route</strong></h5><p class="text-muted mb-0">Agra + Delhi</p></div></div><div class="col-lg-3 pt16 pb16"><div class="text-center p-3" style="background-color: #e8f5e9; border-radius: 12px;"><h5><strong>Transport</strong></h5><p class="text-muted mb-0">Private Vehicle</p></div></div><div class="col-lg-3 pt16 pb16"><div class="text-center p-3" style="background-color: #fce4ec; border-radius: 12px;"><h5><strong>Hotel</strong></h5><p class="text-muted mb-0">Dhaka Intl / Similar</p></div></div></div></div></section>'
+
+# Day 1
+html += '<section class="s_text_image pt48 pb48" data-snippet="s_text_image" data-name="Text - Image" style="background-color: #fafafa;"><div class="container"><h2 style="text-align: center;" class="mb-5"><strong>Day-by-Day Itinerary</strong></h2><div class="row align-items-center"><div class="col-lg-6 pt16 pb16"><img src="/web/image/934-bf6d74a6/freepik__taj-mahal-at-golden-hour-clear-sky-detailed-white__16976.webp" alt="Taj Mahal" class="img img-fluid shadow rounded"/></div><div class="col-lg-6 pt16 pb16"><h3>Day 1 — Agra Sightseeing</h3><p>Pickup from Agra Railway Station. After breakfast proceed for sightseeing.</p><ul><li>Taj Mahal — UNESCO World Wonder</li><li>Agra Fort — Heritage Fort</li></ul><p>Dinner and journey to Delhi (4-5 hours). Stay at Delhi.</p><p><strong>Hotel:</strong> Dhaka International / Similar | <strong>Meals:</strong> Breakfast + Dinner</p></div></div></div></section>'
+
+# Day 2
+html += '<section class="s_image_text pt48 pb48" data-snippet="s_image_text" data-name="Image - Text"><div class="container"><div class="row align-items-center"><div class="col-lg-6 pt16 pb16"><h3>Day 2 — Delhi Sightseeing</h3><p>After breakfast proceed for full day sightseeing.</p><ul><li>India Gate</li><li>Qutub Minar</li><li>Jama Masjid</li><li>Red Fort</li></ul><p>Dinner and night stay at hotel.</p><p><strong>Meals:</strong> Breakfast + Dinner</p></div><div class="col-lg-6 pt16 pb16"><img src="/web/image/931-c84258eb/shalender-kumar-XJpaKpiyNVM-unsplash.pjp" alt="Delhi Sightseeing" class="img img-fluid shadow rounded"/></div></div></div></section>'
+
+# Day 3
+html += '<section class="s_text_image pt48 pb48" data-snippet="s_text_image" data-name="Text - Image" style="background-color: #fafafa;"><div class="container"><div class="row align-items-center"><div class="col-lg-6 pt16 pb16"><img src="/web/image/933-cb37fd9b/jayanth-muppaneni-7eczZ-XFDTA-unsplash.webp" alt="Akshardham Temple" class="img img-fluid shadow rounded"/></div><div class="col-lg-6 pt16 pb16"><h3>Day 3 — Temples + Departure</h3><p>After breakfast proceed for sightseeing.</p><ul><li>Akshardham Temple</li><li>Lotus Temple</li><li>Purchasing</li></ul><p>Night Railway drop off.</p><p><strong>Meals:</strong> Breakfast + Dinner</p></div></div></div></section>'
+
+# Inclusions / Exclusions
+html += '<section class="s_text_block pt48 pb48" data-snippet="s_text_block" data-name="Text"><div class="container"><div class="row"><div class="col-lg-6 pt16 pb16"><div class="p-4" style="background-color: #e8f5e9; border-radius: 12px;"><h3 style="color: #2e7d32;"><strong>Inclusions</strong></h3><ul><li>Food (Breakfast &amp; Dinner)</li><li>2 Night stay in Delhi 3* (Dhaka International / Similar)</li><li>All primary entry tickets</li><li>Private Vehicle for Sightseeings</li><li>Pickup and drop off at Railway</li></ul></div></div><div class="col-lg-6 pt16 pb16"><div class="p-4" style="background-color: #ffebee; border-radius: 12px;"><h3 style="color: #c62828;"><strong>Exclusions</strong></h3><ul><li>No railfare or extra transportation cost over expedition plan</li><li>No travel insurance</li><li>Expenses from weather disturbance or landslides</li><li>Personal expenses (tips, telephone, laundry, beverages)</li><li>GST</li></ul></div></div></div></div></section>'
+
+# CTA Footer - warm dark background + white button
+html += '<section class="s_call_to_action pt48 pb48" data-snippet="s_call_to_action" data-name="Call to Action" style="background-color: #2d3436;"><div class="container"><div class="row"><div class="col-lg-12" style="text-align: center;"><h2 style="color: #ffffff;"><strong>Ready to Explore Agra and Delhi?</strong></h2><p style="color: rgba(255,255,255,0.8);">Contact us for the best price!</p><a href="/contactus" class="btn btn-light btn-lg rounded-pill mt-3">Book Now</a></div></div></div></section>'
+
+html += '</div></t></t>'
+
+view.write({'arch_db': html})
+env.cr.commit()
+print('UPDATED! Refresh /agra-delhi-2n-3d-package')

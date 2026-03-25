@@ -1,0 +1,42 @@
+# Manali-Kasol 4N/5D - STYLE A (AGRA-DELHI STYLE)
+# Paste in webshell
+
+view = env['ir.ui.view'].search([('key', '=', 'website.manali-kasol-4n-5d-package')], limit=1)
+
+html = '<t t-name="website.manali-kasol-4n-5d-package"><t t-call="website.layout"><div id="wrap" class="oe_structure oe_empty">'
+
+# Hero (Style A - Blue Button)
+html += '<section class="s_cover parallax s_parallax_is_fixed pt160 pb160" data-snippet="s_cover" data-name="Cover"><span class="s_parallax_bg oe_img_bg" style="background-image: url(https://images.unsplash.com/photo-1590689080629-7f0e4b2dda88?w=1600); background-position: center center;"/><div class="o_we_bg_filter" style="background-color: rgba(0, 0, 0, 0.5);"/><div class="container"><div class="row"><div class="col-lg-12 pt80 pb40" style="text-align: center;"><h1 style="color: #ffffff; font-size: 48px;">Manali &amp; Kasol Package</h1><p style="color: #ffffff; font-size: 22px;">04 Nights / 05 Days | Delhi - Manali - Kasol - Delhi</p><a href="/contactus" class="btn btn-primary btn-lg rounded-pill mt-3">Book This Trip</a></div></div></div></section>'
+
+# Intro
+html += '<section class="s_text_block pt40 pb40" data-snippet="s_text_block" data-name="Text"><div class="container"><div class="row"><div class="col-lg-8 mx-auto" style="text-align: center;"><p style="font-size: 17px; line-height: 1.8;">The ultimate Himachal experience! This 4 Night / 5 Day package covers the best of Manali, Kasol, and the hidden gem of Grahan Village. Experience snow-capped mountains, adventure, and remote Himalayan culture in one epic trip.</p></div></div></div></section>'
+
+# Quick Info
+html += '<section class="s_features pt32 pb32" data-snippet="s_features" data-name="Features"><div class="container"><div class="row"><div class="col-lg-3 pt16 pb16"><div class="text-center p-3" style="background-color: #e3f2fd; border-radius: 12px;"><h5><strong>Duration</strong></h5><p class="text-muted mb-0">4 Nights / 5 Days</p></div></div><div class="col-lg-3 pt16 pb16"><div class="text-center p-3" style="background-color: #fff3e0; border-radius: 12px;"><h5><strong>Price</strong></h5><p class="text-muted mb-0">INR 11,300 / pax</p></div></div><div class="col-lg-3 pt16 pb16"><div class="text-center p-3" style="background-color: #e8f5e9; border-radius: 12px;"><h5><strong>Transport</strong></h5><p class="text-muted mb-0">Volvo Bus + Pvt Sedan</p></div></div><div class="col-lg-3 pt16 pb16"><div class="text-center p-3" style="background-color: #fce4ec; border-radius: 12px;"><h5><strong>Guide</strong></h5><p class="text-muted mb-0">Malayalam Guide Included</p></div></div></div></div></section>'
+
+# Itinerary Heading
+html += '<section class="s_text_block pt32 pb32" data-snippet="s_text_block" data-name="Text" style="background-color: #fafafa;"><div class="container"><h2 style="text-align: center;" class="mb-5"><strong>Day-by-Day Itinerary</strong></h2><div class="row"><div class="col-lg-8 mx-auto"><div class="p-4" style="background-color: #fff; border-radius: 12px; border-left: 4px solid #1a237e;"><h4>&#9790; Overnight Journey to Manali</h4><p>Board the pushback semi-sleeper Volvo bus from Delhi (12 hours travelling).</p></div></div></div></div></section>'
+
+# Day 1 - Zigzag Left
+html += '<section class="s_text_image pt48 pb48" data-snippet="s_text_image" data-name="Text - Image"><div class="container"><div class="row align-items-center"><div class="col-lg-6 pt16 pb16"><img src="https://images.unsplash.com/photo-1626621341517-bbf3d9990a23?w=800" alt="Manali" class="img img-fluid shadow rounded"/></div><div class="col-lg-6 pt16 pb16"><h3>Day 1 — Manali Sightseeing</h3><p>Arrival and check-in. Explore Hadimba Temple, Mall Road, and the Buddhist Monastery.</p><p><strong>Meals:</strong> Breakfast + Dinner</p></div></div></div></section>'
+
+# Day 2 - Zigzag Right
+html += '<section class="s_image_text pt48 pb48" data-snippet="s_image_text" data-name="Image - Text" style="background-color: #fafafa;"><div class="container"><div class="row align-items-center"><div class="col-lg-6 pt16 pb16"><h3>Day 2 — Solang Valley &amp; Atal Tunnel</h3><p>Adventure at high altitidue! Snow point visit, Solang Valley, and cruise through the Atal Tunnel.</p><p><strong>Meals:</strong> Breakfast + Dinner</p></div><div class="col-lg-6 pt16 pb16"><img src="https://images.unsplash.com/photo-1585320806297-9794b3e4eeae?w=800" alt="Solang Valley" class="img img-fluid shadow rounded"/></div></div></div></section>'
+
+# Day 3 - Zigzag Left
+html += '<section class="s_text_image pt48 pb48" data-snippet="s_text_image" data-name="Text - Image"><div class="container"><div class="row align-items-center"><div class="col-lg-6 pt16 pb16"><img src="https://images.unsplash.com/photo-1590689080629-7f0e4b2dda88?w=800" alt="Kasol" class="img img-fluid shadow rounded"/></div><div class="col-lg-6 pt16 pb16"><h3>Day 3 — Kullu &amp; Kasol</h3><p>Rafting and paragliding in Kullu. Afternoon drive to Kasol. Visit Manikaran hot springs.</p><p><strong>Meals:</strong> Breakfast + Dinner</p></div></div></div></section>'
+
+# Day 4 - Zigzag Right
+html += '<section class="s_image_text pt48 pb48" data-snippet="s_image_text" data-name="Image - Text" style="background-color: #fafafa;"><div class="container"><div class="row align-items-center"><div class="col-lg-6 pt16 pb16"><h3>Day 4 — Grahan Village Trek</h3><p>Experience the isolation of high Himalayan life. Check in to Snow Paradise Homestay.</p><p><strong>Meals:</strong> Breakfast + Dinner</p></div><div class="col-lg-6 pt16 pb16"><img src="https://images.unsplash.com/photo-1592385862924-1d0b5b9e4c74?w=800" alt="Grahan Village" class="img img-fluid shadow rounded"/></div></div></div></section>'
+
+# Day 5 - Return
+html += '<section class="s_text_block pt32 pb32" data-snippet="s_text_block" data-name="Text"><div class="container"><div class="row"><div class="col-lg-8 mx-auto"><div class="p-4" style="background-color: #fff; border-radius: 12px; border-left: 4px solid #1a237e;"><h4>Day 5 — Return Journey</h4><p>Trek back from Grahan. Evening return bus from Bhuntar to Delhi.</p><p><strong>Meals:</strong> Breakfast only</p></div></div></div></div></section>'
+
+# CTA (Style A - Charcoal)
+html += '<section class="s_call_to_action pt48 pb48" data-snippet="s_call_to_action" data-name="Call to Action" style="background-color: #2d3436;"><div class="container"><div class="row"><div class="col-lg-12 text-center text-white"><h2>Ready to Explore Manali &amp; Kasol?</h2><p>Experience the best of Himachal with Holibaba Journeys.</p><a href="/contactus" class="btn btn-light btn-lg rounded-pill mt-3 px-5 py-2">Book Now</a></div></div></div></section>'
+
+html += '</div></t></t>'
+
+view.write({'arch_db': html})
+env.cr.commit()
+print('Style A (Agra-Delhi Style) applied!')

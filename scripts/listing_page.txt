@@ -1,0 +1,35 @@
+# Update Manali listing page - shows all Manali packages as cards
+# Paste in webshell
+
+view = env['ir.ui.view'].search([('key', '=', 'website.kullu-manali-packages')], limit=1)
+
+html = '<t t-name="website.kullu-manali-packages"><t t-call="website.layout"><div id="wrap" class="oe_structure oe_empty">'
+
+# Hero
+html += '<section class="s_cover parallax s_parallax_is_fixed pt160 pb160" data-snippet="s_cover" data-name="Cover"><span class="s_parallax_bg oe_img_bg" style="background-image: url(https://images.unsplash.com/photo-1626621341517-bbf3d9990a23?w=1600); background-position: center center;"/><div class="o_we_bg_filter" style="background-color: rgba(0, 0, 0, 0.5);"/><div class="container"><div class="row"><div class="col-lg-12 pt80 pb40" style="text-align: center;"><h1 style="color: #fff; font-size: 48px;">Manali Packages</h1><p style="color: #fff; font-size: 20px;">Explore our curated Manali tour packages</p></div></div></div></section>'
+
+# Package Cards
+html += '<section class="s_text_block pt48 pb48" data-snippet="s_text_block" data-name="Text" style="background-color: #fafafa;"><div class="container"><h2 class="text-center mb-5"><strong>Choose Your Perfect Package</strong></h2><div class="row">'
+
+# Card 1: Manali 2N/3D
+html += '<div class="col-lg-6 mb-4"><div class="p-4" style="background-color: #fff; border-radius: 12px; border-left: 4px solid #e65100;"><h4><strong>Manali 2N/3D</strong></h4><p>Explore the beauty of Manali in a short 2 night trip. Visit Hadimba Temple, Solang Valley, and more.</p><p><strong>Highlights:</strong> Hadimba Temple, Solang Valley, Mall Road</p><a href="/manali-2n-3d-package" class="btn btn-primary rounded-pill">Discover More</a></div></div>'
+
+# Card 2: Manali 3N/4D
+html += '<div class="col-lg-6 mb-4"><div class="p-4" style="background-color: #fff; border-radius: 12px; border-left: 4px solid #1a237e;"><h4><strong>Manali 3N/4D</strong></h4><p>Extended Manali experience with more time to explore scenic valleys and adventure activities.</p><p><strong>Highlights:</strong> Rohtang Pass, Solang Valley, Old Manali</p><a href="/manali-3n-4d-package" class="btn btn-primary rounded-pill">Discover More</a></div></div>'
+
+# Card 3: Manali-Kasol 3N/4D
+html += '<div class="col-lg-6 mb-4"><div class="p-4" style="background-color: #fff; border-radius: 12px; border-left: 4px solid #2e7d32;"><h4><strong>Manali - Kasol 3N/4D</strong></h4><p>Combine the charm of Manali with the hippie vibes of Kasol. Perfect for nature and adventure lovers.</p><p><strong>Highlights:</strong> Kasol Village, Manikaran, Parvati Valley</p><a href="/manali-kasol-3n-4d-package" class="btn btn-primary rounded-pill">Discover More</a></div></div>'
+
+# Card 4: Manali-Kasol 4N/5D
+html += '<div class="col-lg-6 mb-4"><div class="p-4" style="background-color: #fff; border-radius: 12px; border-left: 4px solid #c62828;"><h4><strong>Manali - Kasol 4N/5D</strong></h4><p>The ultimate Himachal experience covering Manali and Kasol with ample time for sightseeing and relaxation.</p><p><strong>Highlights:</strong> Kullu, Manali, Kasol, Manikaran Hot Springs</p><a href="/manali-kasol-4n-5d-package" class="btn btn-primary rounded-pill">Discover More</a></div></div>'
+
+html += '</div></div></section>'
+
+# CTA
+html += '<section class="s_call_to_action pt48 pb48" data-snippet="s_call_to_action" data-name="Call to Action" style="background-color: #2d3436;"><div class="container"><div class="row"><div class="col-lg-12" style="text-align: center;"><h2 style="color: #fff;"><strong>Need Help Choosing?</strong></h2><p style="color: rgba(255,255,255,0.8);">Contact us and we will help you plan the perfect trip!</p><a href="/contactus" class="btn btn-light btn-lg rounded-pill mt-3">Contact Us</a></div></div></div></section>'
+
+html += '</div></t></t>'
+
+view.write({'arch_db': html})
+env.cr.commit()
+print('Manali listing page updated!')

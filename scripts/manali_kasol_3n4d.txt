@@ -1,0 +1,39 @@
+# Manali-Kasol 3N/4D Package - Proper Odoo Snippets
+# Paste in webshell
+
+view = env['ir.ui.view'].search([('key', '=', 'website.manali-kasol-3n-4d-package')], limit=1)
+
+html = '<t t-name="website.manali-kasol-3n-4d-package"><t t-call="website.layout"><div id="wrap" class="oe_structure oe_empty">'
+
+# Hero
+html += '<section class="s_cover parallax s_parallax_is_fixed pt160 pb160" data-snippet="s_cover" data-name="Cover"><span class="s_parallax_bg oe_img_bg" style="background-image: url(https://images.unsplash.com/photo-1626621341517-bbf3d9990a23?w=1600); background-position: center center;"/><div class="o_we_bg_filter" style="background-color: rgba(0, 0, 0, 0.5);"/><div class="container"><div class="row"><div class="col-lg-12 pt80 pb40" style="text-align: center;"><h1 style="color: #ffffff; font-size: 48px;">Manali &amp; Kasol Package</h1><p style="color: #ffffff; font-size: 22px;">03 Nights / 04 Days | Delhi - Manali - Kasol - Delhi</p><a href="/contactus" class="btn btn-light btn-lg rounded-pill mt-3">Book This Trip</a></div></div></div></section>'
+
+# Intro
+html += '<section class="s_text_block pt40 pb40" data-snippet="s_text_block" data-name="Text"><div class="container"><div class="row"><div class="col-lg-8 mx-auto" style="text-align: center;"><p style="font-size: 17px; line-height: 1.8;">Experience the magic of Himachal Pradesh with this exciting Manali and Kasol combo tour. From snow-covered mountains and adventure sports to peaceful riverside cafes and spiritual hot springs, this package has it all. An overnight Volvo bus journey from Delhi starts your adventure.</p></div></div></div></section>'
+
+# Quick Info
+html += '<section class="s_features pt32 pb32" data-snippet="s_features" data-name="Features"><div class="container"><div class="row"><div class="col-lg-3 pt16 pb16"><div class="text-center p-3" style="background-color: #e3f2fd; border-radius: 12px;"><h5><strong>Duration</strong></h5><p class="text-muted mb-0">3 Nights / 4 Days</p></div></div><div class="col-lg-3 pt16 pb16"><div class="text-center p-3" style="background-color: #fff3e0; border-radius: 12px;"><h5><strong>Price</strong></h5><p class="text-muted mb-0">INR 10,500 / pax</p></div></div><div class="col-lg-3 pt16 pb16"><div class="text-center p-3" style="background-color: #e8f5e9; border-radius: 12px;"><h5><strong>Transport</strong></h5><p class="text-muted mb-0">Volvo Bus + Pvt Vehicle</p></div></div><div class="col-lg-3 pt16 pb16"><div class="text-center p-3" style="background-color: #fce4ec; border-radius: 12px;"><h5><strong>Hotels</strong></h5><p class="text-muted mb-0">Sarthak Regency + Bhoj</p></div></div></div></div></section>'
+
+# Day 1 - Image Left
+html += '<section class="s_text_image pt48 pb48" data-snippet="s_text_image" data-name="Text - Image" style="background-color: #fafafa;"><div class="container"><h2 style="text-align: center;" class="mb-5"><strong>Day-by-Day Itinerary</strong></h2><div class="row align-items-center"><div class="col-lg-6 pt16 pb16"><img src="https://images.unsplash.com/photo-1626621341517-bbf3d9990a23?w=800" alt="Manali" class="img img-fluid shadow rounded"/></div><div class="col-lg-6 pt16 pb16"><h3>Day 1 — Arrival in Manali</h3><p>Overnight Volvo bus from Delhi (12 hours). On arrival, check in at Sarthak Regency and relax.</p><ul><li>Hadimba Temple</li><li>Buddhist Monastery</li><li>Mall Road</li><li>Manali Market</li><li>Local Food Street</li></ul><p>Evening back to hotel. Overnight stay.</p><p><strong>Hotel:</strong> Sarthak Regency 3* | <strong>Meals:</strong> Breakfast + Dinner</p></div></div></div></section>'
+
+# Day 2 - Image Right
+html += '<section class="s_image_text pt48 pb48" data-snippet="s_image_text" data-name="Image - Text"><div class="container"><div class="row align-items-center"><div class="col-lg-6 pt16 pb16"><h3>Day 2 — Solang Valley &amp; Atal Tunnel</h3><p>After breakfast at 9am, proceed for adventure sightseeing.</p><ul><li>Snow Point Visit</li><li>Solang Valley</li><li>Atal Tunnel</li></ul><p>Evening back to hotel. Overnight stay.</p><p><strong>Hotel:</strong> Sarthak Regency 3* | <strong>Meals:</strong> Breakfast + Dinner</p></div><div class="col-lg-6 pt16 pb16"><img src="https://images.unsplash.com/photo-1585320806297-9794b3e4eeae?w=800" alt="Solang Valley" class="img img-fluid shadow rounded"/></div></div></div></section>'
+
+# Day 3 - Image Left
+html += '<section class="s_text_image pt48 pb48" data-snippet="s_text_image" data-name="Text - Image" style="background-color: #fafafa;"><div class="container"><div class="row align-items-center"><div class="col-lg-6 pt16 pb16"><img src="https://images.unsplash.com/photo-1590689080629-7f0e4b2dda88?w=800" alt="Kasol" class="img img-fluid shadow rounded"/></div><div class="col-lg-6 pt16 pb16"><h3>Day 3 — Kullu &amp; Kasol</h3><p>After breakfast proceed to Kullu for adventure activities.</p><ul><li>River Rafting (own cost)</li><li>Paragliding Activities (own cost)</li><li>Journey to Kasol (2-4 hrs)</li><li>Visit Manikaran — Hot Springs &amp; Gurudwara</li></ul><p>Check in to hotel. Dinner and overnight stay.</p><p><strong>Hotel:</strong> Bhoj Hotel / Similar 3* | <strong>Meals:</strong> Breakfast + Dinner</p></div></div></div></section>'
+
+# Day 4 - Image Right
+html += '<section class="s_image_text pt48 pb48" data-snippet="s_image_text" data-name="Image - Text"><div class="container"><div class="row align-items-center"><div class="col-lg-6 pt16 pb16"><h3>Day 4 — Kasol &amp; Return</h3><ul><li>Chalal Village Trek</li><li>Riverside Picnic — scenic spots</li><li>Kasol Market Visit — cafes &amp; handicraft shops</li></ul><p>Evening Volvo bus journey back to Delhi.</p><p><strong>Meals:</strong> Breakfast only</p><p style="color: #888;"><em>Day 5: Early morning Delhi drop off.</em></p></div><div class="col-lg-6 pt16 pb16"><img src="https://images.unsplash.com/photo-1592385862924-1d0b5b9e4c74?w=800" alt="Kasol Market" class="img img-fluid shadow rounded"/></div></div></div></section>'
+
+# Inclusions / Exclusions
+html += '<section class="s_text_block pt48 pb48" data-snippet="s_text_block" data-name="Text"><div class="container"><div class="row"><div class="col-lg-6 pt16 pb16"><div class="p-4" style="background-color: #e8f5e9; border-radius: 12px;"><h3 style="color: #2e7d32;"><strong>Inclusions</strong></h3><ul><li>02 Night Accommodation in Manali</li><li>01 Night Accommodation in Kasol</li><li>Vehicle for Sightseeing (Private)</li><li>Up and Down Volvo Bus Ticket</li><li>All Normal Entry Tickets</li><li>Food (As per itinerary)</li></ul></div></div><div class="col-lg-6 pt16 pb16"><div class="p-4" style="background-color: #ffebee; border-radius: 12px;"><h3 style="color: #c62828;"><strong>Exclusions</strong></h3><ul><li>Early check-in depends on availability (arrival day)</li><li>Travel time food during bus journey</li><li>Extra 4x4 vehicle cost for snow point trips</li><li>Kullu activities ticket (Paragliding &amp; River Rafting)</li><li>Snow Dress</li></ul></div></div></div></div></section>'
+
+# CTA
+html += '<section class="s_call_to_action pt48 pb48" data-snippet="s_call_to_action" data-name="Call to Action" style="background-color: #2d3436;"><div class="container"><div class="row"><div class="col-lg-12" style="text-align: center;"><h2 style="color: #ffffff;"><strong>Ready for Manali &amp; Kasol?</strong></h2><p style="color: rgba(255,255,255,0.8);">Contact us for the best price!</p><a href="/contactus" class="btn btn-light btn-lg rounded-pill mt-3">Book Now</a></div></div></div></section>'
+
+html += '</div></t></t>'
+
+view.write({'arch_db': html})
+env.cr.commit()
+print('Manali-Kasol 3N/4D page updated!')

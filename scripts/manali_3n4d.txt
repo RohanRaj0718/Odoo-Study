@@ -1,0 +1,45 @@
+# Manali 3N/4D Package - Proper Odoo Snippets
+# Paste in webshell
+
+view = env['ir.ui.view'].search([('key', '=', 'website.manali-3n-4d-package')], limit=1)
+
+html = '<t t-name="website.manali-3n-4d-package"><t t-call="website.layout"><div id="wrap" class="oe_structure oe_empty">'
+
+# Hero
+html += '<section class="s_cover parallax s_parallax_is_fixed pt160 pb160" data-snippet="s_cover" data-name="Cover"><span class="s_parallax_bg oe_img_bg" style="background-image: url(https://images.unsplash.com/photo-1626621341517-bbf3d9990a23?w=1600); background-position: center center;"/><div class="o_we_bg_filter" style="background-color: rgba(0, 0, 0, 0.5);"/><div class="container"><div class="row"><div class="col-lg-12 pt80 pb40" style="text-align: center;"><h1 style="color: #ffffff; font-size: 48px;">Manali Package</h1><p style="color: #ffffff; font-size: 22px;">03 Nights / 04 Days | Delhi - Manali - Kullu - Delhi</p><a href="/contactus" class="btn btn-light btn-lg rounded-pill mt-3">Book This Trip</a></div></div></div></section>'
+
+# Intro
+html += '<section class="s_text_block pt40 pb40" data-snippet="s_text_block" data-name="Text"><div class="container"><div class="row"><div class="col-lg-8 mx-auto" style="text-align: center;"><p style="font-size: 17px; line-height: 1.8;">Escape to the stunning valleys of Manali with this perfectly curated 3 Night / 4 Day package. From ancient temples and bustling markets to snow-capped mountains and thrilling adventure sports, experience the best of Himachal Pradesh with Holibaba Journeys.</p></div></div></div></section>'
+
+# Quick Info - Price tiers + details
+html += '<section class="s_features pt32 pb32" data-snippet="s_features" data-name="Features"><div class="container"><div class="row"><div class="col-lg-3 pt16 pb16"><div class="text-center p-3" style="background-color: #e3f2fd; border-radius: 12px;"><h5><strong>Duration</strong></h5><p class="text-muted mb-0">3 Nights / 4 Days</p></div></div><div class="col-lg-3 pt16 pb16"><div class="text-center p-3" style="background-color: #fff3e0; border-radius: 12px;"><h5><strong>Price (Deluxe)</strong></h5><p class="text-muted mb-0">INR 6,499 / pax</p></div></div><div class="col-lg-3 pt16 pb16"><div class="text-center p-3" style="background-color: #e8f5e9; border-radius: 12px;"><h5><strong>Price (3-Star)</strong></h5><p class="text-muted mb-0">INR 8,499 / pax</p></div></div><div class="col-lg-3 pt16 pb16"><div class="text-center p-3" style="background-color: #fce4ec; border-radius: 12px;"><h5><strong>Transport</strong></h5><p class="text-muted mb-0">Volvo Bus + Pvt Sedan</p></div></div></div></div></section>'
+
+# Hotel Info
+html += '<section class="s_text_block pt16 pb16" data-snippet="s_text_block" data-name="Text"><div class="container"><div class="row"><div class="col-lg-6 mx-auto text-center"><p class="mb-0" style="font-size: 15px;"><strong>Deluxe:</strong> Manali Lodge / Snowbird | <strong>3-Star:</strong> Sarthak Regency / Manali Castle</p></div></div></div></section>'
+
+# Day 1 - Journey Night
+html += '<section class="s_text_block pt32 pb32" data-snippet="s_text_block" data-name="Text" style="background-color: #fafafa;"><div class="container"><h2 style="text-align: center;" class="mb-5"><strong>Day-by-Day Itinerary</strong></h2><div class="row"><div class="col-lg-8 mx-auto"><div class="p-4" style="background-color: #fff; border-radius: 12px; border-left: 4px solid #1a237e;"><h4>Day 1 — Overnight Journey</h4><p>Board the Volvo bus from Delhi for an overnight journey to Manali (12 hours travelling).</p></div></div></div></div></section>'
+
+# Day 2 - Image Left
+html += '<section class="s_text_image pt48 pb48" data-snippet="s_text_image" data-name="Text - Image"><div class="container"><div class="row align-items-center"><div class="col-lg-6 pt16 pb16"><img src="https://images.unsplash.com/photo-1626621341517-bbf3d9990a23?w=800" alt="Manali Sightseeing" class="img img-fluid shadow rounded"/></div><div class="col-lg-6 pt16 pb16"><h3>Day 2 — Manali Sightseeing</h3><p>On arrival, check in at the hotel and relax. After breakfast, proceed for sightseeing.</p><ul><li>Hadimba Temple</li><li>Buddhist Monastery</li><li>Mall Road</li><li>Manali Market</li><li>Local Food Street</li></ul><p>Evening back to hotel. Overnight stay.</p><p><strong>Meals:</strong> Breakfast + Dinner</p></div></div></div></section>'
+
+# Day 3 - Image Right
+html += '<section class="s_image_text pt48 pb48" data-snippet="s_image_text" data-name="Image - Text" style="background-color: #fafafa;"><div class="container"><div class="row align-items-center"><div class="col-lg-6 pt16 pb16"><h3>Day 3 — Solang Valley &amp; Atal Tunnel</h3><p>Morning 9am, after breakfast proceed for adventure.</p><ul><li>Snow Point Visit</li><li>Solang Valley</li><li>Atal Tunnel</li></ul><p>Evening back to hotel. Overnight stay.</p><p><strong>Meals:</strong> Breakfast + Dinner</p></div><div class="col-lg-6 pt16 pb16"><img src="https://images.unsplash.com/photo-1585320806297-9794b3e4eeae?w=800" alt="Solang Valley" class="img img-fluid shadow rounded"/></div></div></div></section>'
+
+# Day 4 - Image Left
+html += '<section class="s_text_image pt48 pb48" data-snippet="s_text_image" data-name="Text - Image"><div class="container"><div class="row align-items-center"><div class="col-lg-6 pt16 pb16"><img src="https://images.unsplash.com/photo-1592385862924-1d0b5b9e4c74?w=800" alt="Jogini Waterfall" class="img img-fluid shadow rounded"/></div><div class="col-lg-6 pt16 pb16"><h3>Day 4 — Jogini Waterfall Trek</h3><p>After breakfast, proceed to Jogini Waterfall trekking. Easy-to-moderate 3 km hike (1.5-2 hours) starting from Vashisht Village.</p><p>Evening back to hotel. Overnight stay.</p><p><strong>Meals:</strong> Breakfast + Dinner</p></div></div></div></section>'
+
+# Day 5 - Image Right
+html += '<section class="s_image_text pt48 pb48" data-snippet="s_image_text" data-name="Image - Text" style="background-color: #fafafa;"><div class="container"><div class="row align-items-center"><div class="col-lg-6 pt16 pb16"><h3>Day 5 — Kullu &amp; Return</h3><p>Morning 9am, after breakfast proceed to Kullu sightseeing.</p><ul><li>Rafting Point (Optional, Excluded)</li><li>Paragliding Point (Optional, Excluded)</li><li>Naggar Castle (Depends on time)</li></ul><p>Night 7pm Volvo bus back to Delhi.</p><p><strong>Meals:</strong> Breakfast only</p><p style="color: #888;"><em>Day 6: Morning arrival in Delhi at 6-7 AM.</em></p></div><div class="col-lg-6 pt16 pb16"><img src="https://images.unsplash.com/photo-1590689080629-7f0e4b2dda88?w=800" alt="Kullu Valley" class="img img-fluid shadow rounded"/></div></div></div></section>'
+
+# Inclusions / Exclusions
+html += '<section class="s_text_block pt48 pb48" data-snippet="s_text_block" data-name="Text"><div class="container"><div class="row"><div class="col-lg-6 pt16 pb16"><div class="p-4" style="background-color: #e8f5e9; border-radius: 12px;"><h3 style="color: #2e7d32;"><strong>Inclusions</strong></h3><ul><li>03 Nights Accommodation (3* Category)</li><li>Vehicle for Sightseeing (Private Sedan)</li><li>Up and Down Volvo Bus Ticket</li><li>All Normal Entry Tickets</li><li>Food (As per itinerary)</li></ul></div></div><div class="col-lg-6 pt16 pb16"><div class="p-4" style="background-color: #ffebee; border-radius: 12px;"><h3 style="color: #c62828;"><strong>Exclusions</strong></h3><ul><li>Early check-in depends on availability (arrival day)</li><li>Travel time food during bus journey</li><li>Extra 4x4 vehicle cost for snow point trips</li><li>Kullu activities (Paragliding &amp; River Rafting)</li><li>Snow Dress</li></ul></div></div></div></div></section>'
+
+# CTA
+html += '<section class="s_call_to_action pt48 pb48" data-snippet="s_call_to_action" data-name="Call to Action" style="background-color: #2d3436;"><div class="container"><div class="row"><div class="col-lg-12" style="text-align: center;"><h2 style="color: #ffffff;"><strong>Ready to Explore Manali?</strong></h2><p style="color: rgba(255,255,255,0.8);">Contact us for the best price!</p><a href="/contactus" class="btn btn-light btn-lg rounded-pill mt-3">Book Now</a></div></div></div></section>'
+
+html += '</div></t></t>'
+
+view.write({'arch_db': html})
+env.cr.commit()
+print('Manali 3N/4D page updated!')
